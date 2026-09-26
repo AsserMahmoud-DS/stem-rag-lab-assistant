@@ -9,17 +9,15 @@ from typing import Any
 from llama_index.core.retrievers import QueryFusionRetriever
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-from stem_rag_lab_assistant.config import (
-    EMBEDDING_MODEL_NAME,
-    VECTOR_TOP_K,
-    BM25_TOP_K,
-)
+from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
 from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever
 from stem_rag_lab_assistant.index.vector_store import VectorRetriever, load_vector_store
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 _EMBED_MODEL: HuggingFaceEmbedding | None = None
 _FUSION_RETRIEVER: QueryFusionRetriever | None = None
@@ -29,7 +27,7 @@ def _get_embed_model() -> HuggingFaceEmbedding:
     global _EMBED_MODEL
     if _EMBED_MODEL is None:
         _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=EMBEDDING_MODEL_NAME,
+            model_name=_CFG.embedding_model,
             device="cuda",
         )
     return _EMBED_MODEL
@@ -42,13 +40,13 @@ def _get_fusion_retriever() -> QueryFusionRetriever:
 
     embed_model = _get_embed_model()
     vector_store = load_vector_store()
-    vector_retriever = VectorRetriever(vector_store, embed_model, top_k=VECTOR_TOP_K)
+    vector_retriever = VectorRetriever(vector_store, embed_model, top_k=_CFG.vector_top_k)
 
     bm25_retriever = get_bm25_retriever()
 
     _FUSION_RETRIEVER = QueryFusionRetriever(
         [vector_retriever, bm25_retriever],
-        similarity_top_k=VECTOR_TOP_K,
+        similarity_top_k=_CFG.vector_top_k,
         num_queries=1,              # no query generation — RRF only
         mode="reciprocal_rerank",
         use_async=False,
@@ -56,7 +54,7 @@ def _get_fusion_retriever() -> QueryFusionRetriever:
     )
     logger.info(
         "Hybrid fusion retriever ready (vector_top_k=%d, bm25_top_k=%d, mode=reciprocal_rerank)",
-        VECTOR_TOP_K, BM25_TOP_K,
+        _CFG.vector_top_k, _CFG.bm25_top_k,
     )
     return _FUSION_RETRIEVER
 
