@@ -10,7 +10,7 @@ from typing import Any
 from llama_index.core.schema import TextNode
 from llama_index.retrievers.bm25 import BM25Retriever
 
-from stem_rag_lab_assistant.config import BM25_TOP_K
+from stem_rag_lab_assistant.config import get_config
 
 logger = logging.getLogger(__name__)
 
@@ -84,12 +84,12 @@ def get_bm25_retriever() -> BM25Retriever:
 
         _BM25_RETRIEVER = BM25Retriever.from_defaults(
             nodes=nodes,
-            similarity_top_k=BM25_TOP_K,
+            similarity_top_k=get_config().bm25_top_k,
         )
         _PERSIST_DIR.mkdir(parents=True, exist_ok=True)
         _BM25_RETRIEVER.persist(str(_PERSIST_DIR))
         (_PERSIST_DIR / "chunk_count.txt").write_text(str(current_count))
-        logger.info("BM25 retriever persisted to %s (top_k=%d)", _PERSIST_DIR, BM25_TOP_K)
+        logger.info("BM25 retriever persisted to %s (top_k=%d)", _PERSIST_DIR, get_config().bm25_top_k)
 
     return _BM25_RETRIEVER
 
