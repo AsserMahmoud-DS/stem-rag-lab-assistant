@@ -8,7 +8,7 @@ from typing import Optional
 
 from llama_index.llms.groq import Groq
 
-from stem_rag_lab_assistant.config import ANSWER_MODEL_NAME, JUDGE_MODEL_NAME
+from stem_rag_lab_assistant.config import get_config
 
 logger = logging.getLogger(__name__)
 
@@ -33,8 +33,9 @@ def get_answer_llm() -> Groq:
     """
     global _ANSWER_LLM
     if _ANSWER_LLM is None:
-        _ANSWER_LLM = Groq(model=ANSWER_MODEL_NAME, api_key=_get_api_key())
-        logger.info("Answer LLM initialised: %s", ANSWER_MODEL_NAME)
+        cfg = get_config()
+        _ANSWER_LLM = Groq(model=cfg.answer_model, api_key=_get_api_key())
+        logger.info("Answer LLM initialised: %s", cfg.answer_model)
     return _ANSWER_LLM
 
 
@@ -45,6 +46,7 @@ def get_judge_llm() -> Groq:
     """
     global _JUDGE_LLM
     if _JUDGE_LLM is None:
-        _JUDGE_LLM = Groq(model=JUDGE_MODEL_NAME, api_key=_get_api_key())
-        logger.info("Judge LLM initialised: %s", JUDGE_MODEL_NAME)
+        cfg = get_config()
+        _JUDGE_LLM = Groq(model=cfg.judge_model, api_key=_get_api_key())
+        logger.info("Judge LLM initialised: %s", cfg.judge_model)
     return _JUDGE_LLM
