@@ -14,7 +14,6 @@ from typing import Any
 import numpy as np
 from dotenv import load_dotenv
 from llama_index.core.llms import ChatMessage
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 from lightrag import LightRAG, QueryParam
 from lightrag.base import EmbeddingFunc
@@ -22,6 +21,7 @@ from lightrag.base import EmbeddingFunc
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
+from stem_rag_lab_assistant.resources import get_embed_model
 
 load_dotenv()
 
@@ -38,7 +38,6 @@ _LIGHTRAG_WORKING_DIR = Path(__file__).resolve().parents[3] / "lightrag_data"
 
 _LIGHTRAG: LightRAG | None = None
 _LIGHTRAG_READY: bool = False
-_EMBED_MODEL: HuggingFaceEmbedding | None = None
 
 # persistent event loop for LightRAG's async API
 _LOOP: asyncio.AbstractEventLoop | None = None
@@ -63,28 +62,15 @@ def _run_async(coro: Any) -> Any:
     return future.result(timeout=3600)
 
 
-# ---- model singletons ----
-
-def _get_embed_model() -> HuggingFaceEmbedding:
-    global _EMBED_MODEL
-    if _EMBED_MODEL is None:
-        _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=_CFG.embedding_model,
-            device="cuda",
-        )
-    return _EMBED_MODEL
-
-
 async def _embedding_func(texts: list[str]) -> np.ndarray:
-    """Async wrapper around bge-m3 for LightRAG's EmbeddingFunc."""
-    embed_model = _get_embed_model()
-    embeddings = embed_model.get_text_embedding_batch(texts)
+    """Async wrapper around the shared bge-m3 embedder for LightRAG's EmbeddingFunc."""
+    embeddings = get_embed_model().get_text_embedding_batch(texts)
     return np.array(embeddings, dtype=np.float32)
 
 
 def _build_embedding_func() -> EmbeddingFunc:
     return EmbeddingFunc(
-        embedding_dim=1024,
+        embedding_dim=_CFG.embedding_dim,
         max_token_size=8192,
         model_name=_CFG.embedding_model,
         func=_embedding_func,
