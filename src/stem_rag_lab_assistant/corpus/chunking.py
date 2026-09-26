@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from stem_rag_lab_assistant.config import CHUNK_OVERLAP, CHUNK_SIZE, to_relative_path
+from stem_rag_lab_assistant.config import get_config, to_relative_path
 
 _ELEM_TYPES_TEXT = frozenset({"paragraph", "heading", "caption", "formula"})
 _ELEM_TYPES_IMAGE = frozenset({"image"})
@@ -187,7 +187,7 @@ def _chunk_single_doc(
 ) -> list[dict[str, Any]]:
     """Convert one ODL JSON doc into a list of chunk dicts.
 
-    Splits on page boundaries and on exceeding CHUNK_SIZE.  Caption text and image
+    Splits on page boundaries and on exceeding the chunk-size limit.  Caption text and image
     ai_description text are merged into the enclosing chunk; image linkage is
     recorded via linked_image_ids.  Image elements without description/alt are
     skipped (no text to contribute).
@@ -198,6 +198,7 @@ def _chunk_single_doc(
         doc_id: Stable document ID (PDF stem, e.g. "Lab1").
         pdf_path: Path to the source PDF (used for metadata.file_path).
     """
+    cfg = get_config()
     n_pages = doc.get("number of pages", 1)
     file_path = to_relative_path(pdf_path) if pdf_path else to_relative_path(doc_path)
 
@@ -254,7 +255,7 @@ def _chunk_single_doc(
         text_buffer.append(text)
         combined = " ".join(text_buffer)
 
-        if len(combined) > CHUNK_SIZE:
+        if len(combined) > cfg.chunk_size:
             if len(text_buffer) == 1:
                 _flush(override_text=combined)
                 continue
@@ -262,8 +263,8 @@ def _chunk_single_doc(
             if pre_overflow.strip():
                 _flush(override_text=pre_overflow)
             overlap_text = ""
-            if CHUNK_OVERLAP > 0 and len(pre_overflow) > CHUNK_OVERLAP:
-                overlap_text = pre_overflow[-CHUNK_OVERLAP:]
+            if cfg.chunk_overlap > 0 and len(pre_overflow) > cfg.chunk_overlap:
+                overlap_text = pre_overflow[-cfg.chunk_overlap:]
             text_buffer = [overlap_text] if overlap_text.strip() else []
             text_buffer.append(text)
             current_page = page
