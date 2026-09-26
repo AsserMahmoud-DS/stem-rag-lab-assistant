@@ -12,13 +12,7 @@ from llama_index.core.llms import ChatMessage
 from llama_index.core.retrievers import QueryFusionRetriever
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-from stem_rag_lab_assistant.config import (
-    BM25_TOP_K,
-    EMBEDDING_MODEL_NAME,
-    GRAPH_MAX_EXPANDED_CHUNKS,
-    RERANK_TOP_N,
-    VECTOR_TOP_K,
-)
+from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import (
     ANSWER_SYSTEM_PROMPT,
@@ -38,6 +32,8 @@ from stem_rag_lab_assistant.index.reranker import CrossEncoderReranker, get_rera
 
 logger = logging.getLogger(__name__)
 
+_CFG = get_config()
+
 _EMBED_MODEL: HuggingFaceEmbedding | None = None
 _FUSION_RETRIEVER: QueryFusionRetriever | None = None
 _GRAPH_STORE: GraphStore | None = None
@@ -47,7 +43,7 @@ def _get_embed_model() -> HuggingFaceEmbedding:
     global _EMBED_MODEL
     if _EMBED_MODEL is None:
         _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=EMBEDDING_MODEL_NAME, device="cuda",
+            model_name=_CFG.embedding_model, device="cuda",
         )
     return _EMBED_MODEL
 
@@ -59,18 +55,18 @@ def _get_fusion_retriever() -> QueryFusionRetriever:
 
     embed_model = _get_embed_model()
     vector_store = load_vector_store()
-    vector_retriever = VectorRetriever(vector_store, embed_model, top_k=VECTOR_TOP_K)
+    vector_retriever = VectorRetriever(vector_store, embed_model, top_k=_CFG.vector_top_k)
     bm25_retriever = get_bm25_retriever()
 
     _FUSION_RETRIEVER = QueryFusionRetriever(
         [vector_retriever, bm25_retriever],
-        similarity_top_k=VECTOR_TOP_K,
+        similarity_top_k=_CFG.vector_top_k,
         num_queries=1,
         mode="reciprocal_rerank",
         use_async=False,
         llm=get_answer_llm(),
     )
-    logger.info("Graph seed fusion retriever ready (RRF, top_k=%d)", VECTOR_TOP_K)
+    logger.info("Graph seed fusion retriever ready (RRF, top_k=%d)", _CFG.vector_top_k)
     return _FUSION_RETRIEVER
 
 
@@ -104,7 +100,7 @@ def hybrid_graph_retrieve(
     """Seeds = RRF(vector ∪ BM25) → map to entities → one-hop expansion.
 
     Seed budget is identical to the hybrid method (RRF top-k, same k).
-    Graph expansion is capped at ``GRAPH_MAX_EXPANDED_CHUNKS`` to
+    Graph expansion is capped at ``RAGConfig.graph_max_expanded_chunks`` to
     control context cost while still demonstrating cross-document reach.
 
     Returns dict with keys:
@@ -140,11 +136,11 @@ def hybrid_graph_retrieve(
     expanded_chunk_ids = graph_store.expand_one_hop(seed_entity_ids)
     new_ids = sorted(expanded_chunk_ids - set(seed_ids))
 
-    new_ids = new_ids[:GRAPH_MAX_EXPANDED_CHUNKS]
+    new_ids = new_ids[: _CFG.graph_max_expanded_chunks]
 
     logger.info(
         "One-hop expansion: %d neighbour chunks (%d added, capped at %d)",
-        len(expanded_chunk_ids), len(new_ids), GRAPH_MAX_EXPANDED_CHUNKS,
+        len(expanded_chunk_ids), len(new_ids), _CFG.graph_max_expanded_chunks,
     )
 
     # --- 4. Load neighbour chunk texts (separate from seeds) ---
@@ -159,7 +155,7 @@ def hybrid_graph_retrieve(
 
     # --- 5. Cross-encoder only on expanded chunks → seeds always preserved ---
     reranker = _get_reranker()
-    kept_expanded = reranker.rerank(query, expanded_chunks, top_n=4) if expanded_chunks else []
+    kept_expanded = reranker.rerank(query, expanded_chunks, top_n=_CFG.rerank_top_n) if expanded_chunks else []
     all_chunks: list[dict[str, Any]] = list(seed_chunks) + kept_expanded
 
     elapsed = (time.perf_counter() - t0) * 1000
