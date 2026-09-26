@@ -12,32 +12,12 @@ from llama_index.core.vector_stores import SimpleVectorStore
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
-from stem_rag_lab_assistant.index.vector_store import load_vector_store, retrieve
+from stem_rag_lab_assistant.index.vector_store import retrieve
+from stem_rag_lab_assistant.resources import get_embed_model, get_vector_store
 
 logger = logging.getLogger(__name__)
 
 _CFG = get_config()
-
-_EMBED_MODEL: HuggingFaceEmbedding | None = None
-_VECTOR_STORE: SimpleVectorStore | None = None
-
-
-def _get_embed_model() -> HuggingFaceEmbedding:
-    global _EMBED_MODEL
-    if _EMBED_MODEL is None:
-        _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=_CFG.embedding_model,
-            # Using GPU for query-time embeddings 
-            device="cuda",
-        )
-    return _EMBED_MODEL
-
-
-def _get_vector_store() -> SimpleVectorStore:
-    global _VECTOR_STORE
-    if _VECTOR_STORE is None:
-        _VECTOR_STORE = load_vector_store()
-    return _VECTOR_STORE
 
 
 def _format_context(chunks: list[dict[str, Any]]) -> str:
@@ -60,8 +40,8 @@ def naive_retrieve(
 
     Returns list of {chunk_id, text, score, metadata} dicts.
     """
-    store = vector_store or _get_vector_store()
-    emb_model = embed_model or _get_embed_model()
+    store = vector_store or get_vector_store()
+    emb_model = embed_model or get_embed_model()
     k = top_k or _CFG.vector_top_k
 
     query_embedding = emb_model.get_query_embedding(query)
