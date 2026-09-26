@@ -13,16 +13,11 @@ from typing import Any
 
 import groq
 
-from stem_rag_lab_assistant.config import (
-    EXTRACTION_LLM_MODEL,
-    EXTRACTION_MAX_CONCURRENT,
-    EXTRACTION_MAX_ENTITIES_PER_CHUNK,
-    EXTRACTION_MAX_TOTAL_PER_CHUNK,
-    EXTRACTION_MAX_TOKENS,
-    EXTRACTION_RETRY_MAX,
-)
+from stem_rag_lab_assistant.config import get_config
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 # ---------------------------------------------------------------------------
 # P3.1 — ECE Entity-Type Guidance
@@ -309,8 +304,8 @@ def _get_extraction_client() -> groq.AsyncGroq:
 def _build_user_prompt(
     chunk_text: str,
     heading_breadcrumb: str = "",
-    max_total: int = EXTRACTION_MAX_TOTAL_PER_CHUNK,
-    max_entities: int = EXTRACTION_MAX_ENTITIES_PER_CHUNK,
+    max_total: int = _CFG.extraction_max_total_per_chunk,
+    max_entities: int = _CFG.extraction_max_entities_per_chunk,
 ) -> str:
     heading_block = ""
     if heading_breadcrumb:
@@ -333,10 +328,10 @@ async def _extract_from_chunk_once(
     chunk_text: str,
     heading_breadcrumb: str = "",
     *,
-    model: str = EXTRACTION_LLM_MODEL,
-    max_total: int = EXTRACTION_MAX_TOTAL_PER_CHUNK,
-    max_entities: int = EXTRACTION_MAX_ENTITIES_PER_CHUNK,
-    max_tokens: int = EXTRACTION_MAX_TOKENS,
+    model: str = _CFG.extraction_llm_model,
+    max_total: int = _CFG.extraction_max_total_per_chunk,
+    max_entities: int = _CFG.extraction_max_entities_per_chunk,
+    max_tokens: int = _CFG.extraction_max_tokens,
     temperature: float = 0.1,
 ) -> str:
     """Single async Groq call for entity/relation extraction. Returns raw response text."""
@@ -373,7 +368,7 @@ async def extract_from_chunk(
     chunk_text: str,
     heading_breadcrumb: str = "",
     *,
-    max_retries: int = EXTRACTION_RETRY_MAX,
+    max_retries: int = _CFG.extraction_retry_max,
     **kwargs: Any,
 ) -> dict[str, Any]:
     """Extract entities and relationships from a single chunk, with retry on parse failure.
@@ -484,7 +479,7 @@ async def extract_from_chunks(
     chunks: list[dict[str, Any]],
     client: groq.AsyncGroq | None = None,
     *,
-    max_concurrent: int = EXTRACTION_MAX_CONCURRENT,
+    max_concurrent: int = _CFG.extraction_max_concurrent,
     cooldown_seconds: float = 1.0,
     progress_path: Path | None = None,
     **kwargs: Any,
