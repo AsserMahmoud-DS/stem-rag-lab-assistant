@@ -19,13 +19,15 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from lightrag import LightRAG, QueryParam
 from lightrag.base import EmbeddingFunc
 
-from stem_rag_lab_assistant.config import EMBEDDING_MODEL_NAME, EXTRACTION_LLM_MODEL
+from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
 
 load_dotenv()
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 # ---- paths ----
 
@@ -67,7 +69,7 @@ def _get_embed_model() -> HuggingFaceEmbedding:
     global _EMBED_MODEL
     if _EMBED_MODEL is None:
         _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=EMBEDDING_MODEL_NAME,
+            model_name=_CFG.embedding_model,
             device="cuda",
         )
     return _EMBED_MODEL
@@ -84,7 +86,7 @@ def _build_embedding_func() -> EmbeddingFunc:
     return EmbeddingFunc(
         embedding_dim=1024,
         max_token_size=8192,
-        model_name=EMBEDDING_MODEL_NAME,
+        model_name=_CFG.embedding_model,
         func=_embedding_func,
     )
 
@@ -126,7 +128,7 @@ async def _llm_model_func(
     for attempt in range(max_retries):
         try:
             response = await client.chat.completions.create(
-                model=EXTRACTION_LLM_MODEL,
+                model=_CFG.extraction_llm_model,
                 messages=messages,
                 **create_kwargs,
             )
@@ -205,7 +207,7 @@ def lightrag_retrieve(query: str) -> list[dict[str, Any]]:
 async def _lightrag_retrieve_async(query: str) -> list[dict[str, Any]]:
     rag = await _get_lightrag()
 
-    param = QueryParam(mode="mix", only_need_context=True, chunk_top_k=10)
+    param = QueryParam(mode="mix", only_need_context=True, chunk_top_k=_CFG.lightrag_chunk_top_k)
 
     result = await rag.aquery_llm(query, param)
 
