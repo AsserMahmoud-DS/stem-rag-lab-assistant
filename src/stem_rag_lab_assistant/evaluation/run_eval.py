@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from stem_rag_lab_assistant.config import JUDGE_MODEL_NAME
+from stem_rag_lab_assistant.config import config_snapshot
 from stem_rag_lab_assistant.evaluation.judge import (
     EvalStoppedError,
     judge_answer_relevance,
@@ -48,7 +48,7 @@ def _load_results(method: str) -> dict[str, Any]:
     return {
         "method": method,
         "eval_date": datetime.now(timezone.utc).isoformat(),
-        "judge_model": JUDGE_MODEL_NAME,
+        "config": config_snapshot(),
         "results": [],
         "skipped_due_to_rate_limit": [],
     }
@@ -190,6 +190,7 @@ def run_eval(
     for method in methods:
         logger.info("=== Method: %s ===", method)
         data = _load_results(method)
+        data["config"] = config_snapshot()
         completed = _get_completed_ids(data)
         answer_func = _get_answer_func(method)
 
