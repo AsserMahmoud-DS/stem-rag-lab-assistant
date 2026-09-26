@@ -8,9 +8,11 @@ from typing import Any
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from stem_rag_lab_assistant.config import RERANKER_MODEL_NAME, RERANK_TOP_N
+from stem_rag_lab_assistant.config import get_config
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 _RERANKER_SINGLETON: CrossEncoderReranker | None = None
 
@@ -23,8 +25,8 @@ class CrossEncoderReranker:
 
     def __init__(
         self,
-        model_name: str = RERANKER_MODEL_NAME,
-        top_n: int = RERANK_TOP_N,
+        model_name: str = _CFG.reranker_model,
+        top_n: int = _CFG.rerank_top_n,
         device: str | None = None,
     ) -> None:
         if device is None:
