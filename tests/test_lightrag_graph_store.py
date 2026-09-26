@@ -108,7 +108,7 @@ def test_no_lightrag_hku_import():
 
 
 def test_same_config_constants():
-    """P5.8 — fusion retriever uses config constants, reranker top_n=4."""
+    """P5.8 / S2 — method reads budgets from the shared RAGConfig."""
     method_path = (
         Path(__file__).resolve().parents[1]
         / "src"
@@ -118,20 +118,18 @@ def test_same_config_constants():
     )
     content = method_path.read_text()
 
-    # Must use config constants, not hardcoded numbers
-    assert "VECTOR_TOP_K" in content, (
-        "VECTOR_TOP_K should be used (not hardcoded top-k)"
+    # Must read config, not hardcode numbers
+    assert "get_config" in content, "should read the shared RAGConfig"
+    assert "_CFG.vector_top_k" in content, (
+        "vector top-k should come from RAGConfig.vector_top_k"
     )
-    assert "BM25_TOP_K" in content, (
-        "BM25_TOP_K should be used (not hardcoded top-k)"
-    )
-    assert "GRAPH_MAX_EXPANDED_CHUNKS" in content, (
-        "GRAPH_MAX_EXPANDED_CHUNKS should be used (not hardcoded cap)"
+    assert "_CFG.graph_max_expanded_chunks" in content, (
+        "candidate cap should come from RAGConfig.graph_max_expanded_chunks"
     )
 
-    # Reranker must pass top_n=4 to match hybrid_graph.py
-    assert "top_n=4" in content, (
-        "reranker.rerank must call with top_n=4 to match hybrid_graph.py"
+    # Reranker uses the shared rerank_top_n (parity with hybrid_graph)
+    assert "_CFG.rerank_top_n" in content, (
+        "reranker should read RAGConfig.rerank_top_n"
     )
 
 
