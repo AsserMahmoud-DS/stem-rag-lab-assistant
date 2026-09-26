@@ -13,12 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from stem_rag_lab_assistant.config import (
-    ANSWER_MODEL_NAME,
-    EMBEDDING_MODEL_NAME,
-    JUDGE_MODEL_NAME,
-    RERANKER_MODEL_NAME,
-)
+from stem_rag_lab_assistant.config import config_snapshot
 
 logger = logging.getLogger(__name__)
 
@@ -64,10 +59,7 @@ def compute_comparison(
 
     comparison: dict[str, Any] = {
         "eval_date": datetime.now(timezone.utc).isoformat(),
-        "answer_model": ANSWER_MODEL_NAME,
-        "judge_model": JUDGE_MODEL_NAME,
-        "embedding_model": EMBEDDING_MODEL_NAME,
-        "reranker_model": RERANKER_MODEL_NAME,
+        "config": config_snapshot(),
         "overall": {},
         "per_category": {},
     }
