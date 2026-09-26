@@ -9,15 +9,14 @@ from typing import Any
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.vector_stores import SimpleVectorStore
 
-from stem_rag_lab_assistant.config import (
-    EMBEDDING_MODEL_NAME,
-    VECTOR_TOP_K,
-)
+from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
 from stem_rag_lab_assistant.index.vector_store import load_vector_store, retrieve
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 _EMBED_MODEL: HuggingFaceEmbedding | None = None
 _VECTOR_STORE: SimpleVectorStore | None = None
@@ -27,7 +26,7 @@ def _get_embed_model() -> HuggingFaceEmbedding:
     global _EMBED_MODEL
     if _EMBED_MODEL is None:
         _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=EMBEDDING_MODEL_NAME,
+            model_name=_CFG.embedding_model,
             # Using GPU for query-time embeddings 
             device="cuda",
         )
@@ -63,7 +62,7 @@ def naive_retrieve(
     """
     store = vector_store or _get_vector_store()
     emb_model = embed_model or _get_embed_model()
-    k = top_k or VECTOR_TOP_K
+    k = top_k or _CFG.vector_top_k
 
     query_embedding = emb_model.get_query_embedding(query)
     chunks = retrieve(store, query_embedding, top_k=k)

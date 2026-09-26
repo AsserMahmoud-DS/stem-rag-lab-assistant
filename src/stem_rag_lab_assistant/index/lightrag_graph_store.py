@@ -16,13 +16,11 @@ from typing import Any
 
 import networkx
 
-from stem_rag_lab_assistant.config import (
-    GRAPH_NEIGHBOUR_CAP,
-    GRAPH_SEED_ENTITIES_CAP,
-    LIGHTRAG_WORKING_DIR,
-)
+from stem_rag_lab_assistant.config import LIGHTRAG_WORKING_DIR, get_config
 
 logger = logging.getLogger(__name__)
+
+_CFG = get_config()
 
 _CHUNK_SUFFIX_RE = re.compile(r"-chunk-\d+$")
 
@@ -178,9 +176,9 @@ class LightRAGGraphStore:
     def expand_one_hop(
         self,
         entity_names: set[str],
-        neighbour_cap: int = GRAPH_NEIGHBOUR_CAP,
-        entity_cap: int = GRAPH_SEED_ENTITIES_CAP,
-        chunk_cap_per_neighbour: int = GRAPH_NEIGHBOUR_CAP,
+        neighbour_cap: int = _CFG.graph_neighbour_cap,
+        entity_cap: int = _CFG.graph_seed_entities_cap,
+        chunk_cap_per_neighbour: int = _CFG.graph_neighbour_cap,
     ) -> set[str]:
         """One-hop expansion: for each seed entity, collect neighbour
         entity chunks via relation edges.

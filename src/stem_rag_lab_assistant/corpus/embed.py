@@ -9,7 +9,7 @@ from typing import Any
 
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-from stem_rag_lab_assistant.config import EMBEDDING_DIM, EMBEDDING_MODEL_NAME
+from stem_rag_lab_assistant.config import get_config
 
 logger = logging.getLogger(__name__)
 
@@ -37,23 +37,24 @@ def run_embed(batch_size: int = 16) -> dict[str, Any]:
         raise FileNotFoundError(f"chunks.json not found at {CHUNKS_JSON_PATH}. Run ingest first.")
 
     data = _load_chunks()
+    cfg = get_config()
 
     # Collect all chunks that need embedding
     todo: list[tuple[str, int, str]] = []  # (doc_id, chunk_idx, text)
     for doc_id, doc_data in data.get("docs", {}).items():
         for idx, chunk in enumerate(doc_data.get("chunks", [])):
             emb = chunk.get("embedding")
-            if not emb or len(emb) != EMBEDDING_DIM:
+            if not emb or len(emb) != cfg.embedding_dim:
                 todo.append((doc_id, idx, chunk["text"]))
 
     if not todo:
         logger.info("All chunks already embedded. Nothing to do.")
         return data
 
-    logger.info("Embedding %d chunks with %s (dim=%d)", len(todo), EMBEDDING_MODEL_NAME, EMBEDDING_DIM)
+    logger.info("Embedding %d chunks with %s (dim=%d)", len(todo), cfg.embedding_model, cfg.embedding_dim)
 
     embed_model = HuggingFaceEmbedding(
-        model_name=EMBEDDING_MODEL_NAME,
+        model_name=cfg.embedding_model,
         embed_batch_size=batch_size,
         device = "cuda"
     )

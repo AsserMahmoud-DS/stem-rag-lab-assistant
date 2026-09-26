@@ -8,7 +8,7 @@ import logging
 from pathlib import Path
 from typing import Any
 
-from stem_rag_lab_assistant.config import EXTRACTION_LLM_MODEL, ROOT_DIR
+from stem_rag_lab_assistant.config import ROOT_DIR, get_config
 from stem_rag_lab_assistant.graph.merge import dedup_relations, merge_entities
 
 logger = logging.getLogger(__name__)
@@ -66,7 +66,7 @@ def build_graph(
 
     graph = {
         "version": 1,
-        "extraction_model": EXTRACTION_LLM_MODEL,
+        "extraction_model": get_config().extraction_llm_model,
         "entity_type_profile": entity_type_profile,
         "built_from_chunks_hash": corpus_hash,
         "entities": entities_list,

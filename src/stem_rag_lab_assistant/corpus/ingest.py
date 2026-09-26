@@ -11,9 +11,8 @@ from typing import Any
 
 from stem_rag_lab_assistant.config import (
     DATA_DIR,
-    EMBEDDING_DIM,
-    EMBEDDING_MODEL_NAME,
     LOADED_DATA_DIR,
+    get_config,
     to_relative_path,
 )
 from stem_rag_lab_assistant.corpus.chunking import _chunk_single_doc
@@ -35,7 +34,7 @@ def _load_existing_chunks() -> dict[str, Any]:
     if CHUNKS_JSON_PATH.exists():
         with open(CHUNKS_JSON_PATH, "r", encoding="utf-8") as f:
             return json.load(f)
-    return {"version": 1, "embedding_model": EMBEDDING_MODEL_NAME, "embedding_dim": EMBEDDING_DIM, "docs": {}}
+    return {"version": 1, "embedding_model": get_config().embedding_model, "embedding_dim": get_config().embedding_dim, "docs": {}}
 
 
 def _save_chunks(data: dict[str, Any]) -> None:
