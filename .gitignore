@@ -1,0 +1,27 @@
+/plans
+*.pdf
+AGENTS.md
+*.env
+.env
+requirements.txt
+left-off.txt
+tokens.txt
+helpful_schemas/
+test_pgvector_smoke.py
+lightrag_data/
+lightrag_run/
+reports/
+docs/
+dataset/
+loaded_data/
+runs/
+storage/
+
+*.json
+*.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
