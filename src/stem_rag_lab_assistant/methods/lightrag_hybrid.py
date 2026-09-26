@@ -13,12 +13,9 @@ from __future__ import annotations
 
 import logging
 import time
-from pathlib import Path
 from typing import Any
 
 from llama_index.core.llms import ChatMessage
-from llama_index.core.retrievers import QueryFusionRetriever
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
@@ -26,73 +23,16 @@ from stem_rag_lab_assistant.generation.prompts import (
     ANSWER_SYSTEM_PROMPT,
     ANSWER_USER_TEMPLATE,
 )
-from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever
 from stem_rag_lab_assistant.index.graph_store import load_chunk_texts
-from stem_rag_lab_assistant.index.lightrag_graph_store import (
-    LightRAGGraphStore,
-    load_lightrag_graph_store,
-)
-from stem_rag_lab_assistant.index.reranker import CrossEncoderReranker, get_reranker
-from stem_rag_lab_assistant.index.vector_store import (
-    VectorRetriever,
-    load_vector_store,
+from stem_rag_lab_assistant.resources import (
+    get_fusion_retriever,
+    get_lightrag_graph_store,
+    get_reranker,
 )
 
 logger = logging.getLogger(__name__)
 
 _CFG = get_config()
-
-_EMBED_MODEL: HuggingFaceEmbedding | None = None
-_FUSION_RETRIEVER: QueryFusionRetriever | None = None
-_LIGHTRAG_GRAPH_STORE: LightRAGGraphStore | None = None
-
-
-def _get_embed_model() -> HuggingFaceEmbedding:
-    global _EMBED_MODEL
-    if _EMBED_MODEL is None:
-        _EMBED_MODEL = HuggingFaceEmbedding(
-            model_name=_CFG.embedding_model, device="cuda",
-        )
-    return _EMBED_MODEL
-
-
-def _get_fusion_retriever() -> QueryFusionRetriever:
-    global _FUSION_RETRIEVER
-    if _FUSION_RETRIEVER is not None:
-        return _FUSION_RETRIEVER
-
-    embed_model = _get_embed_model()
-    vector_store = load_vector_store()
-    vector_retriever = VectorRetriever(vector_store, embed_model, top_k=_CFG.vector_top_k)
-    bm25_retriever = get_bm25_retriever()
-
-    _FUSION_RETRIEVER = QueryFusionRetriever(
-        [vector_retriever, bm25_retriever],
-        similarity_top_k=_CFG.vector_top_k,
-        num_queries=1,
-        mode="reciprocal_rerank",
-        use_async=False,
-        llm=get_answer_llm(),
-    )
-    logger.info("LightRAG-hybrid seed fusion retriever ready (RRF, top_k=%d)", _CFG.vector_top_k)
-    return _FUSION_RETRIEVER
-
-
-def _get_graph_store() -> LightRAGGraphStore:
-    global _LIGHTRAG_GRAPH_STORE
-    if _LIGHTRAG_GRAPH_STORE is None:
-        _LIGHTRAG_GRAPH_STORE = load_lightrag_graph_store()
-    return _LIGHTRAG_GRAPH_STORE
-
-
-_reranker: CrossEncoderReranker | None = None
-
-
-def _get_reranker() -> CrossEncoderReranker:
-    global _reranker
-    if _reranker is None:
-        _reranker = get_reranker()
-    return _reranker
 
 
 def _format_context(chunks: list[dict[str, Any]]) -> str:
@@ -116,8 +56,8 @@ def lightrag_hybrid_retrieve(
         all_chunks, entities_matched
     """
     t0 = time.perf_counter()
-    retriever = _get_fusion_retriever()
-    graph_store = _get_graph_store()
+    retriever = get_fusion_retriever()
+    graph_store = get_lightrag_graph_store()
 
     # --- 1. Seeds via RRF (same as hybrid method) ---
     nodes_with_scores = retriever.retrieve(query)
@@ -182,7 +122,7 @@ def lightrag_hybrid_retrieve(
             )
 
     # --- 6. Cross-encoder only on expanded chunks -> seeds always preserved ---
-    reranker = _get_reranker()
+    reranker = get_reranker()
     kept_expanded = reranker.rerank(query, expanded_chunks, top_n=_CFG.rerank_top_n) if expanded_chunks else []
     all_chunks: list[dict[str, Any]] = list(seed_chunks) + kept_expanded
 
