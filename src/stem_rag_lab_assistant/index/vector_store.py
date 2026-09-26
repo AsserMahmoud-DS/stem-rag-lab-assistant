@@ -122,7 +122,9 @@ def retrieve(
     metadata_dict = store._data.metadata_dict
     for chunk_id, score in zip(ids, similarities):
         meta = metadata_dict.get(chunk_id, {})
-        text = meta.pop("_text", "")
+        # get (not pop): metadata_dict is the store's shared state across all
+        # queries — popping _text empties it on re-retrieval within a run.
+        text = meta.get("_text", "")
         out.append(
             {
                 "chunk_id": chunk_id,
