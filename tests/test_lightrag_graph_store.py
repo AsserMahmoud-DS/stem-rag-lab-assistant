@@ -108,29 +108,53 @@ def test_no_lightrag_hku_import():
 
 
 def test_same_config_constants():
-    """P5.8 / S2 — method reads budgets from the shared RAGConfig."""
-    method_path = (
+    """P5.8 / S2 — budgets come from shared RAGConfig + shared resources."""
+    root = Path(__file__).resolve().parents[1] / "src" / "stem_rag_lab_assistant"
+    method = (root / "methods" / "lightrag_hybrid.py").read_text()
+    resources = (root / "resources.py").read_text()
+
+    # Method reads its own caps from the shared config, not literals
+    assert "get_config" in method, "should read the shared RAGConfig"
+    assert "_CFG.graph_max_expanded_chunks" in method, (
+        "candidate cap should come from RAGConfig.graph_max_expanded_chunks"
+    )
+    assert "_CFG.rerank_top_n" in method, (
+        "reranker should read RAGConfig.rerank_top_n"
+    )
+
+    # Seed retriever is the shared process-wide resource
+    assert "get_fusion_retriever" in method, "should use shared fusion retriever"
+
+    # The shared retriever reads top-k from config, not a literal
+    assert "_CFG.vector_top_k" in resources, (
+        "shared fusion retriever should read RAGConfig.vector_top_k"
+    )
+
+
+def test_no_duplicated_resource_singletons():
+    """S2 — methods must use resources.py, not their own singleton getters."""
+    methods_dir = (
         Path(__file__).resolve().parents[1]
         / "src"
         / "stem_rag_lab_assistant"
         / "methods"
-        / "lightrag_hybrid.py"
     )
-    content = method_path.read_text()
-
-    # Must read config, not hardcode numbers
-    assert "get_config" in content, "should read the shared RAGConfig"
-    assert "_CFG.vector_top_k" in content, (
-        "vector top-k should come from RAGConfig.vector_top_k"
+    banned = (
+        "def _get_embed_model",
+        "def _get_fusion_retriever",
+        "def _get_reranker",
+        "def _get_graph_store",
     )
-    assert "_CFG.graph_max_expanded_chunks" in content, (
-        "candidate cap should come from RAGConfig.graph_max_expanded_chunks"
-    )
-
-    # Reranker uses the shared rerank_top_n (parity with hybrid_graph)
-    assert "_CFG.rerank_top_n" in content, (
-        "reranker should read RAGConfig.rerank_top_n"
-    )
+    for name in (
+        "naive.py",
+        "hybrid.py",
+        "hybrid_graph.py",
+        "lightrag_hybrid.py",
+        "lightrag_baseline.py",
+    ):
+        content = (methods_dir / name).read_text()
+        for bad in banned:
+            assert bad not in content, f"{name} still defines `{bad}`"
 
 
 def test_entity_name_access_works():
