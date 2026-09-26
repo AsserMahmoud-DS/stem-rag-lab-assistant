@@ -29,7 +29,10 @@ logger = logging.getLogger(__name__)
 _DATASET_PATH = Path(__file__).resolve().parents[3] / "dataset" / "questions_dataset" / "dataset.json"
 _EVAL_DIR = Path(__file__).resolve().parent
 
-METHOD_NAMES = ["naive", "hybrid", "hybrid_graph", "lightrag"]
+# Evaluated set for the iter-1 re-run. `hybrid_graph` is dormant — kept in code
+# and runnable via an explicit CLI arg, but excluded from the default run
+# (plans/roadmap.md §2.1).
+METHOD_NAMES = ["naive", "hybrid", "lightrag", "lightrag_hybrid"]
 
 
 def _load_dataset(path: Path | None = None) -> list[dict[str, Any]]:

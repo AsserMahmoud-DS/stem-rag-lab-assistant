@@ -143,7 +143,7 @@ def regenerate_comparison() -> None:
 
 if __name__ == "__main__":
     all_fixed: list[str] = []
-    for m in ["naive", "hybrid", "hybrid_graph", "lightrag", "lightrag_hybrid"]:
+    for m in ["naive", "hybrid", "lightrag", "lightrag_hybrid"]:
         fixed = regenerate_method(m)
         all_fixed.extend(fixed)
 

@@ -20,7 +20,8 @@ logger = logging.getLogger(__name__)
 _EVAL_DIR = Path(__file__).resolve().parent
 _COMPARISON_PATH = _EVAL_DIR / "comparison.json"
 
-METHODS = ["naive", "hybrid", "hybrid_graph", "lightrag", "lightrag_hybrid"]
+# Evaluated set — hybrid_graph excluded (dormant; plans/roadmap.md §2.1).
+METHODS = ["naive", "hybrid", "lightrag", "lightrag_hybrid"]
 METRICS = (
     "groundedness",
     "answer_relevance",
