@@ -16,6 +16,22 @@ from stem_rag_lab_assistant.index.lightrag_graph_store import (
 )
 
 
+def _seed_with_expansion(store: LightRAGGraphStore) -> str | None:
+    """Return an entity whose one-hop expansion yields at least one chunk."""
+    for entity in store._adjacency:
+        if store.expand_one_hop({entity}):
+            return entity
+    return None
+
+
+def _seed_with_relations(store: LightRAGGraphStore) -> str | None:
+    """Return an entity whose Conservative-A relation expansion yields chunks."""
+    for entity in store._relation_keys:
+        if store.expand_relations({entity}):
+            return entity
+    return None
+
+
 def test_chunk_id_normalization():
     """P5.1 — _normalize_chunk_id strips -chunk-NNN suffix; idempotent."""
     assert _normalize_chunk_id("doc::ch_00012-chunk-000") == "doc::ch_00012"
@@ -25,26 +41,30 @@ def test_chunk_id_normalization():
 
 
 def test_inverted_index_lookup():
-    """P5.2 — known chunk_id returns non-empty entity list."""
+    """P5.2 — a chunk in the inverted index returns a non-empty entity list."""
     store = load_lightrag_graph_store()
-    # Known chunk from chap 3 DC&AC BRIDGES
-    entities = store.get_entities_for_chunks(["chap 3 DC&AC BRIDGES::ch_00042"])
-    assert len(entities) > 0, "Expected entities for known chunk_id"
+    chunk_id = next(iter(store._chunk_to_entities))
+    entities = store.get_entities_for_chunks([chunk_id])
+    assert len(entities) > 0, f"Expected entities for known chunk_id {chunk_id}"
 
 
 def test_one_hop_returns_normalized_ids():
-    """P5.3 — expand_one_hop yields no -chunk-NNN suffix."""
+    """P5.3 — expand_one_hop yields chunk_ids with no -chunk-NNN suffix."""
     store = load_lightrag_graph_store()
-    chunks = store.expand_one_hop({"Wheatstone Bridge"})
+    seed = _seed_with_expansion(store)
+    assert seed is not None, "No entity with a non-empty one-hop expansion"
+    chunks = store.expand_one_hop({seed})
     assert len(chunks) > 0, "One-hop expansion should return chunk_ids"
     for cid in chunks:
         assert "-chunk-" not in cid, f"Chunk ID still has suffix: {cid}"
 
 
 def test_relation_expansion():
-    """P5.4 — expand_relations returns non-empty for seed entity."""
+    """P5.4 — expand_relations returns non-empty for a relation-bearing entity."""
     store = load_lightrag_graph_store()
-    chunks = store.expand_relations({"Wheatstone Bridge"})
+    seed = _seed_with_relations(store)
+    assert seed is not None, "No entity with a non-empty relation expansion"
+    chunks = store.expand_relations({seed})
     assert len(chunks) > 0, "Relation expansion should return chunk_ids"
     for cid in chunks:
         assert "-chunk-" not in cid, f"Relation chunk ID still has suffix: {cid}"
@@ -53,9 +73,9 @@ def test_relation_expansion():
 def test_dedup_against_seeds():
     """P5.5 — expanded pool excludes seed chunk IDs."""
     store = load_lightrag_graph_store()
-    entity_chunks = store.expand_one_hop({"Wheatstone Bridge"})
-    relation_chunks = store.expand_relations({"Wheatstone Bridge"})
-    expanded_pool = entity_chunks | relation_chunks
+    seed = _seed_with_expansion(store)
+    assert seed is not None, "No entity with a non-empty one-hop expansion"
+    expanded_pool = store.expand_one_hop({seed}) | store.expand_relations({seed})
 
     # Simulate seeds that overlap with expansion
     fake_seeds = set(list(expanded_pool)[:2])
@@ -166,7 +186,8 @@ def test_no_duplicated_resource_singletons():
 def test_entity_name_access_works():
     """Verify that get_entities_for_chunks returns 'name' key for expand_relations."""
     store = load_lightrag_graph_store()
-    entities = store.get_entities_for_chunks(["chap 3 DC&AC BRIDGES::ch_00042"])
+    chunk_id = next(iter(store._chunk_to_entities))
+    entities = store.get_entities_for_chunks([chunk_id])
     assert len(entities) > 0
     for e in entities:
         assert "name" in e, "Entity dict must have 'name' key"

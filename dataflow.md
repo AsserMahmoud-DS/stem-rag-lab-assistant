@@ -51,7 +51,7 @@ not inline in code.
    ║  GRAPH CONSTRUCTION (ours — runs once per corpus version)       ║
    ║                                                                  ║
    ║  for each chunk in chunks.json:                                  ║
-   ║      Groq LLM (llama-4-scout, ECE-tuned entity-type prompt)      ║
+   ║      Groq LLM (qwen3.8-27b, ECE-tuned entity-type prompt)        ║
    ║        → (entities[], relations[]) in JSON                        ║
    ║  → entity normalization (case-insensitive + alias merge)         ║
    ║  → relation dedup                                                ║
@@ -175,7 +175,7 @@ stem_rag_lab_assistant/
 ├── loaded_data/                ← OpenDataLoader JSON per PDF
 ├── chunks.json                 ← chunk_id, doc_id, text, embedding, metadata
 ├── images.json                 ← image_id, doc_id, page, bbox, src, caption, ai_description, linked_chunk_id
-├── graph.json                  ← entities, relations, chunk↔entity links  (ours)
+├── graph.json                  ← ours: entities, relations, chunk↔entity links (dormant hybrid_graph only)
 ├── lightrag_data/              ← isolated working_dir for the throwaway vanilla baseline + lightrag_hybrid
 ├── dataset/questions_dataset/dataset.json ← 40 Qs + golden answers + category + source_chunk_ids
 ├── src/stem_rag_lab_assistant/evaluation/results_*.json  ← per-method judged results

@@ -79,7 +79,7 @@ class RAGConfig:
     graph_max_expanded_chunks: int = 10
 
     # --- graph extraction (sweepable) ---
-    extraction_llm_model: str = "meta-llama/llama-4-scout-17b-16e-instruct"
+    extraction_llm_model: str = "qwen/qwen3.8-27b"
     extraction_max_concurrent: int = 2
     extraction_max_entities_per_chunk: int = 30
     extraction_max_total_per_chunk: int = 50
@@ -110,7 +110,7 @@ def _build_config() -> RAGConfig:
         graph_seed_entities_cap=_env_int("GRAPH_SEED_ENTITIES_CAP", 5),
         graph_max_expanded_chunks=_env_int("GRAPH_MAX_EXPANDED_CHUNKS", 10),
         extraction_llm_model=os.getenv(
-            "EXTRACTION_LLM_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct"
+            "EXTRACTION_LLM_MODEL", "qwen/qwen3.8-27b"
         ),
         extraction_max_concurrent=_env_int("EXTRACTION_MAX_CONCURRENT", 2),
         extraction_max_entities_per_chunk=_env_int(
