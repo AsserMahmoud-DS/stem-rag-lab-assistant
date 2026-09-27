@@ -881,3 +881,12 @@ def audit_graph(graph: dict[str, Any] | None = None) -> None:
             print(f"    {e['name']}: {desc}{'...' if len(e['description']) > 120 else ''}")
 
     print(f"\n{'=' * 80}\n")
+
+
+if __name__ == "__main__":
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+    run_full_extraction_sync()
+    audit_graph()
