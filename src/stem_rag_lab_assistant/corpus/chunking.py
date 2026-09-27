@@ -85,7 +85,9 @@ def _walk_elements(
     extra dict may carry:
       - image_id: str          — stable ID, always set for image elements
       - linked_image_id: str   — same as image_id (used by chunker for linking)
-      - ai_description: str    — from image element's "description" or "alt"
+
+    Image elements carry no text: their AI description stays in images.json as
+    a side payload and is not merged into chunk text (S4).
     """
     if img_counter is None:
         img_counter = {"count": 0}
@@ -107,10 +109,9 @@ def _walk_elements(
             img_counter["count"] += 1
             extra["image_id"] = img_id
             extra["linked_image_id"] = img_id
-            desc = element.get("description") or element.get("alt")
-            if desc:
-                extra["ai_description"] = desc
-            result.append((elem_type, desc or "", page, bbox, extra))
+            # why: image descriptions are not merged into chunk text (S4);
+            # the image stays linked to its positional host chunk instead.
+            result.append((elem_type, "", page, bbox, extra))
             continue
 
         if elem_type in _ELEM_TYPES_TEXT:
@@ -187,10 +188,10 @@ def _chunk_single_doc(
 ) -> list[dict[str, Any]]:
     """Convert one ODL JSON doc into a list of chunk dicts.
 
-    Splits on page boundaries and on exceeding the chunk-size limit.  Caption text and image
-    ai_description text are merged into the enclosing chunk; image linkage is
-    recorded via linked_image_ids.  Image elements without description/alt are
-    skipped (no text to contribute).
+    Splits on page boundaries and on exceeding the chunk-size limit.  Image
+    linkage is recorded via linked_image_ids; image AI descriptions are not
+    merged into chunk text (they stay in images.json as a side payload, S4).
+    Caption text, when present, is merged like any other text element.
 
     Args:
         doc: ODL JSON document dict.
@@ -237,20 +238,22 @@ def _chunk_single_doc(
         linked_image_ids = []
 
     for elem_type, text, page, bbox, extra in flat:
-        if not text.strip():
-            continue
-
-        # flush on page boundary
+        # flush on page boundary before associating this element's image
         if current_page is not None and page != current_page and text_buffer:
             _flush()
+
+        # why: record image linkage even when the element contributes no text,
+        # so a text-less image still attaches to its positional host chunk (S4).
+        if extra.get("linked_image_id"):
+            linked_image_ids.append(extra["linked_image_id"])
+
+        if not text.strip():
+            continue
 
         if not text_buffer:
             current_page = page
             current_elem_type = elem_type if elem_type != "image" else "paragraph"
             current_bbox = bbox
-
-        if extra.get("linked_image_id"):
-            linked_image_ids.append(extra["linked_image_id"])
 
         text_buffer.append(text)
         combined = " ".join(text_buffer)
