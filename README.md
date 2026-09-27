@@ -32,7 +32,7 @@ src/stem_rag_lab_assistant/
 ├── generation/                 # Shared Groq prompts + clients
 │   ├── groq_client.py          # Answer LLM (20B) + Judge LLM (120B)
 │   └── prompts.py              # Shared answer synthesis prompt
-└── evaluation/                 # Evaluation harness (custom Groq LLM-judge, no TruLens)
+└── evaluation/                 # Evaluation harness (TruLens feedback functions + Groq)
     ├── judge.py                # 4 feedback functions (groundedness, relevance, etc.)
     ├── run_eval.py             # Eval runner with incremental save/resume
     ├── aggregate.py            # results_*.json → comparison.json
@@ -53,14 +53,13 @@ uv run opendataloader-pdf-hybrid --port 5002 --enrich-picture-description --enri
 export GROQ_API_KEY="gsk_..."
 
 # Load and process the corpus
-uv run python src/stem_rag_lab_assistant/corpus/load.py      # PDF → loaded_data/
-uv run python src/stem_rag_lab_assistant/corpus/ingest.py     # chunks.json
-uv run python src/stem_rag_lab_assistant/corpus/images.py     # images.json
-uv run python src/stem_rag_lab_assistant/corpus/embed.py      # bge-m3 embeddings
+uv run python -m stem_rag_lab_assistant.corpus.load       # PDF → loaded_data/
+uv run python -m stem_rag_lab_assistant.corpus.ingest --force  # chunks.json
+uv run python -m stem_rag_lab_assistant.corpus.images     # images.json
+uv run python -m stem_rag_lab_assistant.corpus.embed      # bge-m3 embeddings
 
-# Build the knowledge graph
-uv run python src/stem_rag_lab_assistant/graph/extract.py
-uv run python src/stem_rag_lab_assistant/graph/build.py
+# Build the knowledge graph (entities + relations → graph.json)
+uv run python -m stem_rag_lab_assistant.graph.extract
 ```
 
 ## Key Artifacts
