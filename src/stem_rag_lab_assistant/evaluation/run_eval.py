@@ -1,6 +1,7 @@
 """Eval runner — run all methods × dataset questions with incremental save + resume.
 
-Uses the custom Groq LLM-judge (see ``judge.py``); TruLens was descoped.
+Judged by the TruLens feedback functions (see ``judge.py``); retries and the
+stop-and-resume signal live in ``retry.py``.
 """
 
 from __future__ import annotations
@@ -15,11 +16,14 @@ from typing import Any
 
 from stem_rag_lab_assistant.config import config_snapshot
 from stem_rag_lab_assistant.evaluation.judge import (
-    EvalStoppedError,
     judge_answer_relevance,
     judge_context_relevance,
     judge_ground_truth_agreement,
     judge_groundedness,
+)
+from stem_rag_lab_assistant.evaluation.retry import (
+    EvalStoppedError,
+    is_retryable_error,
 )
 from stem_rag_lab_assistant.evaluation.sidecar import log_cell
 from stem_rag_lab_assistant.methods.common import attach_images
@@ -101,7 +105,17 @@ def _run_single_question(
 
     # 1. Retrieve + answer
     t0 = time.perf_counter()
-    result = answer_func(question)
+    try:
+        result = answer_func(question)
+    except EvalStoppedError:
+        raise
+    except Exception as e:
+        if is_retryable_error(str(e)):
+            raise EvalStoppedError(
+                f"Answer generation hit a rate limit for {question_id}: {str(e)[:200]}. "
+                "Progress saved — switch GROQ_API_KEY and re-run to resume."
+            ) from e
+        raise
     answer = result["answer"]
     retrieved_chunks = result["retrieved_chunks"]
     context = result.get("context", "")
@@ -131,6 +145,7 @@ def _run_single_question(
         "category": category,
         "golden_answer": golden_answer,
         "answer": answer,
+        "context": context,
         "retrieved_chunk_ids": retrieved_ids,
         "attached_image_ids": attached_image_ids,
         "scores": {
@@ -230,7 +245,7 @@ def run_eval(
             ) / 4.0
 
             logger.info(
-                "  → groundedness=%d answer_rel=%d context_rel=%d gt_agree=%d | mean=%.1f | latency=%dms",
+                "  → groundedness=%.2f answer_rel=%.2f context_rel=%.2f gt_agree=%.2f | mean=%.2f | latency=%dms",
                 record["scores"]["groundedness"]["score"],
                 record["scores"]["answer_relevance"]["score"],
                 record["scores"]["context_relevance"]["score"],
