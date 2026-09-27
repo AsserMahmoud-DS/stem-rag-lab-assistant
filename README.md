@@ -37,7 +37,6 @@ src/stem_rag_lab_assistant/
     ├── run_eval.py             # Eval runner with incremental save/resume
     ├── aggregate.py            # results_*.json → comparison.json
     ├── sidecar.py              # runs_sidecar.jsonl logger
-    ├── _regenerate.py          # One-shot 8B fallback for empty answers
     └── comparison.json         # Final per-method + per-category scores
 ```
 
@@ -99,9 +98,6 @@ uv run python -m stem_rag_lab_assistant.evaluation.run_eval
 
 # Run a single method only (e.g. to add a new method without rerunning others)
 uv run python -m stem_rag_lab_assistant.evaluation.run_eval lightrag_hybrid
-
-# Regenerate empty answers (math failures) with 8B fallback
-uv run python -m stem_rag_lab_assistant.evaluation._regenerate
 
 # Recompute comparison.json from the frozen results_*.json files (no LLM calls)
 uv run python -m stem_rag_lab_assistant.evaluation.aggregate
