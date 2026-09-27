@@ -59,7 +59,9 @@ def _run_async(coro: Any) -> Any:
     """Bridge: run async coroutine on the persistent loop, return sync result."""
     loop = _get_or_create_loop()
     future = asyncio.run_coroutine_threadsafe(coro, loop)
-    return future.result(timeout=3600)
+    # why: the one-time insert re-extracts the whole corpus (rate-limited, can
+    # exceed an hour); a short timeout would kill a resumable build mid-way.
+    return future.result(timeout=14400)
 
 
 async def _embedding_func(texts: list[str]) -> np.ndarray:
