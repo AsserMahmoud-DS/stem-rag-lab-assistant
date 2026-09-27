@@ -355,8 +355,9 @@ async def _extract_from_chunk_once(
             {"role": "user", "content": user_msg},
         ],
         temperature=temperature,
-        max_tokens=max_tokens,
-        # reasoning_effort="none",
+        max_completion_tokens=max_tokens,
+        # why: qwen3 reasons by default; its thinking tokens are billed then discarded.
+        reasoning_effort="none",
     )
     content = completion.choices[0].message.content
     return content if content else ""
@@ -426,7 +427,9 @@ async def extract_from_chunk(
         "Chunk %s extraction failed after %d attempts: %s",
         chunk_id, max_retries + 1, last_error,
     )
-    return {"chunk_id": chunk_id, "entities": [], "relationships": []}
+    # why: mark failures so they are NOT persisted as completed and get retried
+    # on the next run instead of being silently skipped.
+    return {"chunk_id": chunk_id, "entities": [], "relationships": [], "failed": True}
 
 
 def _extract_retry_seconds(error: Exception | None) -> float:
@@ -462,7 +465,7 @@ def _load_progress(path: Path) -> dict[str, dict[str, Any]]:
                 continue
             try:
                 entry = json.loads(line)
-                if "chunk_id" in entry:
+                if "chunk_id" in entry and not entry.get("failed"):
                     completed[entry["chunk_id"]] = entry
             except json.JSONDecodeError:
                 logger.warning("Skipping malformed line in %s", path)
@@ -537,7 +540,7 @@ async def extract_from_chunks(
                 heading_breadcrumb=chunk.get("heading_breadcrumb", ""),
                 **kwargs,
             )
-            if progress_path is not None:
+            if progress_path is not None and not result.get("failed"):
                 async with progress_lock:
                     _append_progress(progress_path, result)
             if cooldown_seconds > 0:
