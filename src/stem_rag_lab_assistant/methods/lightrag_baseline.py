@@ -87,16 +87,30 @@ async def _llm_model_func(
 ) -> str:
     """Async Groq LLM call for LightRAG's internal extraction and query operations.
 
-    Includes retry-with-backoff for rate limits so they're absorbed before
-    LightRAG's pipeline sees them, enabling smooth incremental progress.
+    Includes retry-with-backoff for rate limits and transient network/5xx
+    failures so they're absorbed before LightRAG's pipeline sees them, enabling
+    smooth incremental progress.
     """
-    from groq import AsyncGroq, RateLimitError
+    import httpx
+    from groq import (
+        APIConnectionError,
+        APITimeoutError,
+        AsyncGroq,
+        InternalServerError,
+        RateLimitError,
+    )
 
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise RuntimeError("GROQ_API_KEY not set")
 
-    client = AsyncGroq(api_key=api_key, max_retries=0)  # we handle retries ourselves
+    # why: a generous connect timeout — transient httpx ConnectTimeouts were
+    # failing docs before any retry could run.
+    client = AsyncGroq(
+        api_key=api_key,
+        max_retries=0,  # we handle retries ourselves
+        timeout=httpx.Timeout(600.0, connect=30.0),
+    )
 
     messages: list[dict[str, str]] = []
     if system_prompt:
@@ -105,11 +119,17 @@ async def _llm_model_func(
         messages.extend(history_messages)
     messages.append({"role": "user", "content": prompt})
 
-    # LightRAG passes internal params via kwargs — only forward OpenAI-compatible ones
+    # LightRAG passes internal params via kwargs — forward OpenAI-compatible ones.
     create_kwargs: dict[str, Any] = {}
-    for key in ("max_tokens", "temperature", "top_p", "stop", "seed"):
-        if key in kwargs:
+    for key in ("temperature", "top_p", "stop", "seed", "response_format"):
+        if kwargs.get(key) is not None:
             create_kwargs[key] = kwargs[key]
+    if kwargs.get("max_tokens") is not None:
+        create_kwargs["max_completion_tokens"] = kwargs["max_tokens"]
+    # why: LightRAG leaves max_tokens=None (unbounded) — cap output from config.
+    create_kwargs.setdefault("max_completion_tokens", _CFG.extraction_max_tokens)
+    # why: qwen3 reasons by default; its thinking tokens are billed then discarded.
+    create_kwargs.setdefault("reasoning_effort", "none")
 
     max_retries = 5
     base_delay = 15  # seconds
@@ -127,6 +147,18 @@ async def _llm_model_func(
                 logger.warning(
                     "Rate limited (attempt %d/%d), waiting %ds ...",
                     attempt + 1, max_retries, delay,
+                )
+                await asyncio.sleep(delay)
+            else:
+                raise
+        except (APITimeoutError, APIConnectionError, InternalServerError) as exc:
+            # why: transient timeouts/connection/5xx errors must not fail a doc —
+            # retry them like rate limits instead of letting LightRAG mark it failed.
+            if attempt < max_retries - 1:
+                delay = base_delay * (2 ** attempt)
+                logger.warning(
+                    "%s (attempt %d/%d), waiting %ds ...",
+                    type(exc).__name__, attempt + 1, max_retries, delay,
                 )
                 await asyncio.sleep(delay)
             else:
