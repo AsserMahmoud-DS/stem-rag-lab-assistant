@@ -63,6 +63,41 @@ def test_chunk_single_doc_contract_and_metadata_shape() -> None:
     assert chunks[1]["metadata"]["doc_n_pages"] == 2
 
 
+def test_image_description_not_merged_into_chunk_text() -> None:
+    doc = {
+        "file name": "figs.pdf",
+        "number of pages": 1,
+        "kids": [
+            {
+                "type": "paragraph",
+                "content": "The bridge balances when the ratio arms are equal.",
+                "page number": 1,
+                "bounding box": [10, 10, 100, 30],
+            },
+            {
+                "type": "image",
+                "description": "A schematic of a Wheatstone bridge with four resistors.",
+                "page number": 1,
+                "bounding box": [10, 40, 100, 90],
+            },
+        ],
+    }
+
+    chunks = _chunk_single_doc(
+        doc=doc,
+        doc_path=Path("loaded_data/figs.json"),
+        doc_id="figs",
+        pdf_path=Path("dataset/figs.pdf"),
+    )
+
+    combined = " ".join(c["text"] for c in chunks)
+    assert "schematic of a Wheatstone bridge" not in combined
+
+    linked = [c for c in chunks if c["metadata"]["linked_image_ids"]]
+    assert linked, "image should stay linked to its positional host chunk"
+    assert "figs::img_00000" in linked[0]["metadata"]["linked_image_ids"]
+
+
 def test_chunk_id_uniqueness_guard_raises_on_duplicates() -> None:
     duplicate_chunks = [
         {
