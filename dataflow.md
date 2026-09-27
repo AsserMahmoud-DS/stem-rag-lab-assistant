@@ -4,6 +4,11 @@ End-to-end flow from ECE PDFs → judged answers across four RAG methods.
 Mirrors AGENTS.md §14. Cross-component links live in `docs/references.md`,
 not inline in code.
 
+> **Current re-run scope:** the evaluated set is **4** methods (`naive`,
+> `hybrid`, `lightrag`, `lightrag_hybrid`). The `hybrid_graph` code path
+> remains valid but is **dormant** (kept current, not run/judged/aggregated).
+> `plans/roadmap.md` is authoritative on conflict.
+
 ## 1. Overview
 
 ```
@@ -25,14 +30,14 @@ not inline in code.
                          │  (_chunk_single_doc)     │  tests/test_chunking_contract.py
                          └─────┬──────────────┬─────┘  (chunk_id, doc_id,
                                │              │       page_number, order, …)
-               caption text +   │              │
-               ai_description   ▼              ▼
+               caption text    │              │
+               (0 in corpus)   ▼              ▼
                embedded into  ┌─────┐      ┌──────────┐
                linked chunk   │chunks│      │ images   │  image_id ──┐
-                              │.json │      │ .json    │  linked_     ├─→ caption_text +
-                              └──┬───┘      └────┬─────┘  chunk_id     │   ai_description
-                                 │               │                     │   embedded into
-                                 │               │                     │   that chunk's text
+                              │.json │      │ .json    │  linked_     ├─→ ai_description
+                              └──┬───┘      └────┬─────┘  chunk_id     │   lives ONLY in
+                                 │               │                     │   images.json (S4)
+                                 │               │                     │   (side payload)
                     bge-m3      │               │  (deterministic
                     dense       │               │   via OpenDataLoader
                     embed       │               │   "linked content id")
@@ -46,7 +51,7 @@ not inline in code.
    ║  GRAPH CONSTRUCTION (ours — runs once per corpus version)       ║
    ║                                                                  ║
    ║  for each chunk in chunks.json:                                  ║
-   ║      Groq LLM (gpt-oss-20b, ECE-tuned entity-type prompt)        ║
+   ║      Groq LLM (llama-4-scout, ECE-tuned entity-type prompt)      ║
    ║        → (entities[], relations[]) in JSON                        ║
    ║  → entity normalization (case-insensitive + alias merge)         ║
    ║  → relation dedup                                                ║
@@ -64,9 +69,10 @@ Docling for table extraction, formula LaTeX, and picture description.
 
 ## 2. Query-time flow (per method)
 
-All five methods run through the custom eval runner (`evaluation/run_eval.py`),
+All evaluated methods run through the custom eval runner (`evaluation/run_eval.py`),
 which logs retrieved context, answer, and latency per run and judges each cell
-with the custom Groq LLM-judge (`evaluation/judge.py`). A thin sidecar
+with the LLM-judge (custom Groq in the shipped run; TruLens + Groq in the
+current re-run). A thin sidecar
 run-log additionally records `attached_image_ids` per (question, method)
 because the judge is unaware of the `images.json` layer.
 
@@ -99,8 +105,9 @@ because the judge is unaware of the `images.json` layer.
    ╔═══════════════════╧══════════════════════════╗
    ║ image attach (IDENTICAL for every method):  ║
    ║   for chunk_id in retrieved_chunks:           ║
-   ║       images where linked_chunk_id == chunk  ║
-   ║   → caption_text + ai_description in context; src_path in refs ║
+║       images where linked_chunk_id == chunk  ║
+║   → image refs (src_path, ai_description) as side payload ║
+║     only; NOT merged into the answer context (S4)         ║
    ╚═══════════════════╤══════════════════════════╝
                        │
                        ▼
@@ -134,7 +141,7 @@ because the judge is unaware of the `images.json` layer.
 
 ## 3. Design invariants (why the rows above look the way they do)
 
-- **Same synthesis prompt across all five methods** — the *only* variable
+- **Same synthesis prompt across all evaluated methods** — the *only* variable
   between methods is *which chunks reach the prompt*. This is the
   fairness guarantee (AGENTS.md §14.2). Vanilla-LightRAG uses
   `only_need_context=True` precisely so its chunk set can be routed
@@ -149,11 +156,12 @@ because the judge is unaware of the `images.json` layer.
   graph are different graphs (different prompts/merge), so the comparison
   is "our pipeline vs LightRAG's pipeline", not "same graph, different
   retrieval". Cleaner policy isolation is a possible iter-2 ablation.
-- **Image linkage is deterministic**, not a similarity guess: OpenDataLoader
-  links a `caption` element to its `image` via `linked content id`; we map
-  that caption into the enclosing chunk. Images with an `ai_description` field
-  (from Docling) are also linked. A figure is returned iff its caption-bearing
-  or ai_description-bearing chunk is retrieved (stated limitation in §14.4).
+- **Image linkage is deterministic**, not a similarity guess: an `image`
+  element's id is recorded on its positional host chunk (or on the chunk of a
+  `caption` that links to it via `linked content id`). Since S4, the AI
+  description lives only in `images.json` (a side payload) and is **not** merged
+  into chunk text, so a figure is returned iff its **host chunk** is retrieved
+  (stated limitation in §14.4).
 - **Incremental at the chunk layer** (satisfies §13): unchanged `doc_id`s
   are not re-embedded or re-upserted; only new/changed chunks enter
   `chunks.json` + the embed cache. The **graph** is a full rebuild in
@@ -163,13 +171,13 @@ because the judge is unaware of the `images.json` layer.
 
 ```
 stem_rag_lab_assistant/
-├── data/                       ← source PDFs (8)
+├── dataset/                    ← source PDFs (8)
 ├── loaded_data/                ← OpenDataLoader JSON per PDF
 ├── chunks.json                 ← chunk_id, doc_id, text, embedding, metadata
 ├── images.json                 ← image_id, doc_id, page, bbox, src, caption, ai_description, linked_chunk_id
 ├── graph.json                  ← entities, relations, chunk↔entity links  (ours)
 ├── lightrag_data/              ← isolated working_dir for the throwaway vanilla baseline + lightrag_hybrid
-├── data/questions_dataset/dataset.json ← 40 Qs + golden answers + category + source_chunk_ids
+├── dataset/questions_dataset/dataset.json ← 40 Qs + golden answers + category + source_chunk_ids
 ├── src/stem_rag_lab_assistant/evaluation/results_*.json  ← per-method judged results
 ├── src/stem_rag_lab_assistant/evaluation/comparison.json ← aggregated scores
 └── runs/runs_sidecar.jsonl     ← (question, method) → retrieved_chunks + attached_image_ids

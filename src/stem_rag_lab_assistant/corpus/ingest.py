@@ -106,5 +106,13 @@ def run_ingest(
 
 
 if __name__ == "__main__":
+    import argparse
+
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-    run_ingest()
+    parser = argparse.ArgumentParser(description="Chunk dataset PDFs into chunks.json.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="re-chunk every document, ignoring the content_hash skip",
+    )
+    run_ingest(force=parser.parse_args().force)

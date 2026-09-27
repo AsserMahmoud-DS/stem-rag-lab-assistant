@@ -1,5 +1,6 @@
 """Tests for LightRAGGraphStore adapter (lightrag_graph_store.py)."""
 
+import os
 import sys
 from pathlib import Path
 
@@ -64,6 +65,11 @@ def test_dedup_against_seeds():
     ), "Expanded IDs should exclude seeds"
 
 
+@pytest.mark.integration
+@pytest.mark.skipif(
+    os.getenv("RUN_LIVE_TESTS") != "1",
+    reason="set RUN_LIVE_TESTS=1 (needs GPU + GROQ_API_KEY) to run",
+)
 def test_budget_parity():
     """P5.6 — final context <= 10 chunks (parity with LightRAG chunk_top_k=10)."""
     from stem_rag_lab_assistant.methods.lightrag_hybrid import lightrag_hybrid_answer
