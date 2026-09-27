@@ -44,12 +44,17 @@ CANDIDATE ANSWER:
 def _get_provider() -> LiteLLM:
     """Lazy singleton TruLens LiteLLM provider pointed at the Groq judge model.
 
-    ``retries=0`` because TruLens wraps every endpoint failure in a generic
-    ``RuntimeError``; we own the retry policy in ``evaluation/retry.py`` (litellm
-    still performs its own SDK-level retries on 429s).
+    ``retries=0`` disables both retry layers TruLens/litellm would otherwise
+    add on top of ours: the TruLens endpoint's short backoff (2/4/8 s — far too
+    short to ride out a 60 s TPM window) and litellm's SDK retries
+    (``litellm.num_retries``). The retry/stop policy is owned by
+    ``evaluation/retry.run_with_retry``.
     """
     global _PROVIDER
     if _PROVIDER is None:
+        import litellm
+
+        litellm.num_retries = 0
         model = f"groq/{get_config().judge_model}"
         _PROVIDER = LiteLLM(model_engine=model, retries=0)
         logger.info("TruLens LiteLLM judge provider ready: %s", model)
