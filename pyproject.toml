@@ -21,6 +21,9 @@ dependencies = [
     "torch==2.6.0",
     "torchvision==0.21.0",
     "torchaudio==2.6.0",
+    "trulens-core>=2.14,<3",
+    "trulens-feedback>=2.14,<3",
+    "trulens-providers-litellm>=2.14,<3",
 ]
 
 
@@ -31,4 +34,9 @@ packages = ["src/stem_rag_lab_assistant"]
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: hits external services (e.g. Groq) or heavy local models; opt in explicitly",
 ]
