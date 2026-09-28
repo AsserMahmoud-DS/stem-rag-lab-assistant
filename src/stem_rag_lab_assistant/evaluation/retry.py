@@ -36,6 +36,10 @@ _RETRYABLE_SIGNATURES = (
     " 502",
     " 503",
     " 504",
+    # Model JSON-output glitches: Groq structured-output validation can reject a
+    # reply that failed to parse; retrying almost always succeeds.
+    "json_validate_failed",
+    "failed to generate json",
 )
 
 # Substrings (lowercased) that mark a fatal, non-retryable failure (bad key).
