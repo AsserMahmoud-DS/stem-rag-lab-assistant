@@ -15,6 +15,13 @@ from pathlib import Path
 from typing import Any
 
 from stem_rag_lab_assistant.config import config_snapshot
+from stem_rag_lab_assistant.evaluation.fallback import (
+    SCHEMA_VERSION,
+    attempt_fallback,
+    empty_fallback,
+    fallback_summary,
+    is_empty_answer,
+)
 from stem_rag_lab_assistant.evaluation.judge import (
     judge_answer_relevance,
     judge_context_relevance,
@@ -55,6 +62,7 @@ def _load_results(method: str) -> dict[str, Any]:
     return {
         "method": method,
         "eval_date": datetime.now(timezone.utc).isoformat(),
+        "schema_version": SCHEMA_VERSION,
         "config": config_snapshot(),
         "results": [],
         "skipped_due_to_rate_limit": [],
@@ -63,6 +71,8 @@ def _load_results(method: str) -> dict[str, Any]:
 
 def _save_results(method: str, data: dict[str, Any]) -> None:
     path = _EVAL_DIR / f"results_{method}.json"
+    data["schema_version"] = SCHEMA_VERSION
+    data["answer_fallback"] = fallback_summary(data.get("results", []))
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     logger.info("Saved %d results for %s → %s", len(data["results"]), method, path)
@@ -111,9 +121,17 @@ def _run_single_question(
     context = result.get("context", "")
     method_latency = result["latency_ms"]
 
-    # Handle None answer (e.g., Groq returned empty response)
-    if answer is None:
-        answer = "[ERROR: model returned no answer]"
+    # Capacity fallback: if the default-budget answer is empty, retry the same
+    # model from the same context with a higher completion budget (reasoning
+    # unchanged). Recorded on every record for auditability.
+    fallback = empty_fallback()
+    if is_empty_answer(answer):
+        if answer is None:
+            answer = "[ERROR: model returned no answer]"
+        fb_answer, fb_meta = attempt_fallback(context, question)
+        fallback = fb_meta
+        if fb_meta["resolved"]:
+            answer = fb_answer
 
     # 2. Attach images
     images = attach_images(retrieved_chunks, max_images=3)
@@ -138,6 +156,7 @@ def _run_single_question(
         "context": context,
         "retrieved_chunk_ids": retrieved_ids,
         "attached_image_ids": attached_image_ids,
+        "answer_fallback": fallback,
         "scores": {
             "groundedness": groundedness,
             "answer_relevance": answer_rel,
