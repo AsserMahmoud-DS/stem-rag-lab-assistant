@@ -222,7 +222,7 @@ def run_eval(
                 record = _run_single_question(method, answer_func, q)
             except EvalStoppedError:
                 logger.error(
-                    "Rate limit stopped eval during %s at %s. "
+                    "Eval stopped during %s at %s. "
                     "%d/%d results saved for this method. "
                     "Re-run to resume.",
                     method, qid, len(data["results"]), len(dataset),
