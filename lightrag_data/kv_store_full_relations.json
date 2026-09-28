@@ -1,0 +1,5190 @@
+{
+  "chapter-1 Error in measurement::ch_00002": {
+    "relation_pairs": [
+      [
+        "Gross Errors",
+        "Operator"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790508003,
+    "update_time": 1790508003,
+    "_id": "chapter-1 Error in measurement::ch_00002"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00000": {
+    "relation_pairs": [
+      [
+        "AC Bridge",
+        "Chapter 3"
+      ],
+      [
+        "AC Bridge",
+        "DC Bridge"
+      ],
+      [
+        "Chapter 3",
+        "DC Bridge"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790508031,
+    "update_time": 1790508031,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00000"
+  },
+  "chapter 5  ADC and DAC::ch_00001": {
+    "relation_pairs": [
+      [
+        "Input Signal Waveform",
+        "Sample-And-Hold Circuit"
+      ],
+      [
+        "Analog Signal Sampling",
+        "Sample-And-Hold Circuit"
+      ],
+      [
+        "A/D Converter",
+        "Output Signal"
+      ],
+      [
+        "Sample-And-Hold Circuit",
+        "Switch"
+      ],
+      [
+        "A/D Converter",
+        "Analog Signal"
+      ],
+      [
+        "A/D Converter",
+        "Sample-And-Hold Circuit"
+      ],
+      [
+        "Sampling Signal",
+        "Switch"
+      ],
+      [
+        "Output Signal",
+        "Sample-And-Hold Circuit"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "chapter 5  ADC and DAC::ch_00001"
+  },
+  "Lab1::ch_00008": {
+    "relation_pairs": [
+      [
+        "Rb",
+        "Rb3"
+      ],
+      [
+        "Circuit",
+        "Ra"
+      ],
+      [
+        "Rb",
+        "Rb4"
+      ],
+      [
+        "Data Table",
+        "Eoi Measured"
+      ],
+      [
+        "Rb",
+        "Rb1"
+      ],
+      [
+        "Circuit",
+        "Eoi Measured"
+      ],
+      [
+        "Rb1",
+        "Rbi"
+      ],
+      [
+        "Rb4",
+        "Rbi"
+      ],
+      [
+        "Circuit Analysis",
+        "Eoi True"
+      ],
+      [
+        "Rb5",
+        "Rbi"
+      ],
+      [
+        "Data Table",
+        "Eoi True"
+      ],
+      [
+        "AVO Meter",
+        "Eoi Measured"
+      ],
+      [
+        "Rb",
+        "Rb2"
+      ],
+      [
+        "Eoi True",
+        "Rbi"
+      ],
+      [
+        "Circuit",
+        "Rb"
+      ],
+      [
+        "Rb",
+        "Rb5"
+      ],
+      [
+        "Rb2",
+        "Rbi"
+      ],
+      [
+        "Rb3",
+        "Rbi"
+      ],
+      [
+        "Circuit",
+        "Ein"
+      ]
+    ],
+    "count": 19,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Lab1::ch_00008"
+  },
+  "chapter-1 Error in measurement::ch_00008": {
+    "relation_pairs": [
+      [
+        "Random Error",
+        "Statistical Analysis"
+      ],
+      [
+        "Measurement",
+        "Random Error"
+      ],
+      [
+        "Measurement",
+        "Statistical Analysis"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790508811,
+    "update_time": 1790508811,
+    "_id": "chapter-1 Error in measurement::ch_00008"
+  },
+  "chapter-1 Error in measurement::ch_00021": {
+    "relation_pairs": [
+      [
+        "Arithmetic Mean",
+        "Deviation"
+      ],
+      [
+        "Standard Deviation",
+        "Statistical Dataset"
+      ],
+      [
+        "Algebraic Sum",
+        "Average Deviation"
+      ],
+      [
+        "Deviation",
+        "Standard Deviation"
+      ],
+      [
+        "Statistical Dataset",
+        "X 4"
+      ],
+      [
+        "Arithmetic Mean",
+        "X 2"
+      ],
+      [
+        "Statistical Dataset",
+        "X 3"
+      ],
+      [
+        "Statistical Dataset",
+        "X 1"
+      ],
+      [
+        "Statistical Dataset",
+        "X 2"
+      ],
+      [
+        "Arithmetic Mean",
+        "X 4"
+      ],
+      [
+        "Arithmetic Mean",
+        "Statistical Dataset"
+      ],
+      [
+        "Average Deviation",
+        "Deviation"
+      ],
+      [
+        "Algebraic Sum",
+        "Deviation"
+      ],
+      [
+        "Average Deviation",
+        "Standard Deviation"
+      ],
+      [
+        "Arithmetic Mean",
+        "X 3"
+      ],
+      [
+        "Arithmetic Mean",
+        "X 1"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "chapter-1 Error in measurement::ch_00021"
+  },
+  "chapter 5  ADC and DAC::ch_00035": {
+    "relation_pairs": [
+      [
+        "Resistance",
+        "Temperature"
+      ],
+      [
+        "Capacitance",
+        "Temperature"
+      ],
+      [
+        "Counter",
+        "Digital Word"
+      ],
+      [
+        "Analog Signal",
+        "Digital Word"
+      ],
+      [
+        "Integrator",
+        "RC Product"
+      ],
+      [
+        "Component-Value Errors",
+        "Single-Slope Converter"
+      ],
+      [
+        "Integrator",
+        "Resistance"
+      ],
+      [
+        "Capacitance",
+        "Integrator"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790508940,
+    "update_time": 1790508940,
+    "_id": "chapter 5  ADC and DAC::ch_00035"
+  },
+  "chapter 5  ADC and DAC::ch_00050": {
+    "relation_pairs": [
+      [
+        "Case A",
+        "LSB"
+      ],
+      [
+        "LSB",
+        "Lower Output Limit"
+      ],
+      [
+        "Case A",
+        "Expected Output"
+      ],
+      [
+        "Maximum Output Error",
+        "Upper Output Limit"
+      ],
+      [
+        "Case B",
+        "Expected Output"
+      ],
+      [
+        "Expected Output",
+        "Vfs"
+      ],
+      [
+        "Expected Output",
+        "Upper Output Limit"
+      ],
+      [
+        "Expected Output",
+        "Lower Output Limit"
+      ],
+      [
+        "LSB",
+        "Value 156.25mV"
+      ],
+      [
+        "LSB",
+        "Upper Output Limit"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "chapter 5  ADC and DAC::ch_00050"
+  },
+  "Lab3::ch_00002": {
+    "relation_pairs": [
+      [
+        "Function Generator",
+        "Synchronization"
+      ],
+      [
+        "Amp=10V",
+        "Function Generator"
+      ],
+      [
+        "F=1KHz",
+        "Function Generator"
+      ],
+      [
+        "Oscilloscope",
+        "XY-Mode"
+      ],
+      [
+        "Oscilloscope",
+        "Time Domain"
+      ],
+      [
+        "Function Generator",
+        "Phase Change"
+      ],
+      [
+        "Oscilloscope",
+        "Probes"
+      ],
+      [
+        "Lissajous Figures",
+        "Oscilloscope"
+      ],
+      [
+        "Function Generator",
+        "Oscilloscope"
+      ],
+      [
+        "Lissajous Figures",
+        "XY-Mode"
+      ],
+      [
+        "Oscilloscope",
+        "Split Display"
+      ],
+      [
+        "Function Generator",
+        "Probes"
+      ],
+      [
+        "Frequency Measurements",
+        "Lissajous Figures"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Lab3::ch_00002"
+  },
+  "chapter 5  ADC and DAC::ch_00011": {
+    "relation_pairs": [
+      [
+        "Analog Output Signal",
+        "DAC"
+      ],
+      [
+        "DAC",
+        "Non-Linearity"
+      ],
+      [
+        "DAC",
+        "Digital Input Signal"
+      ],
+      [
+        "Analog Output Signal",
+        "Digital Input Signal"
+      ],
+      [
+        "DAC",
+        "Linear Relationship"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790509070,
+    "update_time": 1790509070,
+    "_id": "chapter 5  ADC and DAC::ch_00011"
+  },
+  "Lab1::ch_00006": {
+    "relation_pairs": [
+      [
+        "Distribution Curve",
+        "R Sample 2"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790509071,
+    "update_time": 1790509071,
+    "_id": "Lab1::ch_00006"
+  },
+  "chapter 5  ADC and DAC::ch_00036": {
+    "relation_pairs": [
+      [
+        "Dual-Slope A/D Converter",
+        "Input Voltage"
+      ],
+      [
+        "Control Switch",
+        "Dual-Slope A/D Converter"
+      ],
+      [
+        "Clock",
+        "Dual-Slope A/D Converter"
+      ],
+      [
+        "Counter",
+        "Dual-Slope A/D Converter"
+      ],
+      [
+        "Counter",
+        "Digital Output"
+      ],
+      [
+        "Dual-Slope A/D Converter",
+        "Ref Voltage"
+      ],
+      [
+        "Digital Output",
+        "Dual-Slope A/D Converter"
+      ],
+      [
+        "Control Switch",
+        "Input Voltage"
+      ],
+      [
+        "Dual-Slope A/D Converter",
+        "Operational Amplifier"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790509087,
+    "update_time": 1790509087,
+    "_id": "chapter 5  ADC and DAC::ch_00036"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00023": {
+    "relation_pairs": [
+      [
+        "R1",
+        "R2"
+      ],
+      [
+        "Kelvin Bridge",
+        "R2"
+      ],
+      [
+        "Ra",
+        "Rb"
+      ],
+      [
+        "Figure 3.9",
+        "Kelvin Bridge"
+      ],
+      [
+        "Kelvin Bridge",
+        "Ra"
+      ],
+      [
+        "Kelvin Bridge",
+        "Rx"
+      ],
+      [
+        "Kelvin Bridge",
+        "Rb"
+      ],
+      [
+        "Kelvin Bridge",
+        "R1"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790509169,
+    "update_time": 1790509169,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00023"
+  },
+  "chapter-1 Error in measurement::ch_00016": {
+    "relation_pairs": [
+      [
+        "Average Value",
+        "Sum Of The Ten Measurements"
+      ],
+      [
+        "Average Value",
+        "Solution 101.1 10"
+      ],
+      [
+        "Average Value",
+        "Ten Measurements"
+      ],
+      [
+        "Precision 0.96",
+        "Solution 101.1 10"
+      ],
+      [
+        "Sum Of The Ten Measurements",
+        "Ten Measurements"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "chapter-1 Error in measurement::ch_00016"
+  },
+  "chapter(4) oscilloscope::ch_00006": {
+    "relation_pairs": [
+      [
+        "Time",
+        "Voltage"
+      ],
+      [
+        "Voltage",
+        "Y-Inputs"
+      ],
+      [
+        "Screen",
+        "Voltage"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790509202,
+    "update_time": 1790509202,
+    "_id": "chapter(4) oscilloscope::ch_00006"
+  },
+  "chapter-1 Error in measurement::ch_00006": {
+    "relation_pairs": [
+      [
+        "Cleaning",
+        "Environmental Errors"
+      ],
+      [
+        "Ambient Parameters",
+        "Humidity"
+      ],
+      [
+        "Ambient Parameters",
+        "Pressure"
+      ],
+      [
+        "Ambient Parameters",
+        "Temperature"
+      ],
+      [
+        "Ambient Parameters",
+        "Dust"
+      ],
+      [
+        "Environmental Errors",
+        "Magnetic Shielding"
+      ],
+      [
+        "Instrument",
+        "Proper Instrument Housing"
+      ],
+      [
+        "Ambient Parameters",
+        "Environmental Errors"
+      ],
+      [
+        "Air-Conditioning",
+        "Environmental Errors"
+      ],
+      [
+        "Ambient Parameters",
+        "Electrostatic Fields"
+      ],
+      [
+        "Ambient Parameters",
+        "Magnetic Fields"
+      ],
+      [
+        "Ambient Parameters",
+        "Instrument"
+      ],
+      [
+        "Environmental Errors",
+        "Proper Instrument Housing"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "chapter-1 Error in measurement::ch_00006"
+  },
+  "Lab2::ch_00001": {
+    "relation_pairs": [
+      [
+        "Potentiometer R2",
+        "Rx Calculation Equation"
+      ],
+      [
+        "Resistance R3",
+        "Rx Calculation Equation"
+      ],
+      [
+        "Resistance Rx",
+        "Rx Calculation Equation"
+      ],
+      [
+        "Resistance R3",
+        "Resistance Rx"
+      ],
+      [
+        "Comparison Step",
+        "Resistance Rx"
+      ],
+      [
+        "Resistance R1",
+        "Resistance R3"
+      ],
+      [
+        "Volmeter",
+        "Voltage Measurement"
+      ],
+      [
+        "Point D",
+        "Voltage Measurement"
+      ],
+      [
+        "Point B",
+        "Voltage Measurement"
+      ],
+      [
+        "Resistance R1",
+        "Rx Calculation Equation"
+      ],
+      [
+        "Potentiometer R2",
+        "Voltage Measurement"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Lab2::ch_00001"
+  },
+  "chapter 5  ADC and DAC::ch_00015": {
+    "relation_pairs": [
+      [
+        "R8",
+        "Resistor Network"
+      ],
+      [
+        "R1",
+        "Resistor Network"
+      ],
+      [
+        "R5",
+        "Resistor Network"
+      ],
+      [
+        "R6",
+        "Resistor Network"
+      ],
+      [
+        "R4",
+        "Resistor Network"
+      ],
+      [
+        "R3",
+        "Resistor Network"
+      ],
+      [
+        "R7",
+        "Resistor Network"
+      ],
+      [
+        "R2",
+        "Resistor Network"
+      ],
+      [
+        "Vin",
+        "Vout"
+      ],
+      [
+        "Resistor Network",
+        "Vout"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "chapter 5  ADC and DAC::ch_00015"
+  },
+  "chapter 5  ADC and DAC::ch_00002": {
+    "relation_pairs": [
+      [
+        "A/D Converter",
+        "Analog To Digital"
+      ],
+      [
+        "A/D Converter",
+        "D/A Converter"
+      ],
+      [
+        "D/A Converter",
+        "N-bit Digital Word"
+      ],
+      [
+        "D/A Converter",
+        "Digital To Analog"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790509447,
+    "update_time": 1790509447,
+    "_id": "chapter 5  ADC and DAC::ch_00002"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00029": {
+    "relation_pairs": [
+      [
+        "Balance Condition",
+        "Equal Impedance Condition"
+      ],
+      [
+        "Node B",
+        "Node C"
+      ],
+      [
+        "Balance Condition",
+        "Figure 3.10"
+      ],
+      [
+        "AC Bridge",
+        "Balance Condition"
+      ],
+      [
+        "Balance Condition",
+        "Impedance"
+      ],
+      [
+        "Balance Condition",
+        "Detector"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00029"
+  },
+  "chapter(4) oscilloscope::ch_00010": {
+    "relation_pairs": [
+      [
+        "Vertical Delay Amplifier Circuit",
+        "Vertical Delay Line"
+      ],
+      [
+        "CRO",
+        "Switch Position Selector"
+      ],
+      [
+        "Aquadag",
+        "CRO"
+      ],
+      [
+        "CRO",
+        "Vertical Sweep Generator"
+      ],
+      [
+        "CRO",
+        "Frequency Generator"
+      ],
+      [
+        "Aquadag",
+        "Screen Spot"
+      ],
+      [
+        "CRO",
+        "Vertical Delay Amplifier Circuit"
+      ],
+      [
+        "CRO",
+        "Screen Spot"
+      ],
+      [
+        "CRO",
+        "Vertical Amplifier"
+      ],
+      [
+        "Cathode",
+        "Grid"
+      ],
+      [
+        "Intensity Control",
+        "Screen Spot"
+      ],
+      [
+        "CRO",
+        "Horizontal Sweep Generator"
+      ],
+      [
+        "CRO",
+        "Cathode"
+      ],
+      [
+        "Blanking Circuit",
+        "CRO"
+      ],
+      [
+        "Focus Control",
+        "Screen Spot"
+      ],
+      [
+        "CRO",
+        "Trigger Circuit"
+      ],
+      [
+        "Vertical Sweep Generator",
+        "Vertical Sweep Path"
+      ],
+      [
+        "Blanking Circuit",
+        "Screen Spot"
+      ],
+      [
+        "Horizontal Sweep Generator",
+        "Horizontal Sweep Path"
+      ],
+      [
+        "CRO",
+        "Focus Control"
+      ],
+      [
+        "Horizontal Sweep Generator",
+        "Trigger Circuit"
+      ],
+      [
+        "CRO",
+        "Vertical Delay Line"
+      ],
+      [
+        "CRO",
+        "Grid"
+      ],
+      [
+        "CRO",
+        "Intensity Control"
+      ],
+      [
+        "CRO",
+        "Horizontal Amplifier"
+      ]
+    ],
+    "count": 25,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "chapter(4) oscilloscope::ch_00010"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00004": {
+    "relation_pairs": [
+      [
+        "Resistor R3",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R1"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R2"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R3"
+      ],
+      [
+        "Resistor R1",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Resistor R4",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Galvanometer G",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Electrical Circuit Balance Principle"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R4"
+      ],
+      [
+        "Resistor R2",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Galvanometer G"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790509655,
+    "update_time": 1790509655,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00004"
+  },
+  "chapter 5  ADC and DAC::ch_00022": {
+    "relation_pairs": [
+      [
+        "Analog Signal Amplitude",
+        "Quantization Error"
+      ],
+      [
+        "Quantization Error",
+        "Standard Digital Level"
+      ],
+      [
+        "Analog Signal Amplitude",
+        "Standard Digital Level"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790509671,
+    "update_time": 1790509671,
+    "_id": "chapter 5  ADC and DAC::ch_00022"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00012": {
+    "relation_pairs": [
+      [
+        "Rg",
+        "Rx"
+      ],
+      [
+        "E=61",
+        "Rg"
+      ],
+      [
+        "Kx",
+        "Rx"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790509688,
+    "update_time": 1790509688,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00012"
+  },
+  "Lab1::ch_00002": {
+    "relation_pairs": [
+      [
+        "AVO Meter",
+        "Measurement Instrumentation Insertion Error"
+      ],
+      [
+        "Part A",
+        "Statistical Analysis Of Resistors' Samples"
+      ],
+      [
+        "10-Resistor Sample",
+        "Statistical Analysis Of Resistors' Samples"
+      ],
+      [
+        "Resistors",
+        "Test Board"
+      ],
+      [
+        "AVO Meter",
+        "Resistors"
+      ],
+      [
+        "Resistors",
+        "Statistical Analysis Of Resistors' Samples"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "Lab1::ch_00002"
+  },
+  "chapter 5  ADC and DAC::ch_00025": {
+    "relation_pairs": [
+      [
+        "Comparator",
+        "Counter"
+      ],
+      [
+        "Counter",
+        "Start Input"
+      ],
+      [
+        "Analog Input Voltage",
+        "Counter"
+      ],
+      [
+        "Comparator",
+        "EOC Output"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790509770,
+    "update_time": 1790509770,
+    "_id": "chapter 5  ADC and DAC::ch_00025"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00014": {
+    "relation_pairs": [
+      [
+        "Thevenin Equivalent Circuit",
+        "Thevenin Voltage"
+      ],
+      [
+        "Methodology 1",
+        "Thevenin Equivalent Circuit"
+      ],
+      [
+        "Circuit Resistance Configuration",
+        "Thevenin Voltage"
+      ],
+      [
+        "Galvanometer",
+        "Thevenin Equivalent Circuit"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790509817,
+    "update_time": 1790509817,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00014"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00028": {
+    "relation_pairs": [
+      [
+        "General Impedance Bridge",
+        "Z4"
+      ],
+      [
+        "Abox With Z Prime",
+        "Z4"
+      ],
+      [
+        "General Impedance Bridge",
+        "Z2"
+      ],
+      [
+        "General Impedance Bridge",
+        "Z3"
+      ],
+      [
+        "Abox With Z Prime",
+        "Z2"
+      ],
+      [
+        "Abox With Z Prime",
+        "General Impedance Bridge"
+      ],
+      [
+        "Abox With Z Prime",
+        "Z3"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790509930,
+    "update_time": 1790509930,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00028"
+  },
+  "chapter 5  ADC and DAC::ch_00033": {
+    "relation_pairs": [
+      [
+        "Analog Input",
+        "Comparator"
+      ],
+      [
+        "Counter",
+        "Single Slope A/D Converter"
+      ],
+      [
+        "Comparator",
+        "Reference Voltage"
+      ],
+      [
+        "Counter",
+        "Digital Output"
+      ],
+      [
+        "A/D Converter",
+        "Analog Input"
+      ],
+      [
+        "A/D Converter",
+        "Single Slope A/D Converter"
+      ],
+      [
+        "Comparator",
+        "Single Slope A/D Converter"
+      ],
+      [
+        "Clock",
+        "Single Slope A/D Converter"
+      ],
+      [
+        "Clock",
+        "Counter"
+      ],
+      [
+        "A/D Converter",
+        "Digital Output"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790509947,
+    "update_time": 1790509947,
+    "_id": "chapter 5  ADC and DAC::ch_00033"
+  },
+  "chapter 5  ADC and DAC::ch_00024": {
+    "relation_pairs": [
+      [
+        "D/A Converter",
+        "Input Voltage"
+      ],
+      [
+        "Clock Signal",
+        "Up Counter"
+      ],
+      [
+        "Comparator",
+        "OR Gate"
+      ],
+      [
+        "Comparator",
+        "D/A Converter"
+      ],
+      [
+        "D/A Converter",
+        "Up Counter"
+      ],
+      [
+        "OR Gate",
+        "Up Counter"
+      ],
+      [
+        "Clock Signal",
+        "Least Significant Bit"
+      ],
+      [
+        "Comparator",
+        "End Of Conversion"
+      ],
+      [
+        "D/A Converter",
+        "Least Significant Bit"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790509956,
+    "update_time": 1790509956,
+    "_id": "chapter 5  ADC and DAC::ch_00024"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00024": {
+    "relation_pairs": [
+      [
+        "R1",
+        "R2"
+      ],
+      [
+        "R2",
+        "Resistance Calculation Method"
+      ],
+      [
+        "R2",
+        "Rx"
+      ],
+      [
+        "0.01 Ohms",
+        "Rx"
+      ],
+      [
+        "R1",
+        "Rx"
+      ],
+      [
+        "R1",
+        "Resistance Calculation Method"
+      ],
+      [
+        "Resistance Calculation Method",
+        "Rx"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790510053,
+    "update_time": 1790510053,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00024"
+  },
+  "chapter-1 Error in measurement::ch_00004": {
+    "relation_pairs": [
+      [
+        "Environmental Errors",
+        "Systematic Errors"
+      ],
+      [
+        "Instrumental Errors",
+        "Instruments"
+      ],
+      [
+        "Instrumental Errors",
+        "Measurements"
+      ],
+      [
+        "Instrumental Errors",
+        "Systematic Errors"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790510054,
+    "update_time": 1790510054,
+    "_id": "chapter-1 Error in measurement::ch_00004"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00035": {
+    "relation_pairs": [
+      [
+        "Inductance",
+        "Maxwell Wein Bridge"
+      ],
+      [
+        "Capacitance",
+        "Inductance"
+      ],
+      [
+        "Capacitance",
+        "Maxwell Wein Bridge"
+      ],
+      [
+        "Inductance",
+        "Phase Shift"
+      ],
+      [
+        "Capacitance",
+        "Impedance"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790510070,
+    "update_time": 1790510070,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00035"
+  },
+  "chapter 5  ADC and DAC::ch_00040": {
+    "relation_pairs": [
+      [
+        "Comparator Output",
+        "t3"
+      ],
+      [
+        "Integrator Output",
+        "t1"
+      ],
+      [
+        "1v",
+        "Vin"
+      ],
+      [
+        "T1",
+        "Vin"
+      ],
+      [
+        "Comparator Output",
+        "t2"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "chapter 5  ADC and DAC::ch_00040"
+  },
+  "chapter 5  ADC and DAC::ch_00027": {
+    "relation_pairs": [
+      [
+        "D1",
+        "Digital Output"
+      ],
+      [
+        "D3 (MSB)",
+        "Digital Output"
+      ],
+      [
+        "-V",
+        "Tracking A/D Converter"
+      ],
+      [
+        "Control Logic",
+        "Up/Down Counter"
+      ],
+      [
+        "+V",
+        "Tracking A/D Converter"
+      ],
+      [
+        "D2",
+        "Digital Output"
+      ],
+      [
+        "D/A Comparator",
+        "Vfb"
+      ],
+      [
+        "CLR",
+        "Tracking A/D Converter"
+      ],
+      [
+        "D/A Comparator",
+        "Digital Output"
+      ],
+      [
+        "D/A Comparator",
+        "Tracking A/D Converter"
+      ],
+      [
+        "D0 (LSB)",
+        "Digital Output"
+      ],
+      [
+        "Digital Output",
+        "Tracking A/D Converter"
+      ],
+      [
+        "D/A Comparator",
+        "Vin"
+      ],
+      [
+        "Control Logic",
+        "Stop Logic"
+      ],
+      [
+        "Tracking A/D Converter",
+        "Vin"
+      ],
+      [
+        "Control Logic",
+        "Start Logic"
+      ],
+      [
+        "Clock",
+        "Tracking A/D Converter"
+      ],
+      [
+        "Digital Output",
+        "Up/Down Counter"
+      ]
+    ],
+    "count": 18,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "chapter 5  ADC and DAC::ch_00027"
+  },
+  "Lab3::ch_00001": {
+    "relation_pairs": [
+      [
+        "Lissajous Figure",
+        "Phase Measurement"
+      ],
+      [
+        "Lissajous Figure",
+        "Oscilloscope"
+      ],
+      [
+        "Frequency Measurement Using Lissajous Figures",
+        "Lissajous Figure"
+      ],
+      [
+        "Oscilloscope",
+        "Phase Measurement"
+      ],
+      [
+        "Frequency Measurement Using Lissajous Figures",
+        "Oscilloscope"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790511775,
+    "update_time": 1790511775,
+    "_id": "Lab3::ch_00001"
+  },
+  "chapter 5  ADC and DAC::ch_00044": {
+    "relation_pairs": [
+      [
+        "0.5% F.S.",
+        "8-Bit Dac"
+      ],
+      [
+        "0.5% F.S.",
+        "990 To 1010 UA"
+      ],
+      [
+        "1000 UA",
+        "990 To 1010 UA"
+      ],
+      [
+        "1000 UA",
+        "Ideal Output Calculation"
+      ],
+      [
+        "7.81 UA",
+        "Ideal Output Calculation"
+      ],
+      [
+        "2 MA",
+        "Step Size Calculation"
+      ],
+      [
+        "2 MA",
+        "8-Bit Dac"
+      ],
+      [
+        "10000000",
+        "Ideal Output Calculation"
+      ],
+      [
+        "7.81 UA",
+        "Step Size Calculation"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "chapter 5  ADC and DAC::ch_00044"
+  },
+  "Lab1::ch_00004": {
+    "relation_pairs": [
+      [
+        "Sample 2",
+        "Standard Deviation"
+      ],
+      [
+        "Relative Error",
+        "Resistor"
+      ],
+      [
+        "Resistance Measurement Experiment",
+        "Resistor"
+      ],
+      [
+        "Relative Error",
+        "Resistance Measurement Experiment"
+      ],
+      [
+        "Resistor",
+        "Standard Deviation"
+      ],
+      [
+        "Relative Error",
+        "Sample 2"
+      ],
+      [
+        "Resistance Measurement Experiment",
+        "Standard Deviation"
+      ],
+      [
+        "Resistance Measurement Experiment",
+        "Sample 2"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790511892,
+    "update_time": 1790511892,
+    "_id": "Lab1::ch_00004"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00002": {
+    "relation_pairs": [
+      [
+        "Resistance Branch",
+        "Series Resistor Element"
+      ],
+      [
+        "Resistance Network",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Resistance Branch",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Galvanometer"
+      ],
+      [
+        "Figure 3.1",
+        "Wheatstone Bridge"
+      ],
+      [
+        "DC Voltage Source",
+        "Resistance Network"
+      ],
+      [
+        "Galvanometer",
+        "Wheatstone Bridge"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00002"
+  },
+  "chapter-1 Error in measurement::ch_00001": {
+    "relation_pairs": [
+      [
+        "Gross Errors",
+        "Measurement Errors"
+      ],
+      [
+        "Measurement Errors",
+        "Random Errors"
+      ],
+      [
+        "Measurement Errors",
+        "Systematic Errors"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790511989,
+    "update_time": 1790511989,
+    "_id": "chapter-1 Error in measurement::ch_00001"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00018": {
+    "relation_pairs": [
+      [
+        "Galvanometer",
+        "Resistance 125 Ohms"
+      ],
+      [
+        "Example 3.5",
+        "Figure 3.7"
+      ],
+      [
+        "Figure 3.7",
+        "Resistance 525 Ohms"
+      ],
+      [
+        "Approximation Equation",
+        "Example 3.5"
+      ],
+      [
+        "Figure 3.7",
+        "Voltage 10 V"
+      ],
+      [
+        "Figure 3.7",
+        "Galvanometer"
+      ],
+      [
+        "Figure 3.7",
+        "Resistance 500 Ohms"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00018"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00008": {
+    "relation_pairs": [
+      [
+        "Figure 6.3",
+        "Unbalanced Wheatstone Bridge"
+      ],
+      [
+        "Resistance R3",
+        "Vth Thevenin Voltage"
+      ],
+      [
+        "Thevenin Theorem",
+        "Unbalanced Wheatstone Bridge"
+      ],
+      [
+        "Resistance R2",
+        "Th Thevenin Resistance"
+      ],
+      [
+        "Resistance R1",
+        "Th Thevenin Resistance"
+      ],
+      [
+        "Resistance R4",
+        "Th Thevenin Resistance"
+      ],
+      [
+        "Resistance R2",
+        "Vth Thevenin Voltage"
+      ],
+      [
+        "Resistance R3",
+        "Th Thevenin Resistance"
+      ],
+      [
+        "Resistance R1",
+        "Vth Thevenin Voltage"
+      ],
+      [
+        "Resistance R4",
+        "Vth Thevenin Voltage"
+      ],
+      [
+        "Galvanometer",
+        "Thevenin Theorem"
+      ],
+      [
+        "Galvanometer",
+        "Unbalanced Wheatstone Bridge"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00008"
+  },
+  "chapter 5  ADC and DAC::ch_00034": {
+    "relation_pairs": [
+      [
+        "Integration",
+        "Time"
+      ],
+      [
+        "Capacitor",
+        "Integrator"
+      ],
+      [
+        "Analog Signal",
+        "Comparator"
+      ],
+      [
+        "Input Voltage –V Ref",
+        "Integration"
+      ],
+      [
+        "Capacitor",
+        "RC Jo"
+      ],
+      [
+        "Comparator",
+        "Digital Counter"
+      ],
+      [
+        "RC Jo",
+        "Resistor"
+      ],
+      [
+        "Input Voltage –V Ref",
+        "Integrator Output Voltage"
+      ],
+      [
+        "Integrator",
+        "Integrator Output Voltage"
+      ],
+      [
+        "Integrator",
+        "Resistor"
+      ],
+      [
+        "Comparator",
+        "Integrator Output Voltage"
+      ],
+      [
+        "Analog Signal",
+        "Integrator Output Voltage"
+      ],
+      [
+        "Digital Counter",
+        "Integration"
+      ]
+    ],
+    "count": 13,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "chapter 5  ADC and DAC::ch_00034"
+  },
+  "chapter 5  ADC and DAC::ch_00012": {
+    "relation_pairs": [
+      [
+        "Binary Input Bits",
+        "Binary Weighted Resistor"
+      ],
+      [
+        "D/A Converter",
+        "V Out"
+      ],
+      [
+        "Binary Input Bits",
+        "D/A Converter"
+      ],
+      [
+        "D/A Converter",
+        "Rf"
+      ],
+      [
+        "D/A Converter",
+        "V"
+      ],
+      [
+        "Binary Weighted Resistor",
+        "D/A Converter"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790512226,
+    "update_time": 1790512226,
+    "_id": "chapter 5  ADC and DAC::ch_00012"
+  },
+  "Lab1::ch_00001": {
+    "relation_pairs": [
+      [
+        "Error Analysis",
+        "Statistical Sampling Analysis"
+      ],
+      [
+        "Error Analysis",
+        "Instrumentation Insertion Error"
+      ],
+      [
+        "Error Analysis",
+        "Resistor Sample"
+      ],
+      [
+        "Resistor Sample",
+        "Statistical Sampling Analysis"
+      ],
+      [
+        "Electrical Circuit",
+        "Instrumentation Insertion Error"
+      ],
+      [
+        "Instrumentation Insertion Error",
+        "Resistor Sample"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790512227,
+    "update_time": 1790512227,
+    "_id": "Lab1::ch_00001"
+  },
+  "chapter 5  ADC and DAC::ch_00045": {
+    "relation_pairs": [
+      [
+        "4 Bit Binary Ladder",
+        "Input Combination 1010"
+      ],
+      [
+        "5 Bit Binary Ladder",
+        "Full-Scale Output Voltage"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790512324,
+    "update_time": 1790512324,
+    "_id": "chapter 5  ADC and DAC::ch_00045"
+  },
+  "chapter 5  ADC and DAC::ch_00010": {
+    "relation_pairs": [
+      [
+        "Analog Output Signal",
+        "Linearity Error"
+      ],
+      [
+        "Analog Output Signal",
+        "Digital Input Signal"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790512326,
+    "update_time": 1790512326,
+    "_id": "chapter 5  ADC and DAC::ch_00010"
+  },
+  "chapter-1 Error in measurement::ch_00012": {
+    "relation_pairs": [
+      [
+        "Percent Of Error",
+        "Voltage Measurement Problem"
+      ],
+      [
+        "Expected Voltage",
+        "Resistor"
+      ],
+      [
+        "Absolute Error",
+        "Measured Voltage"
+      ],
+      [
+        "Measured Voltage",
+        "Voltage Measurement Problem"
+      ],
+      [
+        "Absolute Error",
+        "Percent Of Error"
+      ],
+      [
+        "Relative Accuracy",
+        "Voltage Measurement Problem"
+      ],
+      [
+        "Absolute Error",
+        "Expected Voltage"
+      ],
+      [
+        "Expected Voltage",
+        "Voltage Measurement Problem"
+      ],
+      [
+        "Measured Voltage",
+        "Resistor"
+      ],
+      [
+        "Absolute Error",
+        "Voltage Measurement Problem"
+      ],
+      [
+        "Percent Of Accuracy",
+        "Voltage Measurement Problem"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "chapter-1 Error in measurement::ch_00012"
+  },
+  "chapter(4) oscilloscope::ch_00005": {
+    "relation_pairs": [
+      [
+        "Fly-Back Time",
+        "Saw-Tooth Waveform"
+      ],
+      [
+        "Deflection System",
+        "Time Base System"
+      ],
+      [
+        "Time Base Circuit",
+        "X-Plates"
+      ],
+      [
+        "Saw-Tooth Waveform",
+        "Time Base Circuit"
+      ],
+      [
+        "Electron Beam",
+        "X-Plates"
+      ],
+      [
+        "Saw-Tooth Waveform",
+        "X-Plates"
+      ],
+      [
+        "Electron Beam",
+        "Screen"
+      ],
+      [
+        "Deflection System",
+        "Electron Beam"
+      ],
+      [
+        "Time Base Circuit",
+        "Time Base System"
+      ],
+      [
+        "Electron Beam",
+        "Fly-Back Time"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "chapter(4) oscilloscope::ch_00005"
+  },
+  "chapter-1 Error in measurement::ch_00009": {
+    "relation_pairs": [
+      [
+        "Expected Value",
+        "Measured Value"
+      ],
+      [
+        "Expected Value",
+        "Yn"
+      ],
+      [
+        "Absolute Error",
+        "Expected Value"
+      ],
+      [
+        "Xn",
+        "Yn"
+      ],
+      [
+        "Measured Value",
+        "Xn"
+      ],
+      [
+        "Absolute Error",
+        "Measured Value"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790512481,
+    "update_time": 1790512481,
+    "_id": "chapter-1 Error in measurement::ch_00009"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00005": {
+    "relation_pairs": [
+      [
+        "Circuit",
+        "Figure 3.2"
+      ],
+      [
+        "Circuit",
+        "Rx"
+      ],
+      [
+        "Circuit",
+        "Galvanometer"
+      ],
+      [
+        "Circuit",
+        "Rz"
+      ],
+      [
+        "Circuit",
+        "Rj"
+      ],
+      [
+        "Galvanometer",
+        "Rx"
+      ],
+      [
+        "Circuit",
+        "Example 3.1"
+      ],
+      [
+        "Example 3_1",
+        "Figure 3_2"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00005"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00019": {
+    "relation_pairs": [
+      [
+        "500 Ohms",
+        "Thevenin Equivalent Resistance"
+      ],
+      [
+        "4 V",
+        "Thevenin Equivalent Voltage"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790512595,
+    "update_time": 1790512595,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00019"
+  },
+  "chapter-1 Error in measurement::ch_00003": {
+    "relation_pairs": [
+      [
+        "Power",
+        "Voltage"
+      ],
+      [
+        "Current",
+        "Power"
+      ],
+      [
+        "Gross Error",
+        "Power"
+      ],
+      [
+        "Gross Error",
+        "Voltmeter"
+      ],
+      [
+        "Gross Error",
+        "Parallax Error"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790512596,
+    "update_time": 1790512596,
+    "_id": "chapter-1 Error in measurement::ch_00003"
+  },
+  "chapter 5  ADC and DAC::ch_00029": {
+    "relation_pairs": [
+      [
+        "Input Voltage",
+        "Internal D A Converter"
+      ],
+      [
+        "Internal D A Converter",
+        "Successive Approximation A Digit Converter"
+      ],
+      [
+        "LSB",
+        "Successive Approximation Register"
+      ],
+      [
+        "Input Voltage",
+        "Successive Approximation Register"
+      ],
+      [
+        "Control Logic",
+        "Successive Approximation A Digit Converter"
+      ],
+      [
+        "Internal D A Converter",
+        "Successive Approximation Register"
+      ],
+      [
+        "Successive Approximation A Digit Converter",
+        "Successive Approximation Register"
+      ],
+      [
+        "MSB",
+        "Successive Approximation Register"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790512643,
+    "update_time": 1790512643,
+    "_id": "chapter 5  ADC and DAC::ch_00029"
+  },
+  "chapter 5  ADC and DAC::ch_00007": {
+    "relation_pairs": [
+      [
+        "Ideal Output",
+        "Resolution"
+      ],
+      [
+        "Resolution",
+        "Voltage Divisions"
+      ],
+      [
+        "Ideal Output",
+        "Voltage Divisions"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790512757,
+    "update_time": 1790512757,
+    "_id": "chapter 5  ADC and DAC::ch_00007"
+  },
+  "chapter(4) oscilloscope::ch_00001": {
+    "relation_pairs": [
+      [
+        "Cathode Ray Oscilloscope",
+        "Electric Voltage"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Electrical Frequency"
+      ],
+      [
+        "CRO",
+        "Cathode Ray Oscilloscope"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Laboratory Environment"
+      ],
+      [
+        "Electrical Signal",
+        "Signal Amplitude"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Electric Current"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Waveform"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Electrical Signal"
+      ],
+      [
+        "Alternating Current",
+        "Cathode Ray Oscilloscope"
+      ],
+      [
+        "Cathode Ray Oscilloscope",
+        "Electric Power"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "chapter(4) oscilloscope::ch_00001"
+  },
+  "chapter 5  ADC and DAC::ch_00041": {
+    "relation_pairs": [
+      [
+        "A/D Converter",
+        "Capacitor"
+      ],
+      [
+        "Dual-Slope Method",
+        "Voltage Slopes"
+      ],
+      [
+        "A/D Converter",
+        "Dual-Slope Method"
+      ],
+      [
+        "A/D Converter",
+        "Measured Time"
+      ],
+      [
+        "A/D Converter",
+        "Fixed Time"
+      ],
+      [
+        "Full Scale Conversion",
+        "Half Scale Conversion"
+      ],
+      [
+        "Full Scale Conversion",
+        "Quarter Scale Conversion"
+      ],
+      [
+        "Capacitor",
+        "Full Scale Conversion"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "chapter 5  ADC and DAC::ch_00041"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00030": {
+    "relation_pairs": [
+      [
+        "Simple Ac Bridge Circuit",
+        "Unknown Inductance"
+      ],
+      [
+        "Figure 3.11",
+        "Simple Ac Bridge Circuit"
+      ],
+      [
+        "Simple Ac Bridge Circuit",
+        "Standard Inductance"
+      ],
+      [
+        "Simple Ac Bridge Circuit",
+        "Standard Capacitance"
+      ],
+      [
+        "Simple Ac Bridge Circuit",
+        "Unknown Capacitance"
+      ],
+      [
+        "Null",
+        "Simple Ac Bridge Circuit"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790512904,
+    "update_time": 1790512904,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00030"
+  },
+  "chapter 5  ADC and DAC::ch_00039": {
+    "relation_pairs": [
+      [
+        "Time Constant RC",
+        "Voltage V2(t)"
+      ],
+      [
+        "Discharge Period",
+        "Time Interval t2 to t3"
+      ],
+      [
+        "Time T2",
+        "Voltage V2(t)"
+      ],
+      [
+        "Time Interval t2 to t3",
+        "Time T1"
+      ],
+      [
+        "Time Interval t2 to t3",
+        "Time T2"
+      ],
+      [
+        "Integrator",
+        "Voltage V2(t)"
+      ],
+      [
+        "Time T1",
+        "Voltage V2(t)"
+      ],
+      [
+        "Reference Voltage Vref",
+        "Voltage V2(t)"
+      ],
+      [
+        "Discharge Period",
+        "Voltage V2(t)"
+      ],
+      [
+        "Input Voltage Vin",
+        "Voltage V2(t)"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "chapter 5  ADC and DAC::ch_00039"
+  },
+  "Lab3::ch_00000": {
+    "relation_pairs": [
+      [
+        "Frequency Measurement",
+        "Oscilloscope Applications"
+      ],
+      [
+        "Oscilloscope Applications",
+        "Probe"
+      ],
+      [
+        "Known Signal",
+        "Unknown Signal"
+      ],
+      [
+        "Lissajous Figures",
+        "Oscilloscope Applications"
+      ],
+      [
+        "Oscilloscope Applications",
+        "Phase Measurement"
+      ],
+      [
+        "Phase Measurement",
+        "Unknown Signal"
+      ],
+      [
+        "Frequency Measurement",
+        "Unknown Signal"
+      ],
+      [
+        "Lissajous Figures",
+        "Oscilloscope"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790512922,
+    "update_time": 1790512922,
+    "_id": "Lab3::ch_00000"
+  },
+  "chapter 5  ADC and DAC::ch_00038": {
+    "relation_pairs": [
+      [
+        "Comparator",
+        "Counter"
+      ],
+      [
+        "Carry Pulse",
+        "Counter"
+      ],
+      [
+        "Carry Pulse",
+        "Control Logic Circuit"
+      ],
+      [
+        "Comparator",
+        "Integrator"
+      ],
+      [
+        "Integrator",
+        "Negative Reference Voltage"
+      ],
+      [
+        "Negative Reference Voltage",
+        "Switch S1"
+      ],
+      [
+        "Clock",
+        "Comparator"
+      ],
+      [
+        "Control Logic Circuit",
+        "Switch S1"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "chapter 5  ADC and DAC::ch_00038"
+  },
+  "chapter-1 Error in measurement::ch_00018": {
+    "relation_pairs": [
+      [
+        "Experiment",
+        "Factors"
+      ],
+      [
+        "Experiment",
+        "Statistical Analysis"
+      ],
+      [
+        "Quantitative Judgments",
+        "Statistical Analysis"
+      ],
+      [
+        "Standard Deviation",
+        "Statistical Analysis"
+      ],
+      [
+        "Data Variations",
+        "Quantitative Judgments"
+      ],
+      [
+        "Data Variations",
+        "Standard Deviation"
+      ],
+      [
+        "Average Deviation",
+        "Statistical Analysis"
+      ],
+      [
+        "Average Deviation",
+        "Data Variations"
+      ],
+      [
+        "Mean Value",
+        "Statistical Analysis"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790513022,
+    "update_time": 1790513022,
+    "_id": "chapter-1 Error in measurement::ch_00018"
+  },
+  "chapter 5  ADC and DAC::ch_00042": {
+    "relation_pairs": [
+      [
+        "Comparator",
+        "Op-Amp"
+      ],
+      [
+        "Comparator",
+        "Flash Analog To Digital Converter"
+      ],
+      [
+        "Flash Analog To Digital Converter",
+        "Priority Encoder"
+      ],
+      [
+        "Digital Output",
+        "Priority Encoder"
+      ],
+      [
+        "Analog Input",
+        "Digital Output"
+      ],
+      [
+        "Comparator",
+        "V_REF"
+      ],
+      [
+        "Comparator",
+        "Reference Voltage"
+      ],
+      [
+        "2^n - 1 Comparators",
+        "Flash Analog To Digital Converter"
+      ],
+      [
+        "Comparator",
+        "Priority Encoder"
+      ],
+      [
+        "Enable Input",
+        "Priority Encoder"
+      ],
+      [
+        "Analog Input",
+        "Comparator"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790513055,
+    "update_time": 1790513055,
+    "_id": "chapter 5  ADC and DAC::ch_00042"
+  },
+  "Lab4::ch_00001": {
+    "relation_pairs": [
+      [
+        "550",
+        "ADC0808"
+      ],
+      [
+        "ADC0808",
+        "VREF(+)"
+      ],
+      [
+        "ADC0808",
+        "ADC0808 Schematic"
+      ],
+      [
+        "ADC0808",
+        "VREF(-)"
+      ],
+      [
+        "ADC0808",
+        "Power"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790513134,
+    "update_time": 1790513134,
+    "_id": "Lab4::ch_00001"
+  },
+  "chapter 5  ADC and DAC::ch_00028": {
+    "relation_pairs": [
+      [
+        "Comparator",
+        "Up/Down Counter"
+      ],
+      [
+        "Dual Slope Conversion",
+        "Up/Down Counter"
+      ],
+      [
+        "Comparator",
+        "Digital-to-Analog Converter"
+      ],
+      [
+        "Tracking Converter",
+        "Up/Down Counter"
+      ],
+      [
+        "Dual Slope Conversion",
+        "Tracking Converter"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790513151,
+    "update_time": 1790513151,
+    "_id": "chapter 5  ADC and DAC::ch_00028"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00010": {
+    "relation_pairs": [
+      [
+        "Example 3.2",
+        "Figure 3.3"
+      ],
+      [
+        "Example 3.2",
+        "Ig"
+      ],
+      [
+        "Example 3.2",
+        "Rx"
+      ],
+      [
+        "1KS",
+        "Rx"
+      ],
+      [
+        "Example 3.2",
+        "Vth"
+      ],
+      [
+        "1KS",
+        "Figure 3.3"
+      ],
+      [
+        "Figure 3.3",
+        "Rx"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00010"
+  },
+  "chapter 5  ADC and DAC::ch_00013": {
+    "relation_pairs": [
+      [
+        "12bit Dac",
+        "High Precision Resistors"
+      ],
+      [
+        "12bit Dac",
+        "R2R Ladder Dac"
+      ],
+      [
+        "Dac",
+        "R2R Ladder Dac"
+      ],
+      [
+        "Low Switch Resistances",
+        "Transistor"
+      ],
+      [
+        "Low Switch Resistances",
+        "R2R Ladder Dac"
+      ],
+      [
+        "R2R Ladder Dac",
+        "Transistor"
+      ],
+      [
+        "Cost",
+        "R2R Ladder Dac"
+      ],
+      [
+        "8bit Resolution",
+        "Dac"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "chapter 5  ADC and DAC::ch_00013"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00009": {
+    "relation_pairs": [
+      [
+        "Thevenin Equivalent Circuit",
+        "Unbalanced Wheatstone Bridge"
+      ],
+      [
+        "Galvanometer",
+        "RG"
+      ],
+      [
+        "Deflection Current",
+        "Galvanometer"
+      ],
+      [
+        "Deflection Current",
+        "Unbalanced Wheatstone Bridge"
+      ],
+      [
+        "Galvanometer",
+        "Unbalanced Wheatstone Bridge"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790513283,
+    "update_time": 1790513283,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00009"
+  },
+  "chapter-1 Error in measurement::ch_00013": {
+    "relation_pairs": [
+      [
+        "Calculations V And A",
+        "Percent Error"
+      ],
+      [
+        "Percent Error",
+        "Ratio 0.98"
+      ],
+      [
+        "Calculations V And A",
+        "Ratio 0.98"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790513330,
+    "update_time": 1790513330,
+    "_id": "chapter-1 Error in measurement::ch_00013"
+  },
+  "chapter 5  ADC and DAC::ch_00043": {
+    "relation_pairs": [
+      [
+        "IC Flash Converter",
+        "Priority Encoder"
+      ],
+      [
+        "IC Flash Converter",
+        "Latch"
+      ],
+      [
+        "IC Flash Converter",
+        "Other"
+      ],
+      [
+        "Latch",
+        "Priority Encoder"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790513396,
+    "update_time": 1790513396,
+    "_id": "chapter 5  ADC and DAC::ch_00043"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00007": {
+    "relation_pairs": [
+      [
+        "Galvanometer",
+        "Sensitivity"
+      ],
+      [
+        "Deflection",
+        "Galvanometer"
+      ],
+      [
+        "Sensitivity",
+        "Total Deflection"
+      ],
+      [
+        "Current",
+        "Total Deflection"
+      ],
+      [
+        "Deflection",
+        "Sensitivity"
+      ],
+      [
+        "Current",
+        "Deflection"
+      ],
+      [
+        "Galvanometer",
+        "Wheatstone Bridge"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790513412,
+    "update_time": 1790513412,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00007"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00033": {
+    "relation_pairs": [
+      [
+        "Capacitive Circuit",
+        "Similar Angle Bridge"
+      ],
+      [
+        "Figure 3.13",
+        "Similar Angle Bridge"
+      ],
+      [
+        "Capacitance Comparison Bridge",
+        "Similar Angle Bridge"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790513429,
+    "update_time": 1790513429,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00033"
+  },
+  "chapter 5  ADC and DAC::ch_00023": {
+    "relation_pairs": [
+      [
+        "Digital Output",
+        "Up Counter"
+      ],
+      [
+        "Comparator",
+        "Input Voltage"
+      ],
+      [
+        "A/D Converter",
+        "D/A Converter"
+      ],
+      [
+        "A/D Converter",
+        "Up Counter"
+      ],
+      [
+        "Comparator",
+        "Feedback Voltage"
+      ],
+      [
+        "D/A Converter",
+        "Feedback Voltage"
+      ],
+      [
+        "EOC",
+        "Up Counter"
+      ],
+      [
+        "Clock",
+        "Up Counter"
+      ],
+      [
+        "D/A Converter",
+        "Digital Output"
+      ],
+      [
+        "A/D Converter",
+        "Comparator"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790514714,
+    "update_time": 1790514714,
+    "_id": "chapter 5  ADC and DAC::ch_00023"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00022": {
+    "relation_pairs": [
+      [
+        "R1",
+        "R3"
+      ],
+      [
+        "Ra",
+        "Rb"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790514715,
+    "update_time": 1790514715,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00022"
+  },
+  "chapter(4) oscilloscope::ch_00004": {
+    "relation_pairs": [
+      [
+        "Electron Beam",
+        "High-Velocity Electron Beam"
+      ],
+      [
+        "Bright Spot",
+        "Phosphorescent Screen"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Vertical Deflection Plates"
+      ],
+      [
+        "Electron Beam",
+        "Vertical Deflection Plates"
+      ],
+      [
+        "Accelerating Anodes",
+        "Electron Beam"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Horizontal Deflection Plates"
+      ],
+      [
+        "Electron Beam",
+        "Focusing Anodes"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Focusing Anodes"
+      ],
+      [
+        "Accelerating Anodes",
+        "Cathode Ray Tube"
+      ],
+      [
+        "Evacuated Glass Envelope",
+        "Phosphorescent Screen"
+      ],
+      [
+        "Electron Beam",
+        "Electron Gun"
+      ],
+      [
+        "High-Velocity Electron Beam",
+        "Phosphorescent Screen"
+      ],
+      [
+        "Electron",
+        "Electron Beam"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Electron Gun"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Evacuated Glass Envelope"
+      ],
+      [
+        "Electron Beam",
+        "Horizontal Deflection Plates"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "chapter(4) oscilloscope::ch_00004"
+  },
+  "chapter-1 Error in measurement::ch_00010": {
+    "relation_pairs": [
+      [
+        "Expected Value",
+        "Percent Error"
+      ],
+      [
+        "Absolute Error",
+        "Percent Error"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790514829,
+    "update_time": 1790514829,
+    "_id": "chapter-1 Error in measurement::ch_00010"
+  },
+  "chapter 5  ADC and DAC::ch_00046": {
+    "relation_pairs": [
+      [
+        "19.53mV",
+        "Step Size"
+      ],
+      [
+        "011101",
+        "Problem 3"
+      ],
+      [
+        "000001",
+        "Problem 3"
+      ],
+      [
+        "100000",
+        "Problem 3"
+      ],
+      [
+        "1.25V",
+        "6-Bit Video D/A Converter"
+      ],
+      [
+        "19.53mV",
+        "6-Bit Video D/A Converter"
+      ],
+      [
+        "1.25V",
+        "Full Scale Range"
+      ],
+      [
+        "6-Bit Video D/A Converter",
+        "Problem 3"
+      ],
+      [
+        "111111",
+        "Problem 3"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "chapter 5  ADC and DAC::ch_00046"
+  },
+  "chapter 5  ADC and DAC::ch_00014": {
+    "relation_pairs": [
+      [
+        "Digital Input",
+        "R-2R Ladder DAC"
+      ],
+      [
+        "R-2R Ladder DAC",
+        "Weighted Sum"
+      ],
+      [
+        "D/A Conversion",
+        "R-2R Ladder DAC"
+      ],
+      [
+        "R-2R Ladder DAC",
+        "Scaling Adder"
+      ],
+      [
+        "R-2R Ladder DAC",
+        "Resistor"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790514847,
+    "update_time": 1790514847,
+    "_id": "chapter 5  ADC and DAC::ch_00014"
+  },
+  "chapter 5  ADC and DAC::ch_00030": {
+    "relation_pairs": [
+      [
+        "Control Clock Logic",
+        "D7 (MSB)"
+      ],
+      [
+        "D/A Comparator",
+        "D0 (LSB)"
+      ],
+      [
+        "Control Clock Logic",
+        "D0 (LSB)"
+      ],
+      [
+        "Q1",
+        "Q2"
+      ],
+      [
+        "D0 (LSB)",
+        "V_in"
+      ],
+      [
+        "D/A Comparator",
+        "V_fb"
+      ],
+      [
+        "Control Clock Logic",
+        "Start"
+      ],
+      [
+        "D7 (MSB)",
+        "V_in"
+      ],
+      [
+        "Q0",
+        "Q1"
+      ],
+      [
+        "+V",
+        "D/A Comparator"
+      ],
+      [
+        "D/A Comparator",
+        "D7 (MSB)"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "chapter 5  ADC and DAC::ch_00030"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00013": {
+    "relation_pairs": [
+      [
+        "Figure 3.4",
+        "Rg"
+      ],
+      [
+        "Circuit",
+        "R3"
+      ],
+      [
+        "Circuit",
+        "R2"
+      ],
+      [
+        "Circuit",
+        "R1"
+      ],
+      [
+        "Figure 3.4",
+        "R1"
+      ],
+      [
+        "Circuit",
+        "R4"
+      ],
+      [
+        "Example 3.3",
+        "Thevenin Equivalent Circuit"
+      ],
+      [
+        "Figure 3.4",
+        "R3"
+      ],
+      [
+        "Figure 3.4",
+        "R2"
+      ],
+      [
+        "E",
+        "Figure 3.4"
+      ],
+      [
+        "Circuit",
+        "Rg"
+      ],
+      [
+        "Example 3.3",
+        "Figure 3.4"
+      ],
+      [
+        "Figure 3.4",
+        "R4"
+      ],
+      [
+        "Circuit",
+        "Figure 3.4"
+      ],
+      [
+        "Circuit",
+        "E"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1790515120,
+    "update_time": 1790515120,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00013"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00021": {
+    "relation_pairs": [
+      [
+        "Kelvin Bridge",
+        "Low Resistance"
+      ],
+      [
+        "Rlc",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Kelvin Bridge",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Kelvin Bridge",
+        "Lead Resistance"
+      ],
+      [
+        "Lead Resistance",
+        "Rlc"
+      ],
+      [
+        "Contact Resistance",
+        "Kelvin Bridge"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790515121,
+    "update_time": 1790515121,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00021"
+  },
+  "chapter-1 Error in measurement::ch_00011": {
+    "relation_pairs": [
+      [
+        "Measured Value",
+        "Relative Accuracy"
+      ],
+      [
+        "Percent Error",
+        "Relative Accuracy"
+      ],
+      [
+        "Percent Accuracy",
+        "Relative Accuracy"
+      ],
+      [
+        "Expected Value",
+        "Relative Accuracy"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790515138,
+    "update_time": 1790515138,
+    "_id": "chapter-1 Error in measurement::ch_00011"
+  },
+  "chapter-1 Error in measurement::ch_00014": {
+    "relation_pairs": [
+      [
+        "Measurement",
+        "Precision"
+      ],
+      [
+        "Measurement",
+        "Xn"
+      ],
+      [
+        "Average Of Xn",
+        "Measurement"
+      ],
+      [
+        "Average Of Xn",
+        "Precision"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790515219,
+    "update_time": 1790515219,
+    "_id": "chapter-1 Error in measurement::ch_00014"
+  },
+  "Lab1::ch_00009": {
+    "relation_pairs": [
+      [
+        "10 V Input Voltage",
+        "Output Voltage (True)"
+      ],
+      [
+        "Insertion Error",
+        "Output Voltage (True)"
+      ],
+      [
+        "100 KΩ Resistor",
+        "Output Voltage (Measured)"
+      ],
+      [
+        "Insertion Error",
+        "Output Voltage (Measured)"
+      ],
+      [
+        "100 KΩ Resistor",
+        "Insertion Error"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790515236,
+    "update_time": 1790515236,
+    "_id": "Lab1::ch_00009"
+  },
+  "Lab1::ch_00000": {
+    "relation_pairs": [
+      [
+        "Error Analysis",
+        "Experiment 1"
+      ],
+      [
+        "Error Analysis",
+        "Physical Quantity"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790515253,
+    "update_time": 1790515253,
+    "_id": "Lab1::ch_00000"
+  },
+  "chapter 5  ADC and DAC::ch_00047": {
+    "relation_pairs": [
+      [
+        "19.53mV",
+        "Output Voltage"
+      ],
+      [
+        "1.23039V",
+        "19.53mV"
+      ],
+      [
+        "19.53mV",
+        "624.96mV"
+      ],
+      [
+        "624.96mV",
+        "Output Voltage"
+      ],
+      [
+        "19.53mV",
+        "566.32mV"
+      ],
+      [
+        "1.23039V",
+        "Output Voltage"
+      ],
+      [
+        "566.32mV",
+        "Output Voltage"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790515350,
+    "update_time": 1790515350,
+    "_id": "chapter 5  ADC and DAC::ch_00047"
+  },
+  "Lab3::ch_00003": {
+    "relation_pairs": [
+      [
+        "Delta O",
+        "Experimental Configuration Data"
+      ],
+      [
+        "F2 Channel 2",
+        "Frequency Parameter"
+      ],
+      [
+        "Experimental Configuration Data",
+        "F2 Channel 2"
+      ],
+      [
+        "F1 Channel 1",
+        "Frequency Parameter"
+      ],
+      [
+        "Experimental Configuration Data",
+        "Output Figure"
+      ],
+      [
+        "Experimental Configuration Data",
+        "F1 Channel 1"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "Lab3::ch_00003"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00017": {
+    "relation_pairs": [
+      [
+        "Thevenin's Equivalent Circuit",
+        "VRN"
+      ],
+      [
+        "R",
+        "Rth"
+      ],
+      [
+        "Rth",
+        "Thevenin's Equivalent Circuit"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790515368,
+    "update_time": 1790515368,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00017"
+  },
+  "chapter 5  ADC and DAC::ch_00017": {
+    "relation_pairs": [
+      [
+        "B-2V",
+        "V"
+      ],
+      [
+        "B4Vr+",
+        "V"
+      ],
+      [
+        "R",
+        "Toop-Amp"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790515450,
+    "update_time": 1790515450,
+    "_id": "chapter 5  ADC and DAC::ch_00017"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00006": {
+    "relation_pairs": [
+      [
+        "R1",
+        "R3"
+      ],
+      [
+        "R1",
+        "Rx"
+      ],
+      [
+        "R3",
+        "Wheatstone Bridge"
+      ],
+      [
+        "R1",
+        "R2"
+      ],
+      [
+        "Resistance Calculation",
+        "Rx"
+      ],
+      [
+        "R2",
+        "R3"
+      ],
+      [
+        "R2",
+        "Rx"
+      ],
+      [
+        "Rx",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Wheatstone Bridge"
+      ],
+      [
+        "R1",
+        "Wheatstone Bridge"
+      ],
+      [
+        "R3",
+        "Rx"
+      ],
+      [
+        "R4",
+        "Wheatstone Bridge"
+      ],
+      [
+        "R2",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Resistance Calculation"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1790515467,
+    "update_time": 1790515467,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00006"
+  },
+  "chapter 5  ADC and DAC::ch_00032": {
+    "relation_pairs": [
+      [
+        "8-bit D/A Converter",
+        "Clock Period"
+      ],
+      [
+        "8-bit D/A Converter",
+        "Analog Input Voltage"
+      ],
+      [
+        "1011 0100",
+        "Analog Input Voltage"
+      ],
+      [
+        "1011 0100",
+        "8-bit D/A Converter"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790515515,
+    "update_time": 1790515515,
+    "_id": "chapter 5  ADC and DAC::ch_00032"
+  },
+  "Lab4::ch_00004": {
+    "relation_pairs": [
+      [
+        "Analog Measured Input Binary Values",
+        "Digital Output Code"
+      ],
+      [
+        "Analog Input",
+        "Digital Output Code"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790515595,
+    "update_time": 1790515595,
+    "_id": "Lab4::ch_00004"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00026": {
+    "relation_pairs": [
+      [
+        "Real Numbers",
+        "Vector Space Definition"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790515597,
+    "update_time": 1790515597,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00026"
+  },
+  "Lab1::ch_00003": {
+    "relation_pairs": [
+      [
+        "Measured Resistance",
+        "Percentage Error"
+      ],
+      [
+        "Average Resistance",
+        "Resistor Analysis"
+      ],
+      [
+        "Percentage Error",
+        "Resistor Analysis"
+      ],
+      [
+        "Color Code",
+        "True Value"
+      ],
+      [
+        "Measured Resistance",
+        "Resistor Analysis"
+      ],
+      [
+        "Resistor Analysis",
+        "Resistor Sample"
+      ],
+      [
+        "Deviation",
+        "Measured Resistance"
+      ],
+      [
+        "Resistor Sample",
+        "True Value"
+      ],
+      [
+        "Resistor Analysis",
+        "True Value"
+      ],
+      [
+        "Average Resistance",
+        "Measured Resistance"
+      ],
+      [
+        "Average Resistance",
+        "Deviation"
+      ],
+      [
+        "Deviation",
+        "Resistor Analysis"
+      ],
+      [
+        "Average Resistance",
+        "Resistor Sample"
+      ],
+      [
+        "Measured Resistance",
+        "Resistor Sample"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "Lab1::ch_00003"
+  },
+  "chapter-1 Error in measurement::ch_00005": {
+    "relation_pairs": [
+      [
+        "Full-Scale Setting",
+        "Incorrect Readings"
+      ],
+      [
+        "Faulty Display Circuit",
+        "Incorrect Readings"
+      ],
+      [
+        "Incorrect Readings",
+        "Irregular Spring Tension"
+      ],
+      [
+        "Analog Meters",
+        "Irregular Spring Tension"
+      ],
+      [
+        "Calibration Error",
+        "Incorrect Readings"
+      ],
+      [
+        "Correction Factors",
+        "Incorrect Readings"
+      ],
+      [
+        "Friction In Bearings",
+        "Incorrect Readings"
+      ],
+      [
+        "Incorrect Readings",
+        "Instrument Calibration"
+      ],
+      [
+        "Incorrect Readings",
+        "Suitable Instrument Selection"
+      ],
+      [
+        "Friction In Bearings",
+        "Moving Components"
+      ],
+      [
+        "Incorrect Readings",
+        "Zero Setting"
+      ],
+      [
+        "Digital Instruments",
+        "Faulty Display Circuit"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "chapter-1 Error in measurement::ch_00005"
+  },
+  "Lab1::ch_00011": {
+    "relation_pairs": [
+      [
+        "Digital AVO Meter",
+        "Insertion Error"
+      ],
+      [
+        "Analog Meter",
+        "Digital AVO Meter"
+      ],
+      [
+        "Analog Meter",
+        "Insertion Error"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790515712,
+    "update_time": 1790515712,
+    "_id": "Lab1::ch_00011"
+  },
+  "chapter-1 Error in measurement::ch_00020": {
+    "relation_pairs": [
+      [
+        "Sample Size",
+        "Standard Deviation"
+      ],
+      [
+        "Mean",
+        "Standard Deviation"
+      ],
+      [
+        "Average Deviation",
+        "Sample Size"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790515759,
+    "update_time": 1790515759,
+    "_id": "chapter-1 Error in measurement::ch_00020"
+  },
+  "chapter 5  ADC and DAC::ch_00004": {
+    "relation_pairs": [
+      [
+        "Dac",
+        "± 0.01% F.S."
+      ],
+      [
+        "9.375 V",
+        "± 0.01% F.S."
+      ],
+      [
+        "Accuracy",
+        "Full-Scale Error"
+      ],
+      [
+        "Dac",
+        "Full-Scale Error"
+      ],
+      [
+        "9.375 V",
+        "± 0.9375 mV"
+      ],
+      [
+        "F.S.",
+        "Full-Scale Error"
+      ],
+      [
+        "± 0.01% F.S.",
+        "± 0.9375 mV"
+      ],
+      [
+        "9.375 V",
+        "Dac"
+      ],
+      [
+        "Full-Scale Error",
+        "± 0.9375 mV"
+      ],
+      [
+        "Full-Scale Error",
+        "± 0.01% F.S."
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790515964,
+    "update_time": 1790515964,
+    "_id": "chapter 5  ADC and DAC::ch_00004"
+  },
+  "chapter 5  ADC and DAC::ch_00051": {
+    "relation_pairs": [
+      [
+        "5 V",
+        "5.156 V"
+      ],
+      [
+        "5 V + 1/2 LSB",
+        "5.156 V"
+      ],
+      [
+        "43.12 percent",
+        "5 V"
+      ],
+      [
+        "4.844 V",
+        "5 V - 1/2 LSB"
+      ],
+      [
+        "4.844 V",
+        "5 V"
+      ],
+      [
+        "156.25mV",
+        "5 V - 1/2 LSB"
+      ],
+      [
+        "156.25mV",
+        "5.156 V"
+      ],
+      [
+        "156.25mV",
+        "4.844 V"
+      ],
+      [
+        "312.5mV",
+        "5 V"
+      ],
+      [
+        "156.25mV",
+        "5 V + 1/2 LSB"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "chapter 5  ADC and DAC::ch_00051"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00003": {
+    "relation_pairs": [
+      [
+        "Null Detector",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Resistor R3",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Resistor R4",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Balance Condition",
+        "Null Detector"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R4"
+      ],
+      [
+        "Balance Condition",
+        "Resistor"
+      ],
+      [
+        "Balance Condition",
+        "Resistor R3"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790515998,
+    "update_time": 1790515998,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00003"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00031": {
+    "relation_pairs": [
+      [
+        "AC Bridge",
+        "Z1"
+      ],
+      [
+        "Example 3.7",
+        "Figure 3.7"
+      ],
+      [
+        "AC Bridge",
+        "Zx"
+      ],
+      [
+        "AC Bridge",
+        "Z3"
+      ],
+      [
+        "AC Bridge",
+        "Z2"
+      ],
+      [
+        "Z2",
+        "Z3"
+      ],
+      [
+        "AC Bridge",
+        "Example 3.7"
+      ],
+      [
+        "AC Bridge",
+        "Detector"
+      ],
+      [
+        "Bridge Balance Condition",
+        "Zx"
+      ],
+      [
+        "Z1",
+        "Zx"
+      ],
+      [
+        "Example 3.7",
+        "Figure 3.12"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00031"
+  },
+  "Lab2::ch_00000": {
+    "relation_pairs": [
+      [
+        "DC Bridge Circuit",
+        "R3"
+      ],
+      [
+        "DC Bridge Circuit",
+        "Rx"
+      ],
+      [
+        "Bridge Configuration",
+        "Impedance Measurement"
+      ],
+      [
+        "Experiment 2",
+        "Part A: DC Bridge"
+      ],
+      [
+        "R1",
+        "R3"
+      ],
+      [
+        "Bridge Configuration",
+        "Experiment 2"
+      ],
+      [
+        "DC Bridge Circuit",
+        "R1"
+      ],
+      [
+        "DC Bridge Circuit",
+        "E"
+      ],
+      [
+        "Balance Condition",
+        "Bridge Configuration"
+      ],
+      [
+        "Part A: DC Bridge",
+        "R3"
+      ],
+      [
+        "Part A: DC Bridge",
+        "Rx"
+      ],
+      [
+        "DC Bridge Circuit",
+        "R2"
+      ],
+      [
+        "DC Bridge Circuit",
+        "Part A: DC Bridge"
+      ],
+      [
+        "Bridge Configuration",
+        "Precise Resistance Measurement"
+      ],
+      [
+        "Part A: DC Bridge",
+        "R1"
+      ],
+      [
+        "Balance Condition",
+        "Potentiometer"
+      ],
+      [
+        "Bridge Configuration",
+        "Potentiometer"
+      ],
+      [
+        "Balance Condition",
+        "DC Bridge Circuit"
+      ],
+      [
+        "DC Bridge Circuit",
+        "Experiment 2"
+      ]
+    ],
+    "count": 19,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Lab2::ch_00000"
+  },
+  "chapter-1 Error in measurement::ch_00019": {
+    "relation_pairs": [
+      [
+        "Arithmetic Mean",
+        "Deviation"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790516208,
+    "update_time": 1790516208,
+    "_id": "chapter-1 Error in measurement::ch_00019"
+  },
+  "Lab4::ch_00003": {
+    "relation_pairs": [
+      [
+        "Circuit",
+        "Digital Output Code"
+      ],
+      [
+        "Cross Multiplication Method",
+        "Digital Output Code"
+      ],
+      [
+        "Circuit",
+        "Fig.1"
+      ],
+      [
+        "Analog Input",
+        "Circuit"
+      ],
+      [
+        "Function Generator",
+        "Square Wave"
+      ],
+      [
+        "8-bit Digital Code",
+        "Digital Output Code"
+      ],
+      [
+        "Circuit",
+        "Power Supply"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "Lab4::ch_00003"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00032": {
+    "relation_pairs": [
+      [
+        "Capacitive Element",
+        "Unknown Impedance Zx"
+      ],
+      [
+        "Capacitive Element",
+        "Series Resistor And Capacitor"
+      ],
+      [
+        "Series Resistor And Capacitor",
+        "Unknown Impedance Zx"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790516353,
+    "update_time": 1790516353,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00032"
+  },
+  "chapter 5  ADC and DAC::ch_00008": {
+    "relation_pairs": [
+      [
+        "Offset Error",
+        "Positive Offset Error"
+      ],
+      [
+        "Digital-to-Analog Converter",
+        "Offset Error"
+      ],
+      [
+        "Digital Input",
+        "Offset Error"
+      ],
+      [
+        "Analog Output",
+        "Digital-to-Analog Converter"
+      ],
+      [
+        "Actual Output",
+        "Offset Error"
+      ],
+      [
+        "Ideal Output",
+        "Offset Error"
+      ],
+      [
+        "Negative Offset Error",
+        "Offset Error"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790516354,
+    "update_time": 1790516354,
+    "_id": "chapter 5  ADC and DAC::ch_00008"
+  },
+  "chapter(4) oscilloscope::ch_00008": {
+    "relation_pairs": [
+      [
+        "Horizontal Amplifier",
+        "Sine-Wave Signal"
+      ],
+      [
+        "Cathode Ray Tube",
+        "Lissajous Figure"
+      ],
+      [
+        "Frequency Measurement",
+        "Lissajous Figure"
+      ],
+      [
+        "Sine-Wave Signal",
+        "Vertical Amplifier"
+      ],
+      [
+        "Lissajous Figure",
+        "Sine-Wave Signal"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790516481,
+    "update_time": 1790516481,
+    "_id": "chapter(4) oscilloscope::ch_00008"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00027": {
+    "relation_pairs": [
+      [
+        "Complex Impedance",
+        "Impedance"
+      ],
+      [
+        "Impedance",
+        "Pure Resistance"
+      ],
+      [
+        "Ac Bridge",
+        "Ac Voltage Source"
+      ],
+      [
+        "Ac Bridge",
+        "Capacitance"
+      ],
+      [
+        "Ac Bridge",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Ac Bridge",
+        "Inductance"
+      ],
+      [
+        "Ac Voltage Source",
+        "Impedance"
+      ],
+      [
+        "Ac Bridge",
+        "Impedance"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790516756,
+    "update_time": 1790516756,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00027"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00011": {
+    "relation_pairs": [
+      [
+        "Resistance Formula",
+        "Thevenin Resistance"
+      ],
+      [
+        "Circuit Equivalent Resistance Formula",
+        "R_1"
+      ],
+      [
+        "Circuit Equivalent Resistance Formula",
+        "R_3"
+      ],
+      [
+        "I_g",
+        "Thevenin Resistance"
+      ],
+      [
+        "Circuit Equivalent Resistance Formula",
+        "R_2"
+      ],
+      [
+        "R_th",
+        "Thevenin Resistance"
+      ],
+      [
+        "24 Milliamps",
+        "Thevenin Resistance"
+      ],
+      [
+        "13.6 Ohms",
+        "Thevenin Resistance"
+      ],
+      [
+        "Thevenin Resistance",
+        "V_th"
+      ],
+      [
+        "1.665 Kiloohms",
+        "Thevenin Resistance"
+      ],
+      [
+        "Circuit Equivalent Resistance Formula",
+        "Thevenin Resistance"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00011"
+  },
+  "chapter(4) oscilloscope::ch_00003": {
+    "relation_pairs": [
+      [
+        "Cathode",
+        "Electron Beam"
+      ],
+      [
+        "Electron Beam",
+        "Fluorescent Y-Plates"
+      ],
+      [
+        "Cathode",
+        "Cathode Tube Ray"
+      ],
+      [
+        "Electron Beam",
+        "Grid Focusing Anode"
+      ],
+      [
+        "Electron Beam",
+        "X-Plates"
+      ],
+      [
+        "Cathode Tube Ray",
+        "Electron Beam"
+      ],
+      [
+        "Cathode Accelerator Anodes",
+        "Electron Beam"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790517355,
+    "update_time": 1790517355,
+    "_id": "chapter(4) oscilloscope::ch_00003"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00001": {
+    "relation_pairs": [
+      [
+        "Bridge Circuit",
+        "Kelvin Bridge"
+      ],
+      [
+        "Bridge Circuit",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Sensitivity Analysis",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Kelvin Bridge",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Bridge Circuit",
+        "Null-Indication Principle"
+      ],
+      [
+        "Unbalance State",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Direct Current Bridge",
+        "Kelvin Bridge"
+      ],
+      [
+        "Direct Current Bridge",
+        "Wheatstone Bridge"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790517390,
+    "update_time": 1790517390,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00001"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00015": {
+    "relation_pairs": [
+      [
+        "Ohm",
+        "R<sub>th</sub>"
+      ],
+      [
+        "R<sub>th</sub>",
+        "Thevenin's Equivalent Resistance"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790517519,
+    "update_time": 1790517519,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00015"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00020": {
+    "relation_pairs": [
+      [
+        "Current Through Galvanometer",
+        "Total Resistance"
+      ],
+      [
+        "Current Through Galvanometer",
+        "Galvanometer"
+      ],
+      [
+        "Deflector",
+        "Resistance Change Percentage"
+      ],
+      [
+        "Calculated Current Value",
+        "Voltage Value"
+      ],
+      [
+        "Deflector",
+        "Galvanometer"
+      ],
+      [
+        "Current Through Galvanometer",
+        "Input Voltage"
+      ],
+      [
+        "Calculated Current Value",
+        "Current Through Galvanometer"
+      ],
+      [
+        "Calculated Current Value",
+        "Resistance Value"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790517522,
+    "update_time": 1790517522,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00020"
+  },
+  "chapter 5  ADC and DAC::ch_00031": {
+    "relation_pairs": [
+      [
+        "16-bit Converter",
+        "Successive Approximation Converter"
+      ],
+      [
+        "Laboratory Functions",
+        "Successive Approximation Converter"
+      ],
+      [
+        "10-20 Microseconds",
+        "Successive Approximation Converter"
+      ],
+      [
+        "Successive Approximation Converter",
+        "Successive Approximation Search Tree"
+      ],
+      [
+        "12-bit Converter",
+        "Successive Approximation Converter"
+      ],
+      [
+        "10-bit Converter",
+        "Successive Approximation Converter"
+      ],
+      [
+        "4-bit A/D D/A Output",
+        "Successive Approximation Converter"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "chapter 5  ADC and DAC::ch_00031"
+  },
+  "chapter 5  ADC and DAC::ch_00000": {
+    "relation_pairs": [
+      [
+        "A/D And D/A",
+        "D/a Converter"
+      ],
+      [
+        "Chapter 5",
+        "D/a Converter"
+      ],
+      [
+        "A/D And D/A",
+        "A/d Converter"
+      ],
+      [
+        "A/d Converter",
+        "Chapter 5"
+      ],
+      [
+        "D/a Converter",
+        "Data Converter Circuits"
+      ],
+      [
+        "A/d Converter",
+        "Data Converter Circuits"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "chapter 5  ADC and DAC::ch_00000"
+  },
+  "chapter 5  ADC and DAC::ch_00003": {
+    "relation_pairs": [
+      [
+        "D/A Conversion",
+        "Digital Domain"
+      ],
+      [
+        "Filtering",
+        "Staircase Output"
+      ],
+      [
+        "Digital Domain",
+        "Staircase Output"
+      ],
+      [
+        "Analog Output",
+        "Filtering"
+      ],
+      [
+        "D/A Conversion",
+        "Staircase Output"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790517622,
+    "update_time": 1790517622,
+    "_id": "chapter 5  ADC and DAC::ch_00003"
+  },
+  "chapter 5  ADC and DAC::ch_00009": {
+    "relation_pairs": [
+      [
+        "Full-Scale Digital Code",
+        "Gain Error"
+      ],
+      [
+        "Gain Error",
+        "LSB"
+      ],
+      [
+        "Binary Input",
+        "Gain Error"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790517639,
+    "update_time": 1790517639,
+    "_id": "chapter 5  ADC and DAC::ch_00009"
+  },
+  "Lab1::ch_00010": {
+    "relation_pairs": [
+      [
+        "Resistance Measurement",
+        "Resistor Measurement Data"
+      ],
+      [
+        "Insertion Error",
+        "Resistor Measurement Data"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790517751,
+    "update_time": 1790517751,
+    "_id": "Lab1::ch_00010"
+  },
+  "chapter 5  ADC and DAC::ch_00021": {
+    "relation_pairs": [
+      [
+        "3-Bit Conversion",
+        "5V"
+      ],
+      [
+        "3-Bit Conversion",
+        "Quantization"
+      ],
+      [
+        "3-Bit Conversion",
+        "Step Size"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790517753,
+    "update_time": 1790517753,
+    "_id": "chapter 5  ADC and DAC::ch_00021"
+  },
+  "chapter 5  ADC and DAC::ch_00049": {
+    "relation_pairs": [
+      [
+        "5-Bit D/A Converter",
+        "Full-Scale Voltage"
+      ],
+      [
+        "00010",
+        "Problem 5"
+      ],
+      [
+        "5-Bit D/A Converter",
+        "± 1/2 LSB"
+      ],
+      [
+        "10000",
+        "Problem 5"
+      ],
+      [
+        "00001",
+        "Problem 5"
+      ],
+      [
+        "10000",
+        "5-Bit D/A Converter"
+      ],
+      [
+        "00010",
+        "5-Bit D/A Converter"
+      ],
+      [
+        "00001",
+        "5-Bit D/A Converter"
+      ],
+      [
+        "5-Bit D/A Converter",
+        "Problem 5"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "chapter 5  ADC and DAC::ch_00049"
+  },
+  "chapter-1 Error in measurement::ch_00017": {
+    "relation_pairs": [
+      [
+        "Measurement",
+        "Measurement Error"
+      ],
+      [
+        "Experimental Factors",
+        "Measurement Error"
+      ],
+      [
+        "Measurement",
+        "Statistical Analysis of Errors"
+      ],
+      [
+        "Measurement",
+        "Physical Quantity"
+      ],
+      [
+        "Experimental Factors",
+        "Measurement"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790517899,
+    "update_time": 1790517899,
+    "_id": "chapter-1 Error in measurement::ch_00017"
+  },
+  "chapter 5  ADC and DAC::ch_00019": {
+    "relation_pairs": [
+      [
+        "Low-Pass Filter",
+        "Sample And Hold"
+      ],
+      [
+        "Analog Signal",
+        "Digital Signal"
+      ],
+      [
+        "A/D Converter",
+        "Sampled-Data Signal"
+      ],
+      [
+        "A/D Conversion System",
+        "Digital Signal"
+      ],
+      [
+        "A/D Conversion System",
+        "Clock"
+      ],
+      [
+        "A/D Conversion System",
+        "Sample And Hold"
+      ],
+      [
+        "A/D Conversion System",
+        "Low-Pass Filter"
+      ],
+      [
+        "A/D Conversion System",
+        "A/D Converter"
+      ],
+      [
+        "Sample And Hold",
+        "Sampled-Data Signal"
+      ],
+      [
+        "Sampled-Data Signal",
+        "Shannon's Sampling Theorem"
+      ],
+      [
+        "A/D Conversion System",
+        "Analog Signal"
+      ],
+      [
+        "A/D Converter",
+        "Digital Signal"
+      ],
+      [
+        "Analog Signal",
+        "Low-Pass Filter"
+      ],
+      [
+        "Clock",
+        "Shannon's Sampling Theorem"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "chapter 5  ADC and DAC::ch_00019"
+  },
+  "chapter 5  ADC and DAC::ch_00048": {
+    "relation_pairs": [
+      [
+        "16mV Output",
+        "4 mV"
+      ],
+      [
+        "4 mV",
+        "4.092 V"
+      ],
+      [
+        "10-Bit Instrumentation D/A Converter",
+        "1023"
+      ],
+      [
+        "1023",
+        "4.092 V"
+      ],
+      [
+        "0000000100",
+        "10-Bit Instrumentation D/A Converter"
+      ],
+      [
+        "10-Bit Instrumentation D/A Converter",
+        "16mV Output"
+      ],
+      [
+        "10-Bit Instrumentation D/A Converter",
+        "4.092 V"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "chapter 5  ADC and DAC::ch_00048"
+  },
+  "chapter-1 Error in measurement::ch_00007": {
+    "relation_pairs": [
+      [
+        "Measurement",
+        "Systematic Errors"
+      ],
+      [
+        "Measurement",
+        "Random Errors"
+      ],
+      [
+        "Gross Errors",
+        "Measurement"
+      ],
+      [
+        "Gross Errors",
+        "Random Errors"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790517985,
+    "update_time": 1790517985,
+    "_id": "chapter-1 Error in measurement::ch_00007"
+  },
+  "chapter 5  ADC and DAC::ch_00006": {
+    "relation_pairs": [
+      [
+        "Analog Level",
+        "Resolution"
+      ],
+      [
+        "Lsb",
+        "Resolution"
+      ],
+      [
+        "Digital To Analog Converter",
+        "Lsb"
+      ],
+      [
+        "Digital To Analog Converter",
+        "Resolution"
+      ],
+      [
+        "Lsb",
+        "Reference Voltage"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790518032,
+    "update_time": 1790518032,
+    "_id": "chapter 5  ADC and DAC::ch_00006"
+  },
+  "chapter 5  ADC and DAC::ch_00018": {
+    "relation_pairs": [
+      [
+        "Binary Weighted DAC",
+        "R-2R Ladder DAC"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790518034,
+    "update_time": 1790518034,
+    "_id": "chapter 5  ADC and DAC::ch_00018"
+  },
+  "Lab1::ch_00005": {
+    "relation_pairs": [
+      [
+        "Resistor Data Table",
+        "Squared Deviation"
+      ],
+      [
+        "Deviation",
+        "Standard Mean Resistance"
+      ],
+      [
+        "Distribution Curve",
+        "Sample 1"
+      ],
+      [
+        "Percentage Error",
+        "Resistor Data Table"
+      ],
+      [
+        "Deviation",
+        "Squared Deviation"
+      ],
+      [
+        "Distribution Curve",
+        "Sample 2"
+      ],
+      [
+        "Distribution Curve",
+        "Resistor Resistance"
+      ],
+      [
+        "Resistor Data Table",
+        "Resistor Resistance"
+      ],
+      [
+        "Resistor Resistance",
+        "Standard Mean Resistance"
+      ],
+      [
+        "Resistor",
+        "Resistor Resistance"
+      ],
+      [
+        "Deviation",
+        "Resistor Data Table"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Lab1::ch_00005"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00025": {
+    "relation_pairs": [
+      [
+        "Murray Loop",
+        "R1"
+      ],
+      [
+        "Damaged Connector",
+        "Good Connector"
+      ],
+      [
+        "Good Connector",
+        "Short-Circuit At End Of The Line"
+      ],
+      [
+        "Applications On D.C Bridges",
+        "Murray Loop"
+      ],
+      [
+        "Murray Loop",
+        "R2"
+      ],
+      [
+        "B",
+        "Good Connector"
+      ],
+      [
+        "Lx",
+        "Resistance Ground Connection Error"
+      ],
+      [
+        "La",
+        "Murray Loop"
+      ],
+      [
+        "Damaged Connector",
+        "Lb"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1790518184,
+    "update_time": 1790518184,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00025"
+  },
+  "chapter-1 Error in measurement::ch_00024": {
+    "relation_pairs": [
+      [
+        "120 V",
+        "5%"
+      ],
+      [
+        "5%",
+        "Limiting Error"
+      ],
+      [
+        "120 V",
+        "Limiting Error"
+      ],
+      [
+        "300 V",
+        "Limiting Error"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790518251,
+    "update_time": 1790518251,
+    "_id": "chapter-1 Error in measurement::ch_00024"
+  },
+  "Lab1::ch_00007": {
+    "relation_pairs": [
+      [
+        "Insertion Error",
+        "Part B"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1790518268,
+    "update_time": 1790518268,
+    "_id": "Lab1::ch_00007"
+  },
+  "chapter-1 Error in measurement::ch_00015": {
+    "relation_pairs": [
+      [
+        "Laboratory",
+        "Set Of Ten Measurements"
+      ],
+      [
+        "Fourth Measurement",
+        "Precision"
+      ],
+      [
+        "Fourth Measurement",
+        "Set Of Ten Measurements"
+      ],
+      [
+        "Fourth Measurement",
+        "Voltage"
+      ],
+      [
+        "Set Of Ten Measurements",
+        "Voltage"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790518315,
+    "update_time": 1790518315,
+    "_id": "chapter-1 Error in measurement::ch_00015"
+  },
+  "chapter-1 Error in measurement::ch_00023": {
+    "relation_pairs": [
+      [
+        "Limiting Errors",
+        "Voltmeter"
+      ],
+      [
+        "120 V Source",
+        "300 V Voltmeter"
+      ],
+      [
+        "Limiting Errors",
+        "Standard Deviation"
+      ],
+      [
+        "Full-Scale Reading",
+        "Limiting Errors"
+      ],
+      [
+        "300 V Voltmeter",
+        "Full-Scale Reading"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790518459,
+    "update_time": 1790518459,
+    "_id": "chapter-1 Error in measurement::ch_00023"
+  },
+  "Lab4::ch_00000": {
+    "relation_pairs": [
+      [
+        "Experiment 4",
+        "Function Generator"
+      ],
+      [
+        "ADC0808",
+        "CLOCK IN"
+      ],
+      [
+        "ADC0808",
+        "Experiment 4"
+      ],
+      [
+        "ADC0808",
+        "Successive Approximation"
+      ],
+      [
+        "ADC0808",
+        "Analog-to-Digital Converter"
+      ],
+      [
+        "ADC0808",
+        "ALE"
+      ],
+      [
+        "ADC0808",
+        "VREF(+)"
+      ],
+      [
+        "Experiment 4",
+        "Resistors"
+      ],
+      [
+        "Experiment 4",
+        "Wires"
+      ],
+      [
+        "ADC0808",
+        "EOC"
+      ],
+      [
+        "Experiment 4",
+        "Light-Emitting Diode"
+      ],
+      [
+        "ADC0808",
+        "Complementary Metal-Oxide-Semiconductor Technology"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Lab4::ch_00000"
+  },
+  "chapter 5  ADC and DAC::ch_00037": {
+    "relation_pairs": [
+      [
+        "Counter",
+        "Time t 2"
+      ],
+      [
+        "Op Amp Integrator",
+        "Time t 1"
+      ],
+      [
+        "Comparator",
+        "Op Amp Integrator"
+      ],
+      [
+        "Op Amp Integrator",
+        "Switch S 1"
+      ],
+      [
+        "Clock",
+        "Counter"
+      ],
+      [
+        "Conversion Process",
+        "Op Amp Integrator"
+      ],
+      [
+        "Conversion Process",
+        "Time t 2"
+      ],
+      [
+        "Switch S 1",
+        "V in"
+      ],
+      [
+        "Conversion Process",
+        "Counter"
+      ],
+      [
+        "Time t 1",
+        "Time t 2"
+      ],
+      [
+        "Clock",
+        "Control Logic"
+      ]
+    ],
+    "count": 11,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "chapter 5  ADC and DAC::ch_00037"
+  },
+  "chapter(4) oscilloscope::ch_00002": {
+    "relation_pairs": [
+      [
+        "Line Signal",
+        "Vertical Amplifier"
+      ],
+      [
+        "CRO",
+        "Horizontal Time Base Trigger Amplifier Generator Circuit"
+      ],
+      [
+        "Vertical Amplifier",
+        "Vertical Deflection Plates"
+      ],
+      [
+        "CRO",
+        "Horizontal Deflection Plates"
+      ],
+      [
+        "Low Voltage Supply",
+        "Vertical Amplifier"
+      ],
+      [
+        "CRO",
+        "Vertical Deflection Plates"
+      ],
+      [
+        "Electron Beam",
+        "Horizontal Deflection Plates"
+      ],
+      [
+        "Horizontal Time Base Trigger Amplifier Generator Circuit",
+        "Low Voltage Supply"
+      ],
+      [
+        "CRO",
+        "CRT HV Supply"
+      ],
+      [
+        "CRO",
+        "Screen"
+      ],
+      [
+        "CRO",
+        "Electron Gun"
+      ],
+      [
+        "Electron Beam",
+        "Vertical Deflection Plates"
+      ],
+      [
+        "CRO",
+        "Vertical Amplifier"
+      ],
+      [
+        "Horizontal Deflection Plates",
+        "Horizontal Time Base Trigger Amplifier Generator Circuit"
+      ],
+      [
+        "Electron Beam",
+        "Screen"
+      ],
+      [
+        "Electron Beam",
+        "Electron Gun"
+      ],
+      [
+        "Electron Beam",
+        "Luminous Spot"
+      ],
+      [
+        "CRT HV Supply",
+        "Electron Gun"
+      ],
+      [
+        "Luminous Spot",
+        "Screen"
+      ],
+      [
+        "CRO",
+        "Low Voltage Supply"
+      ]
+    ],
+    "count": 20,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "chapter(4) oscilloscope::ch_00002"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00036": {
+    "relation_pairs": [
+      [
+        "Balance Equation",
+        "Capacitance"
+      ],
+      [
+        "Balance Equation",
+        "Resistance"
+      ],
+      [
+        "Inductance",
+        "Maxwell-Wein Bridge"
+      ],
+      [
+        "Angular Frequency",
+        "Impedance"
+      ],
+      [
+        "Maxwell Bridge",
+        "Maxwell-Wein Bridge"
+      ],
+      [
+        "Balance Equation",
+        "Impedance"
+      ],
+      [
+        "Figure 7.6",
+        "Maxwell-Wein Bridge"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1790518627,
+    "update_time": 1790518627,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00036"
+  },
+  "chapter 5  ADC and DAC::ch_00020": {
+    "relation_pairs": [
+      [
+        "2 kHz Sine Wave",
+        "Aliasing"
+      ],
+      [
+        "2 kHz Sine Wave",
+        "500 Hz Aliased Signal"
+      ],
+      [
+        "1.5 kHz Sample Rate",
+        "2 kHz Sine Wave"
+      ],
+      [
+        "Aliasing",
+        "Shannons Sampling Theorem"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "chapter 5  ADC and DAC::ch_00020"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00034": {
+    "relation_pairs": [
+      [
+        "Arm Impedance",
+        "Balance Equation"
+      ],
+      [
+        "Impedance Components",
+        "Simplified Relationship"
+      ],
+      [
+        "Balance Equation",
+        "Simplified Relationship"
+      ],
+      [
+        "Arm Impedance",
+        "Impedance Components"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790518757,
+    "update_time": 1790518757,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00034"
+  },
+  "chapter 5  ADC and DAC::ch_00026": {
+    "relation_pairs": [
+      [
+        "A/D Converter",
+        "Counter"
+      ],
+      [
+        "Clock",
+        "Counter"
+      ],
+      [
+        "Counter Type A/D Conversion",
+        "Input Signal"
+      ],
+      [
+        "Comparator",
+        "Input Signal"
+      ],
+      [
+        "DAC",
+        "Staircase Ramp"
+      ],
+      [
+        "Comparator",
+        "Staircase Ramp"
+      ],
+      [
+        "Counter",
+        "DAC"
+      ],
+      [
+        "Conversion Time",
+        "Input Signal"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790518759,
+    "update_time": 1790518759,
+    "_id": "chapter 5  ADC and DAC::ch_00026"
+  },
+  "chapter-1 Error in measurement::ch_00022": {
+    "relation_pairs": [
+      [
+        "Average Deviation",
+        "Deviation Calculations"
+      ],
+      [
+        "Algebraic Sum Of Deviations",
+        "Average Deviation"
+      ],
+      [
+        "Deviation Calculations",
+        "Mean Value"
+      ],
+      [
+        "Algebraic Sum Of Deviations",
+        "Deviation Calculations"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1790518807,
+    "update_time": 1790518807,
+    "_id": "chapter-1 Error in measurement::ch_00022"
+  },
+  "chapter(4) oscilloscope::ch_00007": {
+    "relation_pairs": [
+      [
+        "D.C. Input",
+        "Time Base"
+      ],
+      [
+        "A.C. Input",
+        "Slow Time Base"
+      ],
+      [
+        "A.C. Input",
+        "Fast Time Base"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1790518888,
+    "update_time": 1790518888,
+    "_id": "chapter(4) oscilloscope::ch_00007"
+  },
+  "chapter(4) oscilloscope::ch_00009": {
+    "relation_pairs": [
+      [
+        "Figure 5",
+        "Lissajous Figures"
+      ],
+      [
+        "Frequency Ratio",
+        "Lissajous Figures"
+      ]
+    ],
+    "count": 2,
+    "create_time": 1790518890,
+    "update_time": 1790518890,
+    "_id": "chapter(4) oscilloscope::ch_00009"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00016": {
+    "relation_pairs": [
+      [
+        "Approximate Expression",
+        "Thevenin's Equivalent Voltage"
+      ],
+      [
+        "Thevenin's Equivalent Voltage",
+        "Thévenin's Theorem"
+      ],
+      [
+        "Approximate Expression",
+        "Slightly Unbalanced Condition"
+      ],
+      [
+        "Slightly Unbalanced Condition",
+        "Wheatstone Bridge"
+      ],
+      [
+        "Approximate Expression",
+        "Thevenin's Equivalent Resistance"
+      ],
+      [
+        "Thevenin's Equivalent Resistance",
+        "Thévenin's Theorem"
+      ],
+      [
+        "Resistor",
+        "Slightly Unbalanced Condition"
+      ],
+      [
+        "Resistor",
+        "Wheatstone Bridge"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1790518907,
+    "update_time": 1790518907,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00016"
+  },
+  "chapter 5  ADC and DAC::ch_00053": {
+    "relation_pairs": [
+      [
+        "T1",
+        "Vin"
+      ],
+      [
+        "Vin",
+        "Vref"
+      ],
+      [
+        "T1",
+        "X"
+      ],
+      [
+        "T1",
+        "T2"
+      ],
+      [
+        "T2",
+        "Vref"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1790518941,
+    "update_time": 1790518941,
+    "_id": "chapter 5  ADC and DAC::ch_00053"
+  }
+}

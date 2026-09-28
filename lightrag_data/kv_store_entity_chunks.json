@@ -1,0 +1,6915 @@
+{
+  "Gross Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00002-chunk-000",
+      "chapter-1 Error in measurement::ch_00001-chunk-000",
+      "chapter-1 Error in measurement::ch_00007-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790517985,
+    "_id": "Gross Errors"
+  },
+  "Operator": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508003,
+    "update_time": 1790508003,
+    "_id": "Operator"
+  },
+  "DC Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508031,
+    "update_time": 1790508031,
+    "_id": "DC Bridge"
+  },
+  "AC Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00000-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790516173,
+    "_id": "AC Bridge"
+  },
+  "Chapter 3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508031,
+    "update_time": 1790508031,
+    "_id": "Chapter 3"
+  },
+  "Analog Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000",
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chapter 5  ADC and DAC::ch_00034-chunk-000",
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790517902,
+    "_id": "Analog Signal"
+  },
+  "A/D Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000",
+      "chapter 5  ADC and DAC::ch_00002-chunk-000",
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00041-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00019-chunk-000",
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 7,
+    "update_time": 1790518741,
+    "_id": "A/D Converter"
+  },
+  "Sample-And-Hold Circuit": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Sample-And-Hold Circuit"
+  },
+  "Switch": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Switch"
+  },
+  "Sampling Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Sampling Signal"
+  },
+  "Analog Signal Sampling": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Analog Signal Sampling"
+  },
+  "Input Signal Waveform": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Input Signal Waveform"
+  },
+  "Output Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508485,
+    "update_time": 1790508485,
+    "_id": "Output Signal"
+  },
+  "Circuit": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790516336,
+    "_id": "Circuit"
+  },
+  "Ein": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Ein"
+  },
+  "Ra": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00022-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790514715,
+    "_id": "Ra"
+  },
+  "Rb": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00022-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790514715,
+    "_id": "Rb"
+  },
+  "Rb1": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rb1"
+  },
+  "Rb2": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rb2"
+  },
+  "Rb3": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rb3"
+  },
+  "Rb4": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rb4"
+  },
+  "Rb5": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rb5"
+  },
+  "Rbi": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Rbi"
+  },
+  "Circuit Analysis": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Circuit Analysis"
+  },
+  "Eoi True": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Eoi True"
+  },
+  "AVO Meter": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000",
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790509753,
+    "_id": "AVO Meter"
+  },
+  "Eoi Measured": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Eoi Measured"
+  },
+  "Data Table": {
+    "chunk_ids": [
+      "Lab1::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508703,
+    "update_time": 1790508703,
+    "_id": "Data Table"
+  },
+  "Random Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508811,
+    "update_time": 1790508811,
+    "_id": "Random Error"
+  },
+  "Statistical Analysis": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00008-chunk-000",
+      "chapter-1 Error in measurement::ch_00018-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513022,
+    "_id": "Statistical Analysis"
+  },
+  "Measurement": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00008-chunk-000",
+      "chapter-1 Error in measurement::ch_00000-chunk-000",
+      "chapter-1 Error in measurement::ch_00014-chunk-000",
+      "chapter-1 Error in measurement::ch_00017-chunk-000",
+      "chapter-1 Error in measurement::ch_00007-chunk-000"
+    ],
+    "count": 5,
+    "update_time": 1790517985,
+    "_id": "Measurement"
+  },
+  "X 1": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "X 1"
+  },
+  "X 2": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "X 2"
+  },
+  "X 3": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "X 3"
+  },
+  "X 4": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "X 4"
+  },
+  "Arithmetic Mean": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000",
+      "chapter-1 Error in measurement::ch_00019-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516208,
+    "_id": "Arithmetic Mean"
+  },
+  "Deviation": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000",
+      "Lab1::ch_00003-chunk-000",
+      "chapter-1 Error in measurement::ch_00019-chunk-000",
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518166,
+    "_id": "Deviation"
+  },
+  "Algebraic Sum": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "Algebraic Sum"
+  },
+  "Average Deviation": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000",
+      "chapter-1 Error in measurement::ch_00018-chunk-000",
+      "chapter-1 Error in measurement::ch_00020-chunk-000",
+      "chapter-1 Error in measurement::ch_00022-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518807,
+    "_id": "Average Deviation"
+  },
+  "Standard Deviation": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000",
+      "Lab1::ch_00004-chunk-000",
+      "chapter-1 Error in measurement::ch_00018-chunk-000",
+      "chapter-1 Error in measurement::ch_00020-chunk-000",
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 5,
+    "update_time": 1790518459,
+    "_id": "Standard Deviation"
+  },
+  "Statistical Dataset": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508812,
+    "update_time": 1790508812,
+    "_id": "Statistical Dataset"
+  },
+  "Digital Word": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508940,
+    "update_time": 1790508940,
+    "_id": "Digital Word"
+  },
+  "Counter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chapter 5  ADC and DAC::ch_00036-chunk-000",
+      "chapter 5  ADC and DAC::ch_00025-chunk-000",
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00038-chunk-000",
+      "chapter 5  ADC and DAC::ch_00037-chunk-000",
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 7,
+    "update_time": 1790518741,
+    "_id": "Counter"
+  },
+  "Single-Slope Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508940,
+    "update_time": 1790508940,
+    "_id": "Single-Slope Converter"
+  },
+  "Component-Value Errors": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508940,
+    "update_time": 1790508940,
+    "_id": "Component-Value Errors"
+  },
+  "Integrator": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chapter 5  ADC and DAC::ch_00034-chunk-000",
+      "chapter 5  ADC and DAC::ch_00039-chunk-000",
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790513004,
+    "_id": "Integrator"
+  },
+  "RC Product": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508940,
+    "update_time": 1790508940,
+    "_id": "RC Product"
+  },
+  "Capacitance": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00035-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518627,
+    "_id": "Capacitance"
+  },
+  "Resistance": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518627,
+    "_id": "Resistance"
+  },
+  "Temperature": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00035-chunk-000",
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790509330,
+    "_id": "Temperature"
+  },
+  "LSB": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000",
+      "chapter 5  ADC and DAC::ch_00029-chunk-000",
+      "chapter 5  ADC and DAC::ch_00009-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790517639,
+    "_id": "LSB"
+  },
+  "Vfs": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Vfs"
+  },
+  "Maximum Output Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Maximum Output Error"
+  },
+  "Upper Output Limit": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Upper Output Limit"
+  },
+  "Lower Output Limit": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Lower Output Limit"
+  },
+  "Expected Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Expected Output"
+  },
+  "Case A": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Case A"
+  },
+  "Case B": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Case B"
+  },
+  "Value 156.25mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00050-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508942,
+    "update_time": 1790508942,
+    "_id": "Value 156.25mV"
+  },
+  "Lissajous Figures": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000",
+      "Lab3::ch_00000-chunk-000",
+      "chapter(4) oscilloscope::ch_00009-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518890,
+    "_id": "Lissajous Figures"
+  },
+  "Oscilloscope": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000",
+      "Lab3::ch_00001-chunk-000",
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790512922,
+    "_id": "Oscilloscope"
+  },
+  "Function Generator": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000",
+      "Lab4::ch_00003-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518461,
+    "_id": "Function Generator"
+  },
+  "Probes": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Probes"
+  },
+  "Frequency Measurements": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Frequency Measurements"
+  },
+  "XY-Mode": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "XY-Mode"
+  },
+  "Time Domain": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Time Domain"
+  },
+  "Synchronization": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Synchronization"
+  },
+  "Amp=10V": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Amp=10V"
+  },
+  "F=1KHz": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "F=1KHz"
+  },
+  "Phase Change": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Phase Change"
+  },
+  "Split Display": {
+    "chunk_ids": [
+      "Lab3::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790508959,
+    "update_time": 1790508959,
+    "_id": "Split Display"
+  },
+  "DAC": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00011-chunk-000",
+      "chapter 5  ADC and DAC::ch_00005-chunk-000",
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518741,
+    "_id": "DAC"
+  },
+  "Linear Relationship": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509070,
+    "update_time": 1790509070,
+    "_id": "Linear Relationship"
+  },
+  "Digital Input Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00011-chunk-000",
+      "chapter 5  ADC and DAC::ch_00010-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512326,
+    "_id": "Digital Input Signal"
+  },
+  "Analog Output Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00011-chunk-000",
+      "chapter 5  ADC and DAC::ch_00010-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512326,
+    "_id": "Analog Output Signal"
+  },
+  "Non-Linearity": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509070,
+    "update_time": 1790509070,
+    "_id": "Non-Linearity"
+  },
+  "Distribution Curve": {
+    "chunk_ids": [
+      "Lab1::ch_00006-chunk-000",
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518166,
+    "_id": "Distribution Curve"
+  },
+  "R Sample 2": {
+    "chunk_ids": [
+      "Lab1::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509071,
+    "update_time": 1790509071,
+    "_id": "R Sample 2"
+  },
+  "Dual-Slope A/D Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509087,
+    "update_time": 1790509087,
+    "_id": "Dual-Slope A/D Converter"
+  },
+  "Ref Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509087,
+    "update_time": 1790509087,
+    "_id": "Ref Voltage"
+  },
+  "Input Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000",
+      "chapter 5  ADC and DAC::ch_00024-chunk-000",
+      "chapter 5  ADC and DAC::ch_00029-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 5,
+    "update_time": 1790517503,
+    "_id": "Input Voltage"
+  },
+  "Clock": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000",
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00038-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00019-chunk-000",
+      "chapter 5  ADC and DAC::ch_00037-chunk-000",
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 8,
+    "update_time": 1790518741,
+    "_id": "Clock"
+  },
+  "Digital Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000",
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00042-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000"
+    ],
+    "count": 5,
+    "update_time": 1790514665,
+    "_id": "Digital Output"
+  },
+  "Operational Amplifier": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509087,
+    "update_time": 1790509087,
+    "_id": "Operational Amplifier"
+  },
+  "Control Switch": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509087,
+    "update_time": 1790509087,
+    "_id": "Control Switch"
+  },
+  "Kelvin Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790517372,
+    "_id": "Kelvin Bridge"
+  },
+  "Figure 3.9": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509169,
+    "update_time": 1790509169,
+    "_id": "Figure 3.9"
+  },
+  "R1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00015-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00024-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00022-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "Lab2::ch_00000-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 8,
+    "update_time": 1790518119,
+    "_id": "R1"
+  },
+  "R2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00015-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00024-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "Lab2::ch_00000-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 7,
+    "update_time": 1790518119,
+    "_id": "R2"
+  },
+  "Rx": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00023-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00012-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00024-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 7,
+    "update_time": 1790516191,
+    "_id": "Rx"
+  },
+  "Solution 101.1 10": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "Solution 101.1 10"
+  },
+  "Ten Measurements": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "Ten Measurements"
+  },
+  "Average Value": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "Average Value"
+  },
+  "Precision 0.96": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "Precision 0.96"
+  },
+  "Sum Of The Ten Measurements": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509185,
+    "update_time": 1790509185,
+    "_id": "Sum Of The Ten Measurements"
+  },
+  "Voltage": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000",
+      "chapter-1 Error in measurement::ch_00003-chunk-000",
+      "chapter-1 Error in measurement::ch_00015-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518315,
+    "_id": "Voltage"
+  },
+  "Y-Inputs": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509202,
+    "update_time": 1790509202,
+    "_id": "Y-Inputs"
+  },
+  "Screen": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000",
+      "chapter(4) oscilloscope::ch_00005-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518610,
+    "_id": "Screen"
+  },
+  "A.C. Input": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000",
+      "chapter(4) oscilloscope::ch_00007-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518888,
+    "_id": "A.C. Input"
+  },
+  "D.C. Input": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000",
+      "chapter(4) oscilloscope::ch_00007-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518888,
+    "_id": "D.C. Input"
+  },
+  "Time": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00006-chunk-000",
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512208,
+    "_id": "Time"
+  },
+  "Environmental Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000",
+      "chapter-1 Error in measurement::ch_00004-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790510054,
+    "_id": "Environmental Errors"
+  },
+  "Ambient Parameters": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Ambient Parameters"
+  },
+  "Instrument": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Instrument"
+  },
+  "Air-Conditioning": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Air-Conditioning"
+  },
+  "Magnetic Shielding": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Magnetic Shielding"
+  },
+  "Cleaning": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Cleaning"
+  },
+  "Proper Instrument Housing": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Proper Instrument Housing"
+  },
+  "Pressure": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Pressure"
+  },
+  "Humidity": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Humidity"
+  },
+  "Dust": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Dust"
+  },
+  "Electrostatic Fields": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Electrostatic Fields"
+  },
+  "Magnetic Fields": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509330,
+    "update_time": 1790509330,
+    "_id": "Magnetic Fields"
+  },
+  "Voltmeter": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000",
+      "chapter-1 Error in measurement::ch_00003-chunk-000",
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518459,
+    "_id": "Voltmeter"
+  },
+  "Potentiometer R2": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Potentiometer R2"
+  },
+  "Resistance R1": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512057,
+    "_id": "Resistance R1"
+  },
+  "Resistance R3": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512057,
+    "_id": "Resistance R3"
+  },
+  "Resistance Rx": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Resistance Rx"
+  },
+  "Voltage Measurement": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Voltage Measurement"
+  },
+  "Rx Calculation Equation": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Rx Calculation Equation"
+  },
+  "Comparison Step": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Comparison Step"
+  },
+  "Point B": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Point B"
+  },
+  "Point D": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Point D"
+  },
+  "Volmeter": {
+    "chunk_ids": [
+      "Lab2::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509347,
+    "update_time": 1790509347,
+    "_id": "Volmeter"
+  },
+  "Vout": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "Vout"
+  },
+  "Vin": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000",
+      "chapter 5  ADC and DAC::ch_00040-chunk-000",
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00053-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518941,
+    "_id": "Vin"
+  },
+  "R3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00022-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 5,
+    "update_time": 1790516191,
+    "_id": "R3"
+  },
+  "R5": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "R5"
+  },
+  "R7": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "R7"
+  },
+  "R4": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790515467,
+    "_id": "R4"
+  },
+  "R6": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "R6"
+  },
+  "R8": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "R8"
+  },
+  "Resistor Network": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509348,
+    "update_time": 1790509348,
+    "_id": "Resistor Network"
+  },
+  "D/A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00002-chunk-000",
+      "chapter 5  ADC and DAC::ch_00024-chunk-000",
+      "chapter 5  ADC and DAC::ch_00012-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790514664,
+    "_id": "D/A Converter"
+  },
+  "Analog To Digital": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509447,
+    "update_time": 1790509447,
+    "_id": "Analog To Digital"
+  },
+  "Digital To Analog": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509447,
+    "update_time": 1790509447,
+    "_id": "Digital To Analog"
+  },
+  "N-bit Digital Word": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509447,
+    "update_time": 1790509447,
+    "_id": "N-bit Digital Word"
+  },
+  "Balance Condition": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000",
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 6,
+    "update_time": 1790516191,
+    "_id": "Balance Condition"
+  },
+  "Detector": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516173,
+    "_id": "Detector"
+  },
+  "Figure 3.10": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "Figure 3.10"
+  },
+  "Equal Impedance Condition": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "Equal Impedance Condition"
+  },
+  "Impedance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00035-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518627,
+    "_id": "Impedance"
+  },
+  "Node B": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "Node B"
+  },
+  "Node C": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "Node C"
+  },
+  "Node D": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509464,
+    "update_time": 1790509464,
+    "_id": "Node D"
+  },
+  "CRO": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000",
+      "chapter(4) oscilloscope::ch_00001-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518610,
+    "_id": "CRO"
+  },
+  "Vertical Delay Amplifier Circuit": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Vertical Delay Amplifier Circuit"
+  },
+  "Vertical Amplifier": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000",
+      "chapter(4) oscilloscope::ch_00008-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518610,
+    "_id": "Vertical Amplifier"
+  },
+  "Horizontal Amplifier": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000",
+      "chapter(4) oscilloscope::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516481,
+    "_id": "Horizontal Amplifier"
+  },
+  "Vertical Delay Line": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Vertical Delay Line"
+  },
+  "Grid": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Grid"
+  },
+  "Cathode": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000",
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517355,
+    "_id": "Cathode"
+  },
+  "Aquadag": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Aquadag"
+  },
+  "Screen Spot": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Screen Spot"
+  },
+  "Focus Control": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Focus Control"
+  },
+  "Intensity Control": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Intensity Control"
+  },
+  "Blanking Circuit": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Blanking Circuit"
+  },
+  "Vertical Sweep Generator": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Vertical Sweep Generator"
+  },
+  "Horizontal Sweep Generator": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Horizontal Sweep Generator"
+  },
+  "Frequency Generator": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Frequency Generator"
+  },
+  "Trigger Circuit": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Trigger Circuit"
+  },
+  "Vertical Sweep Path": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Vertical Sweep Path"
+  },
+  "Horizontal Sweep Path": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Horizontal Sweep Path"
+  },
+  "Detailed Block Diagram": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Detailed Block Diagram"
+  },
+  "Switch Position Selector": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509481,
+    "update_time": 1790509481,
+    "_id": "Switch Position Selector"
+  },
+  "Wheatstone Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 9,
+    "update_time": 1790518907,
+    "_id": "Wheatstone Bridge"
+  },
+  "Resistor R1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509655,
+    "update_time": 1790509655,
+    "_id": "Resistor R1"
+  },
+  "Resistor R2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509655,
+    "update_time": 1790509655,
+    "_id": "Resistor R2"
+  },
+  "Resistor R3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515998,
+    "_id": "Resistor R3"
+  },
+  "Resistor R4": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515998,
+    "_id": "Resistor R4"
+  },
+  "Galvanometer G": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509655,
+    "update_time": 1790509655,
+    "_id": "Galvanometer G"
+  },
+  "Electrical Circuit Balance Principle": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509655,
+    "update_time": 1790509655,
+    "_id": "Electrical Circuit Balance Principle"
+  },
+  "Quantization Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00022-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509671,
+    "update_time": 1790509671,
+    "_id": "Quantization Error"
+  },
+  "Analog Signal Amplitude": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00022-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509671,
+    "update_time": 1790509671,
+    "_id": "Analog Signal Amplitude"
+  },
+  "Standard Digital Level": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00022-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509671,
+    "update_time": 1790509671,
+    "_id": "Standard Digital Level"
+  },
+  "Rg": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00012-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515120,
+    "_id": "Rg"
+  },
+  "E=61": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509688,
+    "update_time": 1790509688,
+    "_id": "E=61"
+  },
+  "Kx": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509688,
+    "update_time": 1790509688,
+    "_id": "Kx"
+  },
+  "Resistors": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518461,
+    "_id": "Resistors"
+  },
+  "Test Board": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "Test Board"
+  },
+  "Wires": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518461,
+    "_id": "Wires"
+  },
+  "Statistical Analysis Of Resistors' Samples": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "Statistical Analysis Of Resistors' Samples"
+  },
+  "Measurement Instrumentation Insertion Error": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "Measurement Instrumentation Insertion Error"
+  },
+  "10-Resistor Sample": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "10-Resistor Sample"
+  },
+  "Part A": {
+    "chunk_ids": [
+      "Lab1::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509753,
+    "update_time": 1790509753,
+    "_id": "Part A"
+  },
+  "Comparator": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00025-chunk-000",
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00024-chunk-000",
+      "chapter 5  ADC and DAC::ch_00034-chunk-000",
+      "chapter 5  ADC and DAC::ch_00038-chunk-000",
+      "chapter 5  ADC and DAC::ch_00042-chunk-000",
+      "chapter 5  ADC and DAC::ch_00028-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00037-chunk-000",
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 10,
+    "update_time": 1790518741,
+    "_id": "Comparator"
+  },
+  "EOC Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509770,
+    "update_time": 1790509770,
+    "_id": "EOC Output"
+  },
+  "Start Input": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509770,
+    "update_time": 1790509770,
+    "_id": "Start Input"
+  },
+  "Analog Input Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00025-chunk-000",
+      "chapter 5  ADC and DAC::ch_00032-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515515,
+    "_id": "Analog Input Voltage"
+  },
+  "Thevenin Equivalent Circuit": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00014-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00009-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790515120,
+    "_id": "Thevenin Equivalent Circuit"
+  },
+  "Galvanometer": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00014-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00009-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 8,
+    "update_time": 1790517503,
+    "_id": "Galvanometer"
+  },
+  "Thevenin Voltage": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509817,
+    "update_time": 1790509817,
+    "_id": "Thevenin Voltage"
+  },
+  "Circuit Resistance Configuration": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509817,
+    "update_time": 1790509817,
+    "_id": "Circuit Resistance Configuration"
+  },
+  "Methodology 1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509817,
+    "update_time": 1790509817,
+    "_id": "Methodology 1"
+  },
+  "General Impedance Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509930,
+    "update_time": 1790509930,
+    "_id": "General Impedance Bridge"
+  },
+  "Z2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00028-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516173,
+    "_id": "Z2"
+  },
+  "Z3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00028-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516173,
+    "_id": "Z3"
+  },
+  "Z4": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509930,
+    "update_time": 1790509930,
+    "_id": "Z4"
+  },
+  "Abox With Z Prime": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509930,
+    "update_time": 1790509930,
+    "_id": "Abox With Z Prime"
+  },
+  "Single Slope A/D Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00033-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509947,
+    "update_time": 1790509947,
+    "_id": "Single Slope A/D Converter"
+  },
+  "Reference Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00042-chunk-000",
+      "chapter 5  ADC and DAC::ch_00006-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518032,
+    "_id": "Reference Voltage"
+  },
+  "Analog Input": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00033-chunk-000",
+      "chapter 5  ADC and DAC::ch_00042-chunk-000",
+      "Lab4::ch_00004-chunk-000",
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790516336,
+    "_id": "Analog Input"
+  },
+  "OR Gate": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509956,
+    "update_time": 1790509956,
+    "_id": "OR Gate"
+  },
+  "Up Counter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00024-chunk-000",
+      "chapter 5  ADC and DAC::ch_00023-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514664,
+    "_id": "Up Counter"
+  },
+  "Clock Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509956,
+    "update_time": 1790509956,
+    "_id": "Clock Signal"
+  },
+  "Least Significant Bit": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509956,
+    "update_time": 1790509956,
+    "_id": "Least Significant Bit"
+  },
+  "End Of Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790509956,
+    "update_time": 1790509956,
+    "_id": "End Of Conversion"
+  },
+  "Resistance Calculation Method": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510053,
+    "update_time": 1790510053,
+    "_id": "Resistance Calculation Method"
+  },
+  "0.01 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510053,
+    "update_time": 1790510053,
+    "_id": "0.01 Ohms"
+  },
+  "Systematic Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00004-chunk-000",
+      "chapter-1 Error in measurement::ch_00001-chunk-000",
+      "chapter-1 Error in measurement::ch_00007-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790517985,
+    "_id": "Systematic Errors"
+  },
+  "Instrumental Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510054,
+    "update_time": 1790510054,
+    "_id": "Instrumental Errors"
+  },
+  "Measurements": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510054,
+    "update_time": 1790510054,
+    "_id": "Measurements"
+  },
+  "Instruments": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510054,
+    "update_time": 1790510054,
+    "_id": "Instruments"
+  },
+  "Maxwell Wein Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510070,
+    "update_time": 1790510070,
+    "_id": "Maxwell Wein Bridge"
+  },
+  "Inductance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00035-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518627,
+    "_id": "Inductance"
+  },
+  "Phase Shift": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00035-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510070,
+    "update_time": 1790510070,
+    "_id": "Phase Shift"
+  },
+  "T1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000",
+      "chapter 5  ADC and DAC::ch_00053-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518941,
+    "_id": "T1"
+  },
+  "T2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000",
+      "chapter 5  ADC and DAC::ch_00053-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518941,
+    "_id": "T2"
+  },
+  "Vref": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000",
+      "chapter 5  ADC and DAC::ch_00053-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518941,
+    "_id": "Vref"
+  },
+  "Integrator Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "Integrator Output"
+  },
+  "t1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "t1"
+  },
+  "Comparator Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "Comparator Output"
+  },
+  "t2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "t2"
+  },
+  "t3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "t3"
+  },
+  "1v": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00040-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510213,
+    "update_time": 1790510213,
+    "_id": "1v"
+  },
+  "Tracking A/D Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "Tracking A/D Converter"
+  },
+  "CLR": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "CLR"
+  },
+  "Control Logic": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00029-chunk-000",
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518478,
+    "_id": "Control Logic"
+  },
+  "Start Logic": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "Start Logic"
+  },
+  "Stop Logic": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "Stop Logic"
+  },
+  "D0 (LSB)": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514974,
+    "_id": "D0 (LSB)"
+  },
+  "D1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514974,
+    "_id": "D1"
+  },
+  "D2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514974,
+    "_id": "D2"
+  },
+  "D3 (MSB)": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "D3 (MSB)"
+  },
+  "D/A Comparator": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514974,
+    "_id": "D/A Comparator"
+  },
+  "Vfb": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "Vfb"
+  },
+  "+V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514974,
+    "_id": "+V"
+  },
+  "-V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790510441,
+    "update_time": 1790510441,
+    "_id": "-V"
+  },
+  "Up/Down Counter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00027-chunk-000",
+      "chapter 5  ADC and DAC::ch_00028-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513151,
+    "_id": "Up/Down Counter"
+  },
+  "Lissajous Figure": {
+    "chunk_ids": [
+      "Lab3::ch_00001-chunk-000",
+      "chapter(4) oscilloscope::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516481,
+    "_id": "Lissajous Figure"
+  },
+  "Frequency Measurement Using Lissajous Figures": {
+    "chunk_ids": [
+      "Lab3::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511774,
+    "update_time": 1790511774,
+    "_id": "Frequency Measurement Using Lissajous Figures"
+  },
+  "Phase Measurement": {
+    "chunk_ids": [
+      "Lab3::ch_00001-chunk-000",
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512922,
+    "_id": "Phase Measurement"
+  },
+  "9.375 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00005-chunk-000",
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515964,
+    "_id": "9.375 V"
+  },
+  "± 0.9375 mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00005-chunk-000",
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515964,
+    "_id": "± 0.9375 mV"
+  },
+  "± 0.01%": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511824,
+    "update_time": 1790511824,
+    "_id": "± 0.01%"
+  },
+  "8-Bit Dac": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "8-Bit Dac"
+  },
+  "2 MA": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "2 MA"
+  },
+  "0.5% F.S.": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "0.5% F.S."
+  },
+  "10000000": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "10000000"
+  },
+  "7.81 UA": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "7.81 UA"
+  },
+  "1000 UA": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "1000 UA"
+  },
+  "990 To 1010 UA": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "990 To 1010 UA"
+  },
+  "Step Size Calculation": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "Step Size Calculation"
+  },
+  "Ideal Output Calculation": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00044-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511873,
+    "update_time": 1790511873,
+    "_id": "Ideal Output Calculation"
+  },
+  "Resistor": {
+    "chunk_ids": [
+      "Lab1::ch_00004-chunk-000",
+      "chapter 5  ADC and DAC::ch_00034-chunk-000",
+      "chapter-1 Error in measurement::ch_00012-chunk-000",
+      "chapter 5  ADC and DAC::ch_00014-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000",
+      "Lab1::ch_00005-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 7,
+    "update_time": 1790518907,
+    "_id": "Resistor"
+  },
+  "Relative Error": {
+    "chunk_ids": [
+      "Lab1::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511892,
+    "update_time": 1790511892,
+    "_id": "Relative Error"
+  },
+  "Resistance Measurement Experiment": {
+    "chunk_ids": [
+      "Lab1::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511892,
+    "update_time": 1790511892,
+    "_id": "Resistance Measurement Experiment"
+  },
+  "Sample 2": {
+    "chunk_ids": [
+      "Lab1::ch_00004-chunk-000",
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518166,
+    "_id": "Sample 2"
+  },
+  "Resistance Branch": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "Resistance Branch"
+  },
+  "Series Resistor Element": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "Series Resistor Element"
+  },
+  "DC Voltage Source": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "DC Voltage Source"
+  },
+  "Resistance Network": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "Resistance Network"
+  },
+  "Figure 3.1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511925,
+    "update_time": 1790511925,
+    "_id": "Figure 3.1"
+  },
+  "Random Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00001-chunk-000",
+      "chapter-1 Error in measurement::ch_00007-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517985,
+    "_id": "Random Errors"
+  },
+  "Measurement Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790511989,
+    "update_time": 1790511989,
+    "_id": "Measurement Errors"
+  },
+  "Example 3.5": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Example 3.5"
+  },
+  "Figure 3.7": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516173,
+    "_id": "Figure 3.7"
+  },
+  "Resistance 500 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Resistance 500 Ohms"
+  },
+  "Voltage 10 V": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Voltage 10 V"
+  },
+  "Resistance 525 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Resistance 525 Ohms"
+  },
+  "Resistance 125 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Resistance 125 Ohms"
+  },
+  "Approximation Equation": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512039,
+    "update_time": 1790512039,
+    "_id": "Approximation Equation"
+  },
+  "Unbalanced Wheatstone Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00009-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513283,
+    "_id": "Unbalanced Wheatstone Bridge"
+  },
+  "Thevenin Theorem": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Thevenin Theorem"
+  },
+  "Resistance R2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Resistance R2"
+  },
+  "Resistance R4": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Resistance R4"
+  },
+  "Th Thevenin Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Th Thevenin Resistance"
+  },
+  "Vth Thevenin Voltage": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Vth Thevenin Voltage"
+  },
+  "Figure 6.3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512057,
+    "update_time": 1790512057,
+    "_id": "Figure 6.3"
+  },
+  "Integration": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "Integration"
+  },
+  "Input Voltage –V Ref": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "Input Voltage –V Ref"
+  },
+  "Digital Counter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "Digital Counter"
+  },
+  "Integrator Output Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "Integrator Output Voltage"
+  },
+  "RC Jo": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512208,
+    "update_time": 1790512208,
+    "_id": "RC Jo"
+  },
+  "Capacitor": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00034-chunk-000",
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790512775,
+    "_id": "Capacitor"
+  },
+  "Binary Weighted Resistor": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512226,
+    "update_time": 1790512226,
+    "_id": "Binary Weighted Resistor"
+  },
+  "V Out": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512226,
+    "update_time": 1790512226,
+    "_id": "V Out"
+  },
+  "V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00012-chunk-000",
+      "chapter 5  ADC and DAC::ch_00017-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515450,
+    "_id": "V"
+  },
+  "Rf": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512226,
+    "update_time": 1790512226,
+    "_id": "Rf"
+  },
+  "Binary Input Bits": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512226,
+    "update_time": 1790512226,
+    "_id": "Binary Input Bits"
+  },
+  "Error Analysis": {
+    "chunk_ids": [
+      "Lab1::ch_00001-chunk-000",
+      "Lab1::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515253,
+    "_id": "Error Analysis"
+  },
+  "Resistor Sample": {
+    "chunk_ids": [
+      "Lab1::ch_00001-chunk-000",
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515613,
+    "_id": "Resistor Sample"
+  },
+  "Statistical Sampling Analysis": {
+    "chunk_ids": [
+      "Lab1::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512227,
+    "update_time": 1790512227,
+    "_id": "Statistical Sampling Analysis"
+  },
+  "Instrumentation Insertion Error": {
+    "chunk_ids": [
+      "Lab1::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512227,
+    "update_time": 1790512227,
+    "_id": "Instrumentation Insertion Error"
+  },
+  "Electrical Circuit": {
+    "chunk_ids": [
+      "Lab1::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512227,
+    "update_time": 1790512227,
+    "_id": "Electrical Circuit"
+  },
+  "5 Bit Binary Ladder": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00045-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512324,
+    "update_time": 1790512324,
+    "_id": "5 Bit Binary Ladder"
+  },
+  "4 Bit Binary Ladder": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00045-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512324,
+    "update_time": 1790512324,
+    "_id": "4 Bit Binary Ladder"
+  },
+  "Full-Scale Output Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00045-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512324,
+    "update_time": 1790512324,
+    "_id": "Full-Scale Output Voltage"
+  },
+  "Input Combination 1010": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00045-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512324,
+    "update_time": 1790512324,
+    "_id": "Input Combination 1010"
+  },
+  "Linearity Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512326,
+    "update_time": 1790512326,
+    "_id": "Linearity Error"
+  },
+  "Expected Voltage": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "Expected Voltage"
+  },
+  "Measured Voltage": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "Measured Voltage"
+  },
+  "Absolute Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000",
+      "chapter-1 Error in measurement::ch_00009-chunk-000",
+      "chapter-1 Error in measurement::ch_00010-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790514829,
+    "_id": "Absolute Error"
+  },
+  "Percent Of Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "Percent Of Error"
+  },
+  "Relative Accuracy": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000",
+      "chapter-1 Error in measurement::ch_00011-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515138,
+    "_id": "Relative Accuracy"
+  },
+  "Percent Of Accuracy": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "Percent Of Accuracy"
+  },
+  "Voltage Measurement Problem": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00012-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512373,
+    "update_time": 1790512373,
+    "_id": "Voltage Measurement Problem"
+  },
+  "Deflection System": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "Deflection System"
+  },
+  "Electron Beam": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000",
+      "chapter(4) oscilloscope::ch_00004-chunk-000",
+      "chapter(4) oscilloscope::ch_00003-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518610,
+    "_id": "Electron Beam"
+  },
+  "Time Base System": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "Time Base System"
+  },
+  "Time Base Circuit": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "Time Base Circuit"
+  },
+  "Saw-Tooth Waveform": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "Saw-Tooth Waveform"
+  },
+  "X-Plates": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000",
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517355,
+    "_id": "X-Plates"
+  },
+  "Fly-Back Time": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512479,
+    "update_time": 1790512479,
+    "_id": "Fly-Back Time"
+  },
+  "Expected Value": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00009-chunk-000",
+      "chapter-1 Error in measurement::ch_00010-chunk-000",
+      "chapter-1 Error in measurement::ch_00011-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790515138,
+    "_id": "Expected Value"
+  },
+  "Measured Value": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00009-chunk-000",
+      "chapter-1 Error in measurement::ch_00011-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515138,
+    "_id": "Measured Value"
+  },
+  "Xn": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00009-chunk-000",
+      "chapter-1 Error in measurement::ch_00014-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515219,
+    "_id": "Xn"
+  },
+  "Yn": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512481,
+    "update_time": 1790512481,
+    "_id": "Yn"
+  },
+  "Rz": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Rz"
+  },
+  "Rj": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Rj"
+  },
+  "Example 3.1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Example 3.1"
+  },
+  "Figure 3.2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Figure 3.2"
+  },
+  "Example 3_1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Example 3_1"
+  },
+  "Figure 3_2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512498,
+    "update_time": 1790512498,
+    "_id": "Figure 3_2"
+  },
+  "Thevenin Equivalent Voltage": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512595,
+    "update_time": 1790512595,
+    "_id": "Thevenin Equivalent Voltage"
+  },
+  "Thevenin Equivalent Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512595,
+    "update_time": 1790512595,
+    "_id": "Thevenin Equivalent Resistance"
+  },
+  "4 V": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512595,
+    "update_time": 1790512595,
+    "_id": "4 V"
+  },
+  "500 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512595,
+    "update_time": 1790512595,
+    "_id": "500 Ohms"
+  },
+  "Gross Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512596,
+    "update_time": 1790512596,
+    "_id": "Gross Error"
+  },
+  "Parallax Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512596,
+    "update_time": 1790512596,
+    "_id": "Parallax Error"
+  },
+  "Power": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00003-chunk-000",
+      "Lab4::ch_00001-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513134,
+    "_id": "Power"
+  },
+  "Current": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00003-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513412,
+    "_id": "Current"
+  },
+  "Successive Approximation A Digit Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512643,
+    "update_time": 1790512643,
+    "_id": "Successive Approximation A Digit Converter"
+  },
+  "Successive Approximation Register": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512643,
+    "update_time": 1790512643,
+    "_id": "Successive Approximation Register"
+  },
+  "Internal D A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512643,
+    "update_time": 1790512643,
+    "_id": "Internal D A Converter"
+  },
+  "MSB": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00029-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512643,
+    "update_time": 1790512643,
+    "_id": "MSB"
+  },
+  "Ideal Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00007-chunk-000",
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516354,
+    "_id": "Ideal Output"
+  },
+  "Voltage Divisions": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512757,
+    "update_time": 1790512757,
+    "_id": "Voltage Divisions"
+  },
+  "Resolution": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00007-chunk-000",
+      "chapter 5  ADC and DAC::ch_00006-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518032,
+    "_id": "Resolution"
+  },
+  "Cathode Ray Oscilloscope": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000",
+      "chapter(4) oscilloscope::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790514976,
+    "_id": "Cathode Ray Oscilloscope"
+  },
+  "Alternating Current": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Alternating Current"
+  },
+  "Electric Voltage": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Electric Voltage"
+  },
+  "Electric Current": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Electric Current"
+  },
+  "Electric Power": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Electric Power"
+  },
+  "Electrical Frequency": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Electrical Frequency"
+  },
+  "Electrical Signal": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Electrical Signal"
+  },
+  "Waveform": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Waveform"
+  },
+  "Signal Amplitude": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Signal Amplitude"
+  },
+  "Laboratory Environment": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512758,
+    "update_time": 1790512758,
+    "_id": "Laboratory Environment"
+  },
+  "Dual-Slope Method": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Dual-Slope Method"
+  },
+  "Voltage Slopes": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Voltage Slopes"
+  },
+  "Full Scale Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Full Scale Conversion"
+  },
+  "Half Scale Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Half Scale Conversion"
+  },
+  "Quarter Scale Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Quarter Scale Conversion"
+  },
+  "Fixed Time": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Fixed Time"
+  },
+  "Measured Time": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00041-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512775,
+    "update_time": 1790512775,
+    "_id": "Measured Time"
+  },
+  "Simple Ac Bridge Circuit": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Simple Ac Bridge Circuit"
+  },
+  "Figure 3.11": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Figure 3.11"
+  },
+  "Unknown Inductance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Unknown Inductance"
+  },
+  "Standard Inductance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Standard Inductance"
+  },
+  "Unknown Capacitance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Unknown Capacitance"
+  },
+  "Standard Capacitance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Standard Capacitance"
+  },
+  "C": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "C"
+  },
+  "Null": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512903,
+    "update_time": 1790512903,
+    "_id": "Null"
+  },
+  "Voltage V2(t)": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Voltage V2(t)"
+  },
+  "Time Interval t2 to t3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Time Interval t2 to t3"
+  },
+  "Reference Voltage Vref": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Reference Voltage Vref"
+  },
+  "Input Voltage Vin": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Input Voltage Vin"
+  },
+  "Time Constant RC": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Time Constant RC"
+  },
+  "Time T1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Time T1"
+  },
+  "Discharge Period": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Discharge Period"
+  },
+  "Time T2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00039-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512905,
+    "update_time": 1790512905,
+    "_id": "Time T2"
+  },
+  "Oscilloscope Applications": {
+    "chunk_ids": [
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512922,
+    "update_time": 1790512922,
+    "_id": "Oscilloscope Applications"
+  },
+  "Unknown Signal": {
+    "chunk_ids": [
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512922,
+    "update_time": 1790512922,
+    "_id": "Unknown Signal"
+  },
+  "Known Signal": {
+    "chunk_ids": [
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512922,
+    "update_time": 1790512922,
+    "_id": "Known Signal"
+  },
+  "Probe": {
+    "chunk_ids": [
+      "Lab3::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790512922,
+    "update_time": 1790512922,
+    "_id": "Probe"
+  },
+  "Frequency Measurement": {
+    "chunk_ids": [
+      "Lab3::ch_00000-chunk-000",
+      "chapter(4) oscilloscope::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516481,
+    "_id": "Frequency Measurement"
+  },
+  "Carry Pulse": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "Carry Pulse"
+  },
+  "Control Logic Circuit": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "Control Logic Circuit"
+  },
+  "Switch S1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "Switch S1"
+  },
+  "Negative Reference Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "Negative Reference Voltage"
+  },
+  "Position B": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00038-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513004,
+    "update_time": 1790513004,
+    "_id": "Position B"
+  },
+  "Mean Value": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00018-chunk-000",
+      "chapter-1 Error in measurement::ch_00022-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518807,
+    "_id": "Mean Value"
+  },
+  "Quantitative Judgments": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513022,
+    "update_time": 1790513022,
+    "_id": "Quantitative Judgments"
+  },
+  "Data Variations": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513022,
+    "update_time": 1790513022,
+    "_id": "Data Variations"
+  },
+  "Experiment": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513022,
+    "update_time": 1790513022,
+    "_id": "Experiment"
+  },
+  "Factors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513022,
+    "update_time": 1790513022,
+    "_id": "Factors"
+  },
+  "Flash Analog To Digital Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513053,
+    "update_time": 1790513053,
+    "_id": "Flash Analog To Digital Converter"
+  },
+  "Priority Encoder": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000",
+      "chapter 5  ADC and DAC::ch_00043-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790513396,
+    "_id": "Priority Encoder"
+  },
+  "2^n - 1 Comparators": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513054,
+    "update_time": 1790513054,
+    "_id": "2^n - 1 Comparators"
+  },
+  "Op-Amp": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513054,
+    "update_time": 1790513054,
+    "_id": "Op-Amp"
+  },
+  "Enable Input": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513054,
+    "update_time": 1790513054,
+    "_id": "Enable Input"
+  },
+  "V_REF": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00042-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513054,
+    "update_time": 1790513054,
+    "_id": "V_REF"
+  },
+  "ADC0808": {
+    "chunk_ids": [
+      "Lab4::ch_00001-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518461,
+    "_id": "ADC0808"
+  },
+  "550": {
+    "chunk_ids": [
+      "Lab4::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513134,
+    "update_time": 1790513134,
+    "_id": "550"
+  },
+  "ADC0808 Schematic": {
+    "chunk_ids": [
+      "Lab4::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513134,
+    "update_time": 1790513134,
+    "_id": "ADC0808 Schematic"
+  },
+  "VREF(+)": {
+    "chunk_ids": [
+      "Lab4::ch_00001-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518461,
+    "_id": "VREF(+)"
+  },
+  "VREF(-)": {
+    "chunk_ids": [
+      "Lab4::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513134,
+    "update_time": 1790513134,
+    "_id": "VREF(-)"
+  },
+  "Double Slope Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513151,
+    "update_time": 1790513151,
+    "_id": "Double Slope Conversion"
+  },
+  "Digital-to-Analog Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00028-chunk-000",
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516354,
+    "_id": "Digital-to-Analog Converter"
+  },
+  "Tracking Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513151,
+    "update_time": 1790513151,
+    "_id": "Tracking Converter"
+  },
+  "Dual Slope Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00028-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513151,
+    "update_time": 1790513151,
+    "_id": "Dual Slope Conversion"
+  },
+  "Example 3.2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "Example 3.2"
+  },
+  "Figure 3.3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "Figure 3.3"
+  },
+  "Vth": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "Vth"
+  },
+  "Ig": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "Ig"
+  },
+  "1KS": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513185,
+    "update_time": 1790513185,
+    "_id": "1KS"
+  },
+  "R2R Ladder Dac": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "R2R Ladder Dac"
+  },
+  "Dac": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000",
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515964,
+    "_id": "Dac"
+  },
+  "12bit Dac": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "12bit Dac"
+  },
+  "8bit Resolution": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "8bit Resolution"
+  },
+  "High Precision Resistors": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "High Precision Resistors"
+  },
+  "Low Switch Resistances": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "Low Switch Resistances"
+  },
+  "Transistor": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "Transistor"
+  },
+  "Cost": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513282,
+    "update_time": 1790513282,
+    "_id": "Cost"
+  },
+  "Deflection Current": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513283,
+    "update_time": 1790513283,
+    "_id": "Deflection Current"
+  },
+  "RG": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513283,
+    "update_time": 1790513283,
+    "_id": "RG"
+  },
+  "Percent Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00013-chunk-000",
+      "chapter-1 Error in measurement::ch_00010-chunk-000",
+      "chapter-1 Error in measurement::ch_00011-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790515138,
+    "_id": "Percent Error"
+  },
+  "Ratio 0.98": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513330,
+    "update_time": 1790513330,
+    "_id": "Ratio 0.98"
+  },
+  "Calculations V And A": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513330,
+    "update_time": 1790513330,
+    "_id": "Calculations V And A"
+  },
+  "IC Flash Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00043-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513396,
+    "update_time": 1790513396,
+    "_id": "IC Flash Converter"
+  },
+  "Latch": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00043-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513396,
+    "update_time": 1790513396,
+    "_id": "Latch"
+  },
+  "Other": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00043-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513396,
+    "update_time": 1790513396,
+    "_id": "Other"
+  },
+  "Sensitivity": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513412,
+    "update_time": 1790513412,
+    "_id": "Sensitivity"
+  },
+  "Deflection": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513412,
+    "update_time": 1790513412,
+    "_id": "Deflection"
+  },
+  "Total Deflection": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513412,
+    "update_time": 1790513412,
+    "_id": "Total Deflection"
+  },
+  "Similar Angle Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00033-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513429,
+    "update_time": 1790513429,
+    "_id": "Similar Angle Bridge"
+  },
+  "Figure 3.13": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00033-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513429,
+    "update_time": 1790513429,
+    "_id": "Figure 3.13"
+  },
+  "Capacitive Circuit": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00033-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513429,
+    "update_time": 1790513429,
+    "_id": "Capacitive Circuit"
+  },
+  "Capacitance Comparison Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00033-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790513429,
+    "update_time": 1790513429,
+    "_id": "Capacitance Comparison Bridge"
+  },
+  "EOC": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00023-chunk-000",
+      "chapter 5  ADC and DAC::ch_00030-chunk-000",
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518461,
+    "_id": "EOC"
+  },
+  "Feedback Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514665,
+    "update_time": 1790514665,
+    "_id": "Feedback Voltage"
+  },
+  "Cathode Ray Tube": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000",
+      "chapter(4) oscilloscope::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516481,
+    "_id": "Cathode Ray Tube"
+  },
+  "Electron Gun": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518610,
+    "_id": "Electron Gun"
+  },
+  "Focusing Anodes": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Focusing Anodes"
+  },
+  "Accelerating Anodes": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Accelerating Anodes"
+  },
+  "Horizontal Deflection Plates": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518610,
+    "_id": "Horizontal Deflection Plates"
+  },
+  "Vertical Deflection Plates": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000",
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518610,
+    "_id": "Vertical Deflection Plates"
+  },
+  "Evacuated Glass Envelope": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Evacuated Glass Envelope"
+  },
+  "Phosphorescent Screen": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Phosphorescent Screen"
+  },
+  "Electron": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Electron"
+  },
+  "High-Velocity Electron Beam": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "High-Velocity Electron Beam"
+  },
+  "Bright Spot": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514732,
+    "update_time": 1790514732,
+    "_id": "Bright Spot"
+  },
+  "Problem 3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "Problem 3"
+  },
+  "6-Bit Video D/A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "6-Bit Video D/A Converter"
+  },
+  "1.25V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "1.25V"
+  },
+  "19.53mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000",
+      "chapter 5  ADC and DAC::ch_00047-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515350,
+    "_id": "19.53mV"
+  },
+  "000001": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "000001"
+  },
+  "100000": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "100000"
+  },
+  "111111": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "111111"
+  },
+  "011101": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "011101"
+  },
+  "Step Size": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000",
+      "chapter 5  ADC and DAC::ch_00021-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517753,
+    "_id": "Step Size"
+  },
+  "Full Scale Range": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00046-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514846,
+    "update_time": 1790514846,
+    "_id": "Full Scale Range"
+  },
+  "R-2R Ladder DAC": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00014-chunk-000",
+      "chapter 5  ADC and DAC::ch_00018-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518034,
+    "_id": "R-2R Ladder DAC"
+  },
+  "D/A Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00014-chunk-000",
+      "chapter 5  ADC and DAC::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517622,
+    "_id": "D/A Conversion"
+  },
+  "Scaling Adder": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514847,
+    "update_time": 1790514847,
+    "_id": "Scaling Adder"
+  },
+  "Weighted Sum": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514847,
+    "update_time": 1790514847,
+    "_id": "Weighted Sum"
+  },
+  "Digital Input": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00014-chunk-000",
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516354,
+    "_id": "Digital Input"
+  },
+  "SAR": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "SAR"
+  },
+  "Q0": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q0"
+  },
+  "Q1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q1"
+  },
+  "Q2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q2"
+  },
+  "Q3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q3"
+  },
+  "Q4": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q4"
+  },
+  "Q5": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q5"
+  },
+  "Q6": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q6"
+  },
+  "Q7": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Q7"
+  },
+  "D3": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "D3"
+  },
+  "D4": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "D4"
+  },
+  "D5": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "D5"
+  },
+  "D6": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "D6"
+  },
+  "D7 (MSB)": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "D7 (MSB)"
+  },
+  "Control Clock Logic": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Control Clock Logic"
+  },
+  "Start": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "Start"
+  },
+  "V_in": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "V_in"
+  },
+  "V_fb": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00030-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514974,
+    "update_time": 1790514974,
+    "_id": "V_fb"
+  },
+  "Error In Measurement": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790514992,
+    "update_time": 1790514992,
+    "_id": "Error In Measurement"
+  },
+  "Example 3.3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515120,
+    "update_time": 1790515120,
+    "_id": "Example 3.3"
+  },
+  "Figure 3.4": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515120,
+    "update_time": 1790515120,
+    "_id": "Figure 3.4"
+  },
+  "E": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00013-chunk-000",
+      "Lab2::ch_00000-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 3,
+    "update_time": 1790518119,
+    "_id": "E"
+  },
+  "Contact Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515121,
+    "update_time": 1790515121,
+    "_id": "Contact Resistance"
+  },
+  "Lead Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515121,
+    "update_time": 1790515121,
+    "_id": "Lead Resistance"
+  },
+  "Low Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515121,
+    "update_time": 1790515121,
+    "_id": "Low Resistance"
+  },
+  "Rlc": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515121,
+    "update_time": 1790515121,
+    "_id": "Rlc"
+  },
+  "Percent Accuracy": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515138,
+    "update_time": 1790515138,
+    "_id": "Percent Accuracy"
+  },
+  "Precision": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00014-chunk-000",
+      "chapter-1 Error in measurement::ch_00015-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518315,
+    "_id": "Precision"
+  },
+  "Average": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515219,
+    "update_time": 1790515219,
+    "_id": "Average"
+  },
+  "Average Of Xn": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00014-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515219,
+    "update_time": 1790515219,
+    "_id": "Average Of Xn"
+  },
+  "Insertion Error": {
+    "chunk_ids": [
+      "Lab1::ch_00009-chunk-000",
+      "Lab1::ch_00011-chunk-000",
+      "Lab1::ch_00010-chunk-000",
+      "Lab1::ch_00007-chunk-000"
+    ],
+    "count": 4,
+    "update_time": 1790518268,
+    "_id": "Insertion Error"
+  },
+  "100 KΩ Resistor": {
+    "chunk_ids": [
+      "Lab1::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515236,
+    "update_time": 1790515236,
+    "_id": "100 KΩ Resistor"
+  },
+  "Output Voltage (True)": {
+    "chunk_ids": [
+      "Lab1::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515236,
+    "update_time": 1790515236,
+    "_id": "Output Voltage (True)"
+  },
+  "Output Voltage (Measured)": {
+    "chunk_ids": [
+      "Lab1::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515236,
+    "update_time": 1790515236,
+    "_id": "Output Voltage (Measured)"
+  },
+  "10 V Input Voltage": {
+    "chunk_ids": [
+      "Lab1::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515236,
+    "update_time": 1790515236,
+    "_id": "10 V Input Voltage"
+  },
+  "Experiment 1": {
+    "chunk_ids": [
+      "Lab1::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515253,
+    "update_time": 1790515253,
+    "_id": "Experiment 1"
+  },
+  "Physical Quantity": {
+    "chunk_ids": [
+      "Lab1::ch_00000-chunk-000",
+      "chapter-1 Error in measurement::ch_00017-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517899,
+    "_id": "Physical Quantity"
+  },
+  "624.96mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00047-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515350,
+    "update_time": 1790515350,
+    "_id": "624.96mV"
+  },
+  "1.23039V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00047-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515350,
+    "update_time": 1790515350,
+    "_id": "1.23039V"
+  },
+  "566.32mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00047-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515350,
+    "update_time": 1790515350,
+    "_id": "566.32mV"
+  },
+  "Output Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00047-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515350,
+    "update_time": 1790515350,
+    "_id": "Output Voltage"
+  },
+  "Delta O": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "Delta O"
+  },
+  "F1 Channel 1": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "F1 Channel 1"
+  },
+  "F2 Channel 2": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "F2 Channel 2"
+  },
+  "Output Figure": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "Output Figure"
+  },
+  "Experimental Configuration Data": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "Experimental Configuration Data"
+  },
+  "Frequency Parameter": {
+    "chunk_ids": [
+      "Lab3::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515352,
+    "update_time": 1790515352,
+    "_id": "Frequency Parameter"
+  },
+  "Thevenin's Equivalent Circuit": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515368,
+    "update_time": 1790515368,
+    "_id": "Thevenin's Equivalent Circuit"
+  },
+  "Rth": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515368,
+    "update_time": 1790515368,
+    "_id": "Rth"
+  },
+  "VRN": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515368,
+    "update_time": 1790515368,
+    "_id": "VRN"
+  },
+  "R": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00017-chunk-000",
+      "chapter 5  ADC and DAC::ch_00017-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790515450,
+    "_id": "R"
+  },
+  "B-2V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515450,
+    "update_time": 1790515450,
+    "_id": "B-2V"
+  },
+  "Toop-Amp": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515450,
+    "update_time": 1790515450,
+    "_id": "Toop-Amp"
+  },
+  "B4Vr+": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515450,
+    "update_time": 1790515450,
+    "_id": "B4Vr+"
+  },
+  "Resistance Calculation": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515467,
+    "update_time": 1790515467,
+    "_id": "Resistance Calculation"
+  },
+  "8-bit D/A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515515,
+    "update_time": 1790515515,
+    "_id": "8-bit D/A Converter"
+  },
+  "1011 0100": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515515,
+    "update_time": 1790515515,
+    "_id": "1011 0100"
+  },
+  "Clock Period": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515515,
+    "update_time": 1790515515,
+    "_id": "Clock Period"
+  },
+  "Digital Output Code": {
+    "chunk_ids": [
+      "Lab4::ch_00004-chunk-000",
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790516336,
+    "_id": "Digital Output Code"
+  },
+  "Analog Measured Input Binary Values": {
+    "chunk_ids": [
+      "Lab4::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515595,
+    "update_time": 1790515595,
+    "_id": "Analog Measured Input Binary Values"
+  },
+  "Real Numbers": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515597,
+    "update_time": 1790515597,
+    "_id": "Real Numbers"
+  },
+  "Vector Space Definition": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515597,
+    "update_time": 1790515597,
+    "_id": "Vector Space Definition"
+  },
+  "True Value": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "True Value"
+  },
+  "Measured Resistance": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "Measured Resistance"
+  },
+  "Average Resistance": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "Average Resistance"
+  },
+  "Percentage Error": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000",
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518166,
+    "_id": "Percentage Error"
+  },
+  "Resistor Analysis": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "Resistor Analysis"
+  },
+  "Color Code": {
+    "chunk_ids": [
+      "Lab1::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515613,
+    "update_time": 1790515613,
+    "_id": "Color Code"
+  },
+  "Friction In Bearings": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Friction In Bearings"
+  },
+  "Irregular Spring Tension": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Irregular Spring Tension"
+  },
+  "Calibration Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Calibration Error"
+  },
+  "Zero Setting": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Zero Setting"
+  },
+  "Full-Scale Setting": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Full-Scale Setting"
+  },
+  "Faulty Display Circuit": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Faulty Display Circuit"
+  },
+  "Incorrect Readings": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Incorrect Readings"
+  },
+  "Analog Meters": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Analog Meters"
+  },
+  "Digital Instruments": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Digital Instruments"
+  },
+  "Moving Components": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Moving Components"
+  },
+  "Correction Factors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Correction Factors"
+  },
+  "Instrument Calibration": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Instrument Calibration"
+  },
+  "Suitable Instrument Selection": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515695,
+    "update_time": 1790515695,
+    "_id": "Suitable Instrument Selection"
+  },
+  "Digital AVO Meter": {
+    "chunk_ids": [
+      "Lab1::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515712,
+    "update_time": 1790515712,
+    "_id": "Digital AVO Meter"
+  },
+  "Analog Meter": {
+    "chunk_ids": [
+      "Lab1::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515712,
+    "update_time": 1790515712,
+    "_id": "Analog Meter"
+  },
+  "Sample Size": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515759,
+    "update_time": 1790515759,
+    "_id": "Sample Size"
+  },
+  "Mean": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515759,
+    "update_time": 1790515759,
+    "_id": "Mean"
+  },
+  "Accuracy": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515964,
+    "update_time": 1790515964,
+    "_id": "Accuracy"
+  },
+  "Full-Scale Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515964,
+    "update_time": 1790515964,
+    "_id": "Full-Scale Error"
+  },
+  "F.S.": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515964,
+    "update_time": 1790515964,
+    "_id": "F.S."
+  },
+  "± 0.01% F.S.": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00004-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515964,
+    "update_time": 1790515964,
+    "_id": "± 0.01% F.S."
+  },
+  "5 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "5 V"
+  },
+  "312.5mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "312.5mV"
+  },
+  "5.156 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "5.156 V"
+  },
+  "5 V + 1/2 LSB": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "5 V + 1/2 LSB"
+  },
+  "156.25mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "156.25mV"
+  },
+  "4.844 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "4.844 V"
+  },
+  "5 V - 1/2 LSB": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "5 V - 1/2 LSB"
+  },
+  "43.12 percent": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00051-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515981,
+    "update_time": 1790515981,
+    "_id": "43.12 percent"
+  },
+  "Null Detector": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790515998,
+    "update_time": 1790515998,
+    "_id": "Null Detector"
+  },
+  "Z1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "Z1"
+  },
+  "Zx": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "Zx"
+  },
+  "Figure 3.12": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "Figure 3.12"
+  },
+  "Example 3.7": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "Example 3.7"
+  },
+  "Bridge Balance Condition": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516173,
+    "update_time": 1790516173,
+    "_id": "Bridge Balance Condition"
+  },
+  "Experiment 2": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Experiment 2"
+  },
+  "Bridge Configuration": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Bridge Configuration"
+  },
+  "Precise Resistance Measurement": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Precise Resistance Measurement"
+  },
+  "Impedance Measurement": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Impedance Measurement"
+  },
+  "Potentiometer": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Potentiometer"
+  },
+  "DC Bridge Circuit": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "DC Bridge Circuit"
+  },
+  "Part A: DC Bridge": {
+    "chunk_ids": [
+      "Lab2::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516191,
+    "update_time": 1790516191,
+    "_id": "Part A: DC Bridge"
+  },
+  "Power Supply": {
+    "chunk_ids": [
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "Power Supply"
+  },
+  "Square Wave": {
+    "chunk_ids": [
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "Square Wave"
+  },
+  "Cross Multiplication Method": {
+    "chunk_ids": [
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "Cross Multiplication Method"
+  },
+  "Fig.1": {
+    "chunk_ids": [
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "Fig.1"
+  },
+  "8-bit Digital Code": {
+    "chunk_ids": [
+      "Lab4::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516336,
+    "update_time": 1790516336,
+    "_id": "8-bit Digital Code"
+  },
+  "Unknown Impedance Zx": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516353,
+    "update_time": 1790516353,
+    "_id": "Unknown Impedance Zx"
+  },
+  "Series Resistor And Capacitor": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516353,
+    "update_time": 1790516353,
+    "_id": "Series Resistor And Capacitor"
+  },
+  "Capacitive Element": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00032-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516353,
+    "update_time": 1790516353,
+    "_id": "Capacitive Element"
+  },
+  "Offset Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516354,
+    "update_time": 1790516354,
+    "_id": "Offset Error"
+  },
+  "Actual Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516354,
+    "update_time": 1790516354,
+    "_id": "Actual Output"
+  },
+  "Analog Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00008-chunk-000",
+      "chapter 5  ADC and DAC::ch_00003-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790517622,
+    "_id": "Analog Output"
+  },
+  "Positive Offset Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516354,
+    "update_time": 1790516354,
+    "_id": "Positive Offset Error"
+  },
+  "Negative Offset Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516354,
+    "update_time": 1790516354,
+    "_id": "Negative Offset Error"
+  },
+  "Sine-Wave Signal": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00008-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516481,
+    "update_time": 1790516481,
+    "_id": "Sine-Wave Signal"
+  },
+  "Ac Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516756,
+    "update_time": 1790516756,
+    "_id": "Ac Bridge"
+  },
+  "Ac Voltage Source": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516756,
+    "update_time": 1790516756,
+    "_id": "Ac Voltage Source"
+  },
+  "Pure Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516756,
+    "update_time": 1790516756,
+    "_id": "Pure Resistance"
+  },
+  "Complex Impedance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00027-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790516756,
+    "update_time": 1790516756,
+    "_id": "Complex Impedance"
+  },
+  "Thevenin Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "Thevenin Resistance"
+  },
+  "13.6 Ohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "13.6 Ohms"
+  },
+  "24 Milliamps": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "24 Milliamps"
+  },
+  "1.665 Kiloohms": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "1.665 Kiloohms"
+  },
+  "Resistance Formula": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "Resistance Formula"
+  },
+  "R_th": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "R_th"
+  },
+  "V_th": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "V_th"
+  },
+  "I_g": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "I_g"
+  },
+  "R_1": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "R_1"
+  },
+  "R_2": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "R_2"
+  },
+  "R_3": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "R_3"
+  },
+  "Circuit Equivalent Resistance Formula": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517305,
+    "update_time": 1790517305,
+    "_id": "Circuit Equivalent Resistance Formula"
+  },
+  "Grid Focusing Anode": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517355,
+    "update_time": 1790517355,
+    "_id": "Grid Focusing Anode"
+  },
+  "Fluorescent Y-Plates": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517355,
+    "update_time": 1790517355,
+    "_id": "Fluorescent Y-Plates"
+  },
+  "Cathode Accelerator Anodes": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517355,
+    "update_time": 1790517355,
+    "_id": "Cathode Accelerator Anodes"
+  },
+  "Cathode Tube Ray": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517355,
+    "update_time": 1790517355,
+    "_id": "Cathode Tube Ray"
+  },
+  "Bridge Circuit": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517372,
+    "update_time": 1790517372,
+    "_id": "Bridge Circuit"
+  },
+  "Direct Current Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517372,
+    "update_time": 1790517372,
+    "_id": "Direct Current Bridge"
+  },
+  "Null-Indication Principle": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517372,
+    "update_time": 1790517372,
+    "_id": "Null-Indication Principle"
+  },
+  "Sensitivity Analysis": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517390,
+    "update_time": 1790517390,
+    "_id": "Sensitivity Analysis"
+  },
+  "Unbalance State": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517390,
+    "update_time": 1790517390,
+    "_id": "Unbalance State"
+  },
+  "Deflector": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Deflector"
+  },
+  "Current Through Galvanometer": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Current Through Galvanometer"
+  },
+  "Total Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Total Resistance"
+  },
+  "Resistance Change Percentage": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Resistance Change Percentage"
+  },
+  "Voltage Value": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Voltage Value"
+  },
+  "Resistance Value": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Resistance Value"
+  },
+  "Calculated Current Value": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517503,
+    "update_time": 1790517503,
+    "_id": "Calculated Current Value"
+  },
+  "Thevenin's Equivalent Resistance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00015-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518907,
+    "_id": "Thevenin's Equivalent Resistance"
+  },
+  "R<sub>th</sub>": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517519,
+    "update_time": 1790517519,
+    "_id": "R<sub>th</sub>"
+  },
+  "Ohm": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517519,
+    "update_time": 1790517519,
+    "_id": "Ohm"
+  },
+  "Successive Approximation Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "Successive Approximation Converter"
+  },
+  "Successive Approximation Search Tree": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "Successive Approximation Search Tree"
+  },
+  "10-20 Microseconds": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "10-20 Microseconds"
+  },
+  "4-bit A/D D/A Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "4-bit A/D D/A Output"
+  },
+  "16-bit Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "16-bit Converter"
+  },
+  "12-bit Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "12-bit Converter"
+  },
+  "10-bit Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "10-bit Converter"
+  },
+  "Laboratory Functions": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00031-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517539,
+    "update_time": 1790517539,
+    "_id": "Laboratory Functions"
+  },
+  "Data Converter Circuits": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "Data Converter Circuits"
+  },
+  "Chapter 5": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "Chapter 5"
+  },
+  "A/D And D/A": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "A/D And D/A"
+  },
+  "A/d Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "A/d Converter"
+  },
+  "D/a Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517621,
+    "update_time": 1790517621,
+    "_id": "D/a Converter"
+  },
+  "Digital Domain": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517622,
+    "update_time": 1790517622,
+    "_id": "Digital Domain"
+  },
+  "Staircase Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517622,
+    "update_time": 1790517622,
+    "_id": "Staircase Output"
+  },
+  "Filtering": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00003-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517622,
+    "update_time": 1790517622,
+    "_id": "Filtering"
+  },
+  "Gain Error": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517639,
+    "update_time": 1790517639,
+    "_id": "Gain Error"
+  },
+  "Binary Input": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517639,
+    "update_time": 1790517639,
+    "_id": "Binary Input"
+  },
+  "Full-Scale Digital Code": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517639,
+    "update_time": 1790517639,
+    "_id": "Full-Scale Digital Code"
+  },
+  "Resistor Measurement Data": {
+    "chunk_ids": [
+      "Lab1::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517751,
+    "update_time": 1790517751,
+    "_id": "Resistor Measurement Data"
+  },
+  "Resistance Measurement": {
+    "chunk_ids": [
+      "Lab1::ch_00010-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517751,
+    "update_time": 1790517751,
+    "_id": "Resistance Measurement"
+  },
+  "3-Bit Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517753,
+    "update_time": 1790517753,
+    "_id": "3-Bit Conversion"
+  },
+  "Quantization": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517753,
+    "update_time": 1790517753,
+    "_id": "Quantization"
+  },
+  "5V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00021-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517753,
+    "update_time": 1790517753,
+    "_id": "5V"
+  },
+  "5-Bit D/A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517770,
+    "update_time": 1790517770,
+    "_id": "5-Bit D/A Converter"
+  },
+  "Full-Scale Voltage": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517770,
+    "update_time": 1790517770,
+    "_id": "Full-Scale Voltage"
+  },
+  "± 1/2 LSB": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "± 1/2 LSB"
+  },
+  "00001": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "00001"
+  },
+  "00010": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "00010"
+  },
+  "10000": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "10000"
+  },
+  "Problem 5": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00049-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517771,
+    "update_time": 1790517771,
+    "_id": "Problem 5"
+  },
+  "Statistical Analysis of Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517899,
+    "update_time": 1790517899,
+    "_id": "Statistical Analysis of Errors"
+  },
+  "Experimental Factors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517899,
+    "update_time": 1790517899,
+    "_id": "Experimental Factors"
+  },
+  "Measurement Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00017-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517899,
+    "update_time": 1790517899,
+    "_id": "Measurement Error"
+  },
+  "Low-Pass Filter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Low-Pass Filter"
+  },
+  "Sample And Hold": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Sample And Hold"
+  },
+  "Sampled-Data Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Sampled-Data Signal"
+  },
+  "Digital Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Digital Signal"
+  },
+  "Shannon's Sampling Theorem": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Shannon's Sampling Theorem"
+  },
+  "Block Diagram of A/D Conversion System": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "Block Diagram of A/D Conversion System"
+  },
+  "A/D Conversion System": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00019-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517902,
+    "update_time": 1790517902,
+    "_id": "A/D Conversion System"
+  },
+  "10-Bit Instrumentation D/A Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "10-Bit Instrumentation D/A Converter"
+  },
+  "16mV Output": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "16mV Output"
+  },
+  "0000000100": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "0000000100"
+  },
+  "4 mV": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "4 mV"
+  },
+  "4.092 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "4.092 V"
+  },
+  "1023": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00048-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790517919,
+    "update_time": 1790517919,
+    "_id": "1023"
+  },
+  "Lsb": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518032,
+    "update_time": 1790518032,
+    "_id": "Lsb"
+  },
+  "Analog Level": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518032,
+    "update_time": 1790518032,
+    "_id": "Analog Level"
+  },
+  "Digital To Analog Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00006-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518032,
+    "update_time": 1790518032,
+    "_id": "Digital To Analog Converter"
+  },
+  "Binary Weighted DAC": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00018-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518034,
+    "update_time": 1790518034,
+    "_id": "Binary Weighted DAC"
+  },
+  "Murray Loop": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Murray Loop"
+  },
+  "La": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "La"
+  },
+  "Good Connector": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Good Connector"
+  },
+  "Damaged Connector": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Damaged Connector"
+  },
+  "Resistance Ground Connection Error": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Resistance Ground Connection Error"
+  },
+  "Metal Casing Of The Cable": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Metal Casing Of The Cable"
+  },
+  "Applications On D.C Bridges": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Applications On D.C Bridges"
+  },
+  "Short-Circuit At End Of The Line": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Short-Circuit At End Of The Line"
+  },
+  "B": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "B"
+  },
+  "A": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "A"
+  },
+  "G": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "G"
+  },
+  "Lb": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Lb"
+  },
+  "Lx": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518119,
+    "update_time": 1790518119,
+    "_id": "Lx"
+  },
+  "Resistor Data Table": {
+    "chunk_ids": [
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Resistor Data Table"
+  },
+  "Resistor Resistance": {
+    "chunk_ids": [
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Resistor Resistance"
+  },
+  "Standard Mean Resistance": {
+    "chunk_ids": [
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Standard Mean Resistance"
+  },
+  "Squared Deviation": {
+    "chunk_ids": [
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Squared Deviation"
+  },
+  "Sample 1": {
+    "chunk_ids": [
+      "Lab1::ch_00005-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518166,
+    "update_time": 1790518166,
+    "_id": "Sample 1"
+  },
+  "10-Bit Dual Slope Analog-To-Digital Converter": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "10-Bit Dual Slope Analog-To-Digital Converter"
+  },
+  "1 kHz": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "1 kHz"
+  },
+  "1100100000": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "1100100000"
+  },
+  "Double-Null": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "Double-Null"
+  },
+  "-1 V": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "-1 V"
+  },
+  "1-Millisecond": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "1-Millisecond"
+  },
+  "Integrating Capacitor": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "Integrating Capacitor"
+  },
+  "8 Volts": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "8 Volts"
+  },
+  "10 Volts Per Second": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00052-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518185,
+    "update_time": 1790518185,
+    "_id": "10 Volts Per Second"
+  },
+  "Limiting Error": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518251,
+    "update_time": 1790518251,
+    "_id": "Limiting Error"
+  },
+  "300 V": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518251,
+    "update_time": 1790518251,
+    "_id": "300 V"
+  },
+  "120 V": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518251,
+    "update_time": 1790518251,
+    "_id": "120 V"
+  },
+  "5%": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00024-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518251,
+    "update_time": 1790518251,
+    "_id": "5%"
+  },
+  "Part B": {
+    "chunk_ids": [
+      "Lab1::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518268,
+    "update_time": 1790518268,
+    "_id": "Part B"
+  },
+  "Laboratory": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518315,
+    "update_time": 1790518315,
+    "_id": "Laboratory"
+  },
+  "Set Of Ten Measurements": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518315,
+    "update_time": 1790518315,
+    "_id": "Set Of Ten Measurements"
+  },
+  "Fourth Measurement": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00015-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518315,
+    "update_time": 1790518315,
+    "_id": "Fourth Measurement"
+  },
+  "Limiting Errors": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518459,
+    "update_time": 1790518459,
+    "_id": "Limiting Errors"
+  },
+  "Full-Scale Reading": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518459,
+    "update_time": 1790518459,
+    "_id": "Full-Scale Reading"
+  },
+  "300 V Voltmeter": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518459,
+    "update_time": 1790518459,
+    "_id": "300 V Voltmeter"
+  },
+  "120 V Source": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00023-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518459,
+    "update_time": 1790518459,
+    "_id": "120 V Source"
+  },
+  "Experiment 4": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Experiment 4"
+  },
+  "Analog-to-Digital Converter": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Analog-to-Digital Converter"
+  },
+  "Complementary Metal-Oxide-Semiconductor Technology": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Complementary Metal-Oxide-Semiconductor Technology"
+  },
+  "Light-Emitting Diode": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Light-Emitting Diode"
+  },
+  "ALE": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "ALE"
+  },
+  "CLOCK IN": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "CLOCK IN"
+  },
+  "Successive Approximation": {
+    "chunk_ids": [
+      "Lab4::ch_00000-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518461,
+    "update_time": 1790518461,
+    "_id": "Successive Approximation"
+  },
+  "Switch S 1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "Switch S 1"
+  },
+  "V in": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "V in"
+  },
+  "Op Amp Integrator": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "Op Amp Integrator"
+  },
+  "Conversion Process": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "Conversion Process"
+  },
+  "Time t 2": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "Time t 2"
+  },
+  "Time t 1": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00037-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518478,
+    "update_time": 1790518478,
+    "_id": "Time t 1"
+  },
+  "Luminous Spot": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "Luminous Spot"
+  },
+  "CRT HV Supply": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "CRT HV Supply"
+  },
+  "Line Signal": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "Line Signal"
+  },
+  "Horizontal Time Base Trigger Amplifier Generator Circuit": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "Horizontal Time Base Trigger Amplifier Generator Circuit"
+  },
+  "Low Voltage Supply": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00002-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518610,
+    "update_time": 1790518610,
+    "_id": "Low Voltage Supply"
+  },
+  "Maxwell-Wein Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518627,
+    "update_time": 1790518627,
+    "_id": "Maxwell-Wein Bridge"
+  },
+  "Maxwell Bridge": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518627,
+    "update_time": 1790518627,
+    "_id": "Maxwell Bridge"
+  },
+  "Balance Equation": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000",
+      "chap 3 DC&AC BRIDGES::ch_00034-chunk-000"
+    ],
+    "count": 2,
+    "update_time": 1790518757,
+    "_id": "Balance Equation"
+  },
+  "Figure 7.6": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518627,
+    "update_time": 1790518627,
+    "_id": "Figure 7.6"
+  },
+  "Angular Frequency": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518627,
+    "update_time": 1790518627,
+    "_id": "Angular Frequency"
+  },
+  "Shannons Sampling Theorem": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "Shannons Sampling Theorem"
+  },
+  "Aliasing": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "Aliasing"
+  },
+  "2 kHz Sine Wave": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "2 kHz Sine Wave"
+  },
+  "1.5 kHz Sample Rate": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "1.5 kHz Sample Rate"
+  },
+  "500 Hz Aliased Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00020-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518675,
+    "update_time": 1790518675,
+    "_id": "500 Hz Aliased Signal"
+  },
+  "Staircase Ramp": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518741,
+    "update_time": 1790518741,
+    "_id": "Staircase Ramp"
+  },
+  "Conversion Time": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518741,
+    "update_time": 1790518741,
+    "_id": "Conversion Time"
+  },
+  "Input Signal": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518741,
+    "update_time": 1790518741,
+    "_id": "Input Signal"
+  },
+  "Counter Type A/D Conversion": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00026-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518741,
+    "update_time": 1790518741,
+    "_id": "Counter Type A/D Conversion"
+  },
+  "Arm Impedance": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518757,
+    "update_time": 1790518757,
+    "_id": "Arm Impedance"
+  },
+  "Impedance Components": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518757,
+    "update_time": 1790518757,
+    "_id": "Impedance Components"
+  },
+  "Simplified Relationship": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00034-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518757,
+    "update_time": 1790518757,
+    "_id": "Simplified Relationship"
+  },
+  "Deviation Calculations": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00022-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518807,
+    "update_time": 1790518807,
+    "_id": "Deviation Calculations"
+  },
+  "Algebraic Sum Of Deviations": {
+    "chunk_ids": [
+      "chapter-1 Error in measurement::ch_00022-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518807,
+    "update_time": 1790518807,
+    "_id": "Algebraic Sum Of Deviations"
+  },
+  "Time Base": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518888,
+    "update_time": 1790518888,
+    "_id": "Time Base"
+  },
+  "Fast Time Base": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518888,
+    "update_time": 1790518888,
+    "_id": "Fast Time Base"
+  },
+  "Slow Time Base": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00007-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518888,
+    "update_time": 1790518888,
+    "_id": "Slow Time Base"
+  },
+  "Frequency Ratio": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518890,
+    "update_time": 1790518890,
+    "_id": "Frequency Ratio"
+  },
+  "Figure 5": {
+    "chunk_ids": [
+      "chapter(4) oscilloscope::ch_00009-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518890,
+    "update_time": 1790518890,
+    "_id": "Figure 5"
+  },
+  "Thevenin's Equivalent Voltage": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518907,
+    "update_time": 1790518907,
+    "_id": "Thevenin's Equivalent Voltage"
+  },
+  "Slightly Unbalanced Condition": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518907,
+    "update_time": 1790518907,
+    "_id": "Slightly Unbalanced Condition"
+  },
+  "Approximate Expression": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518907,
+    "update_time": 1790518907,
+    "_id": "Approximate Expression"
+  },
+  "Thévenin's Theorem": {
+    "chunk_ids": [
+      "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518907,
+    "update_time": 1790518907,
+    "_id": "Thévenin's Theorem"
+  },
+  "X": {
+    "chunk_ids": [
+      "chapter 5  ADC and DAC::ch_00053-chunk-000"
+    ],
+    "count": 1,
+    "create_time": 1790518941,
+    "update_time": 1790518941,
+    "_id": "X"
+  }
+}

@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "generation_model": "human-authored-per-chunks-inspection",
+  "generation_date": "2026-07-06",
+  "corpus_hash": "populated-from-chunks.json-sha256-at-runtime",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": "In a voltage divider experiment, a student measures the output voltage across a 100kΩ resistor using an AVO meter. The measured voltage differs from the expected value because the meter itself draws current from the circuit, altering the voltage being measured. This phenomenon is called insertion error. What type of measurement error — gross, systematic, or random — does the insertion error caused by the meter's input impedance belong to, and why?",
+      "golden_answer": "The insertion error in Lab 1 Part B falls under instrumental errors (a subtype of systematic errors). According to Chapter 1, instrumental errors arise from shortcomings of the instruments themselves, such as calibration errors, friction in bearings, or — as in this case — loading effects where the measuring instrument alters the circuit being measured. The AVO meter draws current from the voltage divider circuit (Ra=1kΩ, Rb≈100kΩ), causing the measured voltage Eoi(measured) to differ from the true voltage Eoi(true). This is not a human error (gross) and not random scatter — it is a predictable, correctable bias introduced by the instrument, which is the definition of a systematic/instrumental error.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00004",
+        "chapter-1 Error in measurement::ch_00005",
+        "Lab1::ch_00007",
+        "Lab1::ch_00008",
+        "Lab1::ch_00010"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "Lab1"
+      ]
+    },
+    {
+      "question_id": "Q002",
+      "question": "A student constructs a DC bridge circuit with a 5V supply to measure an unknown resistance. The bridge has two fixed resistors, an adjustable potentiometer, and the unknown resistor. The student adjusts the potentiometer until the voltmeter across the bridge reads zero. Explain what condition this zero-voltage reading represents, and write the equation that relates the unknown resistance to the three known resistances in this balanced state.",
+      "golden_answer": "Chapter 3 derives the Wheatstone bridge balance condition as R1*Rx = R2*R3 (or equivalently Rx = R2*R3/R1), where no current flows through the galvanometer. In Lab 2, the bridge is constructed with E=5V. R1 and R3 are fixed resistors whose values students measure and record. R2 is a potentiometer (adjustable up to 100kΩ, with 50kΩ suggested) that is varied until the voltmeter reads zero between points D and B — this is the null condition. Rx is the unknown resistor being measured. Once R1, R2, and R3 are known and null is achieved, Rx is computed from the formula. The lab's R1, R2, R3 correspond directly to R1(R_arm1), the variable arm, and R3 in Chapter 3's Wheatstone bridge diagram.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00002",
+        "chap 3 DC&AC BRIDGES::ch_00004",
+        "chap 3 DC&AC BRIDGES::ch_00007",
+        "Lab2::ch_00000",
+        "Lab2::ch_00002"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES",
+        "Lab2"
+      ]
+    },
+    {
+      "question_id": "Q003",
+      "question": "A student uses an oscilloscope in XY mode to compare two signals: one at 1kHz and another at 2kHz, with zero phase difference between them. The resulting display is a stationary looped pattern. What frequency ratio does this pattern correspond to, and what does the shape of such a Lissajous figure tell us about the relationship between the two signals?",
+      "golden_answer": "According to Chapter 4, a frequency ratio of 1:2 (or 2:1) between the horizontal and vertical inputs produces a specific Lissajous figure pattern — shown as examples (b) 2:1 and (c) 1:2 in Figure 5. In Lab 3, when F1=1kHz and F2=2kHz (ratio 1:2 with phase difference 0°), the output figure will correspond to the 1:2 pattern. The Lab 3 data table shows this exact configuration: the row with F1(Ch1)=1k, F2(Ch2)=2k, and Δθ=0°.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter(4) oscilloscope::ch_00015",
+        "chapter(4) oscilloscope::ch_00016",
+        "Lab3::ch_00000",
+        "Lab3::ch_00001",
+        "Lab3::ch_00003"
+      ],
+      "doc_ids_involved": [
+        "chapter(4) oscilloscope",
+        "Lab3"
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "question": "The ADC0808 chip converts an analog input voltage to an 8-bit binary output by testing each bit from the most significant to the least significant, comparing an internally generated voltage against the input at each step. At the start of conversion, the chip sets the MSB to 1 and all lower bits to 0, then decides whether to keep or clear the MSB based on a comparator result. It repeats this for every bit down to the LSB. Describe this bit-by-bit conversion algorithm and explain how the final 8-bit output code relates to the analog input voltage.",
+      "golden_answer": "According to Chapter 5, the successive approximation register (SAR) starts by setting the MSB (b7 for 8-bit) to 1 and all lower bits to 0, then compares the DAC output (Vfb) against the input voltage (Vin). If Vfb > Vin, the bit is reset to 0; if Vfb <= Vin, the bit stays at 1. This is repeated for each successive bit down to the LSB. The ADC0808 in Lab 4 uses this exact algorithm: for a given analog input voltage (e.g., 2.5V with Vref=5V), the SAR tests b7→b0 sequentially, each comparison narrowing the result. The final 8-bit binary code in the Lab 4 table is the SAR's converged representation. The Chapter 5 search tree diagram for a 4-bit ADC illustrates this process at the conceptual level, while the ADC0808 implements it for 8 bits.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00044",
+        "chapter 5  ADC and DAC::ch_00047",
+        "chapter 5  ADC and DAC::ch_00050",
+        "Lab4::ch_00000",
+        "Lab4::ch_00003",
+        "Lab4::ch_00004"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC",
+        "Lab4"
+      ]
+    },
+    {
+      "question_id": "Q005",
+      "question": "A student builds a Wheatstone bridge to measure an unknown resistance. During the experiment, the student reads the analog voltmeter at a slight angle rather than straight-on, causing the needle to appear at a different position than it actually is. Classify this type of error as gross, systematic, or random. Does the null-balance method of the bridge — adjusting until the voltmeter reads exactly zero — help mitigate this particular mistake? Why or why not?",
+      "golden_answer": "Parallax error when reading an analog meter is classified as a gross error in Chapter 1's taxonomy — it is a human error caused by the operator reading the instrument incorrectly. The null-balance method of the Wheatstone bridge partially mitigates this because the goal is to adjust R2 until the voltmeter reads exactly zero, which is easier to judge accurately than reading a specific non-zero voltage. However, gross errors in reading the fixed resistor values (R1, R3) would still propagate into the calculated Rx. The bridge's accuracy ultimately depends on the operator correctly identifying the null point and accurately recording the ratio arm values.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00001",
+        "chapter-1 Error in measurement::ch_00002",
+        "chapter-1 Error in measurement::ch_00003",
+        "Lab2::ch_00002",
+        "chap 3 DC&AC BRIDGES::ch_00004"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "Lab2",
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q006",
+      "question": "A 300V voltmeter is specified as accurate within ±2% of its full-scale reading. If this voltmeter were connected as the null detector in a Wheatstone bridge, it would need to detect a Thevenin voltage of approximately 0.125V produced by a 5% resistance imbalance (with Thevenin resistance 500Ω and galvanometer resistance 125Ω). Can this voltmeter reliably detect the 0.125V imbalance signal? Explain why or why not, and discuss what property a null detector must have for bridge measurements.",
+      "golden_answer": "The limiting error of the 300V ±2% F.S. voltmeter is 0.02 × 300V = 6V, meaning the voltmeter cannot reliably detect voltages below 6V. In Example 3.5 of Chapter 3, a 5% resistance change (25Ω out of 500Ω) in a Wheatstone bridge produces a Thevenin equivalent voltage Vth = 0.125V across the galvanometer. A 200-0-200 μA galvanometer with Rg=125Ω detects this, producing full-scale deflection. The voltmeter would be completely useless as a null detector because its 6V threshold is 48× larger than the 0.125V signal. This illustrates why bridge circuits require sensitive galvanometers (microampere deflection), not voltmeters — the null detection sensitivity must match or exceed the imbalance signal magnitude.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00023",
+        "chapter-1 Error in measurement::ch_00024",
+        "chap 3 DC&AC BRIDGES::ch_00012",
+        "chap 3 DC&AC BRIDGES::ch_00038",
+        "chap 3 DC&AC BRIDGES::ch_00039",
+        "chap 3 DC&AC BRIDGES::ch_00040"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q007",
+      "question": "A student measures twenty 100kΩ resistors using a digital ohmmeter and computes their mean and standard deviation to characterize the batch. Another bridge circuit, the Kelvin bridge, is specifically designed with an extra pair of ratio arms to cancel the effect of lead and contact resistance, making it suitable for measuring resistances from about 1Ω down to 1μΩ. Would replacing the ohmmeter with a Kelvin bridge meaningfully improve the accuracy of the 100kΩ resistor measurements? Why or why not?",
+      "golden_answer": "No, using a Kelvin bridge for Lab 1's 100kΩ resistors would not meaningfully improve accuracy. Chapter 3 states the Kelvin bridge is specifically designed to eliminate contact and lead resistance effects, which are significant only when the unknown resistance is very low (1Ω to ~1μΩ range). For a 100kΩ resistor, lead resistance (~0.1Ω) and contact resistance (~0.01Ω) contribute a relative error of only about 0.0001%, which is orders of magnitude below the resistors' tolerance and the ohmmeter's accuracy. Lab 1's approach — taking 20 measurements and computing mean, standard deviation, and distribution curves — addresses the dominant error sources for high-value resistors: statistical scatter (random errors) and resistor tolerance, which the Kelvin bridge does not reduce. The Kelvin bridge would add unnecessary complexity (four-terminal connections, extra ratio arms Ra and Rb) with no measurable benefit at the 100kΩ level.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00041",
+        "chap 3 DC&AC BRIDGES::ch_00042",
+        "Lab1::ch_00002",
+        "Lab1::ch_00003",
+        "Lab1::ch_00004",
+        "Lab1::ch_00005"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES",
+        "Lab1"
+      ]
+    },
+    {
+      "question_id": "Q008",
+      "question": "According to sampling theory, a signal must be sampled at a rate at least twice its highest frequency component to prevent aliasing — a phenomenon where high frequencies masquerade as lower ones in the sampled data. An oscilloscope does not sample in the digital sense; instead, it uses a sawtooth sweep voltage to move the electron beam horizontally in proportion to time. If the oscilloscope's sweep frequency is set too low relative to the input signal frequency, what happens to the displayed waveform? How does this relate to aliasing in an analog-to-digital converter?",
+      "golden_answer": "When a CRO's time-base sweep frequency is too low relative to the input signal frequency, the displayed waveform becomes an incorrect, lower-frequency representation — a visual aliasing effect. For example, Chapter 4 shows that with a slow time base, fast AC signals appear distorted or produce misleading patterns. This is conceptually equivalent to aliasing in ADCs (Chapter 5): in both cases, an insufficient sampling/display rate relative to the signal frequency produces a false representation of the original signal. In a CRO, this is a visual artifact (the eye sees a low-frequency envelope); in an ADC, the sampled digital values represent an aliased frequency given by |fin - k*fs|. The underlying principle is the same — undersampling violates the Nyquist criterion — but the consequence differs: the CRO produces a visually misleading trace, while the ADC produces corrupted digital data that cannot be recovered by filtering.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00030",
+        "chapter 5  ADC and DAC::ch_00031",
+        "chapter(4) oscilloscope::ch_00008",
+        "chapter(4) oscilloscope::ch_00014"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC",
+        "chapter(4) oscilloscope"
+      ]
+    },
+    {
+      "question_id": "Q009",
+      "question": "A student measures 20 samples of a 100kΩ resistor batch and computes the standard deviation σ to assess how much the values spread around the mean. Two formulas are commonly used: one with n in the denominator and one with n − 1. Given that the sample size is only 20, which denominator should the student use, and what is the practical effect on the computed σ of choosing the wrong one?",
+      "golden_answer": "Lab 1 should use n-1 = 19 in the denominator for the standard deviation calculation since 20 < 30, as per Chapter 1's guideline (use n for n≥30, use n-1 for n<30). This is Bessel's correction — using n-1 gives an unbiased estimate of the population standard deviation from a finite sample. Using n=20 instead of n-1=19 would underestimate the standard deviation by approximately sqrt(20/19) ≈ 2.6% relative, which would make the resistor batch appear slightly more consistent than it truly is. In Part B, the insertion error is calculated separately as a percentage difference between true and measured voltage, so the standard deviation denominator choice does not directly affect the insertion error formula. However, if students were to assess the statistical significance of insertion errors (e.g., whether a measured insertion error is larger than expected random variation), using n instead of n-1 would incorrectly narrow the confidence interval, potentially flagging normal scatter as meaningful insertion error.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00020",
+        "chapter-1 Error in measurement::ch_00021",
+        "chapter-1 Error in measurement::ch_00022",
+        "Lab1::ch_00004",
+        "Lab1::ch_00005",
+        "Lab1::ch_00010"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "Lab1"
+      ]
+    },
+    {
+      "question_id": "Q010",
+      "question": "A Wheatstone bridge determines an unknown resistance using the balance equation Rx = R2 × R3 / R1. Suppose each of the three known resistors has a manufacturer-stated tolerance of ±1%. Using error propagation principles, estimate the worst-case relative uncertainty in the calculated Rx. Separately, the bridge's galvanometer can only detect a minimum voltage of 0.125V developed across its terminals when the bridge is slightly unbalanced. Which factor limits the measurement accuracy more: the resistor tolerances or the galvanometer's detection threshold?",
+      "golden_answer": "To estimate uncertainty in Rx from a Wheatstone bridge with ±1% tolerance resistors, you would propagate the errors through the bridge balance equation Rx = R2*R3/R1. Using Chapter 1's relative error framework: the relative uncertainty in Rx is the sum of the relative uncertainties of R2, R3, and R1 (since multiplication/division propagates as addition of relative errors). So uncertainty(Rx)/Rx ≈ |∂Rx/∂R1|*(ΔR1/Rx) + |∂Rx/∂R2|*(ΔR2/Rx) + |∂Rx/∂R3|*(ΔR3/Rx) ≈ 1% + 1% + 1% = 3%. The Thevenin analysis from Chapter 3 confirms that bridge sensitivity (how much galvanometer current flows for a given imbalance) determines the minimum detectable ΔRx, while Chapter 1's error propagation gives the overall uncertainty from known resistor tolerances. In practice, the dominant uncertainty source is the tolerance of the ratio arms (R2, R3) and the standard resistor (R1), not the null-detection sensitivity, assuming the galvanometer is sufficiently sensitive.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00009",
+        "chapter-1 Error in measurement::ch_00010",
+        "chapter-1 Error in measurement::ch_00017",
+        "chapter-1 Error in measurement::ch_00018",
+        "chap 3 DC&AC BRIDGES::ch_00012",
+        "chap 3 DC&AC BRIDGES::ch_00013",
+        "chap 3 DC&AC BRIDGES::ch_00019"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q011",
+      "question": "An analog-to-digital converter with 8-bit resolution and a 5V reference divides the input range into 256 discrete levels, each 19.53mV wide. No matter how stable the input voltage is, the digital output rounds to the nearest level, introducing a quantization error of up to ±½ LSB. Under standard error taxonomy, is quantization error a systematic error, a random error, or something else? Justify your classification.",
+      "golden_answer": "Quantization error is classified as a systematic error under Chapter 1's taxonomy, but with unique characteristics. From Chapter 1, systematic errors include instrumental errors due to shortcomings of the instrument. The staircase transfer function of a 3-bit ADC (Chapter 5, step size = Vfs/2^n = 5V/8 = 0.625V) shows that for an ideal ADC, the quantization error is bounded by ±1/2 LSB and follows a deterministic sawtooth pattern. It is inherent to the conversion process, not caused by the operator (gross) and not random scatter (although it is often modeled as random noise in signal processing for mathematical convenience). However, unlike calibration errors or gain errors which are correctable, quantization error is fundamental — no amount of instrument improvement can eliminate it in an N-bit ADC; only increasing the number of bits reduces it. This makes it a special subcategory: a fundamental, deterministic instrumental error.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00032",
+        "chapter 5  ADC and DAC::ch_00033",
+        "chapter 5  ADC and DAC::ch_00008",
+        "chapter-1 Error in measurement::ch_00001",
+        "chapter-1 Error in measurement::ch_00004",
+        "chapter-1 Error in measurement::ch_00007"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC",
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q012",
+      "question": "In one experiment, a student determines an unknown frequency by displaying Lissajous figures on an oscilloscope and comparing against a known reference signal. In another experiment, a student determines an unknown resistance by balancing a Wheatstone bridge and comparing against known standard resistors. Both are comparison-based null methods. For the Lissajous frequency measurement, what is the equivalent of the bridge's 'null condition' (zero detector current)? What is the equivalent of the bridge's 'ratio arms'?",
+      "golden_answer": "Both methods are comparison (ratio) techniques that avoid absolute measurement. In Lab 3's Lissajous method, the 'null balance' equivalent is achieving a stationary pattern on the CRT screen — when the two frequencies form a simple integer ratio (e.g., 1:1, 1:2, 2:1), the figure stops rotating and becomes stable. The frequency ratio f_unknown/f_known is determined by counting the number of horizontal and vertical tangent points (lobes) of the stationary pattern. The 'ratio arms' equivalent is the known reference frequency — just as the Wheatstone bridge's ratio arms (R2/R1 or R3/R1) determine the scaling factor Rx = R3*(R2/R1), the known signal frequency in Lab 3 determines the scaling: f_unknown = f_known * (horizontal_tangencies / vertical_tangencies). Both methods trade absolute instrument accuracy for comparison precision: the bridge needs precise ratio resistors; the Lissajous method needs a precise reference oscillator.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "Lab3::ch_00000",
+        "Lab3::ch_00001",
+        "Lab3::ch_00002",
+        "Lab2::ch_00000",
+        "Lab2::ch_00002",
+        "chap 3 DC&AC BRIDGES::ch_00004",
+        "chap 3 DC&AC BRIDGES::ch_00007"
+      ],
+      "doc_ids_involved": [
+        "Lab3",
+        "Lab2",
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q013",
+      "question": "A student tests an ADC0808 successive-approximation converter by applying a stable 2.5V DC input and recording the 8-bit digital output. Several readings show slight but unexpected variation in the output code. A different type of A/D converter, the dual-slope converter, integrates the input voltage over a fixed time interval before digitizing, which inherently averages out periodic noise such as 50/60 Hz power-line interference. Does the ADC0808 possess this same noise-averaging property? If not, what could be causing the output variation?",
+      "golden_answer": "No, the noise rejection strategy from Chapter 5 does not apply here because the ADC0808 is a successive approximation (SAR) ADC, not a dual-slope (integrating) ADC. Chapter 5 explains that the dual-slope converter integrates the input over time T1 = 2^n clock cycles and then discharges against a reference, inherently averaging the input and canceling periodic noise at multiples of 1/T1 (including 50/60 Hz if T1 is chosen appropriately). The SAR ADC in the ADC0808 samples the input at a specific instant — it compares the input against sequentially generated DAC levels — and has no integration period to reject noise. If the Lab 4 digital output varies for a fixed DC input, the variation is more likely due to: (a) noise on the DC power supply, (b) inadequate decoupling on the ADC0808, (c) clock jitter, or (d) the ±1/2 LSB inherent quantization error (±19.5mV for 8-bit, 5V range). To mitigate, students should add bypass capacitors and average multiple readings.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "Lab4::ch_00000",
+        "Lab4::ch_00003",
+        "Lab4::ch_00004",
+        "chapter 5  ADC and DAC::ch_00055",
+        "chapter 5  ADC and DAC::ch_00057",
+        "chapter 5  ADC and DAC::ch_00058",
+        "chapter 5  ADC and DAC::ch_00061",
+        "chapter 5  ADC and DAC::ch_00044"
+      ],
+      "doc_ids_involved": [
+        "Lab4",
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q014",
+      "question": "A student is measuring Lissajous figures on an oscilloscope when a strong permanent magnet is inadvertently placed near the instrument. Inside the oscilloscope, an electron beam travels through two pairs of deflection plates and strikes a phosphor screen to create the visible trace. How would the external magnetic field affect the electron beam's path and the displayed Lissajous figure? Under standard error classification, what type of error does this magnetic interference introduce?",
+      "golden_answer": "According to Chapter 4, the CRT produces a focused electron beam that is deflected by electric fields between the X-plates and Y-plates to create the display. If a strong external magnetic field were present, the Lorentz force (F = qv × B) would deflect the moving electrons perpendicular to both their velocity and the magnetic field, distorting the beam path away from the intended trajectory governed by the electric deflection plates. This would distort the Lissajous figure on the screen — the pattern would be shifted, rotated, or warped. Per Chapter 1's taxonomy, this is an environmental error — a systematic error caused by an external condition (magnetic field) affecting the instrument. Unlike a random error, the distortion would be consistent as long as the magnetic field source remains in the same position. It can be avoided by proper housing of the instrument (magnetic shielding) or by removing the source of interference, as Chapter 1 recommends.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00006",
+        "chapter(4) oscilloscope::ch_00007",
+        "chapter(4) oscilloscope::ch_00008",
+        "Lab3::ch_00001",
+        "Lab3::ch_00002"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement",
+        "chapter(4) oscilloscope",
+        "Lab3"
+      ]
+    },
+    {
+      "question_id": "Q015",
+      "question": "Consider two analog-to-digital converters, both clocked at 1kHz. Converter A is a 10-bit dual-slope type that first integrates the input for 2¹⁰ clock cycles and then discharges against a reference. Converter B is an 8-bit successive-approximation type that resolves each bit in roughly one clock cycle, with perhaps 8–10 cycles total per conversion. Estimate the conversion time for each, and explain which architecture is better suited for high-speed applications and why.",
+      "golden_answer": "For the dual-slope ADC (Problem 6, Chapter 5): The charging time T1 = 2^10 × (1/1000) = 1024ms ≈ 1.024s (10-bit counter, 1kHz clock). The discharge time T2 = Vin/Vref × T1; at full scale (Vin ≈ 10V, Vref = -1V) this is approximately T2 ≈ T1 = 1.024s. Total conversion time is T1 + T2 ≈ 2.048s per conversion. For the ADC0808 (Lab 4, 8-bit SAR): Each conversion requires 8 clock cycles (one per bit) plus overhead (typically 8-10 cycles total). At 1kHz, this is approximately 8-10ms — roughly 200× faster than the dual-slope. The dual-slope ADC's speed penalty comes from counting through all 2^n states, making its conversion time proportional to 2^n. The SAR's conversion time is proportional to n (bit-by-bit testing), which explains why SAR ADCs — as Chapter 5 notes with typical 10-20μs conversion times — dominate for general-purpose and high-speed applications, while dual-slope ADCs excel in precision DC measurements (digital voltmeters) where noise rejection matters more than speed.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00075",
+        "chapter 5  ADC and DAC::ch_00076",
+        "chapter 5  ADC and DAC::ch_00044",
+        "chapter 5  ADC and DAC::ch_00047",
+        "Lab4::ch_00000",
+        "Lab4::ch_00003"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC",
+        "Lab4"
+      ]
+    },
+    {
+      "question_id": "Q016",
+      "question": "A student measures twenty 100kΩ resistors from a single manufacturing batch and plots a histogram of the measured resistance values. The histogram has a symmetric bell shape centered near the mean. Using what you know about measurement variability and statistical analysis, explain why many independent resistor measurements tend to follow this bell-shaped distribution. What does the width (standard deviation) of this curve reveal about the batch compared to the color-code nominal value?",
+      "golden_answer": "The normal (Gaussian) distribution emerges from resistor measurements because of the Central Limit Theorem: each resistor's actual value deviates from the nominal value due to many independent manufacturing variations (material composition, trimming process, temperature during fabrication), and the sum of many small independent errors tends toward a normal distribution. Chapter 1 provides the tools to quantify this: the arithmetic mean x̄ of the 20 measured values estimates the true mean of the batch, and the standard deviation σ = sqrt(Σdi²/(n-1)) measures the spread. If the color code states Rt = 100kΩ, and the measurements produce x̄ = 99.8kΩ with σ = 0.5kΩ: (1) The bias |x̄ - Rt|/Rt ≈ 0.2% indicates the batch is centered slightly low, a potential systematic offset. (2) The standard deviation σ = 0.5% of nominal indicates that ~68% of resistors fall within ±0.5% of the mean — well within a typical ±5% or ±1% tolerance band. A standard deviation significantly larger than the stated tolerance would indicate a quality control issue. Lab 1's distribution curve question tests this statistical reasoning: a small σ produces a narrow, tall bell curve; a large σ produces a wide, flat one.",
+      "category": "cross_document",
+      "source_chunk_ids": [
+        "Lab1::ch_00005",
+        "Lab1::ch_00006",
+        "chapter-1 Error in measurement::ch_00017",
+        "chapter-1 Error in measurement::ch_00018",
+        "chapter-1 Error in measurement::ch_00019",
+        "chapter-1 Error in measurement::ch_00020"
+      ],
+      "doc_ids_involved": [
+        "Lab1",
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q017",
+      "question": "A voltmeter gradually drifts out of calibration as its internal components age, causing a persistent offset in all readings. First, classify this calibration drift as a gross, systematic, or random error. Second, if this voltmeter is rated 300V full-scale with a limiting error of ±2% of full-scale, what is the maximum absolute error in volts at any reading? Third, if this voltmeter is used to measure 120V, what is the percent error relative to the reading?",
+      "golden_answer": "Step 1 — Classification: Calibration drift due to aging is an instrumental error (subclass of systematic error), specifically listed in Chapter 1 as 'Calibration errors due to aging' under instrumental errors. Step 2 — Limiting error: The limiting error of the 300V, ±2% F.S. voltmeter is 0.02 × 300V = 6V. This means any reading can be off by up to ±6V regardless of the reading value. Step 3 — Percent error at 120V: When measuring 120V, the percent error = (limiting error / measured value) × 100 = (6V / 120V) × 100 = 5%. This demonstrates a key property: while the absolute error is constant (6V), the percent error increases dramatically at lower readings — from 2% at full scale (300V) to 5% at 120V. This is why instruments should be used in the upper portion of their range.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00004",
+        "chapter-1 Error in measurement::ch_00005",
+        "chapter-1 Error in measurement::ch_00023",
+        "chapter-1 Error in measurement::ch_00024"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q018",
+      "question": "An unbalanced Wheatstone bridge has source voltage E = 10V, arm resistors R1 = 1kΩ, R2 = 1.6kΩ, R3 = 3.5kΩ, R4 = 7.5kΩ, and galvanometer resistance Rg = 200Ω. Calculate: (a) the Thevenin equivalent voltage Vth across the galvanometer terminals, (b) the Thevenin equivalent resistance Rth seen from those terminals, and (c) the galvanometer current Ig. If the galvanometer is a 200-0-200 μA center-zero movement, what does this current mean for the pointer deflection?",
+      "golden_answer": "Step 1 — Vth: Using the voltage divider formula from Chapter 3, Vth = Vb - Va = E×[R4/(R2+R4)] - E×[R3/(R1+R3)] = 10×[7.5/(1.6+7.5)] - 10×[3.5/(1+3.5)] = 10×(7.5/9.1) - 10×(3.5/4.5) = 10×0.8242 - 10×0.7778 = 8.242 - 7.778 = 0.464V. Step 2 — Rth: Rth = (R1//R3) + (R2//R4) = (1×3.5)/(1+3.5) + (1.6×7.5)/(1.6+7.5) = 3.5/4.5 + 12/9.1 = 0.7778 + 1.3187 = 2.0965kΩ. Step 3 — Ig: Ig = Vth/(Rth+Rg) = 0.464V/(2096.5+200)Ω = 0.464/2296.5 = 202.1μA. For a 200-0-200 μA galvanometer, this current would cause slightly more than full-scale deflection, indicating the bridge is significantly unbalanced. The pointer would be driven past the 200μA mark on the scale.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00013",
+        "chap 3 DC&AC BRIDGES::ch_00017",
+        "chap 3 DC&AC BRIDGES::ch_00019",
+        "chap 3 DC&AC BRIDGES::ch_00025",
+        "chap 3 DC&AC BRIDGES::ch_00028",
+        "chap 3 DC&AC BRIDGES::ch_00029",
+        "chap 3 DC&AC BRIDGES::ch_00040"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q019",
+      "question": "A signal with a 3kHz bandwidth is to be digitized. What is the minimum sampling frequency required to avoid aliasing? If a 2kHz sine wave is incorrectly sampled at only 1.5kHz, what alias frequency appears in the digital data? Finally, explain why an integrating (dual-slope) ADC is inherently less susceptible to aliasing than a successive-approximation ADC, even if both are operated below the rate dictated by the sampling theorem.",
+      "golden_answer": "Step 1 — Minimum sampling rate: For a 3kHz bandwidth signal, the minimum sampling rate per Shannon's theorem is fs ≥ 2 × fmax = 2 × 3kHz = 6kHz. In practice, an anti-aliasing filter with cutoff just below fs/2 = 3kHz is needed. Step 2 — Aliasing example: When a 2kHz sine wave is sampled at 1.5kHz (which is less than 2 × 2kHz = 4kHz), the samples produce an alias frequency of |2000 - 1500| = 500Hz (or more generally |fin - k×fs| with k chosen to bring the result within [0, fs/2]). The reconstructed signal appears as a 500Hz wave — a completely different frequency — rather than the original 2kHz. Step 3 — Dual-slope vs SAR aliasing: The dual-slope ADC integrates the input over time T1 before conversion, which acts as a low-pass filter — frequencies at multiples of 1/T1 are attenuated. The SAR ADC samples the input at a specific instant (or with a narrow sample-and-hold window) and has no inherent integration period, so it passes high-frequency content directly to the comparator. Therefore, even with both operating below Nyquist, the dual-slope's integrating front-end provides some built-in anti-alias filtering, while the SAR would faithfully alias high-frequency content.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00030",
+        "chapter 5  ADC and DAC::ch_00031",
+        "chapter 5  ADC and DAC::ch_00057",
+        "chapter 5  ADC and DAC::ch_00058",
+        "chapter 5  ADC and DAC::ch_00044"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q020",
+      "question": "A DC bridge balances when R1 × R4 = R2 × R3. If all resistors in this bridge are replaced by complex impedances Z1 through Z4, what is the generalized balance equation for the resulting AC bridge? Using one specific AC bridge type that has a known capacitor in parallel with R1 in one arm and an unknown inductor in series with Rx in the opposite arm, show how the bridge can determine the unknown inductance Lx purely by balancing against the known capacitance.",
+      "golden_answer": "Step 1 — AC bridge equation: For a Wheatstone bridge with all resistors replaced by impedances Z1, Z2, Z3, Z4, the balance condition becomes |Z1|×|Z4| = |Z2|×|Z3| AND θ1 + θ4 = θ2 + θ3 (magnitude and phase angle conditions), or compactly Z1×Z4 = Z2×Z3 (complex balance equation). This is derived from setting the detector voltage to zero: at balance, I1×Z1 = I2×Z2 and I1×Z3 = I2×Z4, dividing gives Z1/Z3 = Z2/Z4 → Z1×Z4 = Z2×Z3. Step 2 — Maxwell-Wein bridge: In this bridge, Z1 = 1/(1/R1 + jωCs) (R1 parallel with Cs), Z2 = R2, Z3 = R3, Z4 = Rx + jωLx. Substituting into Z1×Z4 = Z2×Z3: [R1/(1+jωCsR1)] × (Rx + jωLx) = R2×R3. Separating real and imaginary parts yields Rx = R2×R3/R1 and Lx = R2×R3×Cs. The unknown inductance is measured purely by balancing against a known capacitance standard — this works because the capacitive impedance in the opposite arm has the opposite phase shift to cancel the inductive impedance.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00007",
+        "chap 3 DC&AC BRIDGES::ch_00053",
+        "chap 3 DC&AC BRIDGES::ch_00056",
+        "chap 3 DC&AC BRIDGES::ch_00058",
+        "chap 3 DC&AC BRIDGES::ch_00072",
+        "chap 3 DC&AC BRIDGES::ch_00075"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q021",
+      "question": "Trace the path of a single electron inside a cathode ray tube from the moment it leaves the heated cathode until it strikes the fluorescent screen, naming each component it passes through in order. Then explain how applying a sawtooth (ramp) voltage to one pair of deflection plates while applying the signal under observation to the other pair produces a visible graph of voltage versus time on the screen.",
+      "golden_answer": "Step 1 — Electron path: The electron is emitted from the heated cathode (thermionic emission), passes through the control grid (which adjusts beam intensity/brightness), enters the focusing anode which narrows the beam to a fine spot, is accelerated by the accelerator anodes to high velocity, travels through the vertical deflection plates (Y-plates) followed by the horizontal deflection plates (X-plates), and finally strikes the phosphor-coated fluorescent screen, producing a visible luminous spot. The entire assembly is enclosed in an evacuated glass envelope. Step 2 — Waveform display: A sawtooth (ramp) voltage applied to the X-plates causes the beam to sweep horizontally across the screen at a constant rate (left to right during the rising ramp), then rapidly fly back (right to left during the falling edge). Simultaneously, the input signal voltage applied to the Y-plates deflects the beam vertically in proportion to the signal amplitude. The combination produces a trace on the screen where the horizontal position is proportional to time (via the sawtooth time-base) and the vertical position is proportional to the signal voltage — exactly a graph of voltage vs. time. If the sawtooth period equals or is an integer multiple of the signal period, the displayed waveform appears stationary.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chapter(4) oscilloscope::ch_00007",
+        "chapter(4) oscilloscope::ch_00008",
+        "chapter(4) oscilloscope::ch_00011",
+        "chapter(4) oscilloscope::ch_00006"
+      ],
+      "doc_ids_involved": [
+        "chapter(4) oscilloscope"
+      ]
+    },
+    {
+      "question_id": "Q022",
+      "question": "An R-2R ladder DAC uses only two resistor values, R and 2R, to perform digital-to-analog conversion. For a 4-bit version with reference voltage Vr = 16V and feedback resistor Rf = R, compute the output voltage for the binary input 1010. If this DAC has a full-scale error of ±0.5% of full-scale output, determine the actual output voltage range for this input. At which end of the digital code range does this full-scale error represent a larger relative error — small codes or large codes — and why?",
+      "golden_answer": "Step 1 — Ideal output for 1010: The input code 1010 = 1×2^3 + 0×2^2 + 1×2^1 + 0×2^0 = 10 (decimal). Vout = -(Rf/R)×Vr×(1/2 + 0/4 + 1/8 + 0/16) = -16V×(0.5 + 0.125) = -16V×0.625 = -10V. Alternatively, Vout = -Vr × (decimal value/2^n) = -16V×(10/16) = -10V. Step 2 — With full-scale error: Full-scale output is -16V×(15/16) = -15V (for code 1111). ±0.5% F.S. error = ±0.005 × 15V = ±0.075V = ±75mV. So the actual output for code 1010 is -10V ± 75mV, i.e., between -9.925V and -10.075V. Step 3 — Impact: Full-scale error is specified as a constant offset in absolute voltage (or as a constant percentage of the full-scale output). For small digital codes, this constant error becomes a much larger percentage of the ideal output. At code 0001 (ideal output -1V), ±75mV represents a ±7.5% relative error; at code 1111 (ideal -15V), it is only ±0.5%. This is analogous to the limiting error behavior in analog meters: the measurement accuracy degrades at the low end of the range.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00024",
+        "chapter 5  ADC and DAC::ch_00026",
+        "chapter 5  ADC and DAC::ch_00029",
+        "chapter 5  ADC and DAC::ch_00006",
+        "chapter 5  ADC and DAC::ch_00007"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q023",
+      "question": "Prove that for any set of measurements, the algebraic sum of the deviations from the arithmetic mean is always zero. Why does this property make the standard deviation (using squared deviations) a more useful measure of spread than the average deviation (using absolute deviations)? Using the data set {50.1, 49.7, 49.6, 50.2}, compute the standard deviation, showing all steps.",
+      "golden_answer": "Step 1 — Proof that Σdi = 0: The arithmetic mean x̄ = (Σxi)/n. Each deviation di = xi - x̄. Sum of deviations: Σdi = Σ(xi - x̄) = Σxi - n×x̄ = Σxi - n×(Σxi/n) = Σxi - Σxi = 0. Step 2 — Why squared deviations: Since Σdi = 0, the average deviation D = Σ|di|/n is always non-negative but loses information about the distribution of errors (a set of small deviations can give the same D as one large deviation with many tiny ones). Squaring the deviations before averaging gives more weight to larger deviations, making the standard deviation more sensitive to outliers and providing a measure that connects to the normal distribution's parameters. Additionally, squaring makes the mathematics tractable (differentiable, related to variance). Step 3 — Computation: x̄ = (50.1 + 49.7 + 49.6 + 50.2)/4 = 199.6/4 = 49.9. Deviations: d1=0.2, d2=-0.2, d3=-0.3, d4=0.3. Sum of squares: 0.04+0.04+0.09+0.09 = 0.26. Since n<30, use n-1: σ = sqrt(0.26/3) = sqrt(0.0867) = 0.294.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00019",
+        "chapter-1 Error in measurement::ch_00020",
+        "chapter-1 Error in measurement::ch_00021",
+        "chapter-1 Error in measurement::ch_00022",
+        "chapter-1 Error in measurement::ch_00023"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "question": "A specialized bridge circuit is designed to measure very low resistances down to the micro-ohm range. Unlike a standard Wheatstone bridge, it uses a second set of ratio arms connected directly to the terminals of the unknown resistor. Explain what measurement problem this extra set of arms solves. Show why the ratio of these extra arms must equal the ratio of the main ratio arms for the bridge to function correctly. Then, given Ra/Rb = 1000, R1 = 5Ω, and R1 = 0.5 × R2, compute the unknown resistance Rx.",
+      "golden_answer": "Step 1 — Problem solved: The standard Wheatstone bridge does not distinguish between the unknown resistance Rx and the resistance of the leads and contacts connecting Rx to the bridge. For resistances above ~1Ω this is negligible, but for low resistances (1Ω down to ~1μΩ), lead and contact resistance (typically 0.01-0.1Ω) can be larger than Rx itself, causing massive errors. The Kelvin bridge adds a second set of ratio arms (Ra, Rb) connected directly at the terminals of Rx, so that the lead resistance appears in series with high-resistance ratio arms (where it is negligible) rather than in series with the low unknown resistance. Step 2 — Ratio requirement: At balance, the voltage drop across the section containing the lead resistance and the unknown Rx must satisfy: (Rx + Rlead)/(Ra+Rb+Rlead) × Ib = (R3/R1) × Ia. The condition Ra/Rb = R1/R3 ensures that the lead resistance Rlead (the resistance of the yoke connecting Rx to the bridge) appears identically in both numerator and denominator terms and cancels out of the balance equation, yielding Rx = R1×R2/R3 (simplified form), or in the Kelvin embodiment, Rx = (R2×R3)/R1. Step 3 — Example 3.6: Since R1 = 5Ω and R1 = 0.5×R2, then R2 = R1/0.5 = 5/0.5 = 10Ω. With Ra/Rb = 1000, Rx = (R2/1000) = 10/1000 = 0.01Ω = 10mΩ.",
+      "category": "multi_hop",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00041",
+        "chap 3 DC&AC BRIDGES::ch_00042",
+        "chap 3 DC&AC BRIDGES::ch_00044",
+        "chap 3 DC&AC BRIDGES::ch_00045",
+        "chap 3 DC&AC BRIDGES::ch_00048"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "question": "Two types of AC bridges are commonly used: one measures an unknown capacitance with its series loss resistance by comparing against a standard capacitor in the same arm, while another measures an unknown inductance by balancing it against a standard capacitor placed in the opposite arm. Compare these two bridge types in terms of what each measures, where the standard component is placed in the bridge, and why that specific placement is necessary for a null to be achieved.",
+      "golden_answer": "(a) The Similar-Angle Bridge measures unknown capacitance Cx and its series resistance Rx in a capacitive circuit. The Maxwell-Wein Bridge measures unknown inductance Lx and its series resistance Rx. (b) The Similar-Angle Bridge uses a standard capacitor Cs (with known capacitance) and a variable resistor R3 in series in the same arm as Cs. The Maxwell-Wein Bridge uses a standard capacitor Cs in parallel with a variable resistor R1 in the opposite arm to the unknown inductor. (c) In both cases, the standard component is placed in the opposite (not adjacent) arm to exploit the opposite phase shift: capacitors have current leading voltage by 90° while inductors have current lagging voltage by 90°. In the Maxwell-Wein bridge, the capacitor in the opposite arm produces a phase shift of +90° (leading) that exactly cancels the inductor's -90° (lagging) phase shift at balance, allowing a resistive null detector to indicate balance. In the Similar-Angle Bridge, both unknown and standard are capacitive (same phase angle), so they are placed in adjacent arms and balanced against resistive ratios — balance is achieved by matching like impedances rather than canceling opposite ones.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00066",
+        "chap 3 DC&AC BRIDGES::ch_00069",
+        "chap 3 DC&AC BRIDGES::ch_00071",
+        "chap 3 DC&AC BRIDGES::ch_00072",
+        "chap 3 DC&AC BRIDGES::ch_00075"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "question": "Measurement errors are commonly grouped into three categories: gross, systematic, and random. Compare systematic errors and random errors on four dimensions: (a) what causes each type, (b) whether repeated measurements can reduce the error, (c) whether the error primarily affects accuracy or precision, and (d) give a concrete measurement example of each.",
+      "golden_answer": "(a) Cause: Systematic errors arise from instrument shortcomings (calibration drift, loading effects, zero offset) or environmental conditions (temperature, humidity, magnetic fields). Random errors arise from unpredictable, uncontrollable fluctuations such as electrical noise, mechanical vibration, or the experimenter's inability to keep all influencing factors perfectly constant. (b) Correction by repeated measurements: Systematic errors cannot be reduced by taking more measurements — the same bias appears in every reading. Random errors can be reduced by increasing the number of measurements (the standard deviation of the mean decreases as 1/√n), but not eliminated entirely. (c) Effect on accuracy vs precision: Systematic errors affect accuracy (how close measurements are to the true value) — they shift all readings by a consistent bias. Random errors affect precision (the spread or repeatability of measurements) — they cause scatter around the mean. A measurement system can be precise (small σ) but inaccurate (large systematic bias), or accurate (small bias) but imprecise (large σ). (d) Example: Systematic — a voltmeter with a zero offset of +0.2V will consistently read 0.2V higher than the true value at every measurement. Random — thermal noise in a resistor causes the measured voltage to fluctuate randomly by ±0.05V about the mean from one reading to the next.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00001",
+        "chapter-1 Error in measurement::ch_00004",
+        "chapter-1 Error in measurement::ch_00005",
+        "chapter-1 Error in measurement::ch_00007",
+        "chapter-1 Error in measurement::ch_00008",
+        "chapter-1 Error in measurement::ch_00017"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q027",
+      "question": "Four distinct analog-to-digital converter architectures are the ramp (counter) type, the tracking type, the successive-approximation type, and the flash type. Compare them on three dimensions: (a) how conversion time scales with the number of bits n, (b) the approximate hardware complexity (number of comparators and other components), and (c) suitability for digitizing rapidly changing input signals.",
+      "golden_answer": "Counter (ramp) ADC: Conversion time is proportional to 2^n (exponential in bits) — worst case for an n-bit conversion is 2^n clock cycles. Requires one comparator, one DAC, one counter — low hardware cost. Unsuitable for high-frequency signals because the conversion time is long and variable (depends on Vin amplitude). Tracking ADC: Similar to counter but uses an up/down counter that tracks the input continuously. Conversion time for a step change is proportional to the step size (up to 2^n cycles in worst case). Same low hardware cost as counter ADC. Suitable for slowly varying signals but can lose track of fast changes. SAR ADC: Conversion time is exactly n clock cycles (proportional to n, not 2^n). Requires one comparator, one DAC, and the SAR logic — moderate hardware cost. Suitable for moderate to high-frequency signals; typical conversion times of 10-20μs for 8-16 bit converters make them adequate for most laboratory applications. Flash ADC: Conversion time is one clock cycle (fastest). Requires 2^n - 1 comparators — exponential hardware cost, making it practical only up to ~8 bits. Fastest architecture; used for video, radar, and very high-speed applications but limited to low resolution due to comparator count (an 8-bit flash needs 255 comparators; 10-bit would need 1023).",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00034",
+        "chapter 5  ADC and DAC::ch_00035",
+        "chapter 5  ADC and DAC::ch_00036",
+        "chapter 5  ADC and DAC::ch_00040",
+        "chapter 5  ADC and DAC::ch_00043",
+        "chapter 5  ADC and DAC::ch_00044",
+        "chapter 5  ADC and DAC::ch_00047",
+        "chapter 5  ADC and DAC::ch_00064",
+        "chapter 5  ADC and DAC::ch_00066"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q028",
+      "question": "Inside an oscilloscope, the trigger circuit monitors the incoming signal and controls when the horizontal sweep begins. Explain the specific role of the trigger circuit in producing a stable, stationary waveform on the screen. If the trigger circuit were disabled entirely, describe what the display would look like for a periodic input signal and why.",
+      "golden_answer": "The trigger circuit synchronizes the start of the horizontal sweep (sawtooth waveform) with a specific point on the input signal waveform — typically a rising edge crossing a user-set voltage threshold. Its role is to ensure that each sweep starts at the same phase of the input signal, so that successive traces overlay exactly on top of each other, producing a stationary (stable) display. Without triggering (or with the trigger disabled), each sweep would start at a random point in the input waveform's cycle. The display would appear as a jumbled, constantly shifting mess of overlapping traces, making it impossible to measure amplitude, frequency, or waveform shape. In some CRO modes, the trigger can be set to AUTO (free-running sweep even without a signal, showing a baseline) or NORM (sweep only when triggered). Chapter 4's block diagram shows the trigger circuit connected between the vertical amplifier output and the time base generator — it monitors the amplified input signal and fires the sawtooth generator precisely when the trigger condition is met.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter(4) oscilloscope::ch_00002",
+        "chapter(4) oscilloscope::ch_00003",
+        "chapter(4) oscilloscope::ch_00004",
+        "chapter(4) oscilloscope::ch_00008"
+      ],
+      "doc_ids_involved": [
+        "chapter(4) oscilloscope"
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "question": "Digital-to-analog converters suffer from three distinct types of transfer-characteristic errors: offset error, gain error, and linearity error (non-linearity). For each one, describe how it manifests in a plot of analog output voltage versus digital input code, and state whether it can be corrected by a simple calibration procedure (such as adjusting a reference voltage or adding an offset).",
+      "golden_answer": "Offset error: A constant shift between the actual and ideal output when the digital input is zero. In the transfer characteristic, the entire staircase output is shifted up or down by a fixed amount — the zero-code output is non-zero. It is correctable by calibration (adding/subtracting an offset voltage). Gain error: The difference between actual and ideal output at full scale; the output step sizes are uniformly too large or too small. In the transfer characteristic, the slope of the staircase is incorrect, causing the error to grow proportionally with the digital input — at full scale the deviation is maximum. It is correctable by calibration (adjusting the reference voltage or amplifier gain). Linearity error (non-linearity): The deviation of the actual output from a straight line connecting the zero and full-scale points, measured over the full range. Unlike offset and gain, the error is not uniform — some codes may be accurate while others deviate. The transfer characteristic shows 'bumps' or waviness where the output deviates from the ideal line. It is the hardest to correct via calibration because the error varies non-uniformly across the range and typically requires look-up table correction or is limited by the DAC's inherent architecture.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00006",
+        "chapter 5  ADC and DAC::ch_00010",
+        "chapter 5  ADC and DAC::ch_00012",
+        "chapter 5  ADC and DAC::ch_00013",
+        "chapter 5  ADC and DAC::ch_00014",
+        "chapter 5  ADC and DAC::ch_00017"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "question": "A Wheatstone bridge can operate in two distinct regimes. In one regime, the galvanometer current is exactly zero and the unknown resistance is found from a simple ratio of the known resistors. In the other regime, the bridge is slightly unbalanced and a small current flows through the galvanometer. Explain what physical condition defines each regime, and describe how analyzing the unbalanced bridge with a Thevenin equivalent circuit allows it to function as a sensitive detector of small resistance changes rather than merely a null indicator.",
+      "golden_answer": "Balanced state: The product of resistances in opposite arms is equal (R1×R4 = R2×R3), the voltage between points b and c (across the galvanometer) is zero, and no current flows through the galvanometer. This is the null condition used for precise comparison measurement — the unknown Rx is determined purely from the ratio of known resistors, independent of source voltage and galvanometer characteristics. Unbalanced state: Any deviation from the balance condition creates a voltage difference Vth (Thevenin voltage) between the galvanometer terminals, causing current Ig = Vth/(Rth+Rg) to flow, deflecting the galvanometer pointer. Thevenin's theorem converts the bridge network into an equivalent circuit with Vth (the open-circuit voltage between the galvanometer terminals) and Rth (the resistance seen looking back into the bridge with the source shorted). This analysis shows that for small resistance changes (Δr) in a nearly balanced bridge, Vth ≈ E×Δr/(4R), making the galvanometer deflection approximately proportional to Δr. Thus the bridge functions not just as a binary null detector but as a proportional sensor — the deflection magnitude indicates how far the bridge is from balance, turning the bridge into a sensitive transducer for resistance-based sensors (strain gauges, RTDs, etc.). Example 3.5 demonstrates that a 5% resistance change in a bridge arm causes full-scale deflection of a 200μA galvanometer.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00004",
+        "chap 3 DC&AC BRIDGES::ch_00007",
+        "chap 3 DC&AC BRIDGES::ch_00012",
+        "chap 3 DC&AC BRIDGES::ch_00013",
+        "chap 3 DC&AC BRIDGES::ch_00017",
+        "chap 3 DC&AC BRIDGES::ch_00019",
+        "chap 3 DC&AC BRIDGES::ch_00032",
+        "chap 3 DC&AC BRIDGES::ch_00034",
+        "chap 3 DC&AC BRIDGES::ch_00038",
+        "chap 3 DC&AC BRIDGES::ch_00040"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "question": "A student measures a resistor ten times. All ten readings are tightly clustered around 98Ω, but the resistor's color code indicates its nominal value should be 100Ω. Analyze this measurement outcome in terms of accuracy and precision. Calculate the percent error relative to the nominal value, and compute the precision of the reading that falls exactly at the mean of the ten measurements.",
+      "golden_answer": "The measurements are precise (tight clustering around 98Ω, small standard deviation) but inaccurate (systematic deviation of ~2Ω from the true value of 100Ω). This is a classic high-precision/low-accuracy scenario. Calculation: The mean is approximately 98Ω (from the tight cluster). Percent error = |true - measured|/true × 100 = |100 - 98|/100 × 100 = 2%. The precision of the measurement closest to the mean (say the reading is exactly 98Ω, the mean = 98Ω): Precision = 1 - |Xn - x̄|/x̄ = 1 - |98-98|/98 = 1 - 0 = 1.0 (perfect precision for that reading relative to the set). However, partial accuracy: A = 1 - |Yn - Xn|/Yn = 1 - 2/100 = 0.98, or 98%. This scenario indicates a systematic error — likely a calibration offset in the ohmmeter — that affects accuracy but not precision. The statistical tools from Chapter 1 (standard deviation, average deviation) quantify the precision, while absolute/percent error quantities quantify the accuracy.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00009",
+        "chapter-1 Error in measurement::ch_00010",
+        "chapter-1 Error in measurement::ch_00011",
+        "chapter-1 Error in measurement::ch_00014",
+        "chapter-1 Error in measurement::ch_00015",
+        "chapter-1 Error in measurement::ch_00016"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "question": "Two common DAC architectures are the binary-weighted resistor DAC and the R-2R ladder DAC. For a 12-bit implementation, compare them on: (a) how many distinct resistor values are needed, (b) the ratio between the largest and smallest resistor required, and (c) the practical manufacturing limitations that make one architecture dominant for higher resolution converters.",
+      "golden_answer": "(a) Binary-weighted DAC: Requires N distinct resistor values (R, 2R, 4R, 8R, ... 2^(N-1)×R) — each bit position needs a resistor scaled by a power of 2. R-2R ladder DAC: Requires only 2 distinct resistor values (R and 2R) regardless of the number of bits. (b) Binary-weighted DAC range: For N bits, the resistor values span from R to 2^(N-1)×R. For a 12-bit DAC, this is a ratio of 2048:1 between the largest (2^11×R = 2048R for the MSB) and smallest (R for the LSB). R-2R ladder DAC range: Ratio is always exactly 2:1 — all resistors are either R or 2R. (c) Practical limitations for 12-bit: The binary-weighted DAC requires a 2048:1 resistance ratio. The smallest resistor (MSB) must be very small to keep the largest (LSB, 2048×R) practical. If the LSB resistor is 1MΩ (to limit current), the MSB resistor would be ~488Ω. But the small MSB resistor must carry the MSB current with high precision — switch resistance (~1-10Ω) and PCB trace resistance become significant error sources. Additionally, all resistors must maintain precision across this wide range, which is difficult and expensive to manufacture on a single chip. The R-2R ladder avoids all these issues by using only two resistor values, making it the dominant DAC architecture for resolutions above ~6 bits.",
+      "category": "same_document",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00020",
+        "chapter 5  ADC and DAC::ch_00021",
+        "chapter 5  ADC and DAC::ch_00023",
+        "chapter 5  ADC and DAC::ch_00024",
+        "chapter 5  ADC and DAC::ch_00026",
+        "chapter 5  ADC and DAC::ch_00029"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q033",
+      "question": "What is the balance condition for a Wheatstone bridge circuit? Write the equation and state what physical condition — in terms of voltages and current — it represents.",
+      "golden_answer": "The balance equation for a Wheatstone bridge is R1 × R4 = R2 × R3 (or R1/R2 = R3/R4). At balance, the voltage drop across R3 equals the voltage drop across R4, and no current flows through the galvanometer (Ig = 0). The voltage at points b and c are equal. This null condition allows the unknown resistance to be determined from the ratio of the three known resistors without needing to know the source voltage.",
+      "category": "lookup",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00005",
+        "chap 3 DC&AC BRIDGES::ch_00007"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q034",
+      "question": "What is the bit resolution and the total number of distinct output levels of the ADC0808 analog-to-digital converter chip?",
+      "golden_answer": "The ADC0808 is an eight-bit (8-bit) successive approximation A/D converter. With 8 bits, it can resolve 2^8 = 256 distinct analog levels. For a 5V reference voltage, the step size (resolution in volts) is 5V/256 ≈ 19.53mV per LSB.",
+      "category": "lookup",
+      "source_chunk_ids": [
+        "Lab4::ch_00000"
+      ],
+      "doc_ids_involved": [
+        "Lab4"
+      ]
+    },
+    {
+      "question_id": "Q035",
+      "question": "What is the formula for computing the standard deviation of a set of repeated measurements, and when should the denominator use n versus n − 1?",
+      "golden_answer": "The standard deviation S for a set of values is S = sqrt(Σdi²/n) or S = sqrt(Σdi²/(n-1)), where di = xi - x̄ is the deviation of each measurement from the arithmetic mean. Use n-1 in the denominator when the number of measurements n < 30, and use n when n ≥ 30.",
+      "category": "lookup",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00020"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q036",
+      "question": "In a dual-slope integrating analog-to-digital converter, what relationship connects the unknown input voltage Vin to the known reference voltage Vref and the two measured time intervals T1 and T2?",
+      "golden_answer": "The dual-slope A/D converter determines the input voltage using the relationship: Vin = Vref × (T2/T1), where T1 is the fixed integration time (charging phase, typically 2^n clock cycles) during which the input voltage Vin is integrated, and T2 is the measured discharge time (time for the integrator output to return to zero when the reference voltage -Vref is applied). The final equation is: Vin × T1 = Vref × T2.",
+      "category": "lookup",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00058",
+        "chapter 5  ADC and DAC::ch_00059",
+        "chapter 5  ADC and DAC::ch_00060"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q037",
+      "question": "What causes the measurement readings to scatter around a central value when the same quantity is repeatedly gauged with a digital instrument?",
+      "golden_answer": "Scattering of readings around a central value during repeated measurements is caused by random errors (also called accidental errors or indeterminate errors). According to the measurement error theory, these errors arise from unpredictable, uncontrollable factors such as electrical noise, thermal fluctuations affecting the instrument's components, and the practical impossibility of keeping all influencing factors (temperature, humidity, supply voltage stability, electromagnetic interference) perfectly constant. Unlike biases that consistently shift readings in one direction, random errors cause readings to be sometimes higher and sometimes lower than the true value, producing a symmetric distribution around the mean. They cannot be eliminated but can be reduced by increasing the number of measurements and averaging — the standard deviation of the mean decreases as the square root of the number of samples.",
+      "category": "paraphrase",
+      "source_chunk_ids": [
+        "chapter-1 Error in measurement::ch_00007",
+        "chapter-1 Error in measurement::ch_00008",
+        "chapter-1 Error in measurement::ch_00017",
+        "chapter-1 Error in measurement::ch_00018"
+      ],
+      "doc_ids_involved": [
+        "chapter-1 Error in measurement"
+      ]
+    },
+    {
+      "question_id": "Q038",
+      "question": "In a four-arm comparison circuit energized by a voltage source, when the electrical potentials at the two midpoints become identical, a sensitive current-indicating device connected between them shows zero. What is this operating state called, what is the instrument that detects it, and how is the unknown arm value determined from the other three?",
+      "golden_answer": "When the electrical potentials at the two midpoints of a four-arm resistive bridge circuit become identical, the bridge is in balance (null condition). In this state, no potential difference exists between the two midpoints, meaning zero current flows through a sensitive current-detecting instrument (the null detector or galvanometer) connected between them. This balanced state is the operating principle of comparison measurement bridges: at balance, the products of the resistances in opposite arms are equal (R1×R4 = R2×R3), and the unknown resistance can be calculated from the three known resistances without needing to measure voltage or current directly. The null detector acts as a binary indicator — current flow indicates imbalance, zero current indicates balance — and can be a galvanometer, a microammeter, or an electronic null detector.",
+      "category": "paraphrase",
+      "source_chunk_ids": [
+        "chap 3 DC&AC BRIDGES::ch_00002",
+        "chap 3 DC&AC BRIDGES::ch_00004",
+        "chap 3 DC&AC BRIDGES::ch_00005",
+        "chap 3 DC&AC BRIDGES::ch_00007"
+      ],
+      "doc_ids_involved": [
+        "chap 3 DC&AC BRIDGES"
+      ]
+    },
+    {
+      "question_id": "Q039",
+      "question": "A device that converts a continuously varying voltage into a finite set of discrete numeric codes unavoidably produces an approximation. What is the discrepancy between the smooth input voltage and the nearest digital output step called, and what determines its maximum possible magnitude?",
+      "golden_answer": "The unavoidable discrepancy between the continuous analog input voltage and the nearest discrete digital level in an analog-to-digital converter is called the quantization error (or quantization uncertainty). Its largest possible value is ±1/2 LSB (one-half of the least significant bit), where one LSB equals the full-scale voltage range divided by 2^n (for an n-bit converter). For example, an 8-bit ADC with a 5V reference has an LSB of 5V/256 ≈ 19.53mV, so the quantization error is bounded to ±9.765mV. This error is inherent to the digitization process and cannot be eliminated for a given number of bits — only increasing the converter's bit width reduces it.",
+      "category": "paraphrase",
+      "source_chunk_ids": [
+        "chapter 5  ADC and DAC::ch_00008",
+        "chapter 5  ADC and DAC::ch_00032",
+        "chapter 5  ADC and DAC::ch_00033"
+      ],
+      "doc_ids_involved": [
+        "chapter 5  ADC and DAC"
+      ]
+    },
+    {
+      "question_id": "Q040",
+      "question": "In a vacuum-tube display instrument, a narrow stream of charged particles passes between two perpendicular pairs of metal surfaces. A ramp-shaped control voltage applied to one pair sweeps the stream steadily in one direction, while the signal under study applied to the other pair deflects it accordingly. After each sweep, the ramp voltage drops rapidly back to its starting level. What is this rapid return called, and why does the instrument blank the stream during this interval?",
+      "golden_answer": "The beam of charged particles is the electron beam in a cathode ray tube (CRT). The two pairs of perpendicular parallel conducting surfaces are the vertical (Y) and horizontal (X) deflection plates. The ramp-shaped control voltage fed to the X-plates is the sawtooth waveform from the time-base generator, which sweeps the beam horizontally across the screen at a constant speed. When the sawtooth voltage rapidly drops back from its maximum to its minimum (the return to the starting value), the electron beam flies back from the right side of the screen to the left side. This rapid return is called the fly-back (or retrace). During fly-back, the beam should ideally be blanked (suppressed) to avoid displaying the return trace across the screen, which would interfere with the signal waveform display.",
+      "category": "paraphrase",
+      "source_chunk_ids": [
+        "chapter(4) oscilloscope::ch_00007",
+        "chapter(4) oscilloscope::ch_00008",
+        "chapter(4) oscilloscope::ch_00009"
+      ],
+      "doc_ids_involved": [
+        "chapter(4) oscilloscope"
+      ]
+    }
+  ]
+}

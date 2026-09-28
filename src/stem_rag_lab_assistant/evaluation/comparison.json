@@ -1,0 +1,112 @@
+{
+  "eval_date": "2026-09-28T05:18:44.401915+00:00",
+  "schema_version": "iter1",
+  "config": {
+    "embedding_model": "BAAI/bge-m3",
+    "embedding_dim": 1024,
+    "answer_model": "openai/gpt-oss-20b",
+    "judge_model": "openai/gpt-oss-120b",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "vector_top_k": 6,
+    "bm25_top_k": 6,
+    "rerank_top_n": 4,
+    "lightrag_chunk_top_k": 10,
+    "answer_fallback_max_tokens": 8192,
+    "answer_fallback_max_attempts": 4,
+    "chunk_size": 512,
+    "chunk_overlap": 80,
+    "graph_neighbour_cap": 2,
+    "graph_expansion_depth": 1,
+    "graph_seed_entities_cap": 5,
+    "graph_max_expanded_chunks": 10,
+    "extraction_llm_model": "qwen/qwen3.8-27b",
+    "extraction_max_concurrent": 2,
+    "extraction_max_entities_per_chunk": 30,
+    "extraction_max_total_per_chunk": 50,
+    "extraction_max_tokens": 4096,
+    "extraction_retry_max": 2
+  },
+  "overall": {
+    "naive": {
+      "groundedness": 0.56,
+      "answer_relevance": 0.91,
+      "context_relevance": 0.71,
+      "ground_truth_agreement": 0.69,
+      "mean": 0.72,
+      "avg_chunks": 6.0,
+      "avg_latency_ms": 1986.4,
+      "n_answer_fallback": 2,
+      "n_answer_fallback_unresolved": 0
+    },
+    "hybrid": {
+      "groundedness": 0.53,
+      "answer_relevance": 0.93,
+      "context_relevance": 0.72,
+      "ground_truth_agreement": 0.7,
+      "mean": 0.72,
+      "avg_chunks": 4.6,
+      "avg_latency_ms": 1733.1,
+      "n_answer_fallback": 3,
+      "n_answer_fallback_unresolved": 0
+    },
+    "lightrag": {
+      "groundedness": 0.56,
+      "answer_relevance": 0.93,
+      "context_relevance": 0.78,
+      "ground_truth_agreement": 0.71,
+      "mean": 0.74,
+      "avg_chunks": 10.0,
+      "avg_latency_ms": 2662.8,
+      "n_answer_fallback": 3,
+      "n_answer_fallback_unresolved": 0
+    },
+    "lightrag_hybrid": {
+      "groundedness": 0.54,
+      "answer_relevance": 0.89,
+      "context_relevance": 0.74,
+      "ground_truth_agreement": 0.71,
+      "mean": 0.72,
+      "avg_chunks": 8.6,
+      "avg_latency_ms": 2273.6,
+      "n_answer_fallback": 3,
+      "n_answer_fallback_unresolved": 0
+    }
+  },
+  "per_category": {
+    "cross_document": {
+      "naive": 0.67,
+      "hybrid": 0.7,
+      "lightrag": 0.69,
+      "lightrag_hybrid": 0.71,
+      "best": "lightrag_hybrid"
+    },
+    "multi_hop": {
+      "naive": 0.72,
+      "hybrid": 0.65,
+      "lightrag": 0.76,
+      "lightrag_hybrid": 0.65,
+      "best": "lightrag"
+    },
+    "same_document": {
+      "naive": 0.65,
+      "hybrid": 0.69,
+      "lightrag": 0.73,
+      "lightrag_hybrid": 0.64,
+      "best": "lightrag"
+    },
+    "lookup": {
+      "naive": 0.91,
+      "hybrid": 0.92,
+      "lightrag": 0.92,
+      "lightrag_hybrid": 0.93,
+      "best": "lightrag_hybrid"
+    },
+    "paraphrase": {
+      "naive": 0.86,
+      "hybrid": 0.79,
+      "lightrag": 0.83,
+      "lightrag_hybrid": 0.87,
+      "best": "lightrag_hybrid"
+    }
+  }
+}

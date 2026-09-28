@@ -1,0 +1,2102 @@
+{
+  "chapter-1 Error in measurement::ch_00002-chunk-000": {
+    "tokens": 48,
+    "content": "Gross Errors These are basically human errors caused by the operator or person using the instrument. The instrument may be good and may not give any error but still the measurement may go wrong due to the operator. The different types of gross errors are:",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0de1f0b7774b84c64b3d5d39b0b5c5cb",
+      "default:extract:b572b25a10ef523dd255bbc322f22672"
+    ],
+    "create_time": 1790507983,
+    "update_time": 1790508003,
+    "_id": "chapter-1 Error in measurement::ch_00002-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00000-chunk-000": {
+    "tokens": 13,
+    "content": "CHAPTER-3- DC & AC BRIDGES 1",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a113604f041aa73162cf2fd59deaeec4",
+      "default:extract:6cd1a1538dd888bd3c05ffdd4fde157a"
+    ],
+    "create_time": 1790507983,
+    "update_time": 1790508031,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00000-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00001-chunk-000": {
+    "tokens": 118,
+    "content": "Most signals are analog   0 Vo C 7 Need to Sample an analog   signal Then convert to digital by A/D converter (b) 7 (c) Us (d) vo 2 The process of periodically sampling an analog signal. (a) Sample-and-hold (S/H) circuit. The switch closes for a small part (  seconds) of every clock period ( T ). (b)   Input signal waveform. (c)   Sampling signal (control signal for the switch). (d)   Output signal (to be fed to A/D converter).",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:67e27ae65a8f12b05d4bf98489b00dab",
+      "default:extract:58459a29265b011722c5c00c9bde1480"
+    ],
+    "create_time": 1790508474,
+    "update_time": 1790508485,
+    "_id": "chapter 5  ADC and DAC::ch_00001-chunk-000"
+  },
+  "Lab1::ch_00008-chunk-000": {
+    "tokens": 165,
+    "content": "- 1.   Set the following circuit where Ein=10 V, Ra= 1KΩ, and Rb is to be selected from the 100kΩ resistors. We will select 5 resistors for Rb each one is called Rb1, Rb2, Rb3, …. Rb5\n- 2.   For each Rb of the five resistors, measure the actual resistance value (Rbi), record this value.\n- 3.   For each Rbi value, use it to calculate Eoi (true) using circuit analysis record them; Then, use The AVO meter to measure the output voltage Eoi (measured).\n- 4.   Record Eoi (true) and Eoi (measured) values in the following table.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00008",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ae789160c876f05584c1ca30db31915b",
+      "default:extract:c5656004105ab54ea6b4f305afed0d8b"
+    ],
+    "create_time": 1790508483,
+    "update_time": 1790508703,
+    "_id": "Lab1::ch_00008-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00008-chunk-000": {
+    "tokens": 72,
+    "content": "ific reason can be assigned and precaution could be taken to avoid these errors. Such errors are categorized as random errors. Noise that is impracticable can cause random errors in measurements. To avoid these errors, frequency of measurement is to be increased, i.e., the same parameter is to be measured often. Error in such measurements can be estimated by statistical analysis.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00008",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:98ebf772ef5c3b9b35f680d49e7bedaf",
+      "default:extract:ceeca53b336b71a73d3ed9e568ef7394"
+    ],
+    "create_time": 1790508483,
+    "update_time": 1790508811,
+    "_id": "chapter-1 Error in measurement::ch_00008-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00021-chunk-000": {
+    "tokens": 161,
+    "content": "variable | value\nX 1 | 50.1\nX 2 | 49.7\nX 3 | 49.6\nX 4 | 50.2   For   the   following   data   compute . Example - (a)   the   arithmetic   mean .\n- (b)   The   deviation   of   each   value\n- (c)   The   algebraic   sum   of   the   deviations .\n- (d)   The   average   deviation\n- (e)   The   standard   deviation Solution (a) the arithmetic mean is computed as 49.9 4 199.6 4 50.2 49.6 49.7 50.1 = = + + + = x",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00021",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8cd1bff52e7cac9c84777d62bed734b9",
+      "default:extract:f307b4a44942130230bb71c20474fbd3"
+    ],
+    "create_time": 1790508486,
+    "update_time": 1790508812,
+    "_id": "chapter-1 Error in measurement::ch_00021-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00035-chunk-000": {
+    "tokens": 79,
+    "content": "- ➢ The value of the digital word contained in the counter is proportional to the level of the analog signal.\n- ➢ The single-slop converter suffers from possible component-value errors.\n- ➢ The level of the integrator output voltage is a function of the RC product\n- ➢ Changes of capacitance and/or resistance with temperature will affect the integrator output and introduce error.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00035",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d0169f873d2121a4be18d3f2e11b3ca4",
+      "default:extract:38e0e76b5e270cdbd4179729dca5cc1a"
+    ],
+    "create_time": 1790508704,
+    "update_time": 1790508940,
+    "_id": "chapter 5  ADC and DAC::ch_00035-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00050-chunk-000": {
+    "tokens": 189,
+    "content": "25 32 1 + LSB = 156.25mV 2 Vfs 1LSB 312.5mV Expect output = 1 x 312.5mV =312.5mV Upper output limit = 312.5 mV +1/2 LSB =312.5mV+156.25mV=468.75mV Lower output limit = 312.5 mV - 1/2 LSB =312.5mV 156.25mV=156.25 mv Maximum output error = 450 percent - a.\n- b. Expect output = 2 x 312.5mV =625 mV Upper output limit 625 mV+l56.25mV=781.25mV Lower output limit =625 mV 156.25mV= 468.75 mv Maximum output error = 425 percent",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00050",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7efd651763f2f3d11a0e10150b992bcd",
+      "default:extract:0f8ad121d91c615ce4764fd25b8cae64"
+    ],
+    "create_time": 1790508811,
+    "update_time": 1790508942,
+    "_id": "chapter 5  ADC and DAC::ch_00050-chunk-000"
+  },
+  "Lab3::ch_00002-chunk-000": {
+    "tokens": 133,
+    "content": "ships between two signals.   A. Frequency Measurements Using Lissajous Figures   - Test the 4 probes using Oscilloscope\n- Connect the output of the two function generator channels with the oscilloscope’s channels using the probes.\n- Display the two signals in the time domain and adjust the amplitude and frequency and phase of the function generator outputs to be exact say Amp=10V, F=1KHz and the phase change as you need to make the two signal synchronized.\n- Adjust the Oscilloscope to run in XY-Mode with split display.\n- Change the parameter as the following table and draw the output Lissajous figures.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab3::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0c9442576cafc8d241fc39a18d2bb8f0",
+      "default:extract:8b2068b002028d90a265a9e68640ec27"
+    ],
+    "create_time": 1790508813,
+    "update_time": 1790508959,
+    "_id": "Lab3::ch_00002-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00011-chunk-000": {
+    "tokens": 122,
+    "content": " Ideally, a DAC should produce a linear relationship between the digital input and analog output Linearity (Ideal) Non-Linearity Analog Output Signal Analog Output Signal Analog Output Signal Analog Output Signal 0010 0010 0011 0011 0100 0100 0101 0101 0010 0010 0011 0011 0100 0100 0101 0101 0000 0000 0001 0001 0000 0000 0001 0001 Digital Input Signal Digital Input Signal Digital Input Signal Digital Input Signal",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00011",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2aa294b79d709ea3cc7a0d0c93239157",
+      "default:extract:c488dc15178c95ef7bcddceac88cb079"
+    ],
+    "create_time": 1790508940,
+    "update_time": 1790509070,
+    "_id": "chapter 5  ADC and DAC::ch_00011-chunk-000"
+  },
+  "Lab1::ch_00006-chunk-000": {
+    "tokens": 23,
+    "content": "r sample 2 will be able to construct the distribution curve accurately? and why? ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00006",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2c66be6961a78f65f1c4e72754a17c7b",
+      "default:extract:a70a8da7a6df2783e864425b0a769dc1"
+    ],
+    "create_time": 1790508942,
+    "update_time": 1790509071,
+    "_id": "Lab1::ch_00006-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00036-chunk-000": {
+    "tokens": 37,
+    "content": "Dual–slope A/D Converter Control S 2 C -V ref R B - A S 1 - A 1 + A 2 V in Counter + Digital output Clock",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00036",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:fa2c635e1d356caaa5e05ec13214ca05",
+      "default:extract:f13582b35beefe4e5c752832fea330b5"
+    ],
+    "create_time": 1790508959,
+    "update_time": 1790509087,
+    "_id": "chapter 5  ADC and DAC::ch_00036-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00023-chunk-000": {
+    "tokens": 105,
+    "content": "Example 3.6 Figure   3 . 9   is   the   Kelvin   Bridge,   the   ratio   of   R a   to   R b   is   1000 .   R 1   is   5   Ohm   and   R 1   = 0 . 5   R 2 .   Find   the   value   of   R x . Rz Rz B E A Ra Figure 3.9: For Example 3.6.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00023",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:af6ad4533e45cd13ccf5ac9fa0c2817c",
+      "default:extract:70a2a9b5cb8936158c9b40d668b2f621"
+    ],
+    "create_time": 1790509070,
+    "update_time": 1790509169,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00023-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00016-chunk-000": {
+    "tokens": 56,
+    "content": "Solution 101.1 10 Sum of  the ten measurements The average value = = n n n X X X --= 1 Precision 0.96 0.04 1 101.1 101.1 97 1 Precision = -= --=",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00016",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:29bc19e70d9adacdb08e4abdb7a07541",
+      "default:extract:69a25259bbeaad083dd1d9dc6e4d1aa6"
+    ],
+    "create_time": 1790509071,
+    "update_time": 1790509185,
+    "_id": "chapter-1 Error in measurement::ch_00016-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00006-chunk-000": {
+    "tokens": 34,
+    "content": "If a voltage is now applied to the Y-inputs, the variation of this voltage with time may be displayed on the screen. a.c. input d.c. input",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00006",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0e809f018e2981b229d5121ba0d41867",
+      "default:extract:f243afbd04190cef73d2d5f95b41df35"
+    ],
+    "create_time": 1790509088,
+    "update_time": 1790509202,
+    "_id": "chapter(4) oscilloscope::ch_00006-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00006-chunk-000": {
+    "tokens": 77,
+    "content": "Environmental errors. Ambient parameters such as temperature, pressure, humidity, magnetic and electrostatic fields, dust, and other such external parameters can affect the performance of the instrument. Improper housing of the instrument also can give wrong readings. Such errors can be avoided by air-conditioning, magnetic shielding, cleaning the instruments, and housing the instruments properly depending on the application and type of the instrument.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00006",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:24f8ce19161eb089362e0db996509cb2",
+      "default:extract:14520c950437bd1872e7aa0f78b699ff"
+    ],
+    "create_time": 1790509169,
+    "update_time": 1790509330,
+    "_id": "chapter-1 Error in measurement::ch_00006-chunk-000"
+  },
+  "Lab2::ch_00001-chunk-000": {
+    "tokens": 146,
+    "content": "d the resistance of R 1 , R 3 , and R x.   R 1   R 3   R x   A R R 1 | R 3 | R x B G E - 2.   Change the potentiometer R 2 ’s value until the voltmeter reads zero voltage between the D and B points.\n- 3.   Using R 1 , R 2 , and R 3   values from 1 and 2, calculate Rx using the following equation: (prove the relation)\nR1 R2 = R3 Rx\n- 4.   Compare between the measured R x value in 1 and the calculated R x   value in 3.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab2::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e55266c177521671c64ca5150489dd97",
+      "default:extract:5fb8368f1c53327e6a1bc0a8eba5312c"
+    ],
+    "create_time": 1790509186,
+    "update_time": 1790509347,
+    "_id": "Lab2::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00015-chunk-000": {
+    "tokens": 95,
+    "content": "f R f R =  2 R R R R 1 3 5 7 2 2 2 2 R R R R R R R R 2 4 6 8 - 2 R R R R V out + ) 2 2 2 2 ( 4 4 3 3 2 2 1 1 ----+ + + = b b b b R V V r f out",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00015",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ad3ecd0027473da41ecf54c31553fcd4",
+      "default:extract:ab5c09686f2b4effdbaecf32d9845f71"
+    ],
+    "create_time": 1790509202,
+    "update_time": 1790509348,
+    "_id": "chapter 5  ADC and DAC::ch_00015-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00002-chunk-000": {
+    "tokens": 38,
+    "content": "A/D converter and D/A Converters Analog to Digital Digital to Analog N-bit digital word 0 1 0 D/A AD VA 0 converter converler No : 0 N",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:93d70cf448b9e3b30d33f19ccfb926eb",
+      "default:extract:15e6c63c800e7c962ba0646be9ca1dbb"
+    ],
+    "create_time": 1790509331,
+    "update_time": 1790509447,
+    "_id": "chapter 5  ADC and DAC::ch_00002-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00029-chunk-000": {
+    "tokens": 143,
+    "content": "Operation of AC Bridge:  When the specific circuit conditions apply, the detector current becomes zero , which is known as null or balance condition.  Since zero current, it means that there is no voltage difference across the detector, Figure 3.10 .  Voltage at point b and c are equal. 2 2 1 1 Z I Z I = 12 21 Figure 3.10: Equivalent of Balance (nulled) AC Bridge.  The same thing at point d . 4 2 3 1 Z I Z I =  From two above equation yield general bridge equation; 4 2 3 1 Z Z Z Z =",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00029",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ebf15ea1bd2cc32f0aaa17c291108f96",
+      "default:extract:eff839ddfc2b48d032766ec41c46bd2c"
+    ],
+    "create_time": 1790509348,
+    "update_time": 1790509464,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00029-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00010-chunk-000": {
+    "tokens": 108,
+    "content": "VERTKCAL CALIBRATIUN CiRcuit IO VERTICAL VERTICAL VERTICAL DELAY Amplifier Circuit AQUADAG CONTROL ELECTRON GRio SCREEN SPOT EXT KORZONTAL HORIZONIA 0 CATHODE HORIZONTAL VEATKCAL amplifier INT 0 SWEEP PUTES SELECTOR EXT HOONIAL + SwITCH POSITION SELECTOR 0 0 FREQUENCY TRIGGER N TENSITY FOCUS BUANKING circuitstoday com GENERATOR CiRcuIT Detailed Block Diagram of a CRO",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00010",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:f56cf5de522032006a42c30700c0169e",
+      "default:extract:9ef288ead8658e4a583c237f1369f105"
+    ],
+    "create_time": 1790509349,
+    "update_time": 1790509481,
+    "_id": "chapter(4) oscilloscope::ch_00010-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00004-chunk-000": {
+    "tokens": 124,
+    "content": " At balance the voltage drop at R 1 and R 2 must be equal to. 4 4 3 3 I R I R =  No current go through the galvanometer G, the bridge is in balance so, R I R I = 2 2 1 1 I R I R = 3 1 I I = 4 2 I I = E 3 2 4 1 4 2 3 1 4 2 3 1 R R R R or R R R R I R I R = = =",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d42c781beb188fc19e648bca8d925fec",
+      "default:extract:abe44803beaabca5e3dc0ad03e0297fc"
+    ],
+    "create_time": 1790509447,
+    "update_time": 1790509655,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00004-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00022-chunk-000": {
+    "tokens": 70,
+    "content": "1-1.B7 010 1.871-25 011 251-3.12 100 3.121-3.75 101 3.7514.37 110 4.371-5.00 111 The difference between the analog signal amplitude and the nearest standard digital level is called quantization error",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00022",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3e66d05125b0a3a48a0f741e145e5fa6",
+      "default:extract:ba752d989e35e3cac6a417b850f60630"
+    ],
+    "create_time": 1790509464,
+    "update_time": 1790509671,
+    "_id": "chapter 5  ADC and DAC::ch_00022-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00012-chunk-000": {
+    "tokens": 326,
+    "content": "R ( 2 R + x   )*   R Th - R R 1 3 R R + 1 3    =  R R x 2         + -= + R R R R R R R R R Th x x ) ( 3 1 3 1 2 2 E=61 = Rg= 100o = Rx R 2 R x =   R  Th  R 2 - R R 1 3 R R + 1 3     - 1         + --        + -= R R R R R R R R R R R R R Th Th x 3 1 3 1 2 3 1 3 1 2         +    - -        +    - = K K K K K K K K K K K K R x 5 1 *5 1 1.665 1 5 1 *5 1 1.665 1 R x = K 4.941 ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00012",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c7360c5331f45d2f83261d596083dbd9",
+      "default:extract:ffa6c320ffb4013e9e202e001e48b5cb"
+    ],
+    "create_time": 1790509481,
+    "update_time": 1790509688,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00012-chunk-000"
+  },
+  "Lab1::ch_00002-chunk-000": {
+    "tokens": 89,
+    "content": "onents’ tolerance, which is the insertion error of measurements instrumentation. Components:   twenty 100 KΩ resistors, AVO meter, one 1 KΩ resistor, test board, and wires . (Note if you can’t find 100 KΩ resistor, bring any other resistance value)   Part A: Statistical analysis for resistors’ samples: First, we start with a 10-resisters sample—sample 1.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:45977e6a1a404ee8df0a17a5180e410b",
+      "default:extract:005345cf5766d832f1d21c47ec584131"
+    ],
+    "create_time": 1790509656,
+    "update_time": 1790509753,
+    "_id": "Lab1::ch_00002-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00025-chunk-000": {
+    "tokens": 68,
+    "content": "➢ Once   V fb > V in , the output of the comparator is driven high, which disables the clock input of the counter. A high logic state on the EOC output indicates that the conversion is complete and the output count is proportional to the analog input voltage. Another conversion may be initiated by pulsing the START input low.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00025",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:380f2ddad419d45dd1702f7f1ea1bf33",
+      "default:extract:e45d4a8ac9638674994fc5925e77c53d"
+    ],
+    "create_time": 1790509672,
+    "update_time": 1790509770,
+    "_id": "chapter 5  ADC and DAC::ch_00025-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00014-chunk-000": {
+    "tokens": 143,
+    "content": "Solution: (1 ) Find Thevenin equivalent circuit as seen from by the galvanometer, V th is, ( ) V V K K K K K K V R R R R R R E VTh 0.276 0.824 0.778 6 1.6 7.5 7.5 1 3.5 3.5 6 2 4 4 1 3 3 = -=         +  -  +  =         + -+ =",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00014",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:53a2871ff55b6ae055ab592c4a51d9b8",
+      "default:extract:d39ed9bcb2e03c9e31c8baaaf39a1784"
+    ],
+    "create_time": 1790509688,
+    "update_time": 1790509817,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00014-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00028-chunk-000": {
+    "tokens": 31,
+    "content": "General impedance bridge Z 2 null Z4 Z 3 Abox with a \"Z' written inside is the symbol for any nonspecilic impedance .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00028",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:622890bee72e711e2f565613128206fe",
+      "default:extract:c2de4f3082336d42a333a1cbd218f189"
+    ],
+    "create_time": 1790509754,
+    "update_time": 1790509930,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00028-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00033-chunk-000": {
+    "tokens": 33,
+    "content": "Integrating A/D Converters Reset - -V ref V in (t) Clock + Comparator - + Analog input Single–slope A/D Converter Counter Digital output",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00033",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:461b9fe08c5435957faa585eace3dc14",
+      "default:extract:a092e76cb91fa937c7242bc680cf0bb3"
+    ],
+    "create_time": 1790509770,
+    "update_time": 1790509947,
+    "_id": "chapter 5  ADC and DAC::ch_00033-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00024-chunk-000": {
+    "tokens": 111,
+    "content": "➢ Because V in > V fb , the output of the comparator is driven low, enabling the OR gate to pass clock pulses to the up counter. The output of the comparator is also used to indicate that a conversion is now in progress (EOC = 0) ➢ The counter increments once for each falling edge of the clock signal, forcing the output of the D/A converter to increase by 1 LSB on each falling clock edge. This action continues until the output of the D/A converter is greater than the input voltage being sampled.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00024",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c766274dc9755625feaa670384b65870",
+      "default:extract:43d9cbd0a0f10b8df6d080307cc2462b"
+    ],
+    "create_time": 1790509817,
+    "update_time": 1790509956,
+    "_id": "chapter 5  ADC and DAC::ch_00024-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00024-chunk-000": {
+    "tokens": 123,
+    "content": "Solution: Calculate the resistance of R x , 1000 1 2 = = a b x R R R R R1  =0.5 R 2 , so calculate R 2 Calculate the value of R x  =  = = 10 0.5 5 0.5 1 2 R R       = 1000 1 2 R Rx   =       = 0.01 1000 1 10",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00024",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:219709c5b9a1bfb8c2fe56e6480d8896",
+      "default:extract:0f2568a921f86c85184c04b9e87b9240"
+    ],
+    "create_time": 1790509931,
+    "update_time": 1790510053,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00024-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00004-chunk-000": {
+    "tokens": 75,
+    "content": "Systematic Errors These are divided into two categories: Instrumental errors: Due to shortcomings of the instruments. Environmental errors: Due to external conditions affecting the instrument. Instrumental errors. Even if human errors are avoided or proper care is taken to see that such errors do not occur, errors can still occur in measurements due to the instrument. The possible reasons can be as follows:",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8aa01e517808bb2216f3a0d3aadc7462",
+      "default:extract:45c7d3d4b891d62ed41554023385dcfd"
+    ],
+    "create_time": 1790509948,
+    "update_time": 1790510054,
+    "_id": "chapter-1 Error in measurement::ch_00004-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00035-chunk-000": {
+    "tokens": 79,
+    "content": "3.3.3 Maxwell Wein   Bridge  It is used to measure unknown   inductances   with capacitance standard.  Because the phase shifts of inductors and capacitors are exactly opposite each other, a capacitive impedance can balance out an inductive impedance if they are located in opposite legs of a bridge R null R Figure 3.13: Maxwell-Wein Bridge.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00035",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1626539d1d74bfb47b55d52414185613",
+      "default:extract:ce828fd5aedbb8f0f35756cc299b9f94"
+    ],
+    "create_time": 1790509957,
+    "update_time": 1790510070,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00035-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00040-chunk-000": {
+    "tokens": 34,
+    "content": "= VinT1 T2 Vref Which equal, V in T1 1v Vref Integrator output t 1 Comparator output t 2 t 3",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00040",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a95a02aaeb0d131d514a95f751523399",
+      "default:extract:f2957b8dc96079b3cd71e8af2995b26f"
+    ],
+    "create_time": 1790510053,
+    "update_time": 1790510213,
+    "_id": "chapter 5  ADC and DAC::ch_00040-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00027-chunk-000": {
+    "tokens": 70,
+    "content": "Tracking A/D converter Clock CLR CLK Control Up START logic Q0    Q Q Q Down STOP 1 2 3 D 0 (LSB) D 1 Digital D 2 output +V D 3 (MSB) D0    D D D V in - 1 2 3 D/A comparator + V fb",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00027",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1d1db3e400c9746f82d9127b82576aae",
+      "default:extract:8ec91d41f4d576271028c33fbeb81ae0"
+    ],
+    "create_time": 1790510054,
+    "update_time": 1790510441,
+    "_id": "chapter 5  ADC and DAC::ch_00027-chunk-000"
+  },
+  "Lab3::ch_00001-chunk-000": {
+    "tokens": 95,
+    "content": "g another signal with known frequency and phase. Components: • 4 probes Theory : A lissajous figure is produced easily on an oscilloscope in XY mode. One can apply one signal to the vertical deflection plates while applying a second signal to the horizontal deflection plates. The resulting waveform is called Lissajous figure. This mode can be used to measure phase or frequency relationships between two signals.   A. Frequency Measurements Using Lissajous Figures",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab3::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d814001dacd456cd31568ee108afba9f",
+      "default:extract:a6c2110ee20172348b56fbba6157e212"
+    ],
+    "create_time": 1790511746,
+    "update_time": 1790511774,
+    "_id": "Lab3::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00044-chunk-000": {
+    "tokens": 164,
+    "content": "Example: A certain 8-bit DAC has a full-scale output of 2mA and a fullscale error of ±   0.5% F.S. What is the range of possible outputs for an input of 10000000? Solution The step size is 2mA/256 = 7.81 μA. Since 10000000 = 128 10 , the ideal output should be: 128 × 7.81 μA ≈ 1000 μA. The error can be as much as ± 0.5% × 2mA = ± 10μA Thus, the actual output can deviate by this amount from the ideal 1000 μA , so the actual output can be anywhere from 990 to 1010 μA .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00044",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:59f370736a67d4d54f551fae9929fbb5",
+      "default:extract:a4ee5fe3a9a89870e35ab7a083c21e85"
+    ],
+    "create_time": 1790511773,
+    "update_time": 1790511873,
+    "_id": "chapter 5  ADC and DAC::ch_00044-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00005-chunk-000": {
+    "tokens": 66,
+    "content": "e output of 9.375 V, this percentage converts To ± 0.01% × 9.375 V = ± 0.9375 mV This means that the output of this DAC can, at any time, be off by as much as 0.9375mV from its expected value.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00005",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:176d906fc2162a8ee1ae3e33d8138513",
+      "default:extract:3d8d9bc442bd584cd461a23e7b1850f6"
+    ],
+    "create_time": 1790511773,
+    "update_time": 1790511824,
+    "_id": "chapter 5  ADC and DAC::ch_00005-chunk-000"
+  },
+  "Lab1::ch_00004-chunk-000": {
+    "tokens": 187,
+    "content": "%e i = |R t R i | R t ∗ 100 2.   Calculate the standard deviation of the sample ( 𝜎𝜎 ) 𝜎𝜎 = � ∑ 𝑑𝑑 𝑖𝑖 2 n i=1 n Then, we repeat from 1 to 5 for a 20-resisters sample—sample 2. Resistor no. 1 | R i (KΩ) | d i (KΩ) | d i 2 | %e\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nR � = ∑ R i 10 i=1 10 σ = � ∑ 𝑑𝑑 10 i=1 10 | = ------------------ 𝑖𝑖 2 = ------------------",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:64b6188fd36248262fba27f7e6dfef0e",
+      "default:extract:bdf008c97dea2eac518bcb46284a36b1"
+    ],
+    "create_time": 1790511776,
+    "update_time": 1790511892,
+    "_id": "Lab1::ch_00004-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00002-chunk-000": {
+    "tokens": 83,
+    "content": "3.2.1 The Wheatstone Bridge.  The Wheatstone bridge consists of two parallel resistance branches with each branch containing two series resistor elements, Figure 3.1 .  A DC voltage source is connected across the resistance network to provide a source of current through the resistance network.  A null detector   is the galvanometer which is connected between the parallel branches to detect the balance condition .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:964bae0a71c7d18f594f7fe7bda6429e",
+      "default:extract:99584c977791f368aa7972b4e74f235a"
+    ],
+    "create_time": 1790511825,
+    "update_time": 1790511925,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00002-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00001-chunk-000": {
+    "tokens": 38,
+    "content": "TYPES OF ERRORS Different types of errors that occur in measurements have been classified into three categories. These include - • Gross errors.\n- • Systematic errors.\n- • Random errors.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4179203adba53f273e5a76507238a4e3",
+      "default:extract:fcd80431f7b104783c60dfd467a5d3be"
+    ],
+    "create_time": 1790511874,
+    "update_time": 1790511989,
+    "_id": "chapter-1 Error in measurement::ch_00001-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00018-chunk-000": {
+    "tokens": 72,
+    "content": "Example 3.5 500 Ω 500 Ω 10 V G 525 Ω 500 Ω Figure 3.7 Use the approximation equation to calculate the current through the galvanometer in Figure 3.7. The galvanometer resistance, Rg is 125 Ω and is a center zero 200-0-200-μA movement.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00018",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c831459886b44304cc9a7d5f584947a8",
+      "default:extract:123cf9a27ba9b2698fa890313600b92d"
+    ],
+    "create_time": 1790511893,
+    "update_time": 1790512039,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00018-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00008-chunk-000": {
+    "tokens": 126,
+    "content": "Unbalanced Wheatstone Bridge .  The current flows through the galvanometer can determine by using Thevenin theorem . 41 Figure 6.3: Unbalance Wheatstone Bridge. R, R, ( ) ( ) 4 2 4 2 3 1 3 1 4 2 3 1 // // R R R R R R R R R R R R R R ab Th + + + = + = = 4 2 4 3 1 3 R R R E R R R E V V V b a Th + -+ = -=",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00008",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2e9b4ddb08649adc64426290ab1dc2bb",
+      "default:extract:2490d530260938163be623e79d068311"
+    ],
+    "create_time": 1790511926,
+    "update_time": 1790512057,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00008-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00034-chunk-000": {
+    "tokens": 93,
+    "content": "- ➢ Integration is initiated with an input voltage –V ref, and the digital counter is started at the same time.\n- ➢ The output of the integrator at time t can be expressed as:\n1 (t) RC Jo (-Vref )dt RC Vreft Vin\n- ➢ When the integrator output voltage reaches the level of the analog signal, the comparator changes states. By means of the associated logic, the counter is inhibited.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00034",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2aa1e23f35126993e093e2fcaded0638",
+      "default:extract:6af8092e94dddac173288f800b66d3f6"
+    ],
+    "create_time": 1790512084,
+    "update_time": 1790512208,
+    "_id": "chapter 5  ADC and DAC::ch_00034-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00012-chunk-000": {
+    "tokens": 61,
+    "content": "D/A Converter with binary weighted resistor -V V + r b 4 2 0 8 R R f b 3 2 1 b 2 2 2 b 1 2 3 4 R R 2 R - + V OUT Rf Rf R",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00012",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:cd6d859eb552017426883766c54d7495",
+      "default:extract:18a954ef2afa192af3a5c333b9f94439"
+    ],
+    "create_time": 1790512089,
+    "update_time": 1790512226,
+    "_id": "chapter 5  ADC and DAC::ch_00012-chunk-000"
+  },
+  "Lab1::ch_00001-chunk-000": {
+    "tokens": 83,
+    "content": "re, in this experiment, we aim to learn some basic principles of error analysis. The experiment is divided into two parts. Using two resistor samples, part A aims to introduce the basis of statistical sampling analysis for the error in resistors due to their tolerance.   Then, part B introduces an additional source of error in the electrical circuits, besides the components’ tolerance, which is the insertion error of measurements instrumentation.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:60eaab32340557ca838d4b5bd1cfb13c",
+      "default:extract:9958118a77ed2e2b12b6c8aee4f2a898"
+    ],
+    "create_time": 1790512094,
+    "update_time": 1790512227,
+    "_id": "Lab1::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00045-chunk-000": {
+    "tokens": 147,
+    "content": "Problem 1: Calculate the full-scale output voltage of a 5 bit binary ladder, if we consider the two logic levels as 1 = 20V, 0 = 0V and R f =R . Ans: –19.375V Problem 2: Calculate the analog output voltage at the given input combination (1010) of 4–bit binary ladder, if 0 = 0V, 1 = 16V and R f =R . Ans: –10V ) 2 2 2 2 ( 4 4 3 3 2 2 1 1 ----+ + + = b b b b R R V V r f out 44",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00045",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0702842c2c361fa67c1acf17ac8cc56a",
+      "default:extract:2c3f5a4137ab9abaf82680ceaaf390bd"
+    ],
+    "create_time": 1790512209,
+    "update_time": 1790512324,
+    "_id": "chapter 5  ADC and DAC::ch_00045-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00010-chunk-000": {
+    "tokens": 71,
+    "content": "Linearity error  The difference between the desired analog output and the actual output over the full range of expected values Analog Output Signal Analog Output Signal 0010 0010 0011 0011 0100 0100 0101 0101 0000 0000 0001 0001 Digital Input Signal Digital Input Signal",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00010",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2c98775d6a1894a1410c3f7997eb2e1e",
+      "default:extract:f2c6bd3d5259cd6e52219ba67e6b8a94"
+    ],
+    "create_time": 1790512227,
+    "update_time": 1790512326,
+    "_id": "chapter 5  ADC and DAC::ch_00010-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00012-chunk-000": {
+    "tokens": 84,
+    "content": "Example The expected value of the voltage across a resistor is 50V., however, measurement yields a value of 49V. Calculate - (a) The absolute error\n- (b)   The percent of error\n- (c)   The relative accuracy\n- (d)   The percent of accuracy Solution (a) V V V X Y e n n 1 49 50 = -= -=",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00012",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:36f9ff217b3907c78e8d6a159b9e3642",
+      "default:extract:47e647a3d09ac9f2dcbd014d9fed823b"
+    ],
+    "create_time": 1790512228,
+    "update_time": 1790512373,
+    "_id": "chapter-1 Error in measurement::ch_00012-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00005-chunk-000": {
+    "tokens": 108,
+    "content": "The deflection system The beam may be moved in the Xand Y-directions by using the time base system. The time base circuit applies a saw-tooth waveform to the X-plates, as shown in Figure 2. The beam is moved from the left-hand side of the screen to the right during the time that the voltage rises to a maximum, and then is returned rapidly to the left as the voltage returns to zero. This fly-back time should be as short as possible. riqht right right left left left 7",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00005",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0b03d058209b108d273dc8481b0e0516",
+      "default:extract:51a4084627bb4766958605853c306ee9"
+    ],
+    "create_time": 1790512325,
+    "update_time": 1790512479,
+    "_id": "chapter(4) oscilloscope::ch_00005-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00009-chunk-000": {
+    "tokens": 51,
+    "content": "Absolute Error (e ab ) : It is defined as the difference between the expected value of the variable and the measured value of the variable Where: n n X Y e -= e   =   absolute error Y n = expected value X n = measured value",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00009",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7a6aaf66944d3cd3941e77ef320be613",
+      "default:extract:cf051bb5c979ef63260cd31f08121007"
+    ],
+    "create_time": 1790512326,
+    "update_time": 1790512481,
+    "_id": "chapter-1 Error in measurement::ch_00009-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00005-chunk-000": {
+    "tokens": 63,
+    "content": "Example 3.l Determine the value of unknown resistor, R x in the circuit of Figure 3.2 assuming a null exist, current through the galvanometer is zero . Rz 12k2 R, = E RJ 32kn Figure 3.2: Circuit For Example 3.1.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00005",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0c01c73df00292db818050f415ce8025",
+      "default:extract:33892d4543418c5f24a79d03f1fde690"
+    ],
+    "create_time": 1790512374,
+    "update_time": 1790512498,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00005-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00019-chunk-000": {
+    "tokens": 100,
+    "content": "Solution: From formula, g Th Th g R R V I + = - (1) Find Thevenin equivalent voltage ( V th ) is,\nV V R r E VTh 0.125 2000 25 * 10 4 =    =       =\n- (2) Find Thevenin equivalent resistance ( R th )is,    500 R RTh",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00019",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9f36ed01b91c717c7ea856e457fb5d28",
+      "default:extract:569a2ccdfca0572f6c6b5c0c39b776f1"
+    ],
+    "create_time": 1790512480,
+    "update_time": 1790512595,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00019-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00003-chunk-000": {
+    "tokens": 108,
+    "content": "ement may go wrong due to the operator. The different types of gross errors are: - •Taking wrong readings.\n- •Reading with parallax error.\n- •Incorrect adjustments of zero and full-scale adjustments.\n- •Improper applications of instruments: Using a 0–100 V voltmeter to measure 0.1 V, etc.\n- •Wrong computation: When power is to be determined, ‘ V ’ and ‘ I ’ are measured. If the computation goes wrong, the measurement of power will be wrong. Thus, wrong",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:71c47af16c5ad75a52242e205d54416a",
+      "default:extract:e73f722047c86d2a22d389aa28101825"
+    ],
+    "create_time": 1790512482,
+    "update_time": 1790512596,
+    "_id": "chapter-1 Error in measurement::ch_00003-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00029-chunk-000": {
+    "tokens": 91,
+    "content": "Successive approximation A/D converter - ➢ Much of the operation of a successive approximation A/D converter depends on the control logic.\n- ➢ The SAR (Successive Approximation Register) is used to produce estimations of the input voltage, beginning with MSB and working down to the LSB, one bit position at a time.\n- ➢ The output of the internal D/A converter is compared with the input voltage after each internal state change.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00029",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ca91afd85fe8b6773d06a37afd9bd689",
+      "default:extract:4a55cd0faef45aaaf6a06312b3d6a119"
+    ],
+    "create_time": 1790512499,
+    "update_time": 1790512643,
+    "_id": "chapter 5  ADC and DAC::ch_00029-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00007-chunk-000": {
+    "tokens": 20,
+    "content": " Poor representation of ideal output due to poor resolution  Size of voltage divisions affect the resolution",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00007",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:281b03648f57c2332dcd47bdd5c6d1bc",
+      "default:extract:bd6e844268485d49ed6274290f82aa5c"
+    ],
+    "create_time": 1790512596,
+    "update_time": 1790512757,
+    "_id": "chapter 5  ADC and DAC::ch_00007-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00001-chunk-000": {
+    "tokens": 85,
+    "content": "Introduction to Cathode Ray Oscilloscope 2 The cathode ray oscilloscope (CRO) is an extremely useful and versatile laboratory instrument used for studying wave shapes of alternating currents and voltages as well as for measurement of voltage, current, power and frequency, in fact, almost any quantity that involves amplitude and waveform. It allows the user to see the amplitude of electrical signals as a function of time on the screen",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5065f72c3ba5b6067ee0f42f4e25e082",
+      "default:extract:6f0da59cb1c128d9e3c7dc6a1fbc3202"
+    ],
+    "create_time": 1790512597,
+    "update_time": 1790512758,
+    "_id": "chapter(4) oscilloscope::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00041-chunk-000": {
+    "tokens": 45,
+    "content": "➢ The operation of this A/D requires 2 voltage slopes, hence the common name DUAL-SLOPE. full scale conversion charging up discharging the capacitor the capacitor half scale conversion quarter scale conversion fixed time measured time",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00041",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:35b3b10b047efdcf4d1ff15751aea623",
+      "default:extract:59767d44c62f1781654178da84ca71b8"
+    ],
+    "create_time": 1790512644,
+    "update_time": 1790512775,
+    "_id": "chapter 5  ADC and DAC::ch_00041-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00030-chunk-000": {
+    "tokens": 36,
+    "content": "unknown inductance null standard inductance unknown capacitance standard capacitance C Cr null R Figure 3.11: (a) and (b) are Simple AC Bridge Circuit.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00030",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c9ea5be9b1ee8990053779a2aaa1d611",
+      "default:extract:0744752ed314e02a2202f2d33535125e"
+    ],
+    "create_time": 1790512758,
+    "update_time": 1790512903,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00030-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00039-chunk-000": {
+    "tokens": 89,
+    "content": "➢ During the period of discharge, from t 2 to t 3 the voltage V 2 (t)   at the output of the integrator is given by the expression. 2 Vz(t)= RC Vz(t)= RC At V(t3) = 0 1 1 Vref (t3 = t2) = VinT1 RC RC If =t3-t2 t = t3 T2",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00039",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:f4ec8e64ac900c8f1f2fc8c36c2e594d",
+      "default:extract:5e51d7ddef96403264db8920cc72b84b"
+    ],
+    "create_time": 1790512759,
+    "update_time": 1790512905,
+    "_id": "chapter 5  ADC and DAC::ch_00039-chunk-000"
+  },
+  "Lab3::ch_00000-chunk-000": {
+    "tokens": 51,
+    "content": "Exp.3   Oscilloscope Applications   Objective: Using the oscilloscope’s Lissajous figures, we measure both the frequency and phase of unkown signal using another signal with known frequency and phase. Components: • 4 probes Theory :",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab3::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:03defbe7801c6c1b4a082d603d60713e",
+      "default:extract:31a2b084ef3e1d5211a2975529538db3"
+    ],
+    "create_time": 1790512776,
+    "update_time": 1790512922,
+    "_id": "Lab3::ch_00000-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00038-chunk-000": {
+    "tokens": 88,
+    "content": "If T1 t2-t1 T1 RC Vin - ➢ As the counter overflows, a “carry” pulse from the counter causes the control logic circuit to set switch S 1 to position B.\n- ➢ The negative reference voltage removes the charge stored in the integrator until the charge becomes zero.\n- ➢ At this point, the comparator switches states producing a signal that disables the clock and freezes the counter reading.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00038",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:caead4e4e9f66e7f9e40677f10767b8d",
+      "default:extract:a03f8cbcc59873459c84cd3a52aed985"
+    ],
+    "create_time": 1790512904,
+    "update_time": 1790513004,
+    "_id": "chapter 5  ADC and DAC::ch_00038-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00018-chunk-000": {
+    "tokens": 65,
+    "content": "erimenter’s   inability   to   keep   all   the   above   factors   constant .   •Statistical Analysis allow us to obtain such information as the mean value, average deviation , and standard deviation of our data. Such information allows us to make quantitative judgments of the variations, or errors in our data.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00018",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:59b9735d38e6c9f875bdbbe42d51ecce",
+      "default:extract:d9577a192abda67cc7c057ba31882396"
+    ],
+    "create_time": 1790512906,
+    "update_time": 1790513022,
+    "_id": "chapter-1 Error in measurement::ch_00018-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00042-chunk-000": {
+    "tokens": 141,
+    "content": "Flash Analog to Digital Converter ➢ Simultaneous or flash analog-to-digital converters use 2 n -1 comparators to convert an analog input to a digital value for processing. Flash ADCs are a series of comparators, each with a slightly different reference voltage. The priority encoder produces an output equal to the highest value input . V REF Op-amp R comparators V in + (analog) - R + - Priority R encoder + (7) - (6) (5) D R 2 + D (4) Binary 1 output D - (3) 0 (2) R (1) + (0) - R + Enable input - R + - R",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00042",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bbfc52dad9f60e7fcb7991bf2077a658",
+      "default:extract:cb96ea8658fd92864f10447e0dbe4e47"
+    ],
+    "create_time": 1790513041,
+    "update_time": 1790513053,
+    "_id": "chapter 5  ADC and DAC::ch_00042-chunk-000"
+  },
+  "Lab4::ch_00001-chunk-000": {
+    "tokens": 71,
+    "content": "UTS ADD A 24 ADD B OUTG 23 ADD € OUT7 ALE OUT8 VREF(+) 76 VREF(-) OE RI R2 R3 R4 R5 RG R7 R8 ADC0808 550 550 550 550 550 550 550 550 Power Fig.1 ADC0808 schematic",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab4::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9bae4db0ba73bf0b5ac1ede8722950aa",
+      "default:extract:cc0c05ca9b46f893e52c45ac10a5d88d"
+    ],
+    "create_time": 1790513052,
+    "update_time": 1790513134,
+    "_id": "Lab4::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00028-chunk-000": {
+    "tokens": 78,
+    "content": "- ➢ Once a conversion is started, the up/down counter begins counting up. When the output of the D/A just exceeds the input voltage, the output of the comparator goes high, causing the counter to begin counting down.\n- ➢ If the input is time varying, the output of the counter will track the input voltage as it increases and decreases; thus the term tracking converter.|",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00028",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9c673e7059d7e08a99c068feeff725f6",
+      "default:extract:134184985d7eae6a27ba4f1c90d93e07"
+    ],
+    "create_time": 1790513052,
+    "update_time": 1790513151,
+    "_id": "chapter 5  ADC and DAC::ch_00028-chunk-000"
+  },
+  "Lab4::ch_00002-chunk-000": {
+    "tokens": 2,
+    "content": "Steps:",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab4::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0065aba040c12b75a038975439b00efc",
+      "default:extract:bfd02130bf745199fe6df51be3e45dbc"
+    ],
+    "create_time": 1790513056,
+    "update_time": 1790513168,
+    "_id": "Lab4::ch_00002-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00010-chunk-000": {
+    "tokens": 57,
+    "content": "Example 3.2 Calculate the value of R x in the circuit of Figure 3.3 if V Th   = 24 mV and Ig =13.6 uA. 1KS Rx Figure 3.3 : Circuit For Example 3.2 A.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00010",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:574da122e2104b363df4057cc66dd6a7",
+      "default:extract:6987b287998d501bf929c4294472a89d"
+    ],
+    "create_time": 1790513135,
+    "update_time": 1790513185,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00010-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00013-chunk-000": {
+    "tokens": 98,
+    "content": "2RfVr Vo (b1 4 4 . + bn2-n) R 2-2 2-1 b2 • Advantages - – Simple Construction Analysis\n- – Fast Conversion • Disadvantages - – Requires large range of resistors (2048:1 for 12bit DAC) with necessary high precision for low resistors\n- – Requires low switch resistances in transistors\n- – Can be expensive. Therefore, usually limited to 8-bit resolution.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00013",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:cb81794fc91a5f8fc1bd641edeb86230",
+      "default:extract:a950c90b2393dcbe14f2fe0d565adafc"
+    ],
+    "create_time": 1790513152,
+    "update_time": 1790513282,
+    "_id": "chapter 5  ADC and DAC::ch_00013-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00009-chunk-000": {
+    "tokens": 55,
+    "content": "Figure 6.4 : Thevenin ’ s Equivalent Circuit for an Unbalanced Wheatstone Bridge.  The deflection current in the galvanometer is, g th th g R R V I + =  R g = the internal resistance in the galvanometer",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00009",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:019f4cfa1558001b328afd2cc13ff5ab",
+      "default:extract:e524d0fe9ef7d22ee3c0aaa82547eccb"
+    ],
+    "create_time": 1790513169,
+    "update_time": 1790513283,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00009-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00013-chunk-000": {
+    "tokens": 99,
+    "content": "2% 100% 50 1 100% 50 49 50 =  =  -= V V V percenterror (c) 0.98 1 1 49 50 1 = -= --= V V A 50 50 V (d) 98% 2% 100% 100% a = -= -= percent error 98% 100 0.98 100 =  =  = A",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00013",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:15b2f5c48d3f9e1316bbe3df9c371f02",
+      "default:extract:fb91b04ad8224c184b613b69da9a1dc0"
+    ],
+    "create_time": 1790513186,
+    "update_time": 1790513330,
+    "_id": "chapter-1 Error in measurement::ch_00013-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00043-chunk-000": {
+    "tokens": 36,
+    "content": "➢ In IC flash converters, the priority encoder usually includes a latch that holds the converter data constant for a period of time after the conversion. ➢ Fast – but more expensive",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00043",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c63f81e8066653d8d8f3fe84439b4b59",
+      "default:extract:c6e727a9ca411e62b746994a51e0e904"
+    ],
+    "create_time": 1790513283,
+    "update_time": 1790513395,
+    "_id": "chapter 5  ADC and DAC::ch_00043-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00007-chunk-000": {
+    "tokens": 113,
+    "content": "Sensitivity of the Wheatstone Bridge.  When the bridge is in unbalance condition , current flows through the galvanometer causing a deflection of its pointer .  The amount of deflection is a function of the sensitivity of the galvanometer.  Sensitivity is the deflection per unit current.  The more sensitive the galvanometer will deflect more   with the same amount of current. A radian A A S    = = = degrees milimeters  Total deflection D is, I S D * =",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00007",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:510c76a0123ebf398245674fda1827f8",
+      "default:extract:17f9fb906a2ee72b7949c29e342bde44"
+    ],
+    "create_time": 1790513284,
+    "update_time": 1790513412,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00007-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00033-chunk-000": {
+    "tokens": 67,
+    "content": "3.3.2 Similar Angle Bridge  Figure 3.13 is a simple form of Similar–Angle Bridge, which is used to measure the impedance of a capacitive circuit .  Sometimes called the capacitance comparison bridge or series resistance capacitance bridge.   Figure 3.13: Similar-Angle Bridge.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00033",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:bff899d7178e819fbd271c4c1b3f4665",
+      "default:extract:4cd77f8f160bb06cf8a9fe4a6e1fe2e0"
+    ],
+    "create_time": 1790513331,
+    "update_time": 1790513429,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00033-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00022-chunk-000": {
+    "tokens": 98,
+    "content": " The second set of R a   and R b   compensates for this relatively low lead contact resistance .  At balance the ratio of R a and R b must be equal to the ratio of R 1 to R 3 . Rz a b x x x R R R R R R R R R R R R R R = = = = 1 3 2 1 3 2 1 3 2 B A Rb Rx",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00022",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d83ece627e1b7a9c9aa2bf2f7703b0a7",
+      "default:extract:7aa2b27d3f8b425c3e12c582139cd2fe"
+    ],
+    "create_time": 1790514652,
+    "update_time": 1790514715,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00022-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00023-chunk-000": {
+    "tokens": 73,
+    "content": "Counter (or ramp) A/D converter EOC Up counter Clock START CLR CLK Q0    Q Q Q 1 2 3 D 0 (LSB) D 1 Digital D 2 output +V D 3 (MSB) D0    D D D V in - 1 2 3 D/A + comparator V fb",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00023",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9553ee3ff95f6781a0dd7dd73f30f94c",
+      "default:extract:7e0c3cdcd76da494d63470814e41299e"
+    ],
+    "create_time": 1790514662,
+    "update_time": 1790514664,
+    "_id": "chapter 5  ADC and DAC::ch_00023-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00004-chunk-000": {
+    "tokens": 65,
+    "content": "Cathode ray tube essentially consists of an electron gun for producing a stream of electrons, focusing and accelerating anodes for producing a narrow and sharply focused electron beam, horizontal and vertical deflection plates for controlling the beam path and an evacuated glass envelope with phosphorescent screen giving bright spot when struck by a high velocity electron beam.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:98da4db16202237530d9513082840430",
+      "default:extract:8c4a2d600300e45c9708445960916c60"
+    ],
+    "create_time": 1790514662,
+    "update_time": 1790514732,
+    "_id": "chapter(4) oscilloscope::ch_00004-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00010-chunk-000": {
+    "tokens": 41,
+    "content": "If we wish to express the error as a percentage (100) Expected value Absolute error percenterror = (100) n Y e percenterror = (100) n n n Y X Y percenterror -=",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00010",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ce2b2710bca6a661118f89f969f108c6",
+      "default:extract:23f712359c89f7098b69adc85bdba0e1"
+    ],
+    "create_time": 1790514715,
+    "update_time": 1790514829,
+    "_id": "chapter-1 Error in measurement::ch_00010-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00046-chunk-000": {
+    "tokens": 85,
+    "content": "Problem 3 A 6-bit video D/A converter produces a maximum output of 1.25V . Determine the output voltage for the following digital input words: - a) 000001.\n- b) 100000.\n- c) 111111.\n- d) 011101 Solution 1.25V Step size 19.53mV 2n 26 64 Vfs Vfs",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00046",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c9c7b8e549faa144a0d371ab8e658429",
+      "default:extract:dac685650e084951c9a9264d78e2d041"
+    ],
+    "create_time": 1790514716,
+    "update_time": 1790514846,
+    "_id": "chapter 5  ADC and DAC::ch_00046-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00014-chunk-000": {
+    "tokens": 172,
+    "content": "R /2 R Ladder DAC A more widely used method for D/A conversion is the R /2 R   ladder . The gain for b 1   is -1. Each successive input has a gain that is half of previous one. The output represents a weighted sum of all of the inputs (similar to the scaling adder). Inputs An advantage of the R /2 R   ladder is that only two values of resistors are required to implement the circuit. D D D D b b b 0 1 2 3 b 1 4 2 3 Rf R f R =  2 R R R R 1 3 5 7 2 2 2 2 R R R R R R R R 2 4 6 8 - 2 R R R R V out +",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00014",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2eab22c7bfa3b1211b9dac3ff8139716",
+      "default:extract:da9aff2bb04db6651a0df8f2d9f95624"
+    ],
+    "create_time": 1790514733,
+    "update_time": 1790514847,
+    "_id": "chapter 5  ADC and DAC::ch_00014-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00030-chunk-000": {
+    "tokens": 106,
+    "content": "EOC SAR Q 0 Q 1 Q 2 Q 3 Q 4 Q 5 Q 6 Q 7 1 5 D 0 (LSB) D 1 D 2 Control Clock logic D 3 D 4 D 5 START D 6 +V D 7 (MSB) D 0 D 1 D 2 D 3 D 4 D 5 D 6 D 7 V in 1 5 - D/A comparator + V fb",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00030",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:44d82c5b62284126bb6ad48068d33283",
+      "default:extract:cffede3232de1ad46e21ef821053b728"
+    ],
+    "create_time": 1790514830,
+    "update_time": 1790514974,
+    "_id": "chapter 5  ADC and DAC::ch_00030-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00000-chunk-000": {
+    "tokens": 10,
+    "content": "Chapter-4- Cathode Ray Oscilloscope",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:472038e11e576bf7c462bd3847255d30",
+      "default:extract:5f94fc1f04842da9e50f5ac322c31150"
+    ],
+    "create_time": 1790514847,
+    "update_time": 1790514976,
+    "_id": "chapter(4) oscilloscope::ch_00000-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00000-chunk-000": {
+    "tokens": 7,
+    "content": "Chapter 1 - Error in Measurement",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c08bab77b324377aa88e434349036680",
+      "default:extract:3f422b50badaed3a5b5268bc1bc40d8c"
+    ],
+    "create_time": 1790514848,
+    "update_time": 1790514992,
+    "_id": "chapter-1 Error in measurement::ch_00000-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00013-chunk-000": {
+    "tokens": 93,
+    "content": "Example 3.3:   circuit Figure 3.4.   Given that E =6V, R 1 = 1kΩ, R 2 = 1.6kΩ, R 3 = 3.5kΩ, R 4 = 7.5kΩ and R g =200Ω. Find Thevenin equivalent circuit 5 E Figure 3.4: Circuit for Example 3.3.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00013",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7c9e68d63e933c6ff21cc7c5c3b7e565",
+      "default:extract:0e901e6a8ac201be0349702c32da0584"
+    ],
+    "create_time": 1790514976,
+    "update_time": 1790515120,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00013-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00021-chunk-000": {
+    "tokens": 111,
+    "content": "3.2.2 Kelvin Bridge.  The Kelvin Bridge is the modified version   of the Wheatstone Bridge.  The modification is done to eliminate   the effect of contact   and lead resistance   when measuring unknown low resistance.  By using Kelvin bridge, resistor within the range of 1 Ω   to approximately 1u Ω   can be measured with high degree of accuracy.  Figure 6.8 is the basic Kelvin bridge. The resistor R lc   represent the lead and contact resistance present in the Wheatstone bridge.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00021",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:60225dc7de7700e9df59acdeea3f5a63",
+      "default:extract:8a03e06cf6ec2afbbc3cc6a3512cc551"
+    ],
+    "create_time": 1790514976,
+    "update_time": 1790515121,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00021-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00011-chunk-000": {
+    "tokens": 56,
+    "content": "Relative Accuracy (A) Is defined as the ratio between the measured value and the expected value n n n n n Y X Y Y X A --= = 1 Accuracy expressed as percent accuracy, a, is 100 100% a  = -= A percent error",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00011",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2fd3f456c6aaa7e0cc19bb8c007d70f5",
+      "default:extract:43ce88a59d024e28fee61519f4a6ff00"
+    ],
+    "create_time": 1790514993,
+    "update_time": 1790515138,
+    "_id": "chapter-1 Error in measurement::ch_00011-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00014-chunk-000": {
+    "tokens": 67,
+    "content": "Precision The Precision of a measurement is a numerical indication of the closeness with which a repeated set of measurements of the same variable agrees with the average of the set of measurements Where: n n n X X X --= 1 Precision X n = the value of the nth measurement X n = the average of the set of n measurements",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00014",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:1601ef7bd6aa1972032b76b39a13ba5c",
+      "default:extract:5ced12854acff1abaae74b0bfc398143"
+    ],
+    "create_time": 1790515121,
+    "update_time": 1790515219,
+    "_id": "chapter-1 Error in measurement::ch_00014-chunk-000"
+  },
+  "Lab1::ch_00009-chunk-000": {
+    "tokens": 169,
+    "content": "red).\n- 4.   Record Eoi (true) and Eoi (measured) values in the following table. ) Rb; AVO Ein=10 V (100 KO ) 5.   Calculate the insertion error for each 100kΩ resistor %inseration error for Rb i (%e 𝑖𝑖 ) = |E oi (true) -E o ( 𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑑𝑑 )| E oi ( 𝑡𝑡𝑚𝑚𝑚𝑚𝑚𝑚 ) ∗ 100",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00009",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:851bf6f25646437a4722aec1e071fb20",
+      "default:extract:b4a91c67751faaf11c66b76d76b484e7"
+    ],
+    "create_time": 1790515122,
+    "update_time": 1790515236,
+    "_id": "Lab1::ch_00009-chunk-000"
+  },
+  "Lab1::ch_00000-chunk-000": {
+    "tokens": 37,
+    "content": "Experiment 1: Error in Experimental Data Objectives: No physical quantity can be measured with perfect certainty. Therefore, in this experiment, we aim to learn some basic principles of error analysis.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:203245f2b441699ac3df8209033cc99d",
+      "default:extract:798add3a3790c7275635bd8ca9ffa670"
+    ],
+    "create_time": 1790515139,
+    "update_time": 1790515253,
+    "_id": "Lab1::ch_00000-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00047-chunk-000": {
+    "tokens": 91,
+    "content": "- a. output voltage = 1 x 19.53mV = 19.53mV\n- b. output voltage = 32 x 19.53mV = 624.96 mV\n- c. output voltage = 63 x 19.53mV = 1.23039 V\n- d. output voltage = 29 x 19.53mV = 566.32mV",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00047",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:674c8ae4d571a81d754c6a0a589aa112",
+      "default:extract:c937fda4106e8c6f5727fc72d2ac7d2c"
+    ],
+    "create_time": 1790515220,
+    "update_time": 1790515350,
+    "_id": "chapter 5  ADC and DAC::ch_00047-chunk-000"
+  },
+  "Lab3::ch_00003-chunk-000": {
+    "tokens": 89,
+    "content": "∆Ө | F1 (Ch1) | F2 (Ch2) | Output Figure\n0 | 1K | 1k\n0 | 1k | 2k\n0 | 2K | 1K\n90 | 10K | 3K\n90 | 10K | 10K\n45 | 10K | 10K\n135 | 10K | 10K",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab3::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a1ba541dc0794137820ef6933df8a1c2",
+      "default:extract:dc636e949a3cbb776cba11ab9c6d8283"
+    ],
+    "create_time": 1790515237,
+    "update_time": 1790515352,
+    "_id": "Lab3::ch_00003-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00017-chunk-000": {
+    "tokens": 42,
+    "content": "To find R th : R R R R th = + = 2 2 RTh = R 7 Vrn #E 4R 3.6 An approximate Thevenin’s equivalent circuit",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00017",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:40f4efac94f2b47c91c3d35665aebeb3",
+      "default:extract:5fdcc572078232ed6ebbbd7a2ce1ee4d"
+    ],
+    "create_time": 1790515254,
+    "update_time": 1790515368,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00017-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00017-chunk-000": {
+    "tokens": 49,
+    "content": "R 2R WW 2R b4Vr+ b4Vr+ b2 = Vr 2 4 4 2 b2V= Toop-amp R b4Vr+ 16 4 2 8",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00017",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:fdc9d245012d9eac92d4e42c195c30ad",
+      "default:extract:5f578ad8e0e796de5793a827c0036b47"
+    ],
+    "create_time": 1790515351,
+    "update_time": 1790515450,
+    "_id": "chapter 5  ADC and DAC::ch_00017-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00006-chunk-000": {
+    "tokens": 69,
+    "content": "Solution : From the circuit, the product of the resistance in opposite arms of the bridge is balance, so solving for R x 3 2 1 R R RxR =  =    = = K K K K R R R Rx 40 12 *32 15 1 3 2",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00006",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3b359dbfc3cc516e343ff7b99839bfbf",
+      "default:extract:639ef9332af6f4f05db7f07798c463be"
+    ],
+    "create_time": 1790515353,
+    "update_time": 1790515467,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00006-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00032-chunk-000": {
+    "tokens": 54,
+    "content": "analog input voltage ¾FS D/A output for 8-bit ½FS conversion with output code 1011 0100 ¼FS CLOCK PERIOD 1      2       3       4        5      6       7      8",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00032",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:afe91594907a302cf3386b6457819bac",
+      "default:extract:06af7ca2a62e34ee539846aa57a5fb76"
+    ],
+    "create_time": 1790515369,
+    "update_time": 1790515515,
+    "_id": "chapter 5  ADC and DAC::ch_00032-chunk-000"
+  },
+  "Lab4::ch_00004-chunk-000": {
+    "tokens": 77,
+    "content": "Digital output code\nAnalog input | Analog Measured\ninput Binary\n0.1 | V\n0.2 | V\n0.5 V\n0.7 | V\n1.0 | V\n1.5 V\n2.0 V\n2.5 V\n3.0 V\n4.0 V\n4.5 V\n5.0 V",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab4::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:826d1811d5506a81d5f4511f453fb162",
+      "default:extract:8885dc497892ae0d9d310dfc4fed91fe"
+    ],
+    "create_time": 1790515451,
+    "update_time": 1790515595,
+    "_id": "Lab4::ch_00004-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00026-chunk-000": {
+    "tokens": 208,
+    "content": "( ) R R R R R R -+ = 2 1 x b a x x 1 b 1 a 1 x 2 R R R R R R R R -+ = b 1 a 1 x 1 x 2 R R R R R R R R + = +  ( ) ( ) b a 1 2 1 x R R R R R R + = +  ( ) ( ) 2 1 b a 1 x R R R R R R + + =           +  + =   b b b a a a 2 1 1 x x x a L a L R R R a L ( ) 2 1 1 2 1 1 x R R 2R L 2L R R R L + = + =  a L R  = ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00026",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:923465f47172b738b08b221467c59a64",
+      "default:extract:864ee416d78fad176b38f49eca900139"
+    ],
+    "create_time": 1790515468,
+    "update_time": 1790515597,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00026-chunk-000"
+  },
+  "Lab1::ch_00003-chunk-000": {
+    "tokens": 151,
+    "content": "sis for resistors’ samples: First, we start with a 10-resisters sample—sample 1. - 1.   Record the true value (R t ) of the resistor patch from the color code.\n- 2.   Measure and record the resistance of each resistor.\n- 3.   Calculate the average resistance ( 𝑅𝑅   ) of the first ten samples. n 𝑅𝑅 � = ∑ R i n i=1 n 1.   For each resistor, calculate the percentage error and deviation. Such that for a resistor number i (Ri) will have its percentage error (%e i ) and its deviation (d i ). d i = R i R �",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9aa1c21c9046e2345a5f7f926f7a1793",
+      "default:extract:436218a72fb91d2c4d8d48ab8919568b"
+    ],
+    "create_time": 1790515516,
+    "update_time": 1790515613,
+    "_id": "Lab1::ch_00003-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00005-chunk-000": {
+    "tokens": 92,
+    "content": "- a. Friction in bearings of various moving components can cause incorrect readings.\n- b. Irregular spring tension in analog meters.\n- c. Calibration errors due to aging.\n- d. Zero setting not adjusted properly.\n- e. Full-scale setting not adjusted properly.\n- f. Faulty display circuit in digital instruments. These errors can be avoided by - • Applying correction factors.\n- • Selecting suitable instruments.\n- • Calibrating the instruments.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00005",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:3ae27a8e63aeb232e61f88ebfa735c3f",
+      "default:extract:7b4370f4ac02f904d10d11fed9d8d832"
+    ],
+    "create_time": 1790515596,
+    "update_time": 1790515695,
+    "_id": "chapter-1 Error in measurement::ch_00005-chunk-000"
+  },
+  "Lab1::ch_00011-chunk-000": {
+    "tokens": 31,
+    "content": "-------------------------------------------------------------------------------- Question : what will happen to the insertion error if we replaced the digital AVO meter with an analog meter? ----------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00011",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:00ba43d7ec2f80dc1bd978f7c00b1503",
+      "default:extract:5d44f597f2f884fbb865aa6757238da2"
+    ],
+    "create_time": 1790515598,
+    "update_time": 1790515712,
+    "_id": "Lab1::ch_00011-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00020-chunk-000": {
+    "tokens": 102,
+    "content": "The average deviation D n ......... 3 2 1 n d d d d D + + + + = The standard deviation S The standard deviation S for a set of values is the degree to which the values vary about the average value n or (n -1|) ......... 2 2 3 2 2 2 1 n d d d d S + + + + = For n< 30 use (n-1) For n ≥ 30 use n",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00020",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8b8c78dd984f93213e028a3f364f459a",
+      "default:extract:547ecd7ea13921e86c36b5bc3b7c8a45"
+    ],
+    "create_time": 1790515614,
+    "update_time": 1790515759,
+    "_id": "chapter-1 Error in measurement::ch_00020-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00004-chunk-000": {
+    "tokens": 124,
+    "content": "Accuracy There are several ways of specifying accuracy. The most common is called full-scale error, which is normally expressed as a percentage of the converter’s full-scale output (%F.S.) Full-scale error is the maximum deviation of the DAC’s output from its expected (ideal) value, expressed as a percentage of full scale. For example, assume that the DAC has an accuracy of ± 0.01% F.S. Since this converter has a full-scale output of 9.375 V, this percentage converts To ± 0.01% × 9.375 V = ± 0.9375 mV",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00004",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a86d9b39a9e4b3aa395e8f67cbe9628d",
+      "default:extract:a62a2443439e5806149783a7e1eb9836"
+    ],
+    "create_time": 1790515696,
+    "update_time": 1790515964,
+    "_id": "chapter 5  ADC and DAC::ch_00004-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00051-chunk-000": {
+    "tokens": 85,
+    "content": "C Expect output = 16 x 312.5mV = 5 V Upper output limit = 5V +1/2 LSB = 5V+156.25mV= 5.156V Lower output limit = 5V - 1/2 LSB = 5V - 156.25mV= 4.844 mv Maximum output error 43.12 percent",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00051",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:cbd63de88d13f1faa61b1a6d25eeed3f",
+      "default:extract:7cea44540355c0efeab592ecf54a8b47"
+    ],
+    "create_time": 1790515713,
+    "update_time": 1790515981,
+    "_id": "chapter 5  ADC and DAC::ch_00051-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00003-chunk-000": {
+    "tokens": 84,
+    "content": "Ka Figure 3.1 : Wheatstone Bridge Circuit. Operation:  We want to know the value of R 4 , vary one of the remaining resistors until the current through the null detector decreases to zero . 4  The bridge is in balance condition , the voltage across resistor R 3 is equal to the voltage drop across   R 4 ,( R 3 = R 4 ).",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:037be003f7bbd42d5d4ca6ca11315496",
+      "default:extract:1392aeb06747d46e221aaadac7283b25"
+    ],
+    "create_time": 1790515760,
+    "update_time": 1790515998,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00003-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00031-chunk-000": {
+    "tokens": 157,
+    "content": "Example 3.7 : The impedances of the AC bridge in Figure 3.7   are given as follows,   = 0   = 0 1 30 200 Z   = 0 2 0 150 Z  -= 0 3 40 250 Z unknown Z Z x = = 4 Z2 detector Z4 Determine the constants of the unknown arm. Figure 3.12: Circuit For Example 3.7. Solution: The first condition for bridge balance requires that Z1 Z x =Z2Z3 Z x =(Z 2 Z3 /Z 1 ) = [(150 * 250)/200] = 187.5 ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00031",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:a1e2b21747d1877750eef8d3e2c9ae26",
+      "default:extract:f434d1889049db6a1a33f6603b760586"
+    ],
+    "create_time": 1790515965,
+    "update_time": 1790516173,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00031-chunk-000"
+  },
+  "Lab2::ch_00000-chunk-000": {
+    "tokens": 143,
+    "content": "Experiment 2: Bridges Objectives: This experiment demonstrates different bridge configurations for precise resistance and impedance measurements at balance using only potentiometers. We use a DC bridge circuit to measure an unknown resistance. Part A: DC Bridge: Construct the bridge with E= 5 V, R 1 = R 3 = 10 KΩ, and R 2 variable resistor 100 KΩ; you can choose Rx with any value up to 100 KΩ say 50 KΩ. 1.     Measure and record the resistance of R 1 , R 3 , and R x.   R 1   R 3   R x   A R R 1 | R 3 | R x",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab2::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:67cba74dc25e6de367c6982c170211bf",
+      "default:extract:ed21ad0faf98d7809505c29ddd64229c"
+    ],
+    "create_time": 1790515982,
+    "update_time": 1790516191,
+    "_id": "Lab2::ch_00000-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00019-chunk-000": {
+    "tokens": 136,
+    "content": "Average value (arithmetic mean) The arithmetic mean of a set of n numbers x 1 , x 2 , ……..,x n   is denoted by x and is defined as n ......... 3 2 1 n x x x x x + + + + = Deviation Is the difference between each piece of test data and the arithmetic mean. The deviation of x 1 , x 2 , ……. from their arithmetic mean x   is denoted by d 1 , d 2 ,……d n   and is defined as x x d -= 1 1 x x d -= 2 2 x x d n n -=",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00019",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:46282d331b951433f416e96ba2f1aa2a",
+      "default:extract:a1c238ad0bc46ddcb0f94f6c7ae5ac0e"
+    ],
+    "create_time": 1790515999,
+    "update_time": 1790516208,
+    "_id": "chapter-1 Error in measurement::ch_00019-chunk-000"
+  },
+  "Lab4::ch_00003-chunk-000": {
+    "tokens": 173,
+    "content": "- 1.   Connect your circuit as the given schematic in Fig.1.\n- 2.   Set Power Supply channel 1 to be 5 Volts (Power Supply Ch#1).\n- 3.   Let Power Supply channel 2 to be Changed as the values in the table given below (Power Supply Ch#2).\n- 4.   Set Function generator to give square wave with Vmax= 5 volt, Vmin= 0 volt and frequency=1KHz.\n- 5.   To test the circuit’s operation, complete the following table. First, use cross multiplication method to predict the 8-bit digital code that should be produced for each of the analog input listed. Then, carefully set your circuit’s analog input voltage to each of these values, and record the digital output code that your circuit produces.",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab4::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:20b2ec3585db330b28fdf017bef7b489",
+      "default:extract:d412d230217f6a90200b62615a9c3e0d"
+    ],
+    "create_time": 1790516174,
+    "update_time": 1790516336,
+    "_id": "Lab4::ch_00003-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00032-chunk-000": {
+    "tokens": 115,
+    "content": " 1 +  x =  2 +  3  x =  2 +  3 - 1 = 0  + (-40 o ) -30 o = -70 o  The unknown impedance Z x , can be written as,   Zx = 187.5  / -70 = (64.13 -j176.19)   This indicate that we are dealing with a capacitive element, possibly consisting of a series resistor and a capacitor .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00032",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:731d890923f12414af5edd7dc4514d85",
+      "default:extract:c339c3fea53b1092fcc832e4b726593e"
+    ],
+    "create_time": 1790516192,
+    "update_time": 1790516353,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00032-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00008-chunk-000": {
+    "tokens": 55,
+    "content": "Offset Error  Occurs when there is a constant offset between the actual output and the ideal output Analog Output . Digital Input Ideal Output Positive Offset Errorr Negative Offset Error 8 Offset error difference between an ideal and actual DAC output when zero digital code applied to the input.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00008",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0ce8aed29d3f853a09cb7273ebca82d3",
+      "default:extract:11f1ffa1d83bf738bea9f923800957e7"
+    ],
+    "create_time": 1790516209,
+    "update_time": 1790516354,
+    "_id": "chapter 5  ADC and DAC::ch_00008-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00008-chunk-000": {
+    "tokens": 87,
+    "content": ". Lissajous Figures: When sine-wave signals of different frequencies are input to the horizontal and vertical amplifiers a stationary pattern is formed on the CRT when the ratio of the two frequencies is an integral fraction such as 1/2, 1/3, 1/4, 1/5, etc. These stationary patterns are known as Lissajous figures and can be used for comparison measurement of frequencies.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00008",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:cfe275207d0e5d60718cad2c43f5456d",
+      "default:extract:8235f240c9e8edb33934fd1302cf93c2"
+    ],
+    "create_time": 1790516337,
+    "update_time": 1790516481,
+    "_id": "chapter(4) oscilloscope::ch_00008-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00027-chunk-000": {
+    "tokens": 83,
+    "content": "3.3 Alternating Current Bridge. 3.3.1 Introduction to AC Bridge.  AC bridges are used to measure inductance   and capacitance .  All the AC bridges are based on the Wheatstone bridge .  In the AC bridge the bridge circuit consists of four impedances and an ac voltage source .  The impedances can either be pure resistance   or complex impedance.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00027",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:123b58857d72068fe30c2a4ca45208e1",
+      "default:extract:7dad63fd50e8c1445e6a09342ab3da58"
+    ],
+    "create_time": 1790516355,
+    "update_time": 1790516756,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00027-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00011-chunk-000": {
+    "tokens": 136,
+    "content": "Solution: Calculate R th Calculate R x + = R R V I g Th th g -= R I V R g g th Th  -= A mV R Th 100 13.6 24   = K R 1.665 Th ( ) ( ) x ab Th R R R R R R + = = 2 3 1 // // x x Th R R R R R R R R R + + + = 2 2 3 1 3 1 x Th R R R R R R R R R + = + -2 3 1 12 x 2 3 1",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00011",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7a5b42b6484e55f34e1be7db9c9760f5",
+      "default:extract:69489c882a69a47ba9929b12794fa8e3"
+    ],
+    "create_time": 1790517292,
+    "update_time": 1790517305,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00011-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00003-chunk-000": {
+    "tokens": 35,
+    "content": "GRID FOCUSING ANODE FLUORESCENT Y-PLATES ELECTRON BEAM CATHODE ACCELERATOR ANCDES X-PLATES Cathode Tube Ray",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:535592b7ceca64435d51c73046b56ac6",
+      "default:extract:7b92914903fb90d7e48dcd30b998880d"
+    ],
+    "create_time": 1790517302,
+    "update_time": 1790517355,
+    "_id": "chapter(4) oscilloscope::ch_00003-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00001-chunk-000": {
+    "tokens": 96,
+    "content": "3.1 Introduction to Bridge.  Bridge circuits are the instruments for making comparison measurements , are widely used to measure resistance , inductance, capacitance and impedance .  Bridge circuits operate on a null-indication principle. . It is very accurate. 3.2 Direct Current Bridge. 3.2.1 The Wheatstone Bridge. - Sensitivity of the Wheatstone Bridge.\n- Unbalance Wheatstone Bridge. 3.2.2 Kelvin Bridge.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00001",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4cf3ecf708c28be8056386e9b35e3523",
+      "default:extract:8ddb3ffe4ed33475c7b403c74eabe527"
+    ],
+    "create_time": 1790517302,
+    "update_time": 1790517372,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00001-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00016-chunk-000": {
+    "tokens": 71,
+    "content": "2R W 2R 2 2R R = 2 2R bVr = b4Vr+ = 4 2 b! 15 b3V ~V (2 R/4 R) ~b 3V r 2 Vr ~b3 V 2 4 4 2 ba 4 Vr",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00016",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:58ac677cee855bd9e79a1092b52582d7",
+      "default:extract:9c26314fa0b6aa3899179e2821c5a526"
+    ],
+    "create_time": 1790517306,
+    "update_time": 1790517388,
+    "_id": "chapter 5  ADC and DAC::ch_00016-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00020-chunk-000": {
+    "tokens": 83,
+    "content": "(3) The current through the galvanometer ( I g )is, A V R R V I g Th Th g  200 125 500 0.125 =  + = + = Observation: If the deflector is a 200-0-200-uA galvanometer, the pointer deflected full scale for a 5% change in resistance. ❑ .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00020",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:96b05c4477e351dc58670bffc39cf362",
+      "default:extract:4124a651127ea39d79a199f7b9f7aeb7"
+    ],
+    "create_time": 1790517356,
+    "update_time": 1790517503,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00020-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00015-chunk-000": {
+    "tokens": 159,
+    "content": "(2) Find Thevenin’s equivalent resistance ( R th )is,  =         +   +   +   =         + + + = K K K K K K K K K R R R R R R R R RTh 2.097 7.5 1.6 *7.5 1.6 3.5 1 *3.5 1 6 4 2 4 2 3 1 3 1 ❑ . Rth=0.276Ohm Fth=0.276 Ohm",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00015",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:60d6da061b6d34b23ff370225e3b4784",
+      "default:extract:f3da466ee625f6f601cdd0d73a3cc130"
+    ],
+    "create_time": 1790517389,
+    "update_time": 1790517519,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00015-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00031-chunk-000": {
+    "tokens": 136,
+    "content": "Successive approximation search tree for a 4-bit A/D D/A output compared with V in to see if larger or smaller Successive  approximation  converters  are  reasonably  priced  for  large bit  values,  i.e.  10,  12  and  even  16  bit  converters.  Their  conversion times, typically ~ 10-20  s, are adequate for most laboratory functions. 1111 1110 1101 1100 1011 1010 1001 1000 0111 0110 0101 0100 0011 0010 0001",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00031",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:474bc6da3e5972b466abbf218d62d28e",
+      "default:extract:e5d44a756732bb84982920c234571724"
+    ],
+    "create_time": 1790517391,
+    "update_time": 1790517539,
+    "_id": "chapter 5  ADC and DAC::ch_00031-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00000-chunk-000": {
+    "tokens": 12,
+    "content": "Chapter 5 Data Converter Circuits A/D and D/A",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9a061ca908313289c3256b8927c1e480",
+      "default:extract:8a556a43cd82d69e39d29227cd1aa283"
+    ],
+    "create_time": 1790517521,
+    "update_time": 1790517621,
+    "_id": "chapter 5  ADC and DAC::ch_00000-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00003-chunk-000": {
+    "tokens": 20,
+    "content": "D/A Conversion Normal Output from digital domain is staircase Filtered to produce smooth Analog output 7A",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00003",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:33a09cda07ccd1ebdd38bd710fd247ba",
+      "default:extract:27b2a4873475b70a21a65f67984b0e66"
+    ],
+    "create_time": 1790517522,
+    "update_time": 1790517622,
+    "_id": "chapter 5  ADC and DAC::ch_00003-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00009-chunk-000": {
+    "tokens": 59,
+    "content": "Gain error the difference between an ideal and actual output when full scale digital code applied to the input. A gain will produce output step sizes that are either larger or smaller than the expected LSB. Gain error causes the output to deviate further from the expected value as the binary input is increased.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00009",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c9031b285f85be66afdb715a702cb26d",
+      "default:extract:8a97182c7231a8d604be6420bc31030b"
+    ],
+    "create_time": 1790517540,
+    "update_time": 1790517639,
+    "_id": "chapter 5  ADC and DAC::ch_00009-chunk-000"
+  },
+  "Lab1::ch_00010-chunk-000": {
+    "tokens": 50,
+    "content": "Resistor | R bi Measured | Eo i True | Eo i Measured | %e i\n1\n2\n3\n4\n5 Question : What is meant by the insertion error? ----------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00010",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ed8eb990ab7ea23673e8f1b44b026f14",
+      "default:extract:68e2439deb362c79e0693c440b40b6ad"
+    ],
+    "create_time": 1790517622,
+    "update_time": 1790517751,
+    "_id": "Lab1::ch_00010-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00021-chunk-000": {
+    "tokens": 218,
+    "content": "3-bit conversion example 111 110 101 100 011 010 001 0oo 5V Step size = V FS / 2 n Eg 5V divided into 8 levels – each 0.625 Vin Quantization levels Vout Voltage levels [V] | representation Binary\n0-0.62\n0.621-1.25 | 001\n1.251-1.B7 | 010\n1.871-25 | 011\n251-3.12 | 100\n3.121-3.75 | 101\n3.7514.37 | 110\n4.371-5.00 | 111 Binary representation Voltage levels [V] 0-0.62 0.621-1.25 001 1.251-1.B7 010 1.871-25 011 251-3.12 100 3.121-3.75 101 3.7514.37 110 4.371-5.00 111",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00021",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4b7d6191be1ca3c664d6b448bdb16543",
+      "default:extract:ac2eab6a52534805e22ab729828bfedc"
+    ],
+    "create_time": 1790517623,
+    "update_time": 1790517753,
+    "_id": "chapter 5  ADC and DAC::ch_00021-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00049-chunk-000": {
+    "tokens": 86,
+    "content": "Problem 5 A certain 5-bit D/A converter has V fs = 10V, with a guaranteed accuracy of ± 1/2 LSB. Determine the expected (ideal) output, the upper and lower limits of the possible output and the percent error of the output at each of the following binary inputs: - a) 00001.\n- b) 00010.\n- c) 10000. Solution",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00049",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:4fe1bda03058d7129062449e60e67866",
+      "default:extract:ed327b638095b21ffcadb00effe8e64e"
+    ],
+    "create_time": 1790517640,
+    "update_time": 1790517770,
+    "_id": "chapter 5  ADC and DAC::ch_00049-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00017-chunk-000": {
+    "tokens": 89,
+    "content": "Statistical Analysis of Errors in Measurements • When   we   measure   any   physical   quantity,   our   measurements   are   affected   by   a   multitude   of   factors . • If   a   measurement   is   repeated   several   times,   the   readings   may   differ   because   of   the   experimenter’s   inability   to   keep   all   the   above   factors   constant .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00017",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:521cbc26fb67b54d4db8fb29219db2af",
+      "default:extract:5b03c651d280bd601486302f4cbd25ba"
+    ],
+    "create_time": 1790517752,
+    "update_time": 1790517899,
+    "_id": "chapter-1 Error in measurement::ch_00017-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00019-chunk-000": {
+    "tokens": 60,
+    "content": "A/D Converters Filtered Analog signal Sampled-data signal Analog signal Low-pass filter Sample and hold A/D converter Digital signal Block diagram of A/D conversion system Clock Shannon’s sampling theorem states that the signal can be reproduced by samples taken at intervals no greater than 1/2 f in apart.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00019",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8f117279197f6ba5238a217d0f2fdcb4",
+      "default:extract:59964af594a5d8a2378104c5b964e727"
+    ],
+    "create_time": 1790517753,
+    "update_time": 1790517902,
+    "_id": "chapter 5  ADC and DAC::ch_00019-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00048-chunk-000": {
+    "tokens": 77,
+    "content": "Problem 4 A 10-bit instrumentation D/A converter produces an output of 16mV with an input of 0000000100. Determine: - a) The step size.\n- b) The maximum output signal. Solution 16mV Step size = 4 mV 4 Maximum output = 1023 x 4 mV = 4.092V",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00048",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:73009aa9163a07419596ce6e7745a4bd",
+      "default:extract:6ea953f9a3c67f6ad2de43586300928b"
+    ],
+    "create_time": 1790517772,
+    "update_time": 1790517919,
+    "_id": "chapter 5  ADC and DAC::ch_00048-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00007-chunk-000": {
+    "tokens": 41,
+    "content": "Random Errors Though gross errors and systematic errors can be avoided by taking proper care, some other errors can also occur in measurements. No specific reason can be assigned and precaution could be taken to avoid these errors.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00007",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7b4068b5cefe25e083779f66ec1581ba",
+      "default:extract:38e6ac394ff9fc08274a7795c823e3f7"
+    ],
+    "create_time": 1790517901,
+    "update_time": 1790517985,
+    "_id": "chapter-1 Error in measurement::ch_00007-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00006-chunk-000": {
+    "tokens": 56,
+    "content": " Smallest analog increment corresponding to 1 LSB change  An N-bit resolution can resolve 2 N distinct analog levels  Common DAC has a 8-16 bit resolution V V N ref LSB = = Resolution number of bits 2 N = where",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00006",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8b9153d7ec5ae967b62ca0402574acda",
+      "default:extract:eb2f2b3efb32f4eccfe0e07212973a52"
+    ],
+    "create_time": 1790517903,
+    "update_time": 1790518032,
+    "_id": "chapter 5  ADC and DAC::ch_00006-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00018-chunk-000": {
+    "tokens": 78,
+    "content": ") 2 2 2 2 ( 4 4 3 3 2 2 1 1 ----+ + + = b b b b R R V V r f out • Advantages - – Only two resistor values (R and 2R)\n- – Does not require high precision resistors • Disadvantage – Lower conversion speed than binary weighted DAC",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00018",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:170124ab8530c305fb2445d2b21d9513",
+      "default:extract:636f61eadae7878745ccdfa524a217f8"
+    ],
+    "create_time": 1790517920,
+    "update_time": 1790518034,
+    "_id": "chapter 5  ADC and DAC::ch_00018-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00025-chunk-000": {
+    "tokens": 49,
+    "content": "▪ Applications on D.C Bridges   Murray Loop R 2 R 1 L a B E A G Short-circuit at Good connector the end of the line L b Damaged connector L x Resistance ground connection error The metal casing of the cable",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00025",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8cff27ddca50a27a66d484b57f6889d9",
+      "default:extract:b69babc9b2292891ab8b0c9fe495e8e8"
+    ],
+    "create_time": 1790517986,
+    "update_time": 1790518119,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00025-chunk-000"
+  },
+  "Lab1::ch_00005-chunk-000": {
+    "tokens": 139,
+    "content": "Resistor no. | R i (KΩ) | d i (KΩ) | d i 2 | %e\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n13\n14\n15\n16\n17\n18\n17\n18\n19\n20\n∑ R i 20 i=1\n𝑅𝑅 � = 20 = ---------------- ∑ 2 20 Question : Draw it. What is the distribution curve name for the resistor readings? ----------------------------------------------------------------------------------------------- Question : Do the results from sample 1 or sample 2 will be able to construct the distribution curve accurately? and why?",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00005",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0ac476d6c7699c113c52c474813cfa66",
+      "default:extract:5f05d1fa6d77172b6f519a320c747cbf"
+    ],
+    "create_time": 1790518033,
+    "update_time": 1790518166,
+    "_id": "Lab1::ch_00005-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00052-chunk-000": {
+    "tokens": 108,
+    "content": "Problem 6 Consider a 10-bit dual slop analog-to-digital converter, with reference voltage of -1V, and a clock frequency of 1 KHz. The integrating capacitor charges to -8V in the time t 1 to t 2 , and discharges at a rate of 10V/sec in the time t 2 to t 3 . What is the input voltage if the binary reading is 1100100000. Solution 1 1 Ims 1 X 103 Tclock fclock",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00052",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:181f210848dfd90f3509783550ee89ed",
+      "default:extract:5e6cf12034ab981d58581717d0d32fda"
+    ],
+    "create_time": 1790518035,
+    "update_time": 1790518185,
+    "_id": "chapter 5  ADC and DAC::ch_00052-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00024-chunk-000": {
+    "tokens": 53,
+    "content": "Solution the   limiting   error   is 0 . 02   x   300 V   = 6 V Therefore,   the   limiting   error   at   120 V   is 5% 100% 120 6 = ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00024",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d2e411d416385febdd8f1537cc619c48",
+      "default:extract:2483170e9b1d313cc3f09d633a738de5"
+    ],
+    "create_time": 1790518168,
+    "update_time": 1790518251,
+    "_id": "chapter-1 Error in measurement::ch_00024-chunk-000"
+  },
+  "Lab1::ch_00007-chunk-000": {
+    "tokens": 6,
+    "content": "Part B: Insertion Error",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab1::ch_00007",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0d0931241f9705e94ae0e61ccaf88f19",
+      "default:extract:46c0bd3ff4f8ed64f1bd08c56ae4cd9f"
+    ],
+    "create_time": 1790518185,
+    "update_time": 1790518268,
+    "_id": "Lab1::ch_00007-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00015-chunk-000": {
+    "tokens": 101,
+    "content": "Example The   following   set   of   ten   measurements   was   recorded   in   the   laboratory .   Calculate   the   precision   of   the   fourth   measurement . Measurement Number | Measurement Value X n   (volts)\n1 | 98\n2 | 98 102\n3 | 101\n4 | 97\n5 | 100\n6 | 103\n7 | 98\n8 | 106\n9 | 107\n10 | 99",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00015",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:567fc65c7c338aa77f764bc27d79af97",
+      "default:extract:875b52ecc6d4c8ff8dc90cc3317d6c69"
+    ],
+    "create_time": 1790518186,
+    "update_time": 1790518315,
+    "_id": "chapter-1 Error in measurement::ch_00015-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00023-chunk-000": {
+    "tokens": 158,
+    "content": "(e)   The   standard   deviation   is   computed   as   ( ) ( ) ( ) ( ) 0.294 3 0.26 (4 -1|) 0.3 0.3 0.2 0.2 2 2 2 2 = = + + -+ -= S Limiting Errors Most manufactures of measuring instruments state that an instrument is accurate within a certain percentage of full-scale reading Example A   300 V   voltmeter   is   specified   to   be   accurate   within   ±   2 %   at   full   scale .   Calculate   the   limiting   error   when   the   instrument   is   used   to   measure   a   120 V   source .",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00023",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:baf1b0929a9ecc687ea762a67d97b1a3",
+      "default:extract:51acae5689c5290f51d2d5ec06af443b"
+    ],
+    "create_time": 1790518252,
+    "update_time": 1790518459,
+    "_id": "chapter-1 Error in measurement::ch_00023-chunk-000"
+  },
+  "Lab4::ch_00000-chunk-000": {
+    "tokens": 157,
+    "content": "Exp.4 Analog-to-Digital (A/D) Converter Background: The objective of this experiment is testing the functionality of the analog-to-digital (ADC) by using ADC0808 chip, which is an eight-bit successive approximation A/D converter using CMOS technology. Components: ADC0808 Chip Resistors: 550 Ω (8 resistors) 8 LEDs, and Wires Function Generator U1 26 10 INO CLOCK IN1 START - IN2\n- IN3 EOC 21 OUT1 20 ING OUT2 19 IN7 OUT3 OUT4 25 OUTS ADD A 24 ADD B OUTG 23 ADD € OUT7 ALE OUT8 VREF(+) 76 VREF(-) OE RI R2 R3 R4",
+    "chunk_order_index": 0,
+    "full_doc_id": "Lab4::ch_00000",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:79367d4c1fa4854cfb2dae54ee239315",
+      "default:extract:ed09977f3b622fa475163e47885fb678"
+    ],
+    "create_time": 1790518269,
+    "update_time": 1790518461,
+    "_id": "Lab4::ch_00000-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00037-chunk-000": {
+    "tokens": 118,
+    "content": "- ➢ When conversion is initialized, the switch S 1   is connected to V in   (position A) which is applied to the op amp integrator. The integrator output is applied to the comparator\n- ➢ As conversion is initiated, the control logic enables the clock which then sends pulses to the counter, which counts the pulses until it overflows at time t 2 . 1 Vi(t) dt Ét < t2 RC Vi (t) (t = t1) RC At Vi(t)= (t2 RC Vin ta Vin t = t2 Vin",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00037",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:b278b54ea52087d9df98743e79d70458",
+      "default:extract:d1571367a528dc9dc8c9c2be9d94a7e0"
+    ],
+    "create_time": 1790518316,
+    "update_time": 1790518478,
+    "_id": "chapter 5  ADC and DAC::ch_00037-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00002-chunk-000": {
+    "tokens": 77,
+    "content": "Block Diagram of a CRO DELAY VERTICAL 0 AMPLIFIER LINE SIGNAL LUMINOUS SPOT ELECTRON GUN SCREEN TO CRT HV SUPPLY ELECTRON LV SUPPLY BEAM VERTICAL TO ALL CIRCUITS DEFLECTION HORIZONTAL PLATES DEFLECTION PLATES HORIZONTAL TIME BASE TRIGGER AMPLIFIER GENERATOR CIRCUIT Block Diagram of a General Purpose CRO",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00002",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:7d165aa5a4c177bfda08aca15b4ef2ea",
+      "default:extract:8a26774d183077a2ec27c6d54ff5cee0"
+    ],
+    "create_time": 1790518460,
+    "update_time": 1790518610,
+    "_id": "chapter(4) oscilloscope::ch_00002-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00036-chunk-000": {
+    "tokens": 177,
+    "content": " Figure 7.6 is the Maxwell-Wein Bridge or sometimes called a Maxwell bridge.  The impedance of the arm can be written as, 1 4 3 3 2 2 1 1/ 1 C j R Z R Z R Z jX R Z c LX x  + = = = + =  Substitute in the balance equation,  Set real   to zero , and imaginary part 1 3 2 R R R Rx = 1 3 2 1 3 2 1 3 2 3 2 1 1 ) ( 1/ 1 R R C L R R C j R R R L j R R R jX R C j R x X x LX x = + = + = + +   ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00036",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:281ba660d12ac161c3700b3e9b9ffda4",
+      "default:extract:df8c44a66ec71e14e773d1eb14448602"
+    ],
+    "create_time": 1790518462,
+    "update_time": 1790518627,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00036-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00020-chunk-000": {
+    "tokens": 86,
+    "content": "Shannon’s sampling theorem Shannon’s sampling theorem states that the signal can be reproduced by samples taken at intervals no greater than 1/2 f in apart.   Aliasing Occurs when the input signal is changing much faster than the sample rate. For example, a 2 kHz sine wave being sampled at 1.5 kHz would be reconstructed as a 500 Hz (the aliased signal) sine wave.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00020",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:6ebe118b9acd2377faeb7fa1c9794a2c",
+      "default:extract:7d7210c91f4a0d50e1a049e79966917a"
+    ],
+    "create_time": 1790518480,
+    "update_time": 1790518675,
+    "_id": "chapter 5  ADC and DAC::ch_00020-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00026-chunk-000": {
+    "tokens": 92,
+    "content": "As the counter counts, its output to the DAC generates a staircase ramp to the comparator. With the clock off, the counter Comparator reading is proportional to V in in V in Note that the V in conversion time depends on the size of the input V’ in signal Conversion time Conv.time With a counter type A/D, if the signal is varying rapidly, the counter must count up and reset before each cycle can begin, making it difficult to follow the signal.",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00026",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e3a1c16925aeca483c80a84de2dbd0bd",
+      "default:extract:cd7bb3eaf6fe4b282ba47b238635f5d1"
+    ],
+    "create_time": 1790518611,
+    "update_time": 1790518741,
+    "_id": "chapter 5  ADC and DAC::ch_00026-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00034-chunk-000": {
+    "tokens": 199,
+    "content": " The impedance of the arm can be written,  Substitute in the balance equation, cx x c jX R Z jX R Z R Z R Z -= -= = = 4 3 3 3 2 2 1 1 ( ) ( ) 2 3 3 1 R jX R jX R R c cx x -= -  Further simplification, 3 2 1 3 1 2 2 3 1 3 2 1 3 2 1 3 2 1 3 2 3 2 1 1 1 1 C R R C R R R R R C R C C jR C jR jR X jR X R R R R jR X R R jR X R R x x x x c cx x c cx x = = = = --= --= -= - ",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00034",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:e0fd164a5a3ad7868c23719a96064fc7",
+      "default:extract:048e5ba3a425b54f8c3477bf8230f93a"
+    ],
+    "create_time": 1790518629,
+    "update_time": 1790518757,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00034-chunk-000"
+  },
+  "chapter-1 Error in measurement::ch_00022-chunk-000": {
+    "tokens": 191,
+    "content": "- (b)   The   deviation   of   each   value   from   the   mean   is   computed   as\nd 1 = 50.1- 49.9 = 0.2 d 2 = 49.7- 49.9 = - 0.2 d 3 = 49.6 - 49.9 = - 0.3 d 4 = 50.2- 49.9 = 0.3\n- (c) The algebraic sum of the deviations is\nd tot = 0.2 -0.2 + 0.3 -0.3 = 0\n- (d)   The   average   deviation   is   computed   as 0.25 4 1.0 4 0.3 0.3 0.2 0.2 = = + + -+ -= D",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter-1 Error in measurement::ch_00022",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:206451d4f385fad8d114860688c85810",
+      "default:extract:2402bedbfa3ba7736b8d47f07aad39f2"
+    ],
+    "create_time": 1790518676,
+    "update_time": 1790518807,
+    "_id": "chapter-1 Error in measurement::ch_00022-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00007-chunk-000": {
+    "tokens": 35,
+    "content": "d.c. input with the time base on d.c. input with the time base off ac. input with a fast time base a.c. input with a slow time base",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00007",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:8fe14694cfe36136acefeef8ad086b07",
+      "default:extract:b8af29382db128f89da488fd81f74874"
+    ],
+    "create_time": 1790518758,
+    "update_time": 1790518888,
+    "_id": "chapter(4) oscilloscope::ch_00007-chunk-000"
+  },
+  "chapter(4) oscilloscope::ch_00009-chunk-000": {
+    "tokens": 62,
+    "content": "(a) (b) (c) (d) Figure 5. Lissajous figures for horizontal-to-vertical frequency ratios of: (a) 1:1, (b) 2:1, (c) 1:2, and (d) 31. 11",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter(4) oscilloscope::ch_00009",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:5ae7151191a65180259d81e7d847b228",
+      "default:extract:a37ace471cfcab7d19991ec191ad3120"
+    ],
+    "create_time": 1790518760,
+    "update_time": 1790518890,
+    "_id": "chapter(4) oscilloscope::ch_00009-chunk-000"
+  },
+  "chap 3 DC&AC BRIDGES::ch_00016-chunk-000": {
+    "tokens": 157,
+    "content": "Slightly Unbalanced Wheatstone Bridge If three of the four resistors in a bridge are equal to R and the fourth differs by 5% or less, we can developed an approximate expression for Thevenin’s equivalent voltage and resistance . R R E 0 0 E R r R r E Vth        =   4 4 E r R r E r R R r R V V V a b th        +  =       -+ + + = -= 2 4 2 1",
+    "chunk_order_index": 0,
+    "full_doc_id": "chap 3 DC&AC BRIDGES::ch_00016",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:2c627d42eeb8bc51e6ceddacbac6940a",
+      "default:extract:741a75fecd3dd3c3b98fc0153d78e2c2"
+    ],
+    "create_time": 1790518808,
+    "update_time": 1790518907,
+    "_id": "chap 3 DC&AC BRIDGES::ch_00016-chunk-000"
+  },
+  "chapter 5  ADC and DAC::ch_00053-chunk-000": {
+    "tokens": 42,
+    "content": "T1 = X lms 1024ms 210 80Oms T2 T1 Vin Vref T2 800ms = = 1V x T1 1024ms Vin Vref",
+    "chunk_order_index": 0,
+    "full_doc_id": "chapter 5  ADC and DAC::ch_00053",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:90ce9699880c079e6e456d705147d3dc",
+      "default:extract:8700a0c5144c34a7b52493fe35b43877"
+    ],
+    "create_time": 1790518889,
+    "update_time": 1790518941,
+    "_id": "chapter 5  ADC and DAC::ch_00053-chunk-000"
+  }
+}

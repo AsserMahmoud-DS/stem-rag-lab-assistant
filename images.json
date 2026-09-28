@@ -1,0 +1,997 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "image_id": "Lab1::img_00000",
+      "doc_id": "Lab1",
+      "page": 4,
+      "bbox": [
+        115.8,
+        325.025,
+        498.4,
+        473.825
+      ],
+      "source_path": "loaded_data/Lab1_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit with a single-pole, single-throw switch labeled Ra=1K and a single-pole, single-throw switch labeled E1=10V. The switch is connected to a single-pole, single-throw resistor labeled R1 and a single-pole, single-throw resistor labeled R2. The switch is connected to a single-pole, single-throw resistor labeled E2 and a single-pole, single-throw resistor labeled E3. The switch is connected to a single-pole, single-throw resistor labeled A0 and a single-pole, single-throw resistor labeled A1.",
+      "linked_chunk_id": "Lab1::ch_00008",
+      "format": "png"
+    },
+    {
+      "image_id": "Lab2::img_00000",
+      "doc_id": "Lab2",
+      "page": 1,
+      "bbox": [
+        396.65,
+        291.62,
+        598.2,
+        446.41
+      ],
+      "source_path": "loaded_data/Lab2_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "In this image we can see a diagram of a circuit.",
+      "linked_chunk_id": "Lab2::ch_00000",
+      "format": "png"
+    },
+    {
+      "image_id": "Lab4::img_00000",
+      "doc_id": "Lab4",
+      "page": 1,
+      "bbox": [
+        9.0,
+        124.941,
+        604.189,
+        414.841
+      ],
+      "source_path": "loaded_data/Lab4_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "In this image there is a diagram with some text and numbers.",
+      "linked_chunk_id": "Lab4::ch_00000",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00000",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 4,
+      "bbox": [
+        125.0,
+        288.0,
+        510.0,
+        534.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram consists of a rectangular box with a single horizontal line running from the top left corner to the bottom right corner. Inside the box, there are two parallel lines, labeled as R and G. These lines are connected to a single point labeled as E. The diagram also includes a series of interconnected points, which are labeled as R1, R2, R3, R4, and R5. These points are connected to each other by lines, forming a series of interconnected circuits. ### Description of the Circuit: 1. **Rectangular Box**: - The rectangular box has a single horizontal line running from the top left corner to the bottom right corner. - The horizontal line is labeled R. 2. **Parallel Lines**: - Two parallel lines are drawn inside the rectangular box. - The lines are labeled as R1 and R2.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00003",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00001",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 5,
+      "bbox": [
+        42.0,
+        160.0,
+        336.0,
+        348.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile2.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram consists of a rectangular box with a single horizontal line running from the top left corner to the bottom right corner. Inside this box, there are two horizontal lines, one labeled G and the other labeled R. These lines are connected to two vertical lines, one labeled R1 and the other labeled R2. Inside the box, there are two horizontal lines, one labeled R1 and the other labeled R2. These lines are connected to two vertical lines, one labeled R3 and the other labeled R4. The diagram also includes a series of horizontal lines, which are connected to the vertical lines. These lines are labeled R3, R4, and R5. The diagram is labeled as follows: - G is the symbol for a ground. - R is the symbol for a resistor. -",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00004",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00002",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 6,
+      "bbox": [
+        97.125,
+        84.0,
+        581.995,
+        360.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile3.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram is divided into two main sections: the left section and the right section. ### Left Section: - **Circuit Description:** - The left section consists of a rectangular rectangular box labeled as R1 and R2. - The right section is a rectangular rectangular box labeled as R3. - Both boxes are connected by a single horizontal line labeled as E. - The horizontal line is connected to the left and right sides of the boxes. - The horizontal line is also connected to the top and bottom of the boxes. ### Right Section: - **Circuit Description:** - The right section is a rectangular rectangular box labeled as R4. - The right side of the box is connected by a horizontal line labeled as E. - The horizontal line is also connected to the top and bottom of the box. ### Analysis and Description:",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00005",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00003",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 7,
+      "bbox": [
+        -0.6,
+        471.54,
+        153.3,
+        541.68
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile4.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00006",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00004",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 9,
+      "bbox": [
+        54.0,
+        216.0,
+        308.37,
+        386.12
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile5.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram consists of a rectangular rectangular box with a single horizontal line running from the top left corner to the bottom right corner. Inside the box, there are two horizontal lines, one on the left and one on the right. These lines are labeled as E and G. The box is connected to two horizontal lines, one on the left and one on the right. These lines are labeled as I and R. Inside the box, there are two horizontal lines, one on the left and one on the right. These lines are labeled as I_1 and I_2. The box is connected to two horizontal lines, one on the left and one on the right. These lines are labeled as R and R_1. The diagram also includes a horizontal line labeled E, which is connected to the left side of the box. This line is labeled as E_",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00008",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00005",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 9,
+      "bbox": [
+        342.0,
+        215.88,
+        636.0,
+        393.76
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile6.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a two-way switch configuration with a single-pole, single-throw switch labeled E and a single-pole, single-throw switch labeled R. The switch is connected to a single-pole, single-throw terminal labeled R2 and a single-pole, single-throw terminal labeled R3. The switch is connected to a single-pole, single-throw terminal labeled E and a single-pole, single-throw terminal labeled R. The switch is connected to a single-pole, single-throw terminal labeled R3 and a single-pole, single-throw terminal labeled R.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00008",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00006",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 10,
+      "bbox": [
+        204.0,
+        333.5,
+        498.0,
+        528.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile7.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram is divided into two main sections, each with a specific set of components. ### Circuit Diagram Description: #### Left Section: - **V1**: A single-pole, single-throw switch labeled as V1 in the diagram. - **V2**: A single-pole, single-throw switch labeled as V2 in the diagram. - **V3**: A single-pole, single-throw switch labeled as V3 in the diagram. - **V4**: A single-pole, single-throw switch labeled as V4 in the diagram. - **V5**: A single-pole, single-throw switch labeled as V5 in the diagram. - **V6**: A single-pole, single-throw switch labeled as V6 in the diagram. - **V7",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00009",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00007",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 11,
+      "bbox": [
+        114.0,
+        90.0,
+        613.12,
+        397.5
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile8.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electric circuit consisting of a voltage source, a resistor, and a capacitor. The voltage source is connected to the resistor, and the capacitor is connected to the resistor. The voltage across the capacitor is 1 kV.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00010",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00008",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 12,
+      "bbox": [
+        -1.68,
+        473.94,
+        151.98,
+        541.68
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile9.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00011",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00009",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 12,
+      "bbox": [
+        5.4,
+        163.98,
+        168.06,
+        234.6
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile10.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00011",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00010",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 13,
+      "bbox": [
+        4.75,
+        162.0,
+        336.0,
+        366.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile11.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a two-terminal electric circuit consisting of a battery and a resistor. The battery is connected to the resistor, which is connected to a voltage source. The battery is connected in series with the resistor, and the voltage across the resistor is 1 kV. The resistor is connected in series with the battery, and the voltage across the resistor is 5 kV. The battery is connected in series with the resistor, and the voltage across the resistor is 1 kV. The battery is connected in series with the resistor, and the voltage across the resistor is 5 kV. The image also includes a small horizontal line labeled E=6V at the top left corner. This line indicates that the voltage across the resistor is 6 volts. The image does not show any other objects or components, such as a person, a car, or a building. It also does not show any electrical equipment or tools, such as a scre",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00012",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00011",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 14,
+      "bbox": [
+        114.0,
+        68.875,
+        576.0,
+        377.995
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile12.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram consists of a single horizontal line labeled E at the top center. This line is connected to two horizontal lines, labeled I and R, which are connected to two vertical lines, labeled G and L, respectively. These lines are connected to a single point labeled X, which is connected to a single point labeled Y. ### Components and Connections - **Horizontal Line**: The horizontal line labeled E is connected to the left side of the diagram. - **Vertical Line**: The vertical line labeled I is connected to the left side of the diagram. - **Horizontal Line**: The horizontal line labeled R is connected to the left side of the diagram. - **Vertical Line**: The vertical line labeled G is connected to the left side of the diagram. - **Point**: The point labeled X is connected to the left side",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00013",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00012",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 16,
+      "bbox": [
+        126.0,
+        67.875,
+        600.0,
+        264.005
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile13.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit with two primary components: a battery and a resistor. Here is a detailed description of the components and their connections: 1. **Battery**: - The battery is a cylindrical object with a positive terminal (P1) and a negative terminal (V1). - The positive terminal is connected to the positive terminal of the battery, which is labeled as P1 on the left side. - The negative terminal is connected to the negative terminal of the battery, which is labeled as V1 on the right side. 2. **Resistor**: - The resistor is a rectangular object with a positive terminal (P2) and a negative terminal (V2). - The positive terminal is connected to the positive terminal of the battery, which is labeled as P2 on the left side. - The negative terminal is connected to the negative terminal of the battery, which is labeled as V2 on",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00015",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00013",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 17,
+      "bbox": [
+        120.0,
+        173.38,
+        366.0,
+        312.01
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile14.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram consists of a rectangular rectangular box with a label E at the top center. Inside the box, there are two parallel wires, labeled a and b. These wires are connected to a single point labeled R. The wire a is connected to the point R and the wire b is connected to the point R. The diagram also includes a series of interconnected components. There are two parallel wires, labeled a and b, connected to the point R. These parallel wires are connected to the points a and b in the diagram. The diagram also includes a series of interconnected components. There are two parallel wires, labeled a and b, connected to the point R. These parallel wires are connected to the points a and b in the diagram. The diagram also includes a series of interconnected components",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00016",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00014",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 18,
+      "bbox": [
+        138.0,
+        122.0,
+        548.0,
+        372.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile15.png",
+      "caption_text": "",
+      "ai_description": "The image shows a simple electrical circuit diagram. The diagram consists of a rectangular rectangular box with a single horizontal line running from the top left corner to the bottom right corner. This line is labeled as Vth and is connected to a single horizontal line labeled E(4R). Inside the box, there is a rectangular box labeled Vth with a label E(4R). This box is connected to a horizontal line labeled Rth with a label E(4R). The box is connected to a single horizontal line labeled Rth with a label E(4R). The box is connected to a horizontal line labeled Vth with a label E(4R). The box is connected to a horizontal line labeled Rth with a label E(4R). The box is connected to a horizontal line labeled Vth with a label E(4",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00017",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00015",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 19,
+      "bbox": [
+        139.018,
+        235.529,
+        508.84,
+        450.055
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile20.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram with a line and a point.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00018",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00016",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 21,
+      "bbox": [
+        31.634,
+        10.852,
+        55.129,
+        28.914
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile21.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00020",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00017",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 23,
+      "bbox": [
+        42.0,
+        37.125,
+        414.0,
+        371.995
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile16.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit consisting of a battery, a resistor, and a capacitor. Here is a detailed description of the components and their relationships: 1. **Battery:** - The battery is a cylindrical object with a cylindrical shape. It is connected to the resistor, which is a rectangular object with a rectangular shape. The resistor is connected to the battery with a single wire. 2. **Resistor:** - The resistor is a rectangular object with a rectangular shape. It is connected to the battery with a single wire. 3. **Capacitor:** - The capacitor is a rectangular object with a rectangular shape. It is connected to the battery with a single wire. 4. **Battery Power:** - The battery has a positive terminal (E) and a negative terminal (E). The positive terminal is connected to the positive terminal of the battery. The negative terminal is connected to the negative terminal of the battery. 5. **Res",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00022",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00018",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 24,
+      "bbox": [
+        132.25,
+        56.125,
+        521.75,
+        406.245
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile17.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram, specifically focusing on a two-terminal electric circuit with a single resistor. The diagram is labeled as R2, R3, and it consists of two primary components: a resistor (R1) and a capacitor (C). ### Components and Description: 1. **Resistor (R1)**: - **Name**: Resistor (R1) - **Value**: 100 ohms - **Capacity**: 100 ohms - **Resistance**: 10 ohms 2. **Capacitor (C)**: - **Name**: Capacitor (C) - **Value**: 1000 ohms - **Capacity**: 1000 ohms - **Resistance**: 10 ohms 3. **Resistance (R2)**: - **Name**: Resistance (R2) - **",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00023",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00019",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 25,
+      "bbox": [
+        20.88,
+        451.86,
+        203.46,
+        531.12
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile18.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00024",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00020",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 26,
+      "bbox": [
+        49.161,
+        69.51,
+        675.187,
+        367.857
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile25.png",
+      "caption_text": "",
+      "ai_description": "In this image there is a diagram, which consists of a metal casing, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a metal wire, a",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00025",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00021",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 29,
+      "bbox": [
+        144.0,
+        73.14,
+        570.0,
+        522.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile19.png",
+      "caption_text": "",
+      "ai_description": "In this diagram, we can see a general impedance bridge. Here, we can see a box with a Z written inside. We can see a symbol for a non-specific impedance. We can see a box with a Z written inside. We can see a symbol for a non-specific impedance. We can see a box with a Z written inside. We can see a symbol for a non-specific impedance. We can see a box with a Z written inside. We can see a symbol for a non-specific impedance. We can see a box with a Z written inside. We can see a symbol for a non-specific impedance. We can see a box with a Z written inside. We can see a symbol for a non-specific impedance.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00028",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00022",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 30,
+      "bbox": [
+        417.38,
+        216.0,
+        708.0,
+        522.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile20.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram is divided into two main sections: the left section and the right section. ### Left Section: - **Circuit Description:** - The left section consists of a series of interconnected components. - There are two primary components: - **Node 1** (labeled as N1) is connected to the left side of the diagram. - **Node 2** (labeled as N2) is connected to the right side of the diagram. - The left side has a current flowing from node 1 to node 2. - The right side has a current flowing from node 2 to node 1. ### Right Section: - **Circuit Description:** - The right section consists of a series of interconnected components. - There are two primary components: - **Node 3** (labeled as N3) is connected to the right side of the",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00029",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00023",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 31,
+      "bbox": [
+        359.63,
+        162.0,
+        696.0,
+        376.87
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile21.png",
+      "caption_text": "",
+      "ai_description": "The image depicts two different types of circuits, each with specific components and their relationships. The first circuit is labeled as unknown inductance and has a symbol representing a circular structure with a single electron in the center. This circuit is connected with two parallel lines, one labeled L and the other labeled R. The L line is connected to the R line, and the R line is connected to the L line. The second circuit is labeled as unknown capacitance and has a symbol representing a circular structure with a single electron in the center. This circuit is connected with two parallel lines, one labeled C and the other labeled L. The C line is connected to the R line, and the L line is connected to the R line. The third circuit is labeled as unknown inductance and has a symbol representing a circular structure with a single electron in the center",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00030",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00024",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 32,
+      "bbox": [
+        438.0,
+        262.25,
+        678.0,
+        468.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile22.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a diagram of a circuit with a central node labeled as AC Source. This node is connected to two other nodes, labeled as b and c. These nodes are connected to a series of interconnected components, which are labeled as d, e, and f. ### Components and Relationships: - **AC Source**: - The AC source is connected to the central node labeled as AC Source. - It is a single point in the circuit, connected to the AC voltage source. - **b**: - The b node is connected to the AC source. - It is a single point in the circuit, connected to the AC voltage source. - **c**: - The c node is connected to the AC voltage source. - It is a single point in the circuit, connected to the AC voltage source. - **d**: - The d node is connected to the AC voltage source",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00031",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00025",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 34,
+      "bbox": [
+        144.0,
+        82.69,
+        470.5,
+        318.0
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile23.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit diagram. The diagram is divided into two main sections: the left section and the right section. ### Left Section: - **Circuit Description:** - The left section is labeled as DC Source and has a circular symbol with a line connecting it to a point labeled DC Source. - The right section is labeled as DC Detector and has a circular symbol with a line connecting it to a point labeled DC Detector. - Both sections have a single line connecting the two points, indicating that they are connected by a single path. ### Right Section: - **Circuit Description:** - The right section is labeled as DC Detector and has a circular symbol with a line connecting it to a point labeled DC Detector. - The left section is labeled as DC Source and has a circular symbol with a line connecting it to a point labeled DC Source.",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00033",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00026",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 35,
+      "bbox": [
+        18.0,
+        12.211,
+        300.0,
+        251.251
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile24.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electronic circuit diagram. The diagram is divided into two main sections: the left section contains a rectangular array of components, while the right section contains a rectangular array of components. ### Left Section: - **Rectangular Array of Components:** - **Top Row:** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1** - **1**",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00034",
+      "format": "png"
+    },
+    {
+      "image_id": "chap 3 DC&AC BRIDGES::img_00027",
+      "doc_id": "chap 3 DC&AC BRIDGES",
+      "page": 36,
+      "bbox": [
+        324.0,
+        38.375,
+        624.0,
+        298.745
+      ],
+      "source_path": "loaded_data/chap 3 DC&AC BRIDGES_images/imageFile25.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a simple electrical circuit consisting of a battery, a resistor, and a switch. Here is a detailed description of the image: ### Circuit Description: #### Power Source: - The power source is a battery. - It is connected to the battery with a resistor. - The resistor is connected to the battery with a short-cut. - The battery is connected to the resistor with a short-cut. #### Switch: - The switch is connected to the battery with a short-cut. - The switch is connected to the resistor with a short-cut. - The switch is connected to the battery with a short-cut. #### Power Source: - The power source is connected to the battery with a resistor. - The resistor is connected to the battery with a short-cut. - The battery is connected to the power source with a short-cut. #### Switch: - The",
+      "linked_chunk_id": "chap 3 DC&AC BRIDGES::ch_00035",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00000",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 2,
+      "bbox": [
+        155.88,
+        251.9,
+        329.38,
+        344.587
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00001",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00001",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 2,
+      "bbox": [
+        360.29,
+        99.875,
+        705.88,
+        496.745
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile2.png",
+      "caption_text": "",
+      "ai_description": "The image is a line graph with two axes. The x-axis is labeled t and the y-axis is labeled v. The graph has two sets of data points, labeled as t and v. The data points are represented by horizontal lines, and the x-axis is labeled t and the y-axis is labeled v. The graph shows a downward trend in the data points, with the highest point being at the highest value of t and the lowest point being at the lowest value of v. The graph also shows a downward trend in the data points, with the highest point being at the highest value of t and the lowest point being at the lowest value of v. The graph also shows a downward trend in the data points, with the highest point being at the highest value of t and the lowest point being at the lowest value of v. The graph also shows a downward trend in the data points",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00001",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00002",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 3,
+      "bbox": [
+        21.0,
+        145.0,
+        699.0,
+        386.87
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile3.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram with some text and numbers.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00002",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00003",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 4,
+      "bbox": [
+        139.75,
+        133.88,
+        580.25,
+        330.26
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile4.png",
+      "caption_text": "",
+      "ai_description": "In this image there is a graph.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00003",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00004",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 7,
+      "bbox": [
+        417.015,
+        70.135,
+        594.201,
+        404.276
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile5.png",
+      "caption_text": "",
+      "ai_description": "The image consists of two geometric shapes. The first shape is a rectangle with two straight sides and two angles. The second shape is a triangle with three sides and three angles.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00007",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00005",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 8,
+      "bbox": [
+        321.819,
+        150.998,
+        684.557,
+        496.423
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile6.png",
+      "caption_text": "",
+      "ai_description": "The image is a bar chart titled Analog Output. The chart is divided into two main sections: Ideal Output and Negative Offset Error. The Ideal Output section is on the left side of the chart, while the Negative Offset Error section is on the right side. ### Description of the Chart: - **Title:** Analog Output - **Legend:** - **Blue Line:** Ideal Output - **Purple Line:** Negative Offset Error - **X-Axis:** - **Label:** Digital Input - **Data Points:** - **Label:** Analog Output - **Data Points:** - **Label:** Negative Offset Error - **Data Points:** - **Label:** Positive Offset Error - **Data Points:** - **Label:** Ideal Output - **Y-Axis:** -",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00008",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00006",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 10,
+      "bbox": [
+        80.966,
+        83.156,
+        617.071,
+        248.206
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile7.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a line graph with a linear scale from 0000 to 0100 on the x-axis, labeled Digital Input Signal. The y-axis represents the analog output signal, with a range of 0000 to 0100. The graph shows a general upward trend, with the output signal increasing from 0000 to 0100. ### Analysis and Description: #### Line Graph: - **Title**: The title of the graph is Analog Output Signal. - **X-Axis**: The x-axis is labeled Digital Input Signal. - **Y-Axis**: The y-axis is labeled Analog Output Signal. - **Data Points**: There are multiple data points plotted on the graph, each representing a different digital input signal. - **Data Points**: The data points are scattered across the graph, indicating a continuous increase in the output signal",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00010",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00007",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 11,
+      "bbox": [
+        8.873,
+        103.538,
+        706.717,
+        296.514
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile8.png",
+      "caption_text": "",
+      "ai_description": "The image presents a line graph with two axes labeled Digital Input Signal and Digital Output Signal. The graph consists of two lines, each representing a different type of input signal. The x-axis represents the input signal values, ranging from 0 to 1000, while the y-axis represents the output signal values, ranging from 0 to 1000. The line representing the input signal is labeled 0000 and is shown to be increasing in value as the input increases. The line representing the output signal is labeled 0010 and is also increasing in value as the input increases. The graph also includes a legend at the bottom of the graph, which indicates the following: - The x-axis label is Digital Input Signal - The y-axis label is Digital Output Signal The graph is labeled as follows: - 0000 is the input",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00011",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00008",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 12,
+      "bbox": [
+        25.881,
+        16.761,
+        709.151,
+        81.381
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile5.png",
+      "caption_text": "",
+      "ai_description": "The image is a diagram of a circuit, which is labeled as Vout and is connected to a series of resistors. The diagram includes a series of labeled points, which are likely to represent the components of the circuit. ### Description of the Circuit: 1. **Vout (Vout)**: - **Vout (Vout)**: This is the output of the circuit. It is connected to the input of the circuit. - **Vout (Vout)**: This is the output of the circuit. It is connected to the input of the circuit. 2. **Vout (Vout)**: - **Vout (Vout)**: This is the output of the circuit. It is connected to the input of the circuit. 3. **Vout (Vout)**: - **Vout (Vout)**: This is the output of the circuit. It is connected to the input of the circuit.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00012",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00009",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 14,
+      "bbox": [
+        241.252,
+        80.322,
+        694.528,
+        321.268
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile10.png",
+      "caption_text": "",
+      "ai_description": "The image is a diagram of a circuit, which consists of multiple components. The diagram is labeled with the following components: 1. **Inputs**: - There are two inputs labeled b1 and b2. These inputs are connected to the inputs labeled R1 and R2. 2. **Outputs**: - There are two outputs labeled R3 and R4. These outputs are connected to the outputs labeled R1 and R2. 3. **Circuit Structure**: - The diagram shows a series of interconnected components, including: - **Inputs**: - The input labeled b1 is connected to the input labeled R1 and R2. - The input labeled b2 is connected to the input labeled R3 and R4. - The input labeled R3 is connected to the input labeled R1 and",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00014",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00010",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 16,
+      "bbox": [
+        4.875,
+        39.5,
+        719.995,
+        513.75
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile6.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram with some text and numbers.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00017",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00011",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 20,
+      "bbox": [
+        408.84,
+        333.48,
+        508.799,
+        405.482
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile7.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a graph.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00021",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00012",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 21,
+      "bbox": [
+        0.256,
+        63.649,
+        709.93,
+        430.628
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile14.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram with some text and numbers.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00023",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00013",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 24,
+      "bbox": [
+        67.129,
+        129.758,
+        650.086,
+        446.968
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile15.png",
+      "caption_text": "",
+      "ai_description": "The image is a line graph titled Comparator. The graph has a horizontal axis labeled Vin and a vertical axis labeled In. The x-axis is labeled Conversion time, and the y-axis is labeled Vin. The graph shows a linear increase in the conversion time as the number of switches increases. The graph shows a general trend of increasing conversion times as the number of switches increases. The conversion times are shown as horizontal lines, with the x-axis labeled Conversion time and the y-axis labeled Vin. The graph shows a linear increase in the conversion time as the number of switches increases. The graph shows a general trend of increasing conversion times as the number of switches increases. The conversion times are shown as horizontal lines, with the x-axis labeled Conversion time and the y-axis labeled Vin. The graph shows a linear increase in the conversion time as the number of switches increases",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00026",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00014",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 25,
+      "bbox": [
+        2.026,
+        32.631,
+        711.294,
+        456.324
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile16.png",
+      "caption_text": "",
+      "ai_description": "In this image there is a diagram with a few objects. At the top there is a symbol which is a circle with a line connecting it to a box. Beside the symbol there is a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which is connected to a box. Beside the box there is a line which",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00027",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00015",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 29,
+      "bbox": [
+        0.321,
+        31.854,
+        674.558,
+        516.009
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile17.png",
+      "caption_text": "",
+      "ai_description": "In this image, there is a diagram that is labeled as SAR. The diagram has a line that is labeled as control logic and another line labeled as start. There is a box that is labeled as D1 and another box labeled as D2. There is a box labeled as D3 and another box labeled as D4. There is a box labeled as D5 and another box labeled as D6. There is a box labeled as D7 and another box labeled as D8. There is a box labeled as D9 and another box labeled as D10. There is a box labeled as D11 and another box labeled as D12. There is a box labeled as D13 and another box labeled as D14. There is a box labeled as D15 and another box labeled as D16. There is",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00030",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00016",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 30,
+      "bbox": [
+        343.038,
+        46.049,
+        614.232,
+        411.631
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile18.png",
+      "caption_text": "",
+      "ai_description": "The image depicts a line graph with a title at the top that reads 1110. The x-axis is labeled 1100 and the y-axis is labeled 1100. The graph shows a linear trend from 1100 to 1110, with a slight increase in the y-axis. The line appears to be increasing in length, with the highest point being at 1110 and the lowest point being at 1000. There are two points on the graph: 1. The first point is labeled 1100 and is located at the highest point on the graph. 2. The second point is labeled 1000 and is located at the lowest point on the graph. The graph also includes a line that starts at the highest point and extends upwards, reaching the lowest point on the graph. The line is colored red, indicating that",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00031",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00017",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 31,
+      "bbox": [
+        28.364,
+        128.032,
+        647.736,
+        538.039
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile19.png",
+      "caption_text": "",
+      "ai_description": "The image is a line graph titled Analog Input Voltage. The graph shows the output of a 8-bit conversion with an output code of 1011 0100. The x-axis represents the Clock Period, ranging from 1 to 8, while the y-axis represents the output voltage in Volts. The graph shows a linear trend with a slight dip in the output voltage around the 1011 0100 code. This indicates that the output voltage is relatively constant, with a slight decrease in the output voltage around the 1011 0100 code. The graph also includes a horizontal scale from 0 to 1000 on the y-axis, labeled CLOCK PERIOD. The x-axis is labeled CLOCK PERIOD, and it ranges from 1 to 8. The graph shows a linear trend with a slight dip",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00032",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00018",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 32,
+      "bbox": [
+        14.892,
+        14.129,
+        670.443,
+        466.354
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile20.png",
+      "caption_text": "",
+      "ai_description": "In the image there is a diagram showing a system with different parts.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00033",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00019",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 35,
+      "bbox": [
+        15.77,
+        73.109,
+        711.901,
+        430.903
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile21.png",
+      "caption_text": "",
+      "ai_description": "In the image there is a diagram with a few lines and points. On the left side of the diagram there is a line labeled V1. On the right side of the diagram there is a line labeled A1. In the middle of the diagram there is a triangle labeled A3. On the left side of the diagram there is a line labeled V2. On the right side of the diagram there is a line labeled A2. At the bottom of the diagram there is a line labeled Digital output.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00036",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00020",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 40,
+      "bbox": [
+        78.538,
+        60.898,
+        631.786,
+        416.597
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile24.png",
+      "caption_text": "",
+      "ai_description": "The image is a diagram of a geometric figure, which is a triangle. The triangle is labeled as charging up the capacitor and is connected to two other triangles. The diagram is labeled as full scale conversion and quarter scale conversion. ### Description of the Triangle - **Charging Up the Capacitor**: The triangle is labeled as charging up the capacitor. This indicates that the capacitor is being charged. - **Discharging the Capacitor**: The triangle is labeled as discharging the capacitor. This indicates that the capacitor is being discharged. - **Half-scale Conversion**: The triangle is labeled as half-scale conversion. This indicates that the capacitor is being converted into a smaller quantity. - **Quarter-scale Conversion**: The triangle is labeled as quarter-scale conversion. This indicates that the capacitor is being converted into a smaller quantity. ### Components of the Triangle - **Charging Up",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00041",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter 5  ADC and DAC::img_00021",
+      "doc_id": "chapter 5  ADC and DAC",
+      "page": 41,
+      "bbox": [
+        353.297,
+        0.133,
+        708.728,
+        464.294
+      ],
+      "source_path": "loaded_data/chapter 5  ADC and DAC_images/imageFile25.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram with some text and numbers.",
+      "linked_chunk_id": "chapter 5  ADC and DAC::ch_00042",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00000",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 1,
+      "bbox": [
+        43.194,
+        286.724,
+        684.795,
+        489.517
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "The image contains a rectangular sign with the following text written on it: Chapter-4-",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00000",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00001",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 3,
+      "bbox": [
+        1.25,
+        96.0,
+        720.0,
+        468.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile1.png",
+      "caption_text": "",
+      "ai_description": "In this image there is a diagram of a circuit. There is a circuit which is labeled as Trigger Circuit. There is a circuit which is labeled as Horizontal Deflection Plates. There is a circuit which is labeled as Vertical Deflection Plate. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal. There is a circuit which is labeled as Vertical Amplifier. There is a circuit which is labeled as Input Signal.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00002",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00002",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 4,
+      "bbox": [
+        13.0,
+        59.5,
+        708.0,
+        408.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile2.png",
+      "caption_text": "",
+      "ai_description": "In this image we can see a picture of a speaker.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00003",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00003",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 5,
+      "bbox": [
+        6.0,
+        36.0,
+        690.0,
+        503.5
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile3.png",
+      "caption_text": "",
+      "ai_description": "In this image we can see a diagram of a metal object. In the object there is a metal bar and a metal object.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00003",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00004",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 7,
+      "bbox": [
+        352.125,
+        0.0,
+        720.0,
+        246.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile4.png",
+      "caption_text": "",
+      "ai_description": "The image is a graph titled Figure 2. The graph is a line graph with a horizontal axis labeled left and a vertical axis labeled right. The graph shows the progression of the data points from left to right. The x-axis is labeled left and the y-axis is labeled right. The graph has two sets of data points, each represented by a different color. The data points are labeled as follows: - Left: Blue - Right: Yellow The graph shows a general upward trend in the data points, with the left data points being the highest and the right data points being the lowest. The graph also shows a general downward trend in the data points, with the left data points being the lowest and the right data points being the highest. ### Analysis and Description: #### Data Points: - Left: Blue - Right: Yellow #### Data Points: - Left: Blue - Right:",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00005",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00005",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 8,
+      "bbox": [
+        66.0,
+        102.0,
+        666.0,
+        362.25
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile5.png",
+      "caption_text": "",
+      "ai_description": "The image is a line graph. The graph has two horizontal lines, one on the left and one on the right. The line on the left is a solid color, while the line on the right is a dashed line. The dashed line is blue and is located on the left side of the graph. The line on the right is a green color, and it is located on the right side of the graph. ### Description of the Graph: - **Title**: The title of the graph is d.c. input. - **X-Axis**: The X-axis is labeled d.c. input. - **Y-Axis**: The Y-axis is labeled a.c. input. - **Data Points**: There are two data points on the graph. The first data point is located on the left side of the graph, and the second data point is located on the right side of the graph. - **Data Points**: The",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00006",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00006",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 9,
+      "bbox": [
+        78.0,
+        41.25,
+        648.0,
+        522.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile6.png",
+      "caption_text": "",
+      "ai_description": "In this image, we can see a diagram. There are four circles. There are two lines and two lines and two lines.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00007",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00007",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 11,
+      "bbox": [
+        102.0,
+        6.0,
+        684.0,
+        546.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile7.png",
+      "caption_text": "",
+      "ai_description": "The image consists of two circles, one inside the other. The circle inside the circle is labeled as a and the circle outside the circle is labeled as b.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00009",
+      "format": "png"
+    },
+    {
+      "image_id": "chapter(4) oscilloscope::img_00008",
+      "doc_id": "chapter(4) oscilloscope",
+      "page": 12,
+      "bbox": [
+        0.0,
+        42.75,
+        720.0,
+        534.0
+      ],
+      "source_path": "loaded_data/chapter(4) oscilloscope_images/imageFile8.png",
+      "caption_text": "",
+      "ai_description": "In this image, there is a diagram labeled as circuit diagram and there are some lines and symbols.",
+      "linked_chunk_id": "chapter(4) oscilloscope::ch_00010",
+      "format": "png"
+    }
+  ]
+}
