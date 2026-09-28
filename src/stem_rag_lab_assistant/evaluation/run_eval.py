@@ -23,7 +23,7 @@ from stem_rag_lab_assistant.evaluation.judge import (
 )
 from stem_rag_lab_assistant.evaluation.retry import (
     EvalStoppedError,
-    is_retryable_error,
+    run_with_retry,
 )
 from stem_rag_lab_assistant.evaluation.sidecar import log_cell
 from stem_rag_lab_assistant.methods.common import attach_images
@@ -103,19 +103,9 @@ def _run_single_question(
     golden_answer = q.get("golden_answer", "")
     category = q.get("category", "unknown")
 
-    # 1. Retrieve + answer
+    # 1. Retrieve + answer (patient retry on transient rate limits)
     t0 = time.perf_counter()
-    try:
-        result = answer_func(question)
-    except EvalStoppedError:
-        raise
-    except Exception as e:
-        if is_retryable_error(str(e)):
-            raise EvalStoppedError(
-                f"Answer generation hit a rate limit for {question_id}: {str(e)[:200]}. "
-                "Progress saved — switch GROQ_API_KEY and re-run to resume."
-            ) from e
-        raise
+    result = run_with_retry(answer_func, question)
     answer = result["answer"]
     retrieved_chunks = result["retrieved_chunks"]
     context = result.get("context", "")
@@ -232,7 +222,7 @@ def run_eval(
                 record = _run_single_question(method, answer_func, q)
             except EvalStoppedError:
                 logger.error(
-                    "Rate limit stopped eval during %s at %s. "
+                    "Eval stopped during %s at %s. "
                     "%d/%d results saved for this method. "
                     "Re-run to resume.",
                     method, qid, len(data["results"]), len(dataset),
