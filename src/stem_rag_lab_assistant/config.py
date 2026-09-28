@@ -27,6 +27,9 @@ DATA_DIR = ROOT_DIR / "dataset"
 LOADED_DATA_DIR = ROOT_DIR / "loaded_data"
 LIGHTRAG_WORKING_DIR = ROOT_DIR / "lightrag_data"
 
+# Evaluation-results schema version (bump when the results_*.json shape changes).
+RESULTS_SCHEMA_VERSION = "iter1"
+
 
 def to_relative_path(path: Path) -> str:
     """Return ``path`` relative to the project root when possible.
@@ -68,6 +71,14 @@ class RAGConfig:
     rerank_top_n: int = 4
     lightrag_chunk_top_k: int = 10
 
+    # --- fairness-locked: answer generation ---
+    # Completion budget used only when the first answer is empty (capacity
+    # fallback). Reasoning effort is intentionally NOT changed. gpt-oss-20b
+    # accepts up to 65,536 output tokens. The fallback retries fresh samples up
+    # to ``answer_fallback_max_attempts`` times (Q024 repeatedly hits ``length``).
+    answer_fallback_max_tokens: int = 8192
+    answer_fallback_max_attempts: int = 4
+
     # --- chunking (sweepable) ---
     chunk_size: int = 512
     chunk_overlap: int = 80
@@ -103,6 +114,8 @@ def _build_config() -> RAGConfig:
         bm25_top_k=_env_int("BM25_TOP_K", 6),
         rerank_top_n=_env_int("RERANK_TOP_N", 4),
         lightrag_chunk_top_k=_env_int("LIGHTRAG_CHUNK_TOP_K", 10),
+        answer_fallback_max_tokens=_env_int("ANSWER_FALLBACK_MAX_TOKENS", 8192),
+        answer_fallback_max_attempts=_env_int("ANSWER_FALLBACK_MAX_ATTEMPTS", 4),
         chunk_size=_env_int("CHUNK_SIZE", 512),
         chunk_overlap=_env_int("CHUNK_OVERLAP", 80),
         graph_neighbour_cap=_env_int("GRAPH_NEIGHBOUR_CAP", 2),
