@@ -30,11 +30,12 @@ src/stem_rag_lab_assistant/
 │   ├── common.py               # attach_images() post-processor
 │   └── lightrag_baseline.py    # Vanilla LightRAG baseline (pinned, throwaway)
 ├── generation/                 # Shared Groq prompts + clients
-│   ├── groq_client.py          # Answer LLM (20B) + Judge LLM (120B)
+│   ├── groq_client.py          # Answer LLM (20B) + capacity-fallback LLM
 │   └── prompts.py              # Shared answer synthesis prompt
 └── evaluation/                 # Evaluation harness (TruLens feedback functions + Groq)
     ├── judge.py                # 4 feedback functions (groundedness, relevance, etc.)
     ├── run_eval.py             # Eval runner with incremental save/resume
+    ├── fallback.py             # Empty-answer capacity fallback + schema migration
     ├── aggregate.py            # results_*.json → comparison.json
     ├── sidecar.py              # runs_sidecar.jsonl logger
     └── comparison.json         # Final per-method + per-category scores
@@ -79,15 +80,16 @@ uv run python -m stem_rag_lab_assistant.graph.extract
 |--------|-----------|-----------------|:---:|
 | **Naive** | Vector top-6 (bge-m3) | — | gpt-oss-20b |
 | **Hybrid** | RRF(Vector + BM25) → top-6 | — | gpt-oss-20b |
-| **Hybrid+Graph** | RRF(Vector + BM25) → graph expansion → CE top-4 expanded | Seeds always preserved | gpt-oss-20b |
 | **LightRAG** | Mix(graph + vector + keyword) → top-10 | — | gpt-oss-20b |
 | **LightRAG-Hybrid** | RRF(Vector + BM25) → LightRAG graph expansion (entity + relation) → CE top-4 expanded | Seeds always preserved | gpt-oss-20b |
 
-The cross-encoder (`BAAI/bge-reranker-v2-m3`) scores only graph-expanded chunks against the query, keeping the top-4. All RRF seed chunks are preserved unconditionally. This isolates graph expansion as the single variable between Hybrid and Hybrid+Graph.
+**Evaluated set = 4 methods** (`naive`, `hybrid`, `lightrag`, `lightrag_hybrid`). **Hybrid+Graph** (our own graph, `methods/hybrid_graph.py`) is kept in code and runnable but **dormant** — excluded from the run/judge/aggregation (`plans/roadmap.md` §2.1).
 
-**LightRAG baseline:** The vanilla LightRAG library (`lightrag-hku==1.5.4`) is used as a fourth comparison point for system-vs-system evaluation. It runs its own end-to-end pipeline (internal extraction, graph construction, mix-mode retrieval) over the same corpus chunks, but feeds its retrieved context into the **same** Groq answer prompt as all other methods for synthesis fairness. LightRAG is a pinned, throwaway baseline — the library is imported in exactly one module (`methods/lightrag_baseline.py`) and deleting it does not break any other method.
+The cross-encoder (`BAAI/bge-reranker-v2-m3`) scores only graph-expanded chunks against the query, keeping the top-4; all RRF seed chunks are preserved unconditionally.
 
-**LightRAG-Hybrid (policy ablation):** A 5th method that swaps LightRAG's native seed retrieval (vector over chunks + entities + relations, with LLM keyword gating) for BM25+vector hybrid RRF seeds, while reusing LightRAG's own extracted graph (1041 entities, 1668 relations, read from persisted `lightrag_data/` artifacts via `networkx` — no `lightrag-hku` runtime dependency). One-hop expansion covers both entity-adjacent and relation-attached neighbours (Conservative A: relations where a seed entity is src or dst). Budget parity with vanilla LightRAG: 6 seeds + 4 reranked = 10 chunks. This isolates whether a simpler retrieval policy with BM25-augmented seeding can match or exceed LightRAG's native dual-level retrieval on ECE content.
+**LightRAG baseline:** The vanilla LightRAG library (`lightrag-hku==1.5.4`) provides a system-vs-system baseline. It runs its own end-to-end pipeline (internal extraction, graph construction, mix-mode retrieval) over the same corpus chunks, but feeds its retrieved context into the **same** Groq answer prompt as all other methods for synthesis fairness. It is a pinned, throwaway baseline — imported in exactly one module (`methods/lightrag_baseline.py`).
+
+**LightRAG-Hybrid (the contribution):** swaps LightRAG's native seed retrieval (vector over chunks + entities + relations, with LLM keyword gating) for BM25+vector hybrid RRF seeds while reusing LightRAG's own extracted graph (read from persisted `lightrag_data/` artifacts via `networkx` — no `lightrag-hku` runtime dependency). One-hop expansion covers both entity-adjacent and relation-attached neighbours (Conservative A). Budget parity with vanilla LightRAG: 6 seeds + 4 reranked = 10 chunks.
 
 ## Running Evaluation
 
@@ -100,35 +102,55 @@ uv run python -m stem_rag_lab_assistant.evaluation.run_eval lightrag_hybrid
 
 # Recompute comparison.json from the frozen results_*.json files (no LLM calls)
 uv run python -m stem_rag_lab_assistant.evaluation.aggregate
+
+# Capacity fallback: rescue empty answers (same model, higher completion budget)
+uv run python -m stem_rag_lab_assistant.evaluation.fallback
+#   --probe              diagnostics only (no file writes)
+#   --dry-run            list cells without calling the API
+#   --qids=Q003,Q024     limit to specific questions
 ```
 
 Results are saved incrementally to `evaluation/results_{method}.json`. The runner skips already-completed questions on re-run.
 
 ## Results
 
-All methods share the same answer model (gpt-oss-20b) and judge (gpt-oss-120b). Six math-heavy questions had empty 20B answers and were regenerated with llama-3.1-8b-instant. Average latency excludes the first question (Q001) which includes one-time model-loading overhead (embedding, cross-encoder, graph hydrate).
+All methods share the same answer model (`openai/gpt-oss-20b`) and judge
+(`openai/gpt-oss-120b`, via TruLens). Scores are the TruLens **0–1** scale (RAG
+triad + ground-truth agreement). Avg latency excludes Q001 (one-time model
+load). `Fallback used` = cells whose first answer was empty and were rescued by
+the capacity fallback (see below).
 
-| Method | Groundedness | Answer Relevance | Context Relevance | GT Agreement | **Mean** | Avg. Chunks | Avg. Latency |
-|--------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Naive | 3.48 | 3.80 | 2.80 | 3.25 | **3.33** | 6.0 | 2.1s |
-| Hybrid | 3.17 | 4.22 | 3.33 | 3.55 | **3.57** | 4.6 | 5.4s |
-| Hybrid+Graph | 3.35 | 4.53 | 3.30 | 3.70 | **3.72** | 8.4 | 19.9s |
-| **LightRAG** | **3.33** | 4.45 | **3.73** | **3.77** | **3.82** | **10.0** | 4.9s |
-| LightRAG-Hybrid | 3.25 | **4.55** | 3.42 | 3.73 | **3.74** | 8.6 | 4.9s |
+| Method | Groundedness | Answer Rel. | Context Rel. | GT Agreement | **Mean** | Avg. Chunks | Avg. Latency | Fallback used |
+|--------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Naive | 0.56 | 0.91 | 0.71 | 0.69 | **0.72** | 6.0 | 2.0s | 2 |
+| Hybrid | 0.53 | 0.93 | 0.72 | 0.70 | **0.72** | 4.6 | 1.7s | 3 |
+| **LightRAG** | 0.56 | 0.93 | **0.78** | **0.71** | **0.74** | **10.0** | 2.7s | 3 |
+| LightRAG-Hybrid | 0.54 | 0.89 | 0.74 | **0.71** | **0.72** | 8.6 | 2.3s | 3 |
 
 ### Per Category
 
-| Category | Naive | Hybrid | Hybrid+Graph | LightRAG | LightRAG-Hybrid | Best |
-|----------|:---:|:---:|:---:|:---:|:---:|------|
-| cross_document | 3.53 | **3.80** | 3.77 | 3.72 | 3.70 | Hybrid |
-| multi_hop | 2.97 | 3.09 | 3.19 | 3.31 | **3.41** | LightRAG-Hybrid |
-| same_document | 3.00 | 3.47 | 3.75 | **4.00** | 3.66 | LightRAG |
-| lookup | 3.31 | 3.50 | 4.44 | **4.56** | 4.12 | LightRAG |
-| paraphrase | 3.94 | 3.88 | 3.81 | 4.12 | **4.31** | LightRAG-Hybrid |
+| Category | Naive | Hybrid | LightRAG | LightRAG-Hybrid | Best |
+|----------|:---:|:---:|:---:|:---:|------|
+| cross_document | 0.67 | 0.70 | 0.69 | **0.71** | LightRAG-Hybrid |
+| multi_hop | 0.72 | 0.65 | **0.76** | 0.65 | LightRAG |
+| same_document | 0.65 | 0.69 | **0.73** | 0.64 | LightRAG |
+| lookup | 0.91 | 0.92 | 0.92 | **0.93** | LightRAG-Hybrid |
+| paraphrase | 0.86 | 0.79 | 0.83 | **0.87** | LightRAG-Hybrid |
 
-**LightRAG wins overall (3.82)** and dominates same-document and lookup categories thanks to its richer graph (1041 entities, 1668 relations) and dual-level retrieval spanning entity-vector, relation-vector, and chunk-vector channels. Hybrid retains its edge on cross_document questions (3.80) where BM25's exact-term matching across documents is strongest — LightRAG's mix mode uses vector + keyword matching but **no BM25**.
+**LightRAG leads overall (0.74)**; the other three are effectively tied at 0.72.
+LightRAG wins `multi_hop` and `same_document`; **LightRAG-Hybrid wins
+`cross_document`, `lookup`, and `paraphrase`** but trails on
+`multi_hop`/`same_document`, consistent with Conservative-A omitting LightRAG's
+high-level relation-vector channel.
 
-**LightRAG-Hybrid (3.74, 5th method)** is a policy ablation: it replaces LightRAG's native seed retrieval with BM25+vector RRF seeds while reusing LightRAG's own extracted graph. It wins two categories — multi_hop (3.41 vs 3.31) and paraphrase (4.31 vs 4.12, the highest score of any method on any category) — where the BM25 lexical boost compensates for the simpler one-hop expansion policy. Its highest answer relevance (4.55) suggests the hybrid seeds surface more directly answerable content. However, it loses on same_document (3.66 vs 4.00) and lookup (4.12 vs 4.56) where LightRAG's dual-level retrieval — particularly vector search over relation descriptions — provides reach that Conservative A's cap-recovery mechanism cannot match. The 0.08 overall gap to LightRAG (within the 40Q noise floor of ~0.10) and the category-level tradeoffs together indicate that BM25-augmented seeding with a simpler graph policy is competitive with LightRAG's native retrieval on select question types, but the dual-level retrieval remains the key differentiator for entity-centric and single-document queries.
+**Capacity fallback (empty answers).** gpt-oss-20b occasionally spends its
+entire completion budget on reasoning and returns no content (default budget is
+small; prompts like Q024 loop regardless of ceiling). When the first answer is
+empty, the **same model** is retried — same prompt, reasoning **unchanged** —
+at `max_completion_tokens=8192` for up to 4 fresh samples. This is uniform
+across all methods and flagged per record (`answer_fallback`, with `attempts`).
+It resolved every empty cell on this run (used: naive 2, hybrid 3, LightRAG 3,
+LightRAG-Hybrid 3; unresolved 0).
 
 ## Configuration
 
@@ -144,6 +166,9 @@ Key settings in `config.py` (overridable via environment variables):
 | `VECTOR_TOP_K` | 6 | Dense retrieval top-k |
 | `BM25_TOP_K` | 6 | BM25 retrieval top-k |
 | `GRAPH_MAX_EXPANDED_CHUNKS` | 10 | Max neighbor chunks from graph expansion |
+| `RERANK_TOP_N` | 4 | Cross-encoder top-n on expanded chunks |
+| `ANSWER_FALLBACK_MAX_TOKENS` | 8192 | Completion budget for the empty-answer fallback |
+| `ANSWER_FALLBACK_MAX_ATTEMPTS` | 4 | Fresh samples tried by the fallback |
 | `EXTRACTION_LLM_MODEL` | `qwen/qwen3.8-27b` | Model for entity/relation extraction |
 
 ## Models

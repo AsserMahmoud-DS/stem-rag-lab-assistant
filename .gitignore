@@ -11,7 +11,7 @@ test_pgvector_smoke.py
 lightrag_data/
 lightrag_run/
 reports/
-docs/
+docs/*
 dataset/
 loaded_data/
 runs/
