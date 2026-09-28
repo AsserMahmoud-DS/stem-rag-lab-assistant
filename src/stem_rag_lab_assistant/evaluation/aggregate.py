@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from stem_rag_lab_assistant.config import config_snapshot
+from stem_rag_lab_assistant.config import RESULTS_SCHEMA_VERSION, config_snapshot
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +60,7 @@ def compute_comparison(
 
     comparison: dict[str, Any] = {
         "eval_date": datetime.now(timezone.utc).isoformat(),
+        "schema_version": RESULTS_SCHEMA_VERSION,
         "config": config_snapshot(),
         "overall": {},
         "per_category": {},
@@ -86,6 +87,16 @@ def compute_comparison(
             sum(r["latency_ms"]["method_latency_ms"] for r in latency_records)
             / len(latency_records),
             1,
+        )
+
+        # Capacity-fallback usage (auditability): recomputed from records, not
+        # trusted from the file-level summary block.
+        fallbacks = [r.get("answer_fallback") or {} for r in results]
+        metric_means["n_answer_fallback"] = sum(
+            1 for fb in fallbacks if fb.get("used")
+        )
+        metric_means["n_answer_fallback_unresolved"] = sum(
+            1 for fb in fallbacks if fb.get("used") and not fb.get("resolved")
         )
 
         comparison["overall"][method] = metric_means
