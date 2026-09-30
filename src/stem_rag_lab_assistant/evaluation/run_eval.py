@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from stem_rag_lab_assistant.config import config_snapshot
+from stem_rag_lab_assistant.corpus.ingest import load_corpus_hash
 from stem_rag_lab_assistant.evaluation.fallback import (
     SCHEMA_VERSION,
     attempt_fallback,
@@ -22,6 +23,7 @@ from stem_rag_lab_assistant.evaluation.fallback import (
     fallback_summary,
     is_empty_answer,
 )
+from stem_rag_lab_assistant.hashing import dataset_hash
 from stem_rag_lab_assistant.evaluation.judge import (
     judge_answer_relevance,
     judge_context_relevance,
@@ -64,6 +66,8 @@ def _load_results(method: str) -> dict[str, Any]:
         "eval_date": datetime.now(timezone.utc).isoformat(),
         "schema_version": SCHEMA_VERSION,
         "config": config_snapshot(),
+        "corpus_hash": None,
+        "dataset_hash": None,
         "results": [],
         "skipped_due_to_rate_limit": [],
     }
@@ -209,15 +213,20 @@ def run_eval(
     if methods is None:
         methods = METHOD_NAMES
 
+    corpus_hash_value = load_corpus_hash()
+    dataset_hash_value = dataset_hash(dataset)
     logger.info(
-        "Eval run: %d questions × %d methods = %d cells",
+        "Eval run: %d questions × %d methods = %d cells (corpus %s, dataset %s)",
         len(dataset), len(methods), len(dataset) * len(methods),
+        corpus_hash_value[:19], dataset_hash_value[:19],
     )
 
     for method in methods:
         logger.info("=== Method: %s ===", method)
         data = _load_results(method)
         data["config"] = config_snapshot()
+        data["corpus_hash"] = corpus_hash_value
+        data["dataset_hash"] = dataset_hash_value
         completed = _get_completed_ids(data)
         answer_func = _get_answer_func(method)
 
