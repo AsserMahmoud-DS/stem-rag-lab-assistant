@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
 import logging
 import os
@@ -16,18 +15,11 @@ from stem_rag_lab_assistant.config import (
     to_relative_path,
 )
 from stem_rag_lab_assistant.corpus.chunking import _chunk_single_doc
+from stem_rag_lab_assistant.hashing import file_sha256
 
 logger = logging.getLogger(__name__)
 
 CHUNKS_JSON_PATH = Path(__file__).resolve().parents[3] / "chunks.json"
-
-
-def _hash_file(path: Path) -> str:
-    sha = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            sha.update(chunk)
-    return f"sha256:{sha.hexdigest()}"
 
 
 def _load_existing_chunks() -> dict[str, Any]:
@@ -66,9 +58,16 @@ def run_ingest(
     data = _load_existing_chunks()
     docs = data.setdefault("docs", {})
 
+    # Prune docs whose PDF was removed from the dataset so chunks.json tracks the
+    # current corpus instead of accumulating stale entries.
+    present_doc_ids = {pdf_path.stem for pdf_path in pdf_paths}
+    for stale_doc_id in [doc_id for doc_id in docs if doc_id not in present_doc_ids]:
+        logger.info("  %s: removed from dataset, pruning", stale_doc_id)
+        del docs[stale_doc_id]
+
     for pdf_path in pdf_paths:
         doc_id = pdf_path.stem
-        content_hash = _hash_file(pdf_path)
+        content_hash = file_sha256(pdf_path)
         source_mtime = _compute_source_mtime(pdf_path)
 
         existing = docs.get(doc_id)
