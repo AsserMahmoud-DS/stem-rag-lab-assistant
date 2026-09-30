@@ -62,14 +62,19 @@ def compute_comparison(
         "eval_date": datetime.now(timezone.utc).isoformat(),
         "schema_version": RESULTS_SCHEMA_VERSION,
         "config": config_snapshot(),
+        "corpus_hash": None,
+        "dataset_hash": None,
         "overall": {},
         "per_category": {},
     }
 
     all_by_cat: dict[str, dict[str, list[float]]] = {}
+    first_data: dict[str, Any] | None = None
 
     for method in methods:
         data = _load_results(method)
+        if first_data is None:
+            first_data = data
         results = data["results"]
 
         metric_means = _mean_metrics(results)
@@ -114,6 +119,10 @@ def compute_comparison(
             entry[method] = round(sum(vals) / max(1, len(vals)), 2)
         entry["best"] = max(entry, key=entry.get)
         comparison["per_category"][cat] = entry
+
+    if first_data is not None:
+        comparison["corpus_hash"] = first_data.get("corpus_hash")
+        comparison["dataset_hash"] = first_data.get("dataset_hash")
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(comparison, f, indent=2, ensure_ascii=False)
