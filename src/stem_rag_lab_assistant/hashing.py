@@ -46,3 +46,26 @@ def corpus_hash(chunks: Iterable[Mapping[str, Any]]) -> str:
     for chunk_id, text_digest in entries:
         digest.update(f"{chunk_id}\x00{text_digest}\n".encode("utf-8"))
     return f"sha256:{digest.hexdigest()}"
+
+
+def dataset_hash(questions: Iterable[Mapping[str, Any]]) -> str:
+    """Order-independent content hash of a question set as ``sha256:<hex>``.
+
+    Hashes ``question_id`` + ``question`` + ``golden_answer`` + ``category`` per
+    question, sorted by ``question_id``, so it changes when a question is added,
+    removed, or edited — independent of question ordering and of provenance
+    fields (e.g. ``source_chunk_ids``, meta) that are not part of the content.
+    """
+    digest = hashlib.sha256()
+    entries = sorted(
+        (
+            str(q.get("question_id", "")),
+            str(q.get("question", "")),
+            str(q.get("golden_answer", "")),
+            str(q.get("category", "")),
+        )
+        for q in questions
+    )
+    for parts in entries:
+        digest.update(("\x00".join(parts) + "\n").encode("utf-8"))
+    return f"sha256:{digest.hexdigest()}"
