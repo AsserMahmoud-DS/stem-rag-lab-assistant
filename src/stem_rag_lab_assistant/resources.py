@@ -26,7 +26,10 @@ from stem_rag_lab_assistant.index.lightrag_graph_store import (
     load_lightrag_graph_store,
 )
 from stem_rag_lab_assistant.index.reranker import get_reranker
-from stem_rag_lab_assistant.index.vector_store import VectorRetriever, load_vector_store
+from stem_rag_lab_assistant.index.vector_store import (
+    VectorRetriever,
+    load_or_build_vector_store,
+)
 
 __all__ = [
     "get_embed_model",
@@ -59,10 +62,10 @@ def get_embed_model() -> HuggingFaceEmbedding:
 
 
 def get_vector_store() -> SimpleVectorStore:
-    """Shared persisted ``SimpleVectorStore`` (loaded once per process)."""
+    """Shared ``SimpleVectorStore`` — loaded if fresh, else rebuilt once per process."""
     global _VECTOR_STORE
     if _VECTOR_STORE is None:
-        _VECTOR_STORE = load_vector_store()
+        _VECTOR_STORE = load_or_build_vector_store()
     return _VECTOR_STORE
 
 
