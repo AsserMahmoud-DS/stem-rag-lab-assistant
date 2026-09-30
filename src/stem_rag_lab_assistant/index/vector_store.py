@@ -15,15 +15,42 @@ from llama_index.core.vector_stores.types import (
     VectorStoreQueryResult,
 )
 
+from stem_rag_lab_assistant.hashing import corpus_hash
+
 logger = logging.getLogger(__name__)
 
 CHUNKS_JSON_PATH = Path(__file__).resolve().parents[3] / "chunks.json"
 _PERSIST_PATH = Path(__file__).resolve().parents[3] / "storage" / "vector_store.json"
+_HASH_PATH = Path(__file__).resolve().parents[3] / "storage" / "vector_store.corpus_hash.txt"
 
 
 def _load_chunks() -> dict[str, Any]:
     with open(CHUNKS_JSON_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def _iter_chunks(data: dict[str, Any]) -> list[dict[str, Any]]:
+    """Flatten chunks.json into a single list of chunk dicts."""
+    return [
+        chunk
+        for doc_data in data.get("docs", {}).values()
+        for chunk in doc_data.get("chunks", [])
+    ]
+
+
+def _current_corpus_hash() -> str:
+    """Content hash of the current corpus (chunk ids + text)."""
+    return corpus_hash(_iter_chunks(_load_chunks()))
+
+
+def _persisted_corpus_hash() -> str | None:
+    """Read the persisted corpus-hash sentinel (None if missing/unreadable)."""
+    if not _HASH_PATH.exists():
+        return None
+    try:
+        return _HASH_PATH.read_text().strip() or None
+    except OSError:
+        return None
 
 
 def _chunks_to_nodes(data: dict[str, Any]) -> list[TextNode]:
@@ -76,6 +103,7 @@ def build_vector_store(
     if persist:
         _PERSIST_PATH.parent.mkdir(parents=True, exist_ok=True)
         store.persist(str(_PERSIST_PATH))
+        _HASH_PATH.write_text(corpus_hash(_iter_chunks(data)))
         logger.info("Vector store persisted to %s", _PERSIST_PATH)
 
     return store
@@ -87,6 +115,31 @@ def load_vector_store(persist_path: str | None = None) -> SimpleVectorStore:
     if not Path(path).exists():
         raise FileNotFoundError(f"No persisted vector store at {path}. Run build_vector_store() first.")
     return SimpleVectorStore.from_persist_path(path)
+
+
+def load_or_build_vector_store() -> SimpleVectorStore:
+    """Load the persisted vector store if fresh, else rebuild from chunks.json.
+
+    Freshness uses the corpus hash (chunk ids + text): if the corpus changed the
+    store is re-hydrated from the cached embeddings (GPU-free) instead of silently
+    serving a stale index.
+    """
+    current_hash = _current_corpus_hash()
+    persisted_hash = _persisted_corpus_hash()
+
+    if _PERSIST_PATH.exists() and persisted_hash == current_hash:
+        logger.info("Loading persisted vector store (%s)", current_hash[:19])
+        return load_vector_store()
+
+    if persisted_hash is not None:
+        logger.warning(
+            "Vector store stale (persisted=%s, current=%s). Rebuilding from chunks.json.",
+            persisted_hash[:19], current_hash[:19],
+        )
+    else:
+        logger.info("Vector store missing or unstamped; building from chunks.json.")
+
+    return build_vector_store()
 
 
 def query_vector_store(
