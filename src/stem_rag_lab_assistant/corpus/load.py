@@ -4,7 +4,6 @@ Requires the hybrid backend to be running:
     opendataloader-pdf-hybrid --port 5002 --enrich-picture-description --enrich-formula
 """
 
-import hashlib
 import json
 import logging
 import os
@@ -13,21 +12,13 @@ from pathlib import Path
 import opendataloader_pdf
 
 from stem_rag_lab_assistant.config import DATA_DIR, LOADED_DATA_DIR
+from stem_rag_lab_assistant.hashing import file_sha256
 
 logger = logging.getLogger(__name__)
 
 # Local cache mapping doc_id -> source content hash, so --only-missing can skip
 # PDFs that were already parsed without re-running the (slow) ODL/JVM step.
 _MANIFEST_NAME = "_opendataloader_manifest.json"
-
-
-def _file_sha256(path: Path) -> str:
-    """Content hash of a file (same scheme as corpus.ingest)."""
-    sha = hashlib.sha256()
-    with open(path, "rb") as f:
-        for block in iter(lambda: f.read(65536), b""):
-            sha.update(block)
-    return f"sha256:{sha.hexdigest()}"
 
 
 def _load_manifest(output_dir: Path) -> dict:
@@ -137,7 +128,7 @@ def run_opendataloader(
             doc_id = pdf_path.stem
             json_path = output_dir / f"{doc_id}.json"
             entry = manifest_docs.get(doc_id, {})
-            if json_path.exists() and entry.get("content_hash") == _file_sha256(pdf_path):
+            if json_path.exists() and entry.get("content_hash") == file_sha256(pdf_path):
                 logger.info("  %s: unchanged, skipping (--only-missing)", doc_id)
                 continue
         to_convert.append(pdf_path_str)
@@ -162,7 +153,7 @@ def run_opendataloader(
     for pdf_path_str in to_convert:
         pdf_path = Path(pdf_path_str)
         manifest_docs[pdf_path.stem] = {
-            "content_hash": _file_sha256(pdf_path),
+            "content_hash": file_sha256(pdf_path),
             "source_mtime": format(os.path.getmtime(pdf_path), ".0f"),
         }
     _save_manifest(output_dir, manifest)
