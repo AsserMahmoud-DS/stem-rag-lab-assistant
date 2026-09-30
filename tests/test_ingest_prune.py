@@ -73,3 +73,16 @@ def test_run_ingest_skips_unchanged_doc(tmp_path, monkeypatch) -> None:
 
     saved = json.loads(chunks_path.read_text(encoding="utf-8"))
     assert saved["docs"]["A"]["chunks"][0]["text"] == "SENTINEL"
+
+
+def test_run_ingest_stamps_corpus_hash(tmp_path, monkeypatch) -> None:
+    from stem_rag_lab_assistant.hashing import corpus_hash
+
+    data_dir, loaded_dir = _seed_pdfs_and_outputs(tmp_path, ["A", "B"])
+    chunks_path = tmp_path / "chunks.json"
+    monkeypatch.setattr(ingest, "CHUNKS_JSON_PATH", chunks_path)
+
+    ingest.run_ingest(data_dir=data_dir, loaded_dir=loaded_dir)
+
+    saved = json.loads(chunks_path.read_text(encoding="utf-8"))
+    assert saved["corpus_hash"] == corpus_hash(ingest._iter_all_chunks(saved["docs"]))
