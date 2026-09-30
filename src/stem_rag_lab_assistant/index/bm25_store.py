@@ -11,6 +11,7 @@ from llama_index.core.schema import TextNode
 from llama_index.retrievers.bm25 import BM25Retriever
 
 from stem_rag_lab_assistant.config import get_config
+from stem_rag_lab_assistant.hashing import corpus_hash
 
 logger = logging.getLogger(__name__)
 
@@ -20,13 +21,6 @@ _PERSIST_DIR = Path(__file__).resolve().parents[3] / "storage" / "bm25_store"
 _BM25_RETRIEVER: BM25Retriever | None = None
 
 
-def _count_chunks() -> int:
-    """Count total chunks across all docs in chunks.json (fast — no full load)."""
-    with open(CHUNKS_JSON_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return sum(d["n_chunks"] for d in data.get("docs", {}).values())
-
-
 def _load_all_chunks() -> list[dict[str, Any]]:
     with open(CHUNKS_JSON_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -34,6 +28,11 @@ def _load_all_chunks() -> list[dict[str, Any]]:
     for doc_data in data.get("docs", {}).values():
         chunks.extend(doc_data.get("chunks", []))
     return chunks
+
+
+def _current_corpus_hash() -> str:
+    """Content hash of the current corpus (chunk ids + text)."""
+    return corpus_hash(_load_all_chunks())
 
 
 def _chunks_to_nodes(chunks: list[dict[str, Any]]) -> list[TextNode]:
@@ -49,34 +48,39 @@ def _chunks_to_nodes(chunks: list[dict[str, Any]]) -> list[TextNode]:
     return nodes
 
 
-def _persisted_chunk_count() -> int | None:
-    """Read the sentinel file so we know how many chunks the persisted index was built from."""
-    sentinel = _PERSIST_DIR / "chunk_count.txt"
+def _persisted_corpus_hash() -> str | None:
+    """Read the persisted corpus-hash sentinel (None if missing/unreadable)."""
+    sentinel = _PERSIST_DIR / "corpus_hash.txt"
     if not sentinel.exists():
         return None
     try:
-        return int(sentinel.read_text().strip())
-    except (ValueError, OSError):
+        return sentinel.read_text().strip() or None
+    except OSError:
         return None
 
 
 def get_bm25_retriever() -> BM25Retriever:
-    """Lazy-init singleton: load persisted BM25 index if fresh, else build + persist."""
+    """Lazy-init singleton: load persisted BM25 index if fresh, else build + persist.
+
+    Freshness is decided by a corpus hash over the chunk ids + text, so adding,
+    removing, or editing chunks forces a rebuild (a global-statistic index like
+    BM25 cannot be updated incrementally).
+    """
     global _BM25_RETRIEVER
     if _BM25_RETRIEVER is not None:
         return _BM25_RETRIEVER
 
-    current_count = _count_chunks()
-    persisted_count = _persisted_chunk_count()
+    current_hash = _current_corpus_hash()
+    persisted_hash = _persisted_corpus_hash()
 
-    if persisted_count == current_count:
-        logger.info("Loading persisted BM25 index (%d chunks) from %s", current_count, _PERSIST_DIR)
+    if persisted_hash == current_hash:
+        logger.info("Loading persisted BM25 index (%s) from %s", current_hash[:19], _PERSIST_DIR)
         _BM25_RETRIEVER = BM25Retriever.from_persist_dir(str(_PERSIST_DIR))
     else:
-        if persisted_count is not None:
+        if persisted_hash is not None:
             logger.info(
-                "BM25 cache stale (persisted=%d, current=%d). Rebuilding.",
-                persisted_count, current_count,
+                "BM25 cache stale (persisted=%s, current=%s). Rebuilding.",
+                persisted_hash[:19], current_hash[:19],
             )
         chunks = _load_all_chunks()
         nodes = _chunks_to_nodes(chunks)
@@ -88,7 +92,7 @@ def get_bm25_retriever() -> BM25Retriever:
         )
         _PERSIST_DIR.mkdir(parents=True, exist_ok=True)
         _BM25_RETRIEVER.persist(str(_PERSIST_DIR))
-        (_PERSIST_DIR / "chunk_count.txt").write_text(str(current_count))
+        (_PERSIST_DIR / "corpus_hash.txt").write_text(current_hash)
         logger.info("BM25 retriever persisted to %s (top_k=%d)", _PERSIST_DIR, get_config().bm25_top_k)
 
     return _BM25_RETRIEVER
