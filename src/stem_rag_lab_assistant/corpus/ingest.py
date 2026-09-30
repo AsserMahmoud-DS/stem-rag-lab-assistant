@@ -15,7 +15,7 @@ from stem_rag_lab_assistant.config import (
     to_relative_path,
 )
 from stem_rag_lab_assistant.corpus.chunking import _chunk_single_doc
-from stem_rag_lab_assistant.hashing import file_sha256
+from stem_rag_lab_assistant.hashing import corpus_hash, file_sha256
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +37,23 @@ def _save_chunks(data: dict[str, Any]) -> None:
 
 def _compute_source_mtime(pdf_path: Path) -> str:
     return format(os.path.getmtime(pdf_path), ".0f")
+
+
+def _iter_all_chunks(docs: dict[str, Any]) -> list[dict[str, Any]]:
+    return [chunk for doc in docs.values() for chunk in doc.get("chunks", [])]
+
+
+def load_corpus_hash() -> str:
+    """Return the corpus fingerprint stamped in chunks.json.
+
+    Falls back to computing it if the field is absent (older chunks.json), so
+    callers always receive a usable hash.
+    """
+    data = _load_existing_chunks()
+    stamped = data.get("corpus_hash")
+    if stamped:
+        return stamped
+    return corpus_hash(_iter_all_chunks(data.get("docs", {})))
 
 
 def run_ingest(
@@ -98,6 +115,7 @@ def run_ingest(
         }
         logger.info("  %s: %d chunks produced", doc_id, len(chunks))
 
+    data["corpus_hash"] = corpus_hash(_iter_all_chunks(docs))
     _save_chunks(data)
     total_chunks = sum(d["n_chunks"] for d in docs.values())
     logger.info("Ingest complete: %d docs, %d total chunks", len(docs), total_chunks)
