@@ -28,7 +28,7 @@ LOADED_DATA_DIR = ROOT_DIR / "loaded_data"
 LIGHTRAG_WORKING_DIR = ROOT_DIR / "lightrag_data"
 
 # Evaluation-results schema version (bump when the results_*.json shape changes).
-RESULTS_SCHEMA_VERSION = "iter1"
+RESULTS_SCHEMA_VERSION = "iter2"
 
 
 def to_relative_path(path: Path) -> str:
