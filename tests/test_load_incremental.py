@@ -111,3 +111,27 @@ def test_default_reconverts_everything(tmp_path, fake_convert) -> None:
     load.run_opendataloader(data_dir, out_dir)
 
     assert fake_convert == [["A", "B"], ["A", "B"]]
+
+
+def test_only_doc_ids_converts_selected(tmp_path, fake_convert) -> None:
+    data_dir, out_dir = tmp_path / "data", tmp_path / "loaded"
+    data_dir.mkdir()
+    out_dir.mkdir()
+    _write_pdf(data_dir / "A.pdf")
+    _write_pdf(data_dir / "B.pdf")
+    _write_pdf(data_dir / "C.pdf")
+
+    counts = load.run_opendataloader(data_dir, out_dir, only_doc_ids=["B"])
+
+    assert fake_convert == [["B"]]
+    assert set(counts) == {"B"}
+
+
+def test_only_doc_ids_unknown_raises(tmp_path, fake_convert) -> None:
+    data_dir, out_dir = tmp_path / "data", tmp_path / "loaded"
+    data_dir.mkdir()
+    out_dir.mkdir()
+    _write_pdf(data_dir / "A.pdf")
+
+    with pytest.raises(FileNotFoundError):
+        load.run_opendataloader(data_dir, out_dir, only_doc_ids=["Z"])
