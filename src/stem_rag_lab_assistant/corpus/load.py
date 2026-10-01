@@ -96,6 +96,7 @@ def run_opendataloader(
     data_dir: Path | None = None,
     output_dir: Path | None = None,
     only_missing: bool = False,
+    only_doc_ids: list[str] | None = None,
 ) -> dict[str, dict[str, int]]:
     """Convert PDFs in data_dir with OpenDataLoader hybrid mode.
 
@@ -110,6 +111,10 @@ def run_opendataloader(
     PDFs does not force a full re-parse. The manifest
     (``_opendataloader_manifest.json``) records each doc's source content hash.
 
+    ``only_doc_ids`` restricts the run to the given PDF stems (doc_ids). Useful
+    to parse one document per convert() call — a single heavy document cannot
+    starve/OOM the backend for the rest of a batch. Unknown ids raise.
+
     Returns {doc_id: {"captions": int, "descriptions": int}} for the exit-gate
     computed across all PDFs (skipped and converted).
     """
@@ -118,6 +123,14 @@ def run_opendataloader(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     pdf_paths = _collect_pdf_paths(data_dir)
+    if only_doc_ids is not None:
+        wanted = set(only_doc_ids)
+        pdf_paths = [p for p in pdf_paths if Path(p).stem in wanted]
+        missing = wanted - {Path(p).stem for p in pdf_paths}
+        if missing:
+            raise FileNotFoundError(
+                f"Requested doc_ids not found in {data_dir}: {sorted(missing)}"
+            )
     manifest = _load_manifest(output_dir)
     manifest_docs = manifest.setdefault("docs", {})
 
@@ -189,7 +202,14 @@ if __name__ == "__main__":
         action="store_true",
         help="skip PDFs whose output JSON already exists and whose PDF is unchanged",
     )
-    counts = run_opendataloader(only_missing=parser.parse_args().only_missing)
+    parser.add_argument(
+        "--only",
+        default=None,
+        help="comma-separated doc_ids (PDF stems) to convert; defaults to all PDFs",
+    )
+    args = parser.parse_args()
+    only = args.only.split(",") if args.only else None
+    counts = run_opendataloader(only_missing=args.only_missing, only_doc_ids=only)
     print("\nCaption + ai_description counts per document:")
     for doc_id, v in sorted(counts.items()):
         cap_flag = " ⚠ NEAR-ZERO" if v["captions"] <= 1 else ""
