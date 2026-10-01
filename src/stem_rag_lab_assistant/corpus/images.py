@@ -109,7 +109,11 @@ def run_images(
 
     all_images: list[dict[str, Any]] = []
 
-    json_files = sorted(loaded_dir.glob("*.json"))
+    # Skip sidecar JSONs (e.g. the `_`-prefixed OpenDataLoader manifest) — only
+    # real per-document ODL element trees are images sources.
+    json_files = sorted(
+        p for p in loaded_dir.glob("*.json") if not p.name.startswith("_")
+    )
     if not json_files:
         raise FileNotFoundError(f"No ODL JSONs found in {loaded_dir}")
 
