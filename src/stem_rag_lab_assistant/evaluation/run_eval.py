@@ -257,6 +257,12 @@ def run_eval(
 ) -> None:
     """Run all methods × all questions, saving results incrementally.
 
+    Iterates **question-major (interleaved)**: for each question, every
+    method's cell runs back-to-back. Server-side drift (the Groq answer call
+    varies run-to-run) then affects all methods nearly equally, so latency
+    stays comparable across methods — unlike method-major, where each method
+    occupies its own ~30-min window.
+
     Existing results are skipped (resume-safe). Rate limits that persist
     >60s cause immediate stop with progress already saved.
     """
@@ -273,24 +279,29 @@ def run_eval(
         corpus_hash_value[:19], dataset_hash_value[:19],
     )
 
+    # Load every method's state up front so the inner loop can interleave.
+    data_by_method: dict[str, dict[str, Any]] = {}
+    completed_by_method: dict[str, set[str]] = {}
+    func_by_method: dict[str, Any] = {}
     for method in methods:
-        logger.info("=== Method: %s ===", method)
         data = _load_results(method)
         data["config"] = config_snapshot()
         data["corpus_hash"] = corpus_hash_value
         data["dataset_hash"] = dataset_hash_value
         completed = _get_completed_ids(data)
-        answer_func = _get_answer_func(method)
-
         if completed:
             logger.info(
                 "Resuming %s: %d/%d already completed",
                 method, len(completed), len(dataset),
             )
+        data_by_method[method] = data
+        completed_by_method[method] = completed
+        func_by_method[method] = _get_answer_func(method)
 
-        for i, q in enumerate(dataset):
-            qid = q["question_id"]
-            if qid in completed:
+    for i, q in enumerate(dataset):
+        qid = q["question_id"]
+        for method in methods:
+            if qid in completed_by_method[method]:
                 continue
 
             logger.info(
@@ -299,13 +310,13 @@ def run_eval(
             )
 
             try:
-                record = _run_single_question(method, answer_func, q)
+                record = _run_single_question(method, func_by_method[method], q)
             except EvalStoppedError:
                 logger.error(
                     "Eval stopped during %s at %s. "
                     "%d/%d results saved for this method. "
                     "Re-run to resume.",
-                    method, qid, len(data["results"]), len(dataset),
+                    method, qid, len(data_by_method[method]["results"]), len(dataset),
                 )
                 sys.exit(1)
 
@@ -324,10 +335,11 @@ def run_eval(
                 record["latency_ms"]["total_latency_ms"],
             )
 
-            data["results"].append(record)
-            _save_results(method, data)
+            data_by_method[method]["results"].append(record)
+            _save_results(method, data_by_method[method])
 
-        completed_final = len(data["results"])
+    for method in methods:
+        completed_final = len(data_by_method[method]["results"])
         logger.info(
             "%s complete: %d/%d results saved",
             method, completed_final, len(dataset),
