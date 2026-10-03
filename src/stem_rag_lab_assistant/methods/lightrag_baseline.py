@@ -134,11 +134,13 @@ async def _llm_model_func(
     history_messages: list[dict[str, str]] | None = None,
     **kwargs: Any,
 ) -> str:
-    """Async Groq LLM call for LightRAG's internal extraction and query operations.
+    """Async Groq LLM binding for LightRAG (query-time keyword extraction).
 
-    Includes retry-with-backoff for rate limits and transient network/5xx
-    failures so they're absorbed before LightRAG's pipeline sees them, enabling
-    smooth incremental progress.
+    Runs on ``lightrag_llm_model`` (gpt-oss-20b by default) rather than our
+    graph-extraction model: it serves LightRAG's dual-level hl/ll keyword
+    extraction for entity/relation search. Includes retry-with-backoff for
+    rate limits and transient network/5xx failures so they're absorbed before
+    LightRAG's pipeline sees them.
     """
     import httpx
     from groq import (
@@ -177,15 +179,21 @@ async def _llm_model_func(
         create_kwargs["max_completion_tokens"] = kwargs["max_tokens"]
     # why: LightRAG leaves max_tokens=None (unbounded) — cap output from config.
     create_kwargs.setdefault("max_completion_tokens", _CFG.extraction_max_tokens)
-    # why: qwen3 reasons by default; its thinking tokens are billed then discarded.
-    create_kwargs.setdefault("reasoning_effort", "none")
+    # why: reasoning models spend/bill thinking tokens here. Keyword extraction
+    # is light, so ask for the cheapest setting each model accepts: gpt-oss
+    # only supports low/medium/high, qwen3 accepts "none".
+    model_name = _CFG.lightrag_llm_model
+    create_kwargs.setdefault(
+        "reasoning_effort",
+        "low" if model_name.startswith("openai/gpt-oss") else "none",
+    )
 
     max_retries = 5
     base_delay = 15  # seconds
     for attempt in range(max_retries):
         try:
             response = await client.chat.completions.create(
-                model=_CFG.extraction_llm_model,
+                model=model_name,
                 messages=messages,
                 **create_kwargs,
             )
