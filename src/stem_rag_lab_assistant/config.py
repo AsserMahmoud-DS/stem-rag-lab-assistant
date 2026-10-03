@@ -89,6 +89,24 @@ class RAGConfig:
     graph_seed_entities_cap: int = 5
     graph_max_expanded_chunks: int = 10
 
+    # --- LightRAG-Hybrid v2 (Phase E, sweepable) ---
+    # Lexical-bridged graph retrieval: RRF chunk seeds -> seed-chunk->entity
+    # lookup -> one-hop entity+relation expansion -> pool cap -> full-pool CE
+    # rerank -> top-N. ``lh_include_graph_text`` matches LightRAG's context
+    # shape (entity/relation descriptions). Token caps are a shared ceiling
+    # (same for every method via methods.common.budget_graph_text), set to
+    # LightRAG's native 6000/8000 so the baseline is not clipped below its own
+    # design; the cost edge comes from retrieving fewer nodes, not a tighter cap.
+    lh_seed_k: int = 10
+    lh_seed_entity_cap: int = 12
+    lh_neighbour_cap: int = 2
+    lh_pool_cap: int = 28
+    lh_topn: int = 10
+    lh_include_graph_text: bool = True
+    lh_max_entity_tokens: int = 6000
+    lh_max_relation_tokens: int = 8000
+    lh_max_graph_tokens: int = 14000
+
     # --- graph extraction (sweepable) ---
     extraction_llm_model: str = "qwen/qwen3.8-27b"
     extraction_max_concurrent: int = 2
@@ -100,6 +118,13 @@ class RAGConfig:
 
 def _env_int(name: str, default: int) -> int:
     return int(os.getenv(name, str(default)))
+
+
+def _env_bool(name: str, default: bool) -> bool:
+    val = os.getenv(name)
+    if val is None:
+        return default
+    return val.strip().lower() in {"1", "true", "yes", "on"}
 
 
 def _build_config() -> RAGConfig:
@@ -122,6 +147,15 @@ def _build_config() -> RAGConfig:
         graph_expansion_depth=_env_int("GRAPH_EXPANSION_DEPTH", 1),
         graph_seed_entities_cap=_env_int("GRAPH_SEED_ENTITIES_CAP", 5),
         graph_max_expanded_chunks=_env_int("GRAPH_MAX_EXPANDED_CHUNKS", 10),
+        lh_seed_k=_env_int("LH_SEED_K", 10),
+        lh_seed_entity_cap=_env_int("LH_SEED_ENTITY_CAP", 12),
+        lh_neighbour_cap=_env_int("LH_NEIGHBOUR_CAP", 2),
+        lh_pool_cap=_env_int("LH_POOL_CAP", 28),
+        lh_topn=_env_int("LH_TOPN", 10),
+        lh_include_graph_text=_env_bool("LH_INCLUDE_GRAPH_TEXT", True),
+        lh_max_entity_tokens=_env_int("LH_MAX_ENTITY_TOKENS", 6000),
+        lh_max_relation_tokens=_env_int("LH_MAX_RELATION_TOKENS", 8000),
+        lh_max_graph_tokens=_env_int("LH_MAX_GRAPH_TOKENS", 14000),
         extraction_llm_model=os.getenv(
             "EXTRACTION_LLM_MODEL", "qwen/qwen3.8-27b"
         ),
