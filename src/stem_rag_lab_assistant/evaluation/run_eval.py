@@ -99,6 +99,17 @@ def _get_answer_func(method: str):
     elif method == "lightrag":
         from stem_rag_lab_assistant.methods.lightrag_baseline import lightrag_answer
         return lightrag_answer
+    elif method == "lightrag_ce":
+        # Phase E: native LightRAG with the same cross-encoder wired in (fairness
+        # parity). Same adapter as "lightrag" — CE is configured at init.
+        from stem_rag_lab_assistant.methods.lightrag_baseline import lightrag_answer
+        return lightrag_answer
+    elif method == "lightrag_hybrid_v2":
+        # Phase E: lexical-bridged graph retrieval + full-pool CE rerank.
+        from stem_rag_lab_assistant.methods.lightrag_hybrid import (
+            lightrag_hybrid_v2_answer,
+        )
+        return lightrag_hybrid_v2_answer
     elif method == "lightrag_hybrid":
         from stem_rag_lab_assistant.methods.lightrag_hybrid import lightrag_hybrid_answer
         return lightrag_hybrid_answer
@@ -151,6 +162,16 @@ def _run_single_question(
 
     retrieved_ids = [ch["chunk_id"] for ch in retrieved_chunks]
 
+    # Retrieval-side LLM accounting (0 for the LLM-free methods; native
+    # LightRAG reports its keyword-extraction call). Used for claim A's cost win.
+    efficiency = {
+        "retrieval_llm_calls": int(result.get("retrieval_llm_calls", 0) or 0),
+        "retrieval_prompt_tokens": int(result.get("retrieval_prompt_tokens", 0) or 0),
+        "retrieval_completion_tokens": int(
+            result.get("retrieval_completion_tokens", 0) or 0
+        ),
+    }
+
     record: dict[str, Any] = {
         "question_id": question_id,
         "question": question,
@@ -161,6 +182,7 @@ def _run_single_question(
         "retrieved_chunk_ids": retrieved_ids,
         "attached_image_ids": attached_image_ids,
         "answer_fallback": fallback,
+        "efficiency": efficiency,
         "scores": {
             "groundedness": groundedness,
             "answer_relevance": answer_rel,
