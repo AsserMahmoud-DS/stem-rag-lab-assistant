@@ -20,8 +20,9 @@ logger = logging.getLogger(__name__)
 _EVAL_DIR = Path(__file__).resolve().parent
 _COMPARISON_PATH = _EVAL_DIR / "comparison.json"
 
-# Evaluated set — hybrid_graph excluded (dormant; plans/roadmap.md §2.1).
-METHODS = ["naive", "hybrid", "lightrag", "lightrag_hybrid"]
+# Default aggregated set = the iter-2 parity comparison (mirrors
+# run_eval.METHOD_NAMES); the legacy methods stay aggregable via `methods=`.
+METHODS = ["naive_ce", "hybrid_ce", "lightrag_hybrid_v2", "lightrag_ce"]
 METRICS = (
     "groundedness",
     "answer_relevance",
@@ -116,6 +117,24 @@ def compute_comparison(
         metric_means["avg_retrieval_completion_tokens"] = round(
             sum(e.get("retrieval_completion_tokens", 0) for e in eff) / len(results), 1
         )
+        # Pre-CE candidate pool (parity claim evidence): mean over the records
+        # that carry it (legacy runs predate the instrumentation).
+        pre_ce = [
+            e["pre_ce_candidates"]
+            for e in eff
+            if e.get("pre_ce_candidates") is not None
+        ]
+        if pre_ce:
+            metric_means["avg_pre_ce_candidates"] = round(
+                sum(pre_ce) / len(pre_ce), 1
+            )
+
+        # Latency decomposition (mean over cells that carry it).
+        tim = [r.get("timing") or {} for r in results]
+        for key in ("retrieval_ms", "rerank_ms", "answer_ms"):
+            vals = [t[key] for t in tim if t.get(key) is not None]
+            if vals:
+                metric_means[f"avg_{key}"] = round(sum(vals) / len(vals), 1)
 
         comparison["overall"][method] = metric_means
 

@@ -17,7 +17,6 @@ from typing import Any
 
 import numpy as np
 from llama_index.core.llms import ChatMessage
-from llama_index.core.retrievers import QueryFusionRetriever
 
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
@@ -26,9 +25,11 @@ from stem_rag_lab_assistant.generation.prompts import (
     ANSWER_USER_TEMPLATE,
 )
 from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever
+from stem_rag_lab_assistant.index.fusion import RRFRetriever
 from stem_rag_lab_assistant.index.graph_store import load_chunk_texts
 from stem_rag_lab_assistant.index.vector_store import VectorRetriever
 from stem_rag_lab_assistant.methods.common import (
+    answer_usage,
     budget_graph_text,
     format_retrieval_context,
 )
@@ -218,10 +219,10 @@ def lightrag_hybrid_answer(query: str) -> dict[str, Any]:
 # (unlike v1, which always kept them).
 # ---------------------------------------------------------------------------
 
-_LH_V2_SEED_RETRIEVER: QueryFusionRetriever | None = None
+_LH_V2_SEED_RETRIEVER: RRFRetriever | None = None
 
 
-def _get_lh_v2_seed_retriever() -> QueryFusionRetriever:
+def _get_lh_v2_seed_retriever() -> RRFRetriever:
     """RRF(vector ∪ BM25) seeder for v2 — fusion top-k = ``lh_seed_k``.
 
     Owns its fusion retriever so widening the fused seed set does not leak into
@@ -233,7 +234,7 @@ def _get_lh_v2_seed_retriever() -> QueryFusionRetriever:
     vector_retriever = VectorRetriever(
         get_vector_store(), get_embed_model(), top_k=_CFG.vector_top_k,
     )
-    _LH_V2_SEED_RETRIEVER = QueryFusionRetriever(
+    _LH_V2_SEED_RETRIEVER = RRFRetriever(
         [vector_retriever, get_bm25_retriever()],
         similarity_top_k=_CFG.lh_seed_k,
         num_queries=1,
@@ -314,8 +315,10 @@ def lightrag_hybrid_v2_retrieve(query: str) -> dict[str, Any]:
     ]
 
     # 5. Full-pool cross-encoder rerank -> top-N (seeds may be dropped).
+    t_pool = time.perf_counter()
     reranker = get_reranker()
     ranked = reranker.rerank(query, pool_chunks, top_n=_CFG.lh_topn)
+    t_rank = time.perf_counter()
     ranked_ids = {c["chunk_id"] for c in ranked}
 
     # 6. Matched context: graph text describes the evidence actually returned —
@@ -347,9 +350,13 @@ def lightrag_hybrid_v2_retrieve(query: str) -> dict[str, Any]:
         "all_chunks": ranked,
         "graph_text": graph_text,
         "seed_chunks": seed_chunks,
+        "pool_size": len(pool_chunks),
         "expanded_chunk_ids": [cid for cid in ranked_ids if cid not in set(seed_ids)],
         "relation_expanded_chunk_ids": [cid for cid in ranked_ids if cid in relation_neigh],
         "entities_matched": len(seed_entities),
+        # Latency decomposition: pre-CE retrieval (seeds/expansion/pool) vs CE.
+        "retrieval_ms": round((t_pool - t0) * 1000, 1),
+        "rerank_ms": round((t_rank - t_pool) * 1000, 1),
     }
 
 
@@ -357,6 +364,7 @@ def lightrag_hybrid_v2_answer(query: str) -> dict[str, Any]:
     """Full v2 pipeline: retrieve + matched context + shared Groq synthesis."""
     t0 = time.perf_counter()
     retrieval = lightrag_hybrid_v2_retrieve(query)
+    t_retrieval = time.perf_counter()
     chunks = retrieval["all_chunks"]
     context_str = format_retrieval_context(chunks, retrieval["graph_text"])
 
@@ -369,10 +377,12 @@ def lightrag_hybrid_v2_answer(query: str) -> dict[str, Any]:
         ),
     ]
     response = llm.chat(messages)
+    t_answer = time.perf_counter()
     answer = (
         response.message.content if hasattr(response, "message") else str(response)
     )
-    latency_ms = (time.perf_counter() - t0) * 1000
+    latency_ms = (t_answer - t0) * 1000
+    prompt_tok, completion_tok, reasoning_tok = answer_usage(response)
 
     return {
         "query": query,
@@ -395,6 +405,14 @@ def lightrag_hybrid_v2_answer(query: str) -> dict[str, Any]:
         "retrieval_llm_calls": 0,
         "retrieval_prompt_tokens": 0,
         "retrieval_completion_tokens": 0,
+        "pre_ce_candidates": retrieval["pool_size"],
+        # Latency decomposition (retrieval / CE from retrieve; answer here).
+        "retrieval_ms": retrieval["retrieval_ms"],
+        "rerank_ms": retrieval["rerank_ms"],
+        "answer_ms": round((t_answer - t_retrieval) * 1000, 1),
+        "answer_prompt_tokens": prompt_tok,
+        "answer_completion_tokens": completion_tok,
+        "answer_reasoning_tokens": reasoning_tok,
     }
 
 

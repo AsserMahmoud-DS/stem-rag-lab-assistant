@@ -42,10 +42,12 @@ logger = logging.getLogger(__name__)
 _DATASET_PATH = Path(__file__).resolve().parents[3] / "dataset" / "questions_dataset" / "dataset.json"
 _EVAL_DIR = Path(__file__).resolve().parent
 
-# Evaluated set for the iter-1 re-run. `hybrid_graph` is dormant — kept in code
-# and runnable via an explicit CLI arg, but excluded from the default run
-# (plans/roadmap.md §2.1).
-METHOD_NAMES = ["naive", "hybrid", "lightrag", "lightrag_hybrid"]
+# Default evaluated set = the iter-2 parity comparison: identical candidate
+# budget (lh_pool_cap) and final budget (lh_topn) across all four, same
+# cross-encoder (plans/roadmap.md §5.6). The legacy five (naive, hybrid,
+# lightrag, lightrag_hybrid, dormant hybrid_graph) stay registered below and
+# remain runnable via an explicit `methods` argument.
+METHOD_NAMES = ["naive_ce", "hybrid_ce", "lightrag_hybrid_v2", "lightrag_ce"]
 
 
 def _load_dataset(path: Path | None = None) -> list[dict[str, Any]]:
@@ -90,9 +92,17 @@ def _get_answer_func(method: str):
     if method == "naive":
         from stem_rag_lab_assistant.methods.naive import naive_answer
         return naive_answer
+    elif method == "naive_ce":
+        # Phase E parity control: vector candidates -> CE -> shared budget.
+        from stem_rag_lab_assistant.methods.naive import naive_ce_answer
+        return naive_ce_answer
     elif method == "hybrid":
         from stem_rag_lab_assistant.methods.hybrid import hybrid_answer
         return hybrid_answer
+    elif method == "hybrid_ce":
+        # Phase E parity control: RRF candidates -> CE -> shared budget.
+        from stem_rag_lab_assistant.methods.hybrid import hybrid_ce_answer
+        return hybrid_ce_answer
     elif method == "hybrid_graph":
         from stem_rag_lab_assistant.methods.hybrid_graph import hybrid_graph_answer
         return hybrid_graph_answer
@@ -171,6 +181,25 @@ def _run_single_question(
             result.get("retrieval_completion_tokens", 0) or 0
         ),
     }
+    # Pre-CE candidate pool feeding the cross-encoder (recorded by the parity
+    # methods; absent for legacy runs that predate the instrumentation).
+    if result.get("pre_ce_candidates") is not None:
+        efficiency["pre_ce_candidates"] = int(result["pre_ce_candidates"])
+
+    # Latency decomposition: local retrieval / cross-encoder / remote answer +
+    # answer token usage. Recorded only when the method reports it, so legacy
+    # cells stay untouched.
+    timing: dict[str, Any] = {}
+    for key in (
+        "retrieval_ms",
+        "rerank_ms",
+        "answer_ms",
+        "answer_prompt_tokens",
+        "answer_completion_tokens",
+        "answer_reasoning_tokens",
+    ):
+        if result.get(key) is not None:
+            timing[key] = result[key]
 
     record: dict[str, Any] = {
         "question_id": question_id,
@@ -183,6 +212,7 @@ def _run_single_question(
         "attached_image_ids": attached_image_ids,
         "answer_fallback": fallback,
         "efficiency": efficiency,
+        "timing": timing,
         "scores": {
             "groundedness": groundedness,
             "answer_relevance": answer_rel,

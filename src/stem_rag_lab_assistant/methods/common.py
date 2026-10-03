@@ -100,6 +100,24 @@ def approx_tokens(text: str) -> int:
     return max(1, len(text) // 4)
 
 
+def answer_usage(response: Any) -> tuple[int | None, int | None, int | None]:
+    """Extract (prompt, completion, reasoning) tokens from a ChatResponse.
+
+    llama_index exposes the raw provider response on ``response.raw``; Groq
+    there carries a ``usage`` object (gpt-oss also reports reasoning tokens).
+    Returns ``(None, None, None)`` when the provider doesn't report usage.
+    """
+    usage = getattr(getattr(response, "raw", None), "usage", None)
+    if usage is None:
+        return None, None, None
+    details = getattr(usage, "completion_tokens_details", None)
+    return (
+        getattr(usage, "prompt_tokens", None),
+        getattr(usage, "completion_tokens", None),
+        getattr(details, "reasoning_tokens", None) if details else None,
+    )
+
+
 def budget_graph_text(
     entities: list[tuple[str, str]],
     relations: list[tuple[str, str, str]],
@@ -107,8 +125,10 @@ def budget_graph_text(
     """Render token-budgeted ENTITIES / RELATIONS blocks (LightRAG-style).
 
     Entity/relation descriptions are inserted into the answer context so every
-    method sees the same *shape* of context. Caps are the ``lh_max_*`` safety
-    ceilings (below native LightRAG's 6000/8000 defaults).
+    method sees the same *shape* of context. Caps are the ``lh_max_*`` ceilings
+    (entity/relation match native LightRAG's 6000/8000 defaults; the combined
+    ``lh_max_graph_tokens`` is an extra safety net that stays inert while the
+    per-part caps sum to it).
     """
     cfg = get_config()
 

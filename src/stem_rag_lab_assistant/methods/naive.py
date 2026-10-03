@@ -12,7 +12,9 @@ from llama_index.core.vector_stores import SimpleVectorStore
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
+from stem_rag_lab_assistant.index.reranker import get_reranker
 from stem_rag_lab_assistant.index.vector_store import retrieve
+from stem_rag_lab_assistant.methods.common import answer_usage, format_retrieval_context
 from stem_rag_lab_assistant.resources import get_embed_model, get_vector_store
 
 logger = logging.getLogger(__name__)
@@ -96,6 +98,69 @@ def naive_answer(
         "model": "naive",
     }
     return result
+
+
+# ---------------------------------------------------------------------------
+# Phase E parity control — naive_ce
+# Same candidate budget (lh_pool_cap) and final budget (lh_topn) as the graph
+# methods, with the same cross-encoder, but candidates come from plain dense
+# retrieval only. Chunks-only context (no graph, no graph text).
+# ---------------------------------------------------------------------------
+
+
+def naive_ce_answer(query: str) -> dict[str, Any]:
+    """Budget-parity naive control: vector top-N candidates -> CE -> top-k.
+
+    Differs from the graph methods only in retrieval policy — the candidate
+    pool (``lh_pool_cap``), reranker and final budget (``lh_topn``) are
+    identical, and context is chunks-only.
+    """
+    t0 = time.perf_counter()
+
+    candidates = naive_retrieve(query, top_k=_CFG.lh_pool_cap)
+    t_retrieval = time.perf_counter()
+    ranked = get_reranker().rerank(query, candidates, top_n=_CFG.lh_topn)
+    t_rerank = time.perf_counter()
+    context_str = format_retrieval_context(ranked, "")
+
+    llm = get_answer_llm()
+    from llama_index.core.llms import ChatMessage
+
+    messages = [
+        ChatMessage(role="system", content=ANSWER_SYSTEM_PROMPT),
+        ChatMessage(role="user", content=ANSWER_USER_TEMPLATE.format(
+            context=context_str, query=query,
+        )),
+    ]
+
+    response = llm.chat(messages)
+    t_answer = time.perf_counter()
+    answer = response.message.content if hasattr(response, "message") else str(response)
+    prompt_tok, completion_tok, reasoning_tok = answer_usage(response)
+
+    return {
+        "query": query,
+        "retrieved_chunks": [
+            {"chunk_id": ch["chunk_id"], "text": ch["text"], "score": ch["rerank_score"]}
+            for ch in ranked
+        ],
+        "context": context_str,
+        "answer": answer,
+        "latency_ms": round((t_answer - t0) * 1000, 1),
+        "model": "naive_ce",
+        # Dense retrieval + local cross-encoder: no retrieval-side LLM calls.
+        "retrieval_llm_calls": 0,
+        "retrieval_prompt_tokens": 0,
+        "retrieval_completion_tokens": 0,
+        "pre_ce_candidates": len(candidates),
+        # Latency decomposition (local retrieval / CE / remote answer).
+        "retrieval_ms": round((t_retrieval - t0) * 1000, 1),
+        "rerank_ms": round((t_rerank - t_retrieval) * 1000, 1),
+        "answer_ms": round((t_answer - t_rerank) * 1000, 1),
+        "answer_prompt_tokens": prompt_tok,
+        "answer_completion_tokens": completion_tok,
+        "answer_reasoning_tokens": reasoning_tok,
+    }
 
 
 if __name__ == "__main__":

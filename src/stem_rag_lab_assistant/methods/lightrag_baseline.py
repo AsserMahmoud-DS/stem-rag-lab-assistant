@@ -22,8 +22,13 @@ from lightrag.base import EmbeddingFunc
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
-from stem_rag_lab_assistant.index.reranker import lightrag_rerank_func
+from stem_rag_lab_assistant.index.reranker import (
+    last_rerank_doc_counts,
+    lightrag_rerank_func,
+    reset_rerank_stats,
+)
 from stem_rag_lab_assistant.methods.common import (
+    answer_usage,
     budget_graph_text,
     format_retrieval_context,
 )
@@ -47,6 +52,11 @@ _LLM_STATS = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
 # matched (entities + relations + chunks) context instead of chunks-only.
 _LAST_ENTITIES: list[tuple[str, str]] = []
 _LAST_RELATIONS: list[tuple[str, str, str]] = []
+
+# Pre-CE chunk candidate pool of the last retrieval, measured from the rerank
+# calls LightRAG made (chunk stage is the largest call; entity/relation stages
+# retrieve top_k=40 each). None if no rerank call was recorded.
+_LAST_PRE_CE_CANDIDATES: int | None = None
 
 
 def _normalize_lightrag_chunk_id(cid: str) -> str:
@@ -282,11 +292,14 @@ async def _lightrag_retrieve_async(query: str) -> list[dict[str, Any]]:
     # Reset accounting so we capture THIS query's retrieval-side LLM usage
     # (native LightRAG makes a keyword-extraction LLM call before retrieval).
     _reset_llm_stats()
+    reset_rerank_stats()
     result = await rag.aquery_llm(query, param)
 
-    global _LAST_ENTITIES, _LAST_RELATIONS
+    global _LAST_ENTITIES, _LAST_RELATIONS, _LAST_PRE_CE_CANDIDATES
     data = result.get("data", {})
     chunks_data = data.get("chunks", [])
+    doc_counts = last_rerank_doc_counts()
+    _LAST_PRE_CE_CANDIDATES = max(doc_counts) if doc_counts else None
     _LAST_ENTITIES = [
         (e.get("entity_name", ""), e.get("description", ""))
         for e in data.get("entities", [])
@@ -339,6 +352,7 @@ def lightrag_answer(query: str) -> dict[str, Any]:
     t0 = time.perf_counter()
 
     chunks = lightrag_retrieve(query)
+    t_retrieval = time.perf_counter()
     # Matched context: native LightRAG's entities/relations + chunks, so the
     # only difference vs the contribution is the retrieval policy.
     graph_text = ""
@@ -358,13 +372,15 @@ def lightrag_answer(query: str) -> dict[str, Any]:
     ]
 
     response = llm.chat(messages)
+    t_answer = time.perf_counter()
     answer = (
         response.message.content
         if hasattr(response, "message")
         else str(response)
     )
+    prompt_tok, completion_tok, reasoning_tok = answer_usage(response)
 
-    latency_ms = (time.perf_counter() - t0) * 1000
+    latency_ms = (t_answer - t0) * 1000
 
     result = {
         "query": query,
@@ -381,6 +397,14 @@ def lightrag_answer(query: str) -> dict[str, Any]:
         "retrieval_llm_calls": _LLM_STATS["calls"],
         "retrieval_prompt_tokens": _LLM_STATS["prompt_tokens"],
         "retrieval_completion_tokens": _LLM_STATS["completion_tokens"],
+        # Pre-CE candidate pool (largest rerank call = chunk stage).
+        "pre_ce_candidates": _LAST_PRE_CE_CANDIDATES,
+        # Latency decomposition: native retrieval (incl. its own rerank) vs answer.
+        "retrieval_ms": round((t_retrieval - t0) * 1000, 1),
+        "answer_ms": round((t_answer - t_retrieval) * 1000, 1),
+        "answer_prompt_tokens": prompt_tok,
+        "answer_completion_tokens": completion_tok,
+        "answer_reasoning_tokens": reasoning_tok,
     }
     return result
 
