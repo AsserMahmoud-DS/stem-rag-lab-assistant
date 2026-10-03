@@ -48,6 +48,7 @@ class LightRAGGraphStore:
         self._chunk_to_entities: dict[str, set[str]] = {}
         self._relation_keys: dict[str, set[str]] = {}
         self._relation_chunks: dict[str, set[str]] = {}
+        self._edges: list[tuple[str, str, dict[str, Any]]] = []
 
         self._load_graphml()
         self._load_entity_chunks()
@@ -84,6 +85,7 @@ class LightRAGGraphStore:
         for src, dst, data in g.edges(data=True):
             self._adjacency.setdefault(src, set()).add(dst)
             self._adjacency.setdefault(dst, set()).add(src)
+            self._edges.append((src, dst, dict(data)))
 
         logger.debug("graphml: %d nodes, %d edges loaded", len(g.nodes), len(g.edges))
 
@@ -237,6 +239,70 @@ class LightRAGGraphStore:
     def get_entity(self, entity_id: str) -> dict[str, Any] | None:
         """Return entity node data by name."""
         return self._entity_nodes.get(entity_id)
+
+    def get_entity_descriptions(
+        self, names: list[str],
+    ) -> list[tuple[str, str]]:
+        """Return ``(name, description)`` for the named entities (non-empty)."""
+        out: list[tuple[str, str]] = []
+        for name in names:
+            node = self._entity_nodes.get(name)
+            if not node:
+                continue
+            desc = (node.get("description") or "").strip()
+            if desc:
+                out.append((name, desc))
+        return out
+
+    def get_relations_for_entities(
+        self, names: set[str] | list[str], cap: int | None = None,
+    ) -> list[tuple[str, str, str]]:
+        """Return ``(src, dst, description)`` for edges touching *names*.
+
+        Used to build a LightRAG-style relation context for hybrid v2.
+        """
+        wanted = set(names)
+        out: list[tuple[str, str, str]] = []
+        for src, dst, data in self._edges:
+            if src not in wanted and dst not in wanted:
+                continue
+            desc = (data.get("description") or "").strip()
+            if desc:
+                out.append((src, dst, desc))
+            if cap is not None and len(out) >= cap:
+                break
+        return out
+
+    def get_entity_names_for_chunks(
+        self, chunk_ids: list[str],
+    ) -> dict[str, int]:
+        """Return ``{entity_name: count}`` for entities backing *chunk_ids*.
+
+        Count = how many of the given chunks reference the entity, used to
+        order the graph-text context by centrality to the returned evidence.
+        """
+        counts: dict[str, int] = {}
+        for cid in chunk_ids:
+            for name in self._chunk_to_entities.get(cid, set()):
+                counts[name] = counts.get(name, 0) + 1
+        return counts
+
+    def get_relations_among(
+        self, names: set[str] | list[str],
+    ) -> list[tuple[str, str, str]]:
+        """Return ``(src, dst, description)`` for edges with BOTH endpoints in *names*.
+
+        Induced-subgraph relations, so the context is focused on the returned
+        evidence's entity set rather than every edge touching it.
+        """
+        wanted = set(names)
+        out: list[tuple[str, str, str]] = []
+        for src, dst, data in self._edges:
+            if src in wanted and dst in wanted:
+                desc = (data.get("description") or "").strip()
+                if desc:
+                    out.append((src, dst, desc))
+        return out
 
 
 # ------------------------------------------------------------------
