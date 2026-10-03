@@ -186,6 +186,21 @@ def _run_single_question(
     if result.get("pre_ce_candidates") is not None:
         efficiency["pre_ce_candidates"] = int(result["pre_ce_candidates"])
 
+    # Latency decomposition: local retrieval / cross-encoder / remote answer +
+    # answer token usage. Recorded only when the method reports it, so legacy
+    # cells stay untouched.
+    timing: dict[str, Any] = {}
+    for key in (
+        "retrieval_ms",
+        "rerank_ms",
+        "answer_ms",
+        "answer_prompt_tokens",
+        "answer_completion_tokens",
+        "answer_reasoning_tokens",
+    ):
+        if result.get(key) is not None:
+            timing[key] = result[key]
+
     record: dict[str, Any] = {
         "question_id": question_id,
         "question": question,
@@ -197,6 +212,7 @@ def _run_single_question(
         "attached_image_ids": attached_image_ids,
         "answer_fallback": fallback,
         "efficiency": efficiency,
+        "timing": timing,
         "scores": {
             "groundedness": groundedness,
             "answer_relevance": answer_rel,

@@ -129,6 +129,13 @@ def compute_comparison(
                 sum(pre_ce) / len(pre_ce), 1
             )
 
+        # Latency decomposition (mean over cells that carry it).
+        tim = [r.get("timing") or {} for r in results]
+        for key in ("retrieval_ms", "rerank_ms", "answer_ms"):
+            vals = [t[key] for t in tim if t.get(key) is not None]
+            if vals:
+                metric_means[f"avg_{key}"] = round(sum(vals) / len(vals), 1)
+
         comparison["overall"][method] = metric_means
 
         per_record_means: dict[str, list[float]] = {}

@@ -13,7 +13,7 @@ from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever_at
 from stem_rag_lab_assistant.index.fusion import RRFRetriever
 from stem_rag_lab_assistant.index.reranker import get_reranker
 from stem_rag_lab_assistant.index.vector_store import VectorRetriever
-from stem_rag_lab_assistant.methods.common import format_retrieval_context
+from stem_rag_lab_assistant.methods.common import answer_usage, format_retrieval_context
 from stem_rag_lab_assistant.resources import get_embed_model, get_fusion_retriever, get_vector_store
 
 logger = logging.getLogger(__name__)
@@ -140,6 +140,7 @@ def hybrid_ce_answer(query: str) -> dict[str, Any]:
     t0 = time.perf_counter()
 
     nodes = _get_hybrid_ce_retriever().retrieve(query)
+    t_retrieval = time.perf_counter()
     candidates = [
         {
             "chunk_id": n.node.node_id,
@@ -151,6 +152,7 @@ def hybrid_ce_answer(query: str) -> dict[str, Any]:
     ]
 
     ranked = get_reranker().rerank(query, candidates, top_n=_CFG.lh_topn)
+    t_rerank = time.perf_counter()
     context_str = format_retrieval_context(ranked, "")
 
     llm = get_answer_llm()
@@ -164,7 +166,9 @@ def hybrid_ce_answer(query: str) -> dict[str, Any]:
     ]
 
     response = llm.chat(messages)
+    t_answer = time.perf_counter()
     answer = response.message.content if hasattr(response, "message") else str(response)
+    prompt_tok, completion_tok, reasoning_tok = answer_usage(response)
 
     return {
         "query": query,
@@ -174,13 +178,20 @@ def hybrid_ce_answer(query: str) -> dict[str, Any]:
         ],
         "context": context_str,
         "answer": answer,
-        "latency_ms": round((time.perf_counter() - t0) * 1000, 1),
+        "latency_ms": round((t_answer - t0) * 1000, 1),
         "model": "hybrid_ce",
         # Local retrieval (RRF + cross-encoder): no retrieval-side LLM calls.
         "retrieval_llm_calls": 0,
         "retrieval_prompt_tokens": 0,
         "retrieval_completion_tokens": 0,
         "pre_ce_candidates": len(candidates),
+        # Latency decomposition (local retrieval / CE / remote answer).
+        "retrieval_ms": round((t_retrieval - t0) * 1000, 1),
+        "rerank_ms": round((t_rerank - t_retrieval) * 1000, 1),
+        "answer_ms": round((t_answer - t_rerank) * 1000, 1),
+        "answer_prompt_tokens": prompt_tok,
+        "answer_completion_tokens": completion_tok,
+        "answer_reasoning_tokens": reasoning_tok,
     }
 
 

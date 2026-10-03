@@ -28,6 +28,7 @@ from stem_rag_lab_assistant.index.reranker import (
     reset_rerank_stats,
 )
 from stem_rag_lab_assistant.methods.common import (
+    answer_usage,
     budget_graph_text,
     format_retrieval_context,
 )
@@ -351,6 +352,7 @@ def lightrag_answer(query: str) -> dict[str, Any]:
     t0 = time.perf_counter()
 
     chunks = lightrag_retrieve(query)
+    t_retrieval = time.perf_counter()
     # Matched context: native LightRAG's entities/relations + chunks, so the
     # only difference vs the contribution is the retrieval policy.
     graph_text = ""
@@ -370,13 +372,15 @@ def lightrag_answer(query: str) -> dict[str, Any]:
     ]
 
     response = llm.chat(messages)
+    t_answer = time.perf_counter()
     answer = (
         response.message.content
         if hasattr(response, "message")
         else str(response)
     )
+    prompt_tok, completion_tok, reasoning_tok = answer_usage(response)
 
-    latency_ms = (time.perf_counter() - t0) * 1000
+    latency_ms = (t_answer - t0) * 1000
 
     result = {
         "query": query,
@@ -395,6 +399,12 @@ def lightrag_answer(query: str) -> dict[str, Any]:
         "retrieval_completion_tokens": _LLM_STATS["completion_tokens"],
         # Pre-CE candidate pool (largest rerank call = chunk stage).
         "pre_ce_candidates": _LAST_PRE_CE_CANDIDATES,
+        # Latency decomposition: native retrieval (incl. its own rerank) vs answer.
+        "retrieval_ms": round((t_retrieval - t0) * 1000, 1),
+        "answer_ms": round((t_answer - t_retrieval) * 1000, 1),
+        "answer_prompt_tokens": prompt_tok,
+        "answer_completion_tokens": completion_tok,
+        "answer_reasoning_tokens": reasoning_tok,
     }
     return result
 
