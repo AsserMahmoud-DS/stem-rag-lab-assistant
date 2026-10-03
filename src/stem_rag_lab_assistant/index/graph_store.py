@@ -14,6 +14,9 @@ logger = logging.getLogger(__name__)
 
 _CFG = get_config()
 
+# Process-wide cache of chunk_id -> text (see _all_chunk_texts).
+_CHUNK_TEXTS: dict[str, str] | None = None
+
 
 class GraphStore:
     """Query-side graph reader — loads graph.json and answers neighbour queries.
@@ -112,19 +115,33 @@ def load_graph_store(path: Path | None = None) -> GraphStore:
     return GraphStore(graph)
 
 
+def _all_chunk_texts(chunks_json_path: Path | None = None) -> dict[str, str]:
+    """Return the full ``chunk_id -> text`` map, cached once per process.
+
+    Re-parsing ``chunks.json`` (which carries every embedding, ~15 MB) on each
+    query was the dominant cost of the graph-expansion path. The map is built
+    once and reused; passing an explicit ``chunks_json_path`` forces a reload
+    (used by tests).
+    """
+    global _CHUNK_TEXTS
+    if _CHUNK_TEXTS is None or chunks_json_path is not None:
+        path = chunks_json_path or (
+            Path(__file__).resolve().parents[3] / "chunks.json"
+        )
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        _CHUNK_TEXTS = {
+            c["chunk_id"]: c.get("text", "")
+            for doc in data.get("docs", {}).values()
+            for c in doc.get("chunks", [])
+        }
+    return _CHUNK_TEXTS
+
+
 def load_chunk_texts(
     chunk_ids: set[str],
     chunks_json_path: Path | None = None,
 ) -> dict[str, str]:
-    """Look up chunk texts from chunks.json by chunk_id."""
-    if chunks_json_path is None:
-        chunks_json_path = Path(__file__).resolve().parents[3] / "chunks.json"
-    with open(chunks_json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    texts: dict[str, str] = {}
-    for doc in data.get("docs", {}).values():
-        for ch in doc.get("chunks", []):
-            if ch["chunk_id"] in chunk_ids:
-                texts[ch["chunk_id"]] = ch.get("text", "")
-    return texts
+    """Look up chunk texts from chunks.json by chunk_id (cached)."""
+    all_texts = _all_chunk_texts(chunks_json_path)
+    return {cid: all_texts[cid] for cid in chunk_ids if cid in all_texts}

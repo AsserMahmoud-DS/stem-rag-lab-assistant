@@ -6,6 +6,7 @@ import asyncio
 import json
 import logging
 import os
+import re
 import threading
 import time
 from pathlib import Path
@@ -21,6 +22,11 @@ from lightrag.base import EmbeddingFunc
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
+from stem_rag_lab_assistant.index.reranker import lightrag_rerank_func
+from stem_rag_lab_assistant.methods.common import (
+    budget_graph_text,
+    format_retrieval_context,
+)
 from stem_rag_lab_assistant.resources import get_embed_model
 
 load_dotenv()
@@ -28,6 +34,39 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 _CFG = get_config()
+
+# LightRAG returns its internal chunk ids as ``<our_id>-chunk-NNN``; strip the
+# suffix so ids match chunks.json (gold overlap + image attachment).
+_CHUNK_SUFFIX_RE = re.compile(r"-chunk-\d+$")
+
+# Per-query retrieval-side LLM accounting (native LightRAG extracts keywords
+# with an LLM before graph retrieval). Counters are reset around each query.
+_LLM_STATS = {"calls": 0, "prompt_tokens": 0, "completion_tokens": 0}
+
+# Graph context captured by the last retrieval, so lightrag_answer can build a
+# matched (entities + relations + chunks) context instead of chunks-only.
+_LAST_ENTITIES: list[tuple[str, str]] = []
+_LAST_RELATIONS: list[tuple[str, str, str]] = []
+
+
+def _normalize_lightrag_chunk_id(cid: str) -> str:
+    return _CHUNK_SUFFIX_RE.sub("", cid or "")
+
+
+def _reset_llm_stats() -> None:
+    _LLM_STATS.update(calls=0, prompt_tokens=0, completion_tokens=0)
+
+
+def _llm_cache_enabled() -> bool:
+    """Whether LightRAG's LLM response cache is on (default true).
+
+    Disable (``LIGHTRAG_ENABLE_LLM_CACHE=false``) to force a real keyword-LLM
+    call per query, so retrieval-cost comparison isn't masked by a
+    warm cache from a previous run.
+    """
+    return os.getenv("LIGHTRAG_ENABLE_LLM_CACHE", "true").strip().lower() in {
+        "1", "true", "yes", "on",
+    }
 
 # ---- paths ----
 
@@ -140,6 +179,13 @@ async def _llm_model_func(
                 messages=messages,
                 **create_kwargs,
             )
+            _LLM_STATS["calls"] += 1
+            usage = getattr(response, "usage", None)
+            if usage is not None:
+                _LLM_STATS["prompt_tokens"] += getattr(usage, "prompt_tokens", 0) or 0
+                _LLM_STATS["completion_tokens"] += (
+                    getattr(usage, "completion_tokens", 0) or 0
+                )
             return response.choices[0].message.content or ""
         except RateLimitError:
             if attempt < max_retries - 1:
@@ -180,6 +226,10 @@ async def _init_lightrag() -> LightRAG:
         working_dir=str(_LIGHTRAG_WORKING_DIR),
         llm_model_func=_llm_model_func,
         embedding_func=_build_embedding_func(),
+        # Fairness parity with the contribution: native LightRAG gets the SAME
+        # cross-encoder (its default pipeline expects a rerank model).
+        rerank_model_func=lightrag_rerank_func,
+        enable_llm_cache=_llm_cache_enabled(),
         llm_model_max_async=1,
         embedding_batch_num=8,
     )
@@ -229,9 +279,22 @@ async def _lightrag_retrieve_async(query: str) -> list[dict[str, Any]]:
 
     param = QueryParam(mode="mix", only_need_context=True, chunk_top_k=_CFG.lightrag_chunk_top_k)
 
+    # Reset accounting so we capture THIS query's retrieval-side LLM usage
+    # (native LightRAG makes a keyword-extraction LLM call before retrieval).
+    _reset_llm_stats()
     result = await rag.aquery_llm(query, param)
 
-    chunks_data = result.get("data", {}).get("chunks", [])
+    global _LAST_ENTITIES, _LAST_RELATIONS
+    data = result.get("data", {})
+    chunks_data = data.get("chunks", [])
+    _LAST_ENTITIES = [
+        (e.get("entity_name", ""), e.get("description", ""))
+        for e in data.get("entities", [])
+    ]
+    _LAST_RELATIONS = [
+        (r.get("src_id", ""), r.get("tgt_id", ""), r.get("description", ""))
+        for r in data.get("relationships", [])
+    ]
     logger.info(
         "LightRAG retrieval: %d chunks for query (first 60 chars): %r",
         len(chunks_data), query[:60],
@@ -240,7 +303,7 @@ async def _lightrag_retrieve_async(query: str) -> list[dict[str, Any]]:
     output: list[dict[str, Any]] = []
     n = max(len(chunks_data), 1)
     for idx, ch in enumerate(chunks_data):
-        chunk_id = ch.get("chunk_id", "")
+        chunk_id = _normalize_lightrag_chunk_id(ch.get("chunk_id", ""))
         text = ch.get("content", "")
 
         score = ch.get("rerank_score")
@@ -276,7 +339,12 @@ def lightrag_answer(query: str) -> dict[str, Any]:
     t0 = time.perf_counter()
 
     chunks = lightrag_retrieve(query)
-    context_str = _format_context(chunks)
+    # Matched context: native LightRAG's entities/relations + chunks, so the
+    # only difference vs the contribution is the retrieval policy.
+    graph_text = ""
+    if _CFG.lh_include_graph_text:
+        graph_text = budget_graph_text(_LAST_ENTITIES, _LAST_RELATIONS)
+    context_str = format_retrieval_context(chunks, graph_text)
     llm = get_answer_llm()
 
     messages = [
@@ -308,6 +376,11 @@ def lightrag_answer(query: str) -> dict[str, Any]:
         "answer": answer,
         "latency_ms": round(latency_ms, 1),
         "model": "lightrag",
+        # Retrieval-side LLM accounting (keyword extraction), captured in
+        # _lightrag_retrieve_async via _LLM_STATS.
+        "retrieval_llm_calls": _LLM_STATS["calls"],
+        "retrieval_prompt_tokens": _LLM_STATS["prompt_tokens"],
+        "retrieval_completion_tokens": _LLM_STATS["completion_tokens"],
     }
     return result
 

@@ -104,6 +104,19 @@ def compute_comparison(
             1 for fb in fallbacks if fb.get("used") and not fb.get("resolved")
         )
 
+        # Retrieval-side LLM cost (claim A): native LightRAG reports its
+        # keyword-extraction call; the LLM-free methods report 0.
+        eff = [r.get("efficiency") or {} for r in results]
+        metric_means["avg_retrieval_llm_calls"] = round(
+            sum(e.get("retrieval_llm_calls", 0) for e in eff) / len(results), 2
+        )
+        metric_means["avg_retrieval_prompt_tokens"] = round(
+            sum(e.get("retrieval_prompt_tokens", 0) for e in eff) / len(results), 1
+        )
+        metric_means["avg_retrieval_completion_tokens"] = round(
+            sum(e.get("retrieval_completion_tokens", 0) for e in eff) / len(results), 1
+        )
+
         comparison["overall"][method] = metric_means
 
         per_record_means: dict[str, list[float]] = {}
