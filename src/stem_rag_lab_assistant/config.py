@@ -153,6 +153,14 @@ class RAGConfig:
     # Retries per chunk on JSON parse failure.
     extraction_retry_max: int = 2
 
+    # --- native LightRAG baseline LLM binding (query-time keyword extraction) ---
+    # Serves LightRAG's dual-level (hl/ll) keyword extraction used to search
+    # entities/relations at query time. Kept separate from
+    # ``extraction_llm_model`` (our own graph.json extraction) so the
+    # baseline's runtime binding can change without altering our graph
+    # artifacts; inserts are dedup no-ops, so no re-extraction happens.
+    lightrag_llm_model: str = "openai/gpt-oss-20b"
+
 
 def _env_int(name: str, default: int) -> int:
     return int(os.getenv(name, str(default)))
@@ -206,6 +214,7 @@ def _build_config() -> RAGConfig:
         ),
         extraction_max_tokens=_env_int("EXTRACTION_MAX_TOKENS", 4096),
         extraction_retry_max=_env_int("EXTRACTION_RETRY_MAX", 2),
+        lightrag_llm_model=os.getenv("LIGHTRAG_LLM_MODEL", "openai/gpt-oss-20b"),
     )
 
 
