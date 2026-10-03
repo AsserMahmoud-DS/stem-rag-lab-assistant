@@ -13,13 +13,13 @@ from __future__ import annotations
 
 import logging
 
-from llama_index.core.retrievers import QueryFusionRetriever
 from llama_index.core.vector_stores import SimpleVectorStore
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever
+from stem_rag_lab_assistant.index.fusion import RRFRetriever
 from stem_rag_lab_assistant.index.graph_store import GraphStore, load_graph_store
 from stem_rag_lab_assistant.index.lightrag_graph_store import (
     LightRAGGraphStore,
@@ -47,7 +47,7 @@ _CFG = get_config()
 
 _EMBED_MODEL: HuggingFaceEmbedding | None = None
 _VECTOR_STORE: SimpleVectorStore | None = None
-_FUSION_RETRIEVER: QueryFusionRetriever | None = None
+_FUSION_RETRIEVER: RRFRetriever | None = None
 _GRAPH_STORE: GraphStore | None = None
 
 
@@ -69,7 +69,7 @@ def get_vector_store() -> SimpleVectorStore:
     return _VECTOR_STORE
 
 
-def get_fusion_retriever() -> QueryFusionRetriever:
+def get_fusion_retriever() -> RRFRetriever:
     """Shared RRF(vector + BM25) seed retriever — identical for every method."""
     global _FUSION_RETRIEVER
     if _FUSION_RETRIEVER is not None:
@@ -78,7 +78,7 @@ def get_fusion_retriever() -> QueryFusionRetriever:
     vector_retriever = VectorRetriever(
         get_vector_store(), get_embed_model(), top_k=_CFG.vector_top_k,
     )
-    _FUSION_RETRIEVER = QueryFusionRetriever(
+    _FUSION_RETRIEVER = RRFRetriever(
         [vector_retriever, get_bm25_retriever()],
         similarity_top_k=_CFG.vector_top_k,
         num_queries=1,          # no query generation — RRF only

@@ -1,4 +1,4 @@
-"""Hybrid RAG — BM25 + vector fusion via QueryFusionRetriever RRF. (P2)"""
+"""Hybrid RAG — BM25 + vector fusion via id-keyed RRF. (P2)"""
 
 from __future__ import annotations
 
@@ -6,12 +6,11 @@ import logging
 import time
 from typing import Any
 
-from llama_index.core.retrievers import QueryFusionRetriever
-
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
 from stem_rag_lab_assistant.generation.prompts import ANSWER_SYSTEM_PROMPT, ANSWER_USER_TEMPLATE
 from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever_at
+from stem_rag_lab_assistant.index.fusion import RRFRetriever
 from stem_rag_lab_assistant.index.reranker import get_reranker
 from stem_rag_lab_assistant.index.vector_store import VectorRetriever
 from stem_rag_lab_assistant.methods.common import format_retrieval_context
@@ -101,10 +100,10 @@ def hybrid_answer(
 # retrieval instead of graph one-hop expansion. Chunks-only context.
 # ---------------------------------------------------------------------------
 
-_HYBRID_CE_RETRIEVER: QueryFusionRetriever | None = None
+_HYBRID_CE_RETRIEVER: RRFRetriever | None = None
 
 
-def _get_hybrid_ce_retriever() -> QueryFusionRetriever:
+def _get_hybrid_ce_retriever() -> RRFRetriever:
     """RRF(vector ∪ BM25) candidate seeder at the shared candidate budget.
 
     Sub-retrievers are built at ``lh_pool_cap`` too: LlamaIndex's fusion
@@ -119,7 +118,7 @@ def _get_hybrid_ce_retriever() -> QueryFusionRetriever:
     vector_retriever = VectorRetriever(
         get_vector_store(), get_embed_model(), top_k=_CFG.lh_pool_cap,
     )
-    _HYBRID_CE_RETRIEVER = QueryFusionRetriever(
+    _HYBRID_CE_RETRIEVER = RRFRetriever(
         [vector_retriever, get_bm25_retriever_at(_CFG.lh_pool_cap)],
         similarity_top_k=_CFG.lh_pool_cap,
         num_queries=1,

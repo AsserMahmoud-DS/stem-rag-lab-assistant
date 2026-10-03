@@ -17,7 +17,6 @@ from typing import Any
 
 import numpy as np
 from llama_index.core.llms import ChatMessage
-from llama_index.core.retrievers import QueryFusionRetriever
 
 from stem_rag_lab_assistant.config import get_config
 from stem_rag_lab_assistant.generation.groq_client import get_answer_llm
@@ -26,6 +25,7 @@ from stem_rag_lab_assistant.generation.prompts import (
     ANSWER_USER_TEMPLATE,
 )
 from stem_rag_lab_assistant.index.bm25_store import get_bm25_retriever
+from stem_rag_lab_assistant.index.fusion import RRFRetriever
 from stem_rag_lab_assistant.index.graph_store import load_chunk_texts
 from stem_rag_lab_assistant.index.vector_store import VectorRetriever
 from stem_rag_lab_assistant.methods.common import (
@@ -218,10 +218,10 @@ def lightrag_hybrid_answer(query: str) -> dict[str, Any]:
 # (unlike v1, which always kept them).
 # ---------------------------------------------------------------------------
 
-_LH_V2_SEED_RETRIEVER: QueryFusionRetriever | None = None
+_LH_V2_SEED_RETRIEVER: RRFRetriever | None = None
 
 
-def _get_lh_v2_seed_retriever() -> QueryFusionRetriever:
+def _get_lh_v2_seed_retriever() -> RRFRetriever:
     """RRF(vector ∪ BM25) seeder for v2 — fusion top-k = ``lh_seed_k``.
 
     Owns its fusion retriever so widening the fused seed set does not leak into
@@ -233,7 +233,7 @@ def _get_lh_v2_seed_retriever() -> QueryFusionRetriever:
     vector_retriever = VectorRetriever(
         get_vector_store(), get_embed_model(), top_k=_CFG.vector_top_k,
     )
-    _LH_V2_SEED_RETRIEVER = QueryFusionRetriever(
+    _LH_V2_SEED_RETRIEVER = RRFRetriever(
         [vector_retriever, get_bm25_retriever()],
         similarity_top_k=_CFG.lh_seed_k,
         num_queries=1,
