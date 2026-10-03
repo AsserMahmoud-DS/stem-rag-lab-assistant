@@ -16,6 +16,23 @@ _CFG = get_config()
 
 _RERANKER_SINGLETON: CrossEncoderReranker | None = None
 
+# Per-query accounting of rerank calls coming through the LightRAG adapter
+# (``lightrag_rerank_func`` → ``rerank_index_scores``): native LightRAG reranks
+# its entity, relation and chunk stages through it, so the document counts
+# measure its pre-CE candidate pools. Our own methods call ``rerank()`` with
+# their own candidate lists and report ``pre_ce_candidates`` directly instead.
+_RERANK_DOC_COUNTS: list[int] = []
+
+
+def reset_rerank_stats() -> None:
+    """Clear per-query rerank-call accounting (call before each query)."""
+    _RERANK_DOC_COUNTS.clear()
+
+
+def last_rerank_doc_counts() -> list[int]:
+    """Document count of each LightRAG rerank call since the last reset."""
+    return list(_RERANK_DOC_COUNTS)
+
 
 class CrossEncoderReranker:
     """Scores (query, chunk) pairs with a cross-encoder and returns top-N.
@@ -121,6 +138,7 @@ def rerank_index_scores(
     """
     reranker = get_reranker()
     chunks = [{"chunk_id": str(i), "text": t} for i, t in enumerate(documents)]
+    _RERANK_DOC_COUNTS.append(len(documents))
     kept = reranker.rerank(query, chunks, top_n=top_n or len(chunks))
     return [
         {"index": int(c["chunk_id"]), "relevance_score": float(c["rerank_score"])}

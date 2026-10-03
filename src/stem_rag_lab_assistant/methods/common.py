@@ -107,8 +107,10 @@ def budget_graph_text(
     """Render token-budgeted ENTITIES / RELATIONS blocks (LightRAG-style).
 
     Entity/relation descriptions are inserted into the answer context so every
-    method sees the same *shape* of context. Caps are the ``lh_max_*`` safety
-    ceilings (below native LightRAG's 6000/8000 defaults).
+    method sees the same *shape* of context. Caps are the ``lh_max_*`` ceilings
+    (entity/relation match native LightRAG's 6000/8000 defaults; the combined
+    ``lh_max_graph_tokens`` is an extra safety net that stays inert while the
+    per-part caps sum to it).
     """
     cfg = get_config()
 

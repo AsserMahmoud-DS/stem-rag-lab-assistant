@@ -347,6 +347,7 @@ def lightrag_hybrid_v2_retrieve(query: str) -> dict[str, Any]:
         "all_chunks": ranked,
         "graph_text": graph_text,
         "seed_chunks": seed_chunks,
+        "pool_size": len(pool_chunks),
         "expanded_chunk_ids": [cid for cid in ranked_ids if cid not in set(seed_ids)],
         "relation_expanded_chunk_ids": [cid for cid in ranked_ids if cid in relation_neigh],
         "entities_matched": len(seed_entities),
@@ -395,6 +396,7 @@ def lightrag_hybrid_v2_answer(query: str) -> dict[str, Any]:
         "retrieval_llm_calls": 0,
         "retrieval_prompt_tokens": 0,
         "retrieval_completion_tokens": 0,
+        "pre_ce_candidates": retrieval["pool_size"],
     }
 
 

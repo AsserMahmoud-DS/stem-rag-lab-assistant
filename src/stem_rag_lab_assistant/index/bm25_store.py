@@ -98,6 +98,20 @@ def get_bm25_retriever() -> BM25Retriever:
     return _BM25_RETRIEVER
 
 
+def get_bm25_retriever_at(top_k: int) -> BM25Retriever:
+    """Private BM25Retriever instance with its own ``similarity_top_k``.
+
+    Loads the same persisted index as the shared singleton (calling it first
+    also guarantees the persisted index exists and is fresh), so a caller can
+    widen top-k for its own fusion retriever without mutating state other
+    methods see through the shared singleton.
+    """
+    get_bm25_retriever()
+    retriever = BM25Retriever.from_persist_dir(str(_PERSIST_DIR))
+    retriever.similarity_top_k = top_k
+    return retriever
+
+
 def bm25_retrieve(
     query: str,
     retriever: BM25Retriever | None = None,
